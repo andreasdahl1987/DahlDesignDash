@@ -106,7 +106,7 @@ If you made yourself a DD SW1 or a DD DDU (congratulations), make sure to enable
 
 General colors and color coded values in this dashboard:
 
-Bad/low ![Screen Shot 2022-10-22 at 8.43.38 PM](Screen Shot 2022-10-22 at 8.43.38 PM.png) Good/High
+Bad/low ![](assets/Screen%20Shot%202022-10-22%20at%208.43.38%20PM.png) Good/High
 
 Default state / not enough data: GREY
 
@@ -130,7 +130,7 @@ For any colors that is not intuitive and I’ve failed to explain, don't hesitat
 
 ## Dashboard Overview
 
-![Screen Shot 2022-10-22 at 8.52.06 PM](Screen Shot 2022-10-22 at 8.52.06 PM.png)
+![](assets/Screen%20Shot%202022-10-22%20at%208.52.06%20PM.png)
 
 This is a lot of info!  This is what it could look like, though this dash has many shapes and forms, depending on car model, user input and circumstances. There are no static elements in the entire dash.
 
@@ -148,7 +148,7 @@ You can cycle through the 5 delta modes by ensuring you are on Pit Mode 11 and p
 
 #### Performance Delta Mode
 
-The performance delta screen is pretty much self explanatory. The bars on the bottom show how fast the delta is shifting in either direction. This design is downright stolen from Meekesta.![Screen Shot 2022-10-22 at 8.57.47 PM](Screen Shot 2022-10-22 at 8.57.47 PM.png)
+The performance delta screen is pretty much self explanatory. The bars on the bottom show how fast the delta is shifting in either direction. This design is downright stolen from Meekesta.![](assets/Screen%20Shot%202022-10-22%20at%208.57.47%20PM.png)
 
 The top section shows the delta and type (compated to Last Lap (LL), Session Best (SB) or Lap Record/Personal Best (LR)).  
 
@@ -156,7 +156,9 @@ The bottom section is unique - the dashboard stores your 'minisector' times (eac
 
 #### Pit Save Delta Mode
 
-Shows the slowest lap time acceptable if you chose to save a pit stop by conserving fuel or skip changing tires. The delta in the lower right corner is your current delta to this slowest acceptable lap time.![Screen Shot 2022-10-22 at 9.04.37 PM](Screen Shot 2022-10-22 at 9.04.37 PM.png)
+Shows the slowest lap time acceptable if you chose to save a pit stop by conserving fuel or skip changing tires. The delta in the lower right corner is your current delta to this slowest acceptable lap time.
+
+<img src="assets/Screen%20Shot%202022-10-22%20at%209.04.37%20PM.png" style="zoom:50%;" />
 
 The “F +3.87” shows how you’re doing with regards to avoiding pitting for fuel, which also is an important part of the calculation. If you’re driving slow to save fuel and avoid a pit stop, you have to make sure you can actually avoid the pit stop. This value is calculated with the fuel consumption on the previous lap, so you can do a lap with lift/coast and see if you will save enough fuel to avoid pitting, and check if you go fast enough to make it worthwhile. In this case, you’re good on lap time, but still need to save 3.87L more fuel. For the first 30% distance of your lap, the delta will refer to your previous lap time. Then it will go live for the remaining 70%. To get an accurate “acceptable slowest lap time”, you should lock your lapping pace, when you have good pace. This could be smart to do early in the race. Do this with PitMenu11 + “Plus”.
 
@@ -164,13 +166,13 @@ The “F +3.87” shows how you’re doing with regards to avoiding pitting for 
 
 Last is the “fuel saving” delta. It will display your current set target fuel pr. lap (set with PitMenu12 + “OK”, adjusted with PitMenu12 +/-) and your delta to this target on the last lap. On the right, you will see the cumulative fuel saved compared to target on the stint.
 
-![Screen Shot 2022-10-22 at 9.05.15 PM](Screen Shot 2022-10-22 at 9.05.15 PM.png)
+<img src="assets/Screen%20Shot%202022-10-22%20at%209.05.15%20PM.png" style="zoom:50%;" />
 
 ### RPM Bar
 
-![Screen Shot 2022-10-22 at 9.05.33 PM](Screen Shot 2022-10-22 at 9.05.33 PM.png)
+![assets/Screen Shot 2022-10-22 at 9.05.33 PM](assets/Screen Shot 2022-10-22 at 9.05.33 PM.png)
 
-In test/practice sessions the bar has a pink and a green line showing the optimal shift point and your shift timing for the previous gear shift.   LastlyThis gives you an indication on whether you’re shifting too early or too late. You can also enable the shoft points for races in the DahlDesign options screen, as well as enable the bar to turn orange as a 'shift indicator'.![Screen Shot 2022-10-22 at 9.07.23 PM](Screen Shot 2022-10-22 at 9.07.23 PM.png)
+In test/practice sessions the bar has a pink and a green line showing the optimal shift point and your shift timing for the previous gear shift.   LastlyThis gives you an indication on whether you’re shifting too early or too late. You can also enable the shoft points for races in the DahlDesign options screen, as well as enable the bar to turn orange as a 'shift indicator'.![assets/Screen Shot 2022-10-22 at 9.07.23 PM](assets/Screen Shot 2022-10-22 at 9.07.23 PM.png)
 
 The bar will change colors when using HYS boost, toggling NoBoost, DRS, P2P, etc.
 
@@ -178,7 +180,7 @@ The bar will show all kinds of warnings and messages, as well as some practical 
 
 Lastly, you can also replace the RPM bar for LEDs (like progressive shift lights).
 
-![Screen Shot 2022-10-22 at 9.07.45 PM](Screen Shot 2022-10-22 at 9.07.45 PM.png)
+![assets/Screen Shot 2022-10-22 at 9.07.45 PM](assets/Screen Shot 2022-10-22 at 9.07.45 PM.png)
 
 ### Left Multi Function Display (MFD)
 
@@ -300,7 +302,7 @@ I will implement a weather forecast system in the future if it becomes relevant.
 
 ### Gear box
 
-This part of the dash will change from car to car; the most basic for the Skippy, the most advanced for LMP1 and F1 cars. The info displayed should be fairly intuitive, but some examples are included below.![Screen Shot 2022-10-22 at 9.22.21 PM](Screen Shot 2022-10-22 at 9.22.21 PM.png)
+This part of the dash will change from car to car; the most basic for the Skippy, the most advanced for LMP1 and F1 cars. The info displayed should be fairly intuitive, but some examples are included below.![assets/Screen Shot 2022-10-22 at 9.22.21 PM](assets/Screen Shot 2022-10-22 at 9.22.21 PM.png)
 
 ### Menu Bars & Adjustments
 
@@ -308,7 +310,7 @@ This part of the dash will change from car to car; the most basic for the Skippy
 
  If the car has only a few InCar adjustments, there will only be a PitMenu bar
 
-![Screen Shot 2022-10-22 at 9.25.39 PM](Screen Shot 2022-10-22 at 9.25.39 PM.png)
+![assets/Screen Shot 2022-10-22 at 9.25.39 PM](assets/Screen Shot 2022-10-22 at 9.25.39 PM.png)
 
 These correspond to the 12 positions decribed in the Pit Menu Configuration section of this manual.
 
@@ -319,7 +321,7 @@ P itMenu11 is a mini version of the “Pit Messages” graphic on pit screen. Wh
 
 If the car has only a few InCar adjustments, there will only be a PitMenu bar. Otherwize, both InCarMenu and PitMenu will be displayed.   The items shown depend on the car.
 
-![Screen Shot 2022-10-22 at 9.27.09 PM](Screen Shot 2022-10-22 at 9.27.09 PM.png)
+![assets/Screen Shot 2022-10-22 at 9.27.09 PM](assets/Screen Shot 2022-10-22 at 9.27.09 PM.png)
 
 #### Menu Box
 
@@ -341,7 +343,7 @@ For high-power cars, where you can’t give 100% throttle from the start, an alt
 
 ### Pit screen
 
-Activated with Pit screen button (mapped on plugin options page) or  PitMenu11 + OK![Screen Shot 2022-10-22 at 9.32.00 PM](Screen Shot 2022-10-22 at 9.32.00 PM.png)
+Activated with Pit screen button (mapped on plugin options page) or  PitMenu11 + OK![assets/Screen Shot 2022-10-22 at 9.32.00 PM](assets/Screen Shot 2022-10-22 at 9.32.00 PM.png)
 
 This screen might seem flooded at first, let's chop it into elements.
 
@@ -349,13 +351,13 @@ This screen might seem flooded at first, let's chop it into elements.
 
 **Tether** - Essential car/race info + temperatures.The two drivers are car ahead and car behind on track, extracted from left side RACE2.
 
-![Screen Shot 2022-10-22 at 9.33.17 PM](Screen Shot 2022-10-22 at 9.33.17 PM.png)
+![assets/Screen Shot 2022-10-22 at 9.33.17 PM](assets/Screen Shot 2022-10-22 at 9.33.17 PM.png)
 
 #### Tires
 
 **Tires** - Wear/temp/pressure. Updated only on pit stop (because iRacing doesn't update live). In this case the set pressure for rear/front tires are different from the set you’re currently using, thus marked in blue. Front tires are purple, meaning they are set to be changed. Tire temperatures and wear with color indications.
 
-![Screen Shot 2022-10-22 at 9.33.45 PM](Screen Shot 2022-10-22 at 9.33.45 PM.png)
+![assets/Screen Shot 2022-10-22 at 9.33.45 PM](assets/Screen Shot 2022-10-22 at 9.33.45 PM.png)
 
 #### Center
 
@@ -377,7 +379,7 @@ In this example, 1 pitstop is needed, and we’re quite far from both being able
 
 to fill and the stint can be extended to lap 39 instead of lap 34 as an absolute last lap to pit. Since only 1 pit stop is required, the minimum amount to fuel (bottom line) is the fuel delta. With 2 or more stops, this would look different. 
 
-![Screen Shot 2022-10-22 at 9.35.08 PM](Screen Shot 2022-10-22 at 9.35.08 PM.png)
+![assets/Screen Shot 2022-10-22 at 9.35.08 PM](assets/Screen Shot 2022-10-22 at 9.35.08 PM.png)
 
 #### Pit Services
 
@@ -440,7 +442,7 @@ A quick summary/recommendation on what to do. If you’ve got 1 second to look a
 
 ## DahlDesign Data Plugin Descriptions
 
-To Be Added
+Please see the documentation in the [relevant repo.](https://github.com/andreasdahl1987/DahlDesignProperties)
 
 ## Clutch
 
