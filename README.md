@@ -16,3 +16,5 @@ Check out the manual in Manual/DahlDesignDash.md
 
 3. 
    Do your thing and send in PRs!
+
+Find the required plugin files here: [Dahl Design Proprties](https://github.com/andreasdahl1987/DahlDesignProperties)
