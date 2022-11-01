@@ -1,0 +1,141 @@
+{
+  "$id": "1",
+  "Version": 2,
+  "Id": "b5e48b0d-dd31-4050-893d-0e50556dd725",
+  "BaseHeight": 768,
+  "BaseWidth": 1280,
+  "BackgroundColor": "#FF000000",
+  "Screens": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "RenderingSkip": 0,
+        "IsFreezed": false,
+        "InGameScreen": true,
+        "IdleScreen": false,
+        "PitScreen": false,
+        "ScreenScript": {
+          "$id": "4",
+          "Interpreter": 1
+        },
+        "BackgroundColor": "#FF000000",
+        "IsSelected": true,
+        "Items": {
+          "$id": "5",
+          "$values": [
+            {
+              "$id": "6",
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "NextScreenCommand": 5,
+              "PreviousScreenCommand": 0,
+              "AutoSize": true,
+              "AutoSizeScale": 1.0,
+              "FileName": "launch.djson",
+              "Rotation": 0.0,
+              "UseRotation": false,
+              "CanResize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BlurRadius": 0.0,
+              "EnableBlur": false,
+              "BorderStyle": {
+                "$id": "7",
+                "BorderColor": "#FFFFFFFF",
+                "BorderTop": 0,
+                "BorderBottom": 0,
+                "BorderLeft": 0,
+                "BorderRight": 0,
+                "RadiusTopLeft": 0,
+                "RadiusTopRight": 0,
+                "RadiusBottomLeft": 0,
+                "RadiusBottomRight": 0,
+                "Bindings": {
+                  "$id": "8"
+                }
+              },
+              "Height": 768.0,
+              "Left": 0.0,
+              "Opacity": 100.0,
+              "Top": 0.0,
+              "Visible": false,
+              "BlinkDelay": 250.0,
+              "BlinkEnabled": false,
+              "Width": 1280.0,
+              "BorderBottom": 0,
+              "BorderColor": "#FFFFFFFF",
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderTop": 0,
+              "Id": "5e1da207-3445-421b-856e-6895bf523bb0",
+              "IsFreezed": true,
+              "IsSelected": true,
+              "Name": "Launch",
+              "RenderingSkip": 0,
+              "Sid": 0,
+              "Bindings": {
+                "$id": "9",
+                "Visible": {
+                  "$id": "10",
+                  "Formula": {
+                    "$id": "11",
+                    "Expression": "maximum(5000,\r\n[DataCorePlugin.GameData.NewData.CarSettings_CurrentDisplayedRPMPercent]>8\r\nand\r\n[DataCorePlugin.GameData.NewData.SpeedLocal]<2)\r\nand\r\n[InputStatus.JoystickPlugin.Arduino_Leonardo_B41] = 1\r\n\r\n"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            }
+          ]
+        },
+        "Id": "257698bc-4994-4c46-aee1-52c3283140b1",
+        "Name": "Screen1",
+        "Sid": 0,
+        "Bindings": {
+          "$id": "12"
+        }
+      }
+    ]
+  },
+  "SnapToGrid": false,
+  "HideLabels": false,
+  "ShowBoundingRectangles": false,
+  "GridSize": 10,
+  "SelectedScreen": {
+    "$ref": "3"
+  },
+  "Images": {
+    "$id": "13",
+    "$values": []
+  },
+  "Metadata": {
+    "$id": "14",
+    "ScreenCount": 1.0,
+    "InGameScreensIndexs": {
+      "$id": "15",
+      "$values": [
+        0
+      ]
+    },
+    "IdleScreensIndexs": {
+      "$id": "16",
+      "$values": []
+    },
+    "MainPreviewIndex": 0,
+    "IsOverlay": false,
+    "ShowInTaskBar": true,
+    "Width": 1280.0,
+    "Height": 768.0,
+    "OverlaySizeWarning": true,
+    "MetadataVersion": 2.0,
+    "EnableOnDashboardMessaging": true,
+    "PitScreensIndexs": {
+      "$id": "17",
+      "$values": []
+    }
+  },
+  "ShowOnScreenControls": true,
+  "ShowInTaskBar": true,
+  "IsOverlay": false,
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true
+}

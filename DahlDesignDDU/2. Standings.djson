@@ -1,0 +1,285 @@
+{
+  "$id": "1",
+  "Version": 2,
+  "Id": "7f864aa0-8c30-4048-ba57-b46107d87baa",
+  "BaseHeight": 768,
+  "BaseWidth": 1280,
+  "BackgroundColor": "#FF000000",
+  "Screens": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "RenderingSkip": 0,
+        "IsFreezed": false,
+        "InGameScreen": true,
+        "IdleScreen": false,
+        "PitScreen": false,
+        "ScreenScript": {
+          "$id": "4",
+          "Interpreter": 1
+        },
+        "BackgroundColor": "#FF000000",
+        "IsSelected": false,
+        "Items": {
+          "$id": "5",
+          "$values": [
+            {
+              "$id": "6",
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "Rotation": 0.0,
+              "UseRotation": false,
+              "CanResize": true,
+              "BackgroundColor": "#FFFFE4C4",
+              "BlurRadius": 0.0,
+              "EnableBlur": false,
+              "BorderStyle": {
+                "$id": "7",
+                "AllBorders": 2,
+                "AllCornerRadius": 0,
+                "BorderColor": "#FFFFFFFF",
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2,
+                "CornerRadius": "0,0,0,0",
+                "RadiusTopLeft": 0,
+                "RadiusTopRight": 0,
+                "RadiusBottomLeft": 0,
+                "RadiusBottomRight": 0,
+                "Bindings": {
+                  "$id": "8"
+                }
+              },
+              "Height": 328.0,
+              "Left": 281.0,
+              "Opacity": 100.0,
+              "Top": 188.0,
+              "Visible": true,
+              "BlinkDelay": 250.0,
+              "BlinkEnabled": false,
+              "Width": 806.0,
+              "BorderBottom": 2,
+              "BorderColor": "#FFFFFFFF",
+              "BorderLeft": 2,
+              "BorderRight": 2,
+              "BorderTop": 2,
+              "Id": "31bb99c1-b25c-4035-b241-c5c215b4e039",
+              "IsFreezed": false,
+              "IsSelected": true,
+              "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "Sid": 0,
+              "Bindings": {
+                "$id": "9"
+              }
+            }
+          ]
+        },
+        "Id": "9f5ce25f-97d4-46ba-ac5d-da3210538a8a",
+        "Name": "Screen1",
+        "Sid": 0,
+        "Bindings": {
+          "$id": "10"
+        }
+      },
+      {
+        "$id": "11",
+        "RenderingSkip": 0,
+        "IsFreezed": false,
+        "InGameScreen": true,
+        "IdleScreen": false,
+        "PitScreen": false,
+        "ScreenScript": {
+          "$id": "12",
+          "Interpreter": 1
+        },
+        "BackgroundColor": "#FF000000",
+        "IsSelected": false,
+        "Items": {
+          "$id": "13",
+          "$values": [
+            {
+              "$id": "14",
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "Rotation": 0.0,
+              "UseRotation": false,
+              "CanResize": true,
+              "BackgroundColor": "#FF7FFF00",
+              "BlurRadius": 0.0,
+              "EnableBlur": false,
+              "BorderStyle": {
+                "$id": "15",
+                "AllBorders": 2,
+                "AllCornerRadius": 0,
+                "BorderColor": "#FFFFFFFF",
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2,
+                "CornerRadius": "0,0,0,0",
+                "RadiusTopLeft": 0,
+                "RadiusTopRight": 0,
+                "RadiusBottomLeft": 0,
+                "RadiusBottomRight": 0,
+                "Bindings": {
+                  "$id": "16"
+                }
+              },
+              "Height": 382.0,
+              "Left": 516.0,
+              "Opacity": 100.0,
+              "Top": 290.0,
+              "Visible": true,
+              "BlinkDelay": 250.0,
+              "BlinkEnabled": false,
+              "Width": 786.0,
+              "BorderBottom": 2,
+              "BorderColor": "#FFFFFFFF",
+              "BorderLeft": 2,
+              "BorderRight": 2,
+              "BorderTop": 2,
+              "Id": "5aefbf08-5164-4f5c-8138-3efca4a9514b",
+              "IsFreezed": false,
+              "IsSelected": true,
+              "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "Sid": 0,
+              "Bindings": {
+                "$id": "17"
+              }
+            }
+          ]
+        },
+        "Id": "fac3f5b3-2cb7-4b29-abf0-e23384efca74",
+        "Name": "Screen2",
+        "Sid": 0,
+        "Bindings": {
+          "$id": "18"
+        }
+      },
+      {
+        "$id": "19",
+        "RenderingSkip": 0,
+        "IsFreezed": false,
+        "InGameScreen": true,
+        "IdleScreen": false,
+        "PitScreen": false,
+        "ScreenScript": {
+          "$id": "20",
+          "Interpreter": 1
+        },
+        "BackgroundColor": "#FF000000",
+        "IsSelected": true,
+        "Items": {
+          "$id": "21",
+          "$values": [
+            {
+              "$id": "22",
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "Rotation": 0.0,
+              "UseRotation": false,
+              "CanResize": true,
+              "BackgroundColor": "#FFFF0000",
+              "BlurRadius": 0.0,
+              "EnableBlur": false,
+              "BorderStyle": {
+                "$id": "23",
+                "AllBorders": 2,
+                "AllCornerRadius": 0,
+                "BorderColor": "#FFFFFFFF",
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2,
+                "CornerRadius": "0,0,0,0",
+                "RadiusTopLeft": 0,
+                "RadiusTopRight": 0,
+                "RadiusBottomLeft": 0,
+                "RadiusBottomRight": 0,
+                "Bindings": {
+                  "$id": "24"
+                }
+              },
+              "Height": 381.0,
+              "Left": 333.0,
+              "Opacity": 100.0,
+              "Top": 173.0,
+              "Visible": true,
+              "BlinkDelay": 250.0,
+              "BlinkEnabled": false,
+              "Width": 461.0,
+              "BorderBottom": 2,
+              "BorderColor": "#FFFFFFFF",
+              "BorderLeft": 2,
+              "BorderRight": 2,
+              "BorderTop": 2,
+              "Id": "9f279351-4c17-4f3a-936f-2a63d466e9c6",
+              "IsFreezed": false,
+              "IsSelected": true,
+              "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "Sid": 0,
+              "Bindings": {
+                "$id": "25"
+              }
+            }
+          ]
+        },
+        "Id": "5c15c221-5810-40d2-8b6d-908f7058d36a",
+        "Name": "Screen3",
+        "Sid": 0,
+        "Bindings": {
+          "$id": "26"
+        }
+      }
+    ]
+  },
+  "SnapToGrid": false,
+  "HideLabels": false,
+  "ShowBoundingRectangles": false,
+  "GridSize": 10,
+  "SelectedScreen": {
+    "$ref": "19"
+  },
+  "Images": {
+    "$id": "27",
+    "$values": []
+  },
+  "Metadata": {
+    "$id": "28",
+    "ScreenCount": 3.0,
+    "InGameScreensIndexs": {
+      "$id": "29",
+      "$values": [
+        0,
+        1,
+        2
+      ]
+    },
+    "IdleScreensIndexs": {
+      "$id": "30",
+      "$values": []
+    },
+    "MainPreviewIndex": 0,
+    "IsOverlay": false,
+    "ShowInTaskBar": true,
+    "Width": 1280.0,
+    "Height": 768.0,
+    "OverlaySizeWarning": true,
+    "MetadataVersion": 2.0,
+    "EnableOnDashboardMessaging": true,
+    "PitScreensIndexs": {
+      "$id": "31",
+      "$values": []
+    }
+  },
+  "ShowOnScreenControls": true,
+  "ShowInTaskBar": true,
+  "IsOverlay": false,
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true
+}

@@ -1,0 +1,1489 @@
+{
+  "$id": "1",
+  "Version": 2,
+  "Id": "e34cacf6-d752-4557-94a2-7921e36ab9c5",
+  "BaseHeight": 100,
+  "BaseWidth": 1280,
+  "BackgroundColor": "#FF000000",
+  "Screens": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "RenderingSkip": 0,
+        "InGameScreen": true,
+        "IdleScreen": false,
+        "PitScreen": false,
+        "ScreenScript": {
+          "$id": "4",
+          "Interpreter": 1
+        },
+        "BackgroundColor": "#FF000000",
+        "IsSelected": true,
+        "Items": {
+          "$id": "5",
+          "$values": [
+            {
+              "$id": "6",
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "Rotation": 0.0,
+              "UseRotation": false,
+              "CanResize": true,
+              "BackgroundColor": "#FF7CFC00",
+              "BlurRadius": 0.0,
+              "EnableBlur": false,
+              "BorderStyle": {
+                "$id": "7",
+                "BorderColor": "#FFFFFFFF",
+                "BorderTop": 0,
+                "BorderBottom": 0,
+                "BorderLeft": 0,
+                "BorderRight": 0,
+                "RadiusTopLeft": 0,
+                "RadiusTopRight": 0,
+                "RadiusBottomLeft": 0,
+                "RadiusBottomRight": 0,
+                "Bindings": {
+                  "$id": "8"
+                }
+              },
+              "Height": 100.0,
+              "Left": 0.0,
+              "Opacity": 100.0,
+              "Top": 0.0,
+              "Visible": true,
+              "BlinkDelay": 250.0,
+              "BlinkEnabled": false,
+              "Width": 1280.0,
+              "BorderBottom": 0,
+              "BorderColor": "#FFFFFFFF",
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderTop": 0,
+              "Id": "765884a8-de37-45d2-8262-91651ce01f16",
+              "IsFreezed": false,
+              "IsSelected": false,
+              "Name": "Background",
+              "RenderingSkip": 0,
+              "Sid": 0,
+              "Bindings": {
+                "$id": "9",
+                "BackgroundColor": {
+                  "$id": "10",
+                  "Formula": {
+                    "$id": "11",
+                    "Expression": "if ([DahlDesign.CarBehind01Name] = '' || \r\n[DahlDesign.CarBehind02Name] = '' ||\r\n[DahlDesign.CarBehind03Name] = '' ||\r\n[DahlDesign.CarBehind04Name] = '' ||\r\n[DahlDesign.CarBehind05Name] = '' ||\r\n[DahlDesign.CarBehind01Gap] > 20 , 'fuchsia', 'dimgray')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$id": "12",
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Repetitions": 0.0,
+              "RepeatLeftOffset": 0.0,
+              "RepeatTopOffset": 30.0,
+              "Height": 100.0,
+              "Width": 420.0,
+              "BackgroundColor": "#00FFFFFF",
+              "BlurRadius": 0.0,
+              "Rotation": 0.0,
+              "BorderStyle": {
+                "$id": "13",
+                "BorderColor": "#FFFFFFFF",
+                "BorderTop": 0,
+                "BorderBottom": 0,
+                "BorderLeft": 0,
+                "BorderRight": 0,
+                "RadiusTopLeft": 0,
+                "RadiusTopRight": 0,
+                "RadiusBottomLeft": 0,
+                "RadiusBottomRight": 0,
+                "Bindings": {
+                  "$id": "14"
+                }
+              },
+              "RenderingSkip": 0,
+              "ShowSelection": false,
+              "CanResize": false,
+              "Childrens": {
+                "$id": "15",
+                "$values": [
+                  {
+                    "$id": "16",
+                    "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                    "IsTextItem": true,
+                    "ShadowDepth": 0,
+                    "ShadowBlur": 0,
+                    "ShadowDirection": 315,
+                    "ShadowColor": "#FF808080",
+                    "Font": "Segoe UI",
+                    "FontWeight": "Normal",
+                    "TextWrapping": 1,
+                    "FontStyle": "Normal",
+                    "FontSize": 50.0,
+                    "Text": "2.4",
+                    "TextColor": "#FF000000",
+                    "HorizontalAlignment": 0,
+                    "VerticalAlignment": 1,
+                    "UseMonospacedText": false,
+                    "CharWidth": 40.0,
+                    "SpecialCharsWidth": 20.0,
+                    "SpecialChars": ".,:;",
+                    "TextMask": "",
+                    "TextMaskColor": "#FF808080",
+                    "Rotation": 0.0,
+                    "UseRotation": false,
+                    "CanResize": true,
+                    "BackgroundColor": "#FFDC143C",
+                    "BlurRadius": 0.0,
+                    "EnableBlur": false,
+                    "BorderStyle": {
+                      "$id": "17",
+                      "BorderColor": "#FFFFFFFF",
+                      "BorderTop": 0,
+                      "BorderBottom": 0,
+                      "BorderLeft": 0,
+                      "BorderRight": 0,
+                      "RadiusTopLeft": 0,
+                      "RadiusTopRight": 0,
+                      "RadiusBottomLeft": 0,
+                      "RadiusBottomRight": 0,
+                      "Bindings": {
+                        "$id": "18"
+                      }
+                    },
+                    "Height": 100.0,
+                    "Left": 863.0,
+                    "Opacity": 100.0,
+                    "Top": 0.0,
+                    "Visible": true,
+                    "BlinkDelay": 250.0,
+                    "BlinkEnabled": false,
+                    "Width": 100.0,
+                    "BorderBottom": 0,
+                    "BorderColor": "#FFFFFFFF",
+                    "BorderLeft": 0,
+                    "BorderRight": 0,
+                    "BorderTop": 0,
+                    "Id": "3eec891c-34d8-4586-8ae6-677a8cf85293",
+                    "IsFreezed": false,
+                    "IsSelected": false,
+                    "Name": "Gap5",
+                    "RenderingSkip": 0,
+                    "Sid": 0,
+                    "Bindings": {
+                      "$id": "19",
+                      "Text": {
+                        "$id": "20",
+                        "FormatString": "0.0",
+                        "Formula": {
+                          "$id": "21",
+                          "Expression": "if([DahlDesign.CarBehind05Gap] < 20, \r\nif([DahlDesign.CarBehind05Gap]-[DahlDesign.CarBehind04Gap] < 1, '', \r\n[DahlDesign.CarBehind05Gap]-[DahlDesign.CarBehind04Gap]), '')"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Text"
+                      },
+                      "Left": {
+                        "$id": "22",
+                        "Formula": {
+                          "$id": "23",
+                          "Expression": "1286-([DahlDesign.CarBehind05Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Left"
+                      },
+                      "Width": {
+                        "$id": "24",
+                        "Formula": {
+                          "$id": "25",
+                          "Expression": "([DahlDesign.CarBehind05Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Width"
+                      },
+                      "BackgroundColor": {
+                        "$id": "26",
+                        "Formula": {
+                          "$id": "27",
+                          "Expression": "if ([DahlDesign.CarBehind05Gap]-[DahlDesign.CarBehind04Gap] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind05Gap]-[DahlDesign.CarBehind04Gap] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind05Gap]-[DahlDesign.CarBehind04Gap] > 3, 'orange', 'red')))\r\n"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "BackgroundColor"
+                      },
+                      "TextColor": {
+                        "$id": "28",
+                        "Formula": {
+                          "$id": "29",
+                          "Expression": "if ([DahlDesign.CarBehind05Gap]-[DahlDesign.CarBehind04Gap] > 8, 'white',\r\nif ([DahlDesign.CarBehind05Gap]-[DahlDesign.CarBehind04Gap] > 5, 'black', 'white'))"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "TextColor"
+                      }
+                    }
+                  },
+                  {
+                    "$id": "30",
+                    "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                    "IsRectangleItem": true,
+                    "Rotation": 0.0,
+                    "UseRotation": false,
+                    "CanResize": true,
+                    "BackgroundColor": "#00FFFFFF",
+                    "BlurRadius": 0.0,
+                    "EnableBlur": false,
+                    "BorderStyle": {
+                      "$id": "31",
+                      "BorderColor": "#FFFFFFFF",
+                      "BorderTop": 3,
+                      "BorderBottom": 3,
+                      "BorderLeft": 3,
+                      "BorderRight": 3,
+                      "RadiusTopLeft": 0,
+                      "RadiusTopRight": 0,
+                      "RadiusBottomLeft": 0,
+                      "RadiusBottomRight": 0,
+                      "Bindings": {
+                        "$id": "32",
+                        "BorderColor": {
+                          "$id": "33",
+                          "Formula": {
+                            "$id": "34",
+                            "Expression": "if ([DahlDesign.CarBehind05IsInPit], 'peru', 'white')"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "BorderColor"
+                        }
+                      }
+                    },
+                    "Height": 100.0,
+                    "Left": 1277.0,
+                    "Opacity": 100.0,
+                    "Top": 0.0,
+                    "Visible": true,
+                    "BlinkDelay": 250.0,
+                    "BlinkEnabled": false,
+                    "Width": 6.0,
+                    "BorderBottom": 3,
+                    "BorderColor": "#FFFFFFFF",
+                    "BorderLeft": 3,
+                    "BorderRight": 3,
+                    "BorderTop": 3,
+                    "Id": "83c33d8f-e14d-4b6a-a0ef-0ec61c8698ed",
+                    "IsFreezed": false,
+                    "IsSelected": false,
+                    "Name": "Car5",
+                    "RenderingSkip": 0,
+                    "Sid": 0,
+                    "Bindings": {
+                      "$id": "35",
+                      "Left": {
+                        "$id": "36",
+                        "Formula": {
+                          "$id": "37",
+                          "Expression": "1280-([DahlDesign.CarBehind05Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Left"
+                      }
+                    }
+                  }
+                ]
+              },
+              "Group": false,
+              "UseRotation": false,
+              "EnableBlur": false,
+              "Left": 863.0,
+              "Opacity": 100.0,
+              "Top": 0.0,
+              "Visible": false,
+              "BlinkDelay": 250.0,
+              "BlinkEnabled": false,
+              "BorderBottom": 0,
+              "BorderColor": "#FFFFFFFF",
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderTop": 0,
+              "Id": "46f1a93f-eee6-4173-b049-0447579acc74",
+              "IsSelected": false,
+              "Name": "Car5",
+              "Sid": 0,
+              "Bindings": {
+                "$id": "38",
+                "Visible": {
+                  "$id": "39",
+                  "Formula": {
+                    "$id": "40",
+                    "Expression": "!([DahlDesign.CarBehind05Name] = '')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$id": "41",
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Repetitions": 0.0,
+              "RepeatLeftOffset": 0.0,
+              "RepeatTopOffset": 30.0,
+              "Height": 100.0,
+              "Width": 420.0,
+              "BackgroundColor": "#00FFFFFF",
+              "BlurRadius": 0.0,
+              "Rotation": 0.0,
+              "BorderStyle": {
+                "$id": "42",
+                "BorderColor": "#FFFFFFFF",
+                "BorderTop": 0,
+                "BorderBottom": 0,
+                "BorderLeft": 0,
+                "BorderRight": 0,
+                "RadiusTopLeft": 0,
+                "RadiusTopRight": 0,
+                "RadiusBottomLeft": 0,
+                "RadiusBottomRight": 0,
+                "Bindings": {
+                  "$id": "43"
+                }
+              },
+              "RenderingSkip": 0,
+              "ShowSelection": false,
+              "CanResize": false,
+              "Childrens": {
+                "$id": "44",
+                "$values": [
+                  {
+                    "$id": "45",
+                    "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                    "IsTextItem": true,
+                    "ShadowDepth": 0,
+                    "ShadowBlur": 0,
+                    "ShadowDirection": 315,
+                    "ShadowColor": "#FF808080",
+                    "Font": "Segoe UI",
+                    "FontWeight": "Normal",
+                    "TextWrapping": 1,
+                    "FontStyle": "Normal",
+                    "FontSize": 50.0,
+                    "Text": "2.4",
+                    "TextColor": "#FF000000",
+                    "HorizontalAlignment": 0,
+                    "VerticalAlignment": 1,
+                    "UseMonospacedText": false,
+                    "CharWidth": 40.0,
+                    "SpecialCharsWidth": 20.0,
+                    "SpecialChars": ".,:;",
+                    "TextMask": "",
+                    "TextMaskColor": "#FF808080",
+                    "Rotation": 0.0,
+                    "UseRotation": false,
+                    "CanResize": true,
+                    "BackgroundColor": "#FFDC143C",
+                    "BlurRadius": 0.0,
+                    "EnableBlur": false,
+                    "BorderStyle": {
+                      "$id": "46",
+                      "BorderColor": "#FFFFFFFF",
+                      "BorderTop": 0,
+                      "BorderBottom": 0,
+                      "BorderLeft": 0,
+                      "BorderRight": 0,
+                      "RadiusTopLeft": 0,
+                      "RadiusTopRight": 0,
+                      "RadiusBottomLeft": 0,
+                      "RadiusBottomRight": 0,
+                      "Bindings": {
+                        "$id": "47"
+                      }
+                    },
+                    "Height": 100.0,
+                    "Left": 863.0,
+                    "Opacity": 100.0,
+                    "Top": 0.0,
+                    "Visible": true,
+                    "BlinkDelay": 250.0,
+                    "BlinkEnabled": false,
+                    "Width": 100.0,
+                    "BorderBottom": 0,
+                    "BorderColor": "#FFFFFFFF",
+                    "BorderLeft": 0,
+                    "BorderRight": 0,
+                    "BorderTop": 0,
+                    "Id": "3eec891c-34d8-4586-8ae6-677a8cf85293",
+                    "IsFreezed": false,
+                    "IsSelected": false,
+                    "Name": "Gap4",
+                    "RenderingSkip": 0,
+                    "Sid": 0,
+                    "Bindings": {
+                      "$id": "48",
+                      "Text": {
+                        "$id": "49",
+                        "FormatString": "0.0",
+                        "Formula": {
+                          "$id": "50",
+                          "Expression": "if([DahlDesign.CarBehind04Gap] < 20, \r\nif([DahlDesign.CarBehind04Gap]-[DahlDesign.CarBehind03Gap] < 1, '', \r\n[DahlDesign.CarBehind04Gap]-[DahlDesign.CarBehind03Gap]), '')"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Text"
+                      },
+                      "Left": {
+                        "$id": "51",
+                        "Formula": {
+                          "$id": "52",
+                          "Expression": "1286-([DahlDesign.CarBehind04Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Left"
+                      },
+                      "Width": {
+                        "$id": "53",
+                        "Formula": {
+                          "$id": "54",
+                          "Expression": "([DahlDesign.CarBehind04Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Width"
+                      },
+                      "BackgroundColor": {
+                        "$id": "55",
+                        "Formula": {
+                          "$id": "56",
+                          "Expression": "if ([DahlDesign.CarBehind04Gap]-[DahlDesign.CarBehind03Gap] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind04Gap]-[DahlDesign.CarBehind03Gap] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind04Gap]-[DahlDesign.CarBehind03Gap] > 3, 'orange', 'red')))\r\n"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "BackgroundColor"
+                      },
+                      "TextColor": {
+                        "$id": "57",
+                        "Formula": {
+                          "$id": "58",
+                          "Expression": "if ([DahlDesign.CarBehind04Gap]-[DahlDesign.CarBehind03Gap] > 8, 'white',\r\nif ([DahlDesign.CarBehind04Gap]-[DahlDesign.CarBehind03Gap] > 5, 'black', 'white'))"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "TextColor"
+                      }
+                    }
+                  },
+                  {
+                    "$id": "59",
+                    "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                    "IsRectangleItem": true,
+                    "Rotation": 0.0,
+                    "UseRotation": false,
+                    "CanResize": true,
+                    "BackgroundColor": "#00FFFFFF",
+                    "BlurRadius": 0.0,
+                    "EnableBlur": false,
+                    "BorderStyle": {
+                      "$id": "60",
+                      "BorderColor": "#FFFFFFFF",
+                      "BorderTop": 3,
+                      "BorderBottom": 3,
+                      "BorderLeft": 3,
+                      "BorderRight": 3,
+                      "RadiusTopLeft": 0,
+                      "RadiusTopRight": 0,
+                      "RadiusBottomLeft": 0,
+                      "RadiusBottomRight": 0,
+                      "Bindings": {
+                        "$id": "61",
+                        "BorderColor": {
+                          "$id": "62",
+                          "Formula": {
+                            "$id": "63",
+                            "Expression": "if ([DahlDesign.CarBehind04IsInPit], 'peru', 'white')"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "BorderColor"
+                        }
+                      }
+                    },
+                    "Height": 100.0,
+                    "Left": 1277.0,
+                    "Opacity": 100.0,
+                    "Top": 0.0,
+                    "Visible": true,
+                    "BlinkDelay": 250.0,
+                    "BlinkEnabled": false,
+                    "Width": 6.0,
+                    "BorderBottom": 3,
+                    "BorderColor": "#FFFFFFFF",
+                    "BorderLeft": 3,
+                    "BorderRight": 3,
+                    "BorderTop": 3,
+                    "Id": "83c33d8f-e14d-4b6a-a0ef-0ec61c8698ed",
+                    "IsFreezed": false,
+                    "IsSelected": false,
+                    "Name": "Car4",
+                    "RenderingSkip": 0,
+                    "Sid": 0,
+                    "Bindings": {
+                      "$id": "64",
+                      "Left": {
+                        "$id": "65",
+                        "Formula": {
+                          "$id": "66",
+                          "Expression": "1280-([DahlDesign.CarBehind04Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Left"
+                      }
+                    }
+                  }
+                ]
+              },
+              "Group": false,
+              "UseRotation": false,
+              "EnableBlur": false,
+              "Left": 863.0,
+              "Opacity": 100.0,
+              "Top": 0.0,
+              "Visible": false,
+              "BlinkDelay": 250.0,
+              "BlinkEnabled": false,
+              "BorderBottom": 0,
+              "BorderColor": "#FFFFFFFF",
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderTop": 0,
+              "Id": "ea286fe7-c8ff-408d-8385-56f52f4bddd0",
+              "IsSelected": false,
+              "Name": "Car4",
+              "Sid": 0,
+              "Bindings": {
+                "$id": "67",
+                "Visible": {
+                  "$id": "68",
+                  "Formula": {
+                    "$id": "69",
+                    "Expression": "!([DahlDesign.CarBehind04Name] = '')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$id": "70",
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Repetitions": 0.0,
+              "RepeatLeftOffset": 0.0,
+              "RepeatTopOffset": 30.0,
+              "Height": 100.0,
+              "Width": 279.0,
+              "BackgroundColor": "#00FFFFFF",
+              "BlurRadius": 0.0,
+              "Rotation": 0.0,
+              "BorderStyle": {
+                "$id": "71",
+                "BorderColor": "#FFFFFFFF",
+                "BorderTop": 0,
+                "BorderBottom": 0,
+                "BorderLeft": 0,
+                "BorderRight": 0,
+                "RadiusTopLeft": 0,
+                "RadiusTopRight": 0,
+                "RadiusBottomLeft": 0,
+                "RadiusBottomRight": 0,
+                "Bindings": {
+                  "$id": "72"
+                }
+              },
+              "RenderingSkip": 0,
+              "ShowSelection": false,
+              "CanResize": false,
+              "Childrens": {
+                "$id": "73",
+                "$values": [
+                  {
+                    "$id": "74",
+                    "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                    "IsTextItem": true,
+                    "ShadowDepth": 0,
+                    "ShadowBlur": 0,
+                    "ShadowDirection": 315,
+                    "ShadowColor": "#FF808080",
+                    "Font": "Segoe UI",
+                    "FontWeight": "Normal",
+                    "TextWrapping": 1,
+                    "FontStyle": "Normal",
+                    "FontSize": 50.0,
+                    "Text": "6.1",
+                    "TextColor": "#FF000000",
+                    "HorizontalAlignment": 0,
+                    "VerticalAlignment": 1,
+                    "UseMonospacedText": false,
+                    "CharWidth": 40.0,
+                    "SpecialCharsWidth": 20.0,
+                    "SpecialChars": ".,:;",
+                    "TextMask": "",
+                    "TextMaskColor": "#FF808080",
+                    "Rotation": 0.0,
+                    "UseRotation": false,
+                    "CanResize": true,
+                    "BackgroundColor": "#FFFFFF00",
+                    "BlurRadius": 0.0,
+                    "EnableBlur": false,
+                    "BorderStyle": {
+                      "$id": "75",
+                      "BorderColor": "#FFFFFFFF",
+                      "BorderTop": 0,
+                      "BorderBottom": 0,
+                      "BorderLeft": 0,
+                      "BorderRight": 0,
+                      "RadiusTopLeft": 0,
+                      "RadiusTopRight": 0,
+                      "RadiusBottomLeft": 0,
+                      "RadiusBottomRight": 0,
+                      "Bindings": {
+                        "$id": "76"
+                      }
+                    },
+                    "Height": 100.0,
+                    "Left": 758.0,
+                    "Opacity": 100.0,
+                    "Top": 0.0,
+                    "Visible": true,
+                    "BlinkDelay": 250.0,
+                    "BlinkEnabled": false,
+                    "Width": 273.0,
+                    "BorderBottom": 0,
+                    "BorderColor": "#FFFFFFFF",
+                    "BorderLeft": 0,
+                    "BorderRight": 0,
+                    "BorderTop": 0,
+                    "Id": "3eec891c-34d8-4586-8ae6-677a8cf85293",
+                    "IsFreezed": false,
+                    "IsSelected": false,
+                    "Name": "Gap3",
+                    "RenderingSkip": 0,
+                    "Sid": 0,
+                    "Bindings": {
+                      "$id": "77",
+                      "Text": {
+                        "$id": "78",
+                        "FormatString": "0.0",
+                        "Formula": {
+                          "$id": "79",
+                          "Expression": "if([DahlDesign.CarBehind03Gap] < 20, \r\nif([DahlDesign.CarBehind03Gap]-[DahlDesign.CarBehind02Gap] < 1, '', \r\n[DahlDesign.CarBehind03Gap]-[DahlDesign.CarBehind02Gap]), '')"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Text"
+                      },
+                      "Left": {
+                        "$id": "80",
+                        "Formula": {
+                          "$id": "81",
+                          "Expression": "1286-([DahlDesign.CarBehind03Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Left"
+                      },
+                      "Width": {
+                        "$id": "82",
+                        "Formula": {
+                          "$id": "83",
+                          "Expression": "([DahlDesign.CarBehind03Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Width"
+                      },
+                      "BackgroundColor": {
+                        "$id": "84",
+                        "Formula": {
+                          "$id": "85",
+                          "Expression": "if ([DahlDesign.CarBehind03Gap]-[DahlDesign.CarBehind02Gap] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind03Gap]-[DahlDesign.CarBehind02Gap] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind03Gap]-[DahlDesign.CarBehind02Gap] > 3, 'orange', 'red')))\r\n"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "BackgroundColor"
+                      },
+                      "TextColor": {
+                        "$id": "86",
+                        "Formula": {
+                          "$id": "87",
+                          "Expression": "if ([DahlDesign.CarBehind03Gap]-[DahlDesign.CarBehind02Gap] > 8, 'white',\r\nif ([DahlDesign.CarBehind03Gap]-[DahlDesign.CarBehind02Gap] > 5, 'black', 'white'))"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "TextColor"
+                      }
+                    }
+                  },
+                  {
+                    "$id": "88",
+                    "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                    "IsRectangleItem": true,
+                    "Rotation": 0.0,
+                    "UseRotation": false,
+                    "CanResize": true,
+                    "BackgroundColor": "#00FFFFFF",
+                    "BlurRadius": 0.0,
+                    "EnableBlur": false,
+                    "BorderStyle": {
+                      "$id": "89",
+                      "BorderColor": "#FFFFFFFF",
+                      "BorderTop": 3,
+                      "BorderBottom": 3,
+                      "BorderLeft": 3,
+                      "BorderRight": 3,
+                      "RadiusTopLeft": 0,
+                      "RadiusTopRight": 0,
+                      "RadiusBottomLeft": 0,
+                      "RadiusBottomRight": 0,
+                      "Bindings": {
+                        "$id": "90",
+                        "BorderColor": {
+                          "$id": "91",
+                          "Formula": {
+                            "$id": "92",
+                            "Expression": "if ([DahlDesign.CarBehind03IsInPit], 'peru', 'white')"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "BorderColor"
+                        }
+                      }
+                    },
+                    "Height": 100.0,
+                    "Left": 752.0,
+                    "Opacity": 100.0,
+                    "Top": 0.0,
+                    "Visible": true,
+                    "BlinkDelay": 250.0,
+                    "BlinkEnabled": false,
+                    "Width": 6.0,
+                    "BorderBottom": 3,
+                    "BorderColor": "#FFFFFFFF",
+                    "BorderLeft": 3,
+                    "BorderRight": 3,
+                    "BorderTop": 3,
+                    "Id": "83c33d8f-e14d-4b6a-a0ef-0ec61c8698ed",
+                    "IsFreezed": false,
+                    "IsSelected": false,
+                    "Name": "Car3",
+                    "RenderingSkip": 0,
+                    "Sid": 0,
+                    "Bindings": {
+                      "$id": "93",
+                      "Left": {
+                        "$id": "94",
+                        "Formula": {
+                          "$id": "95",
+                          "Expression": "1280-([DahlDesign.CarBehind03Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Left"
+                      }
+                    }
+                  }
+                ]
+              },
+              "Group": false,
+              "UseRotation": false,
+              "EnableBlur": false,
+              "Left": 752.0,
+              "Opacity": 100.0,
+              "Top": 0.0,
+              "Visible": true,
+              "BlinkDelay": 250.0,
+              "BlinkEnabled": false,
+              "BorderBottom": 0,
+              "BorderColor": "#FFFFFFFF",
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderTop": 0,
+              "Id": "04f1297e-d77a-447f-9f1f-28923706257f",
+              "IsSelected": false,
+              "Name": "Car3",
+              "Sid": 0,
+              "Bindings": {
+                "$id": "96",
+                "Visible": {
+                  "$id": "97",
+                  "Formula": {
+                    "$id": "98",
+                    "Expression": "!([DahlDesign.CarBehind03Name] = '')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$id": "99",
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Repetitions": 0.0,
+              "RepeatLeftOffset": 0.0,
+              "RepeatTopOffset": 30.0,
+              "Height": 100.0,
+              "Width": 107.0,
+              "BackgroundColor": "#00FFFFFF",
+              "BlurRadius": 0.0,
+              "Rotation": 0.0,
+              "BorderStyle": {
+                "$id": "100",
+                "BorderColor": "#FFFFFFFF",
+                "BorderTop": 0,
+                "BorderBottom": 0,
+                "BorderLeft": 0,
+                "BorderRight": 0,
+                "RadiusTopLeft": 0,
+                "RadiusTopRight": 0,
+                "RadiusBottomLeft": 0,
+                "RadiusBottomRight": 0,
+                "Bindings": {
+                  "$id": "101"
+                }
+              },
+              "RenderingSkip": 0,
+              "ShowSelection": false,
+              "CanResize": false,
+              "Childrens": {
+                "$id": "102",
+                "$values": [
+                  {
+                    "$id": "103",
+                    "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                    "IsTextItem": true,
+                    "ShadowDepth": 0,
+                    "ShadowBlur": 0,
+                    "ShadowDirection": 315,
+                    "ShadowColor": "#FF808080",
+                    "Font": "Segoe UI",
+                    "FontWeight": "Normal",
+                    "TextWrapping": 1,
+                    "FontStyle": "Normal",
+                    "FontSize": 50.0,
+                    "Text": "1.3",
+                    "TextColor": "#FF000000",
+                    "HorizontalAlignment": 0,
+                    "VerticalAlignment": 1,
+                    "UseMonospacedText": false,
+                    "CharWidth": 40.0,
+                    "SpecialCharsWidth": 20.0,
+                    "SpecialChars": ".,:;",
+                    "TextMask": "",
+                    "TextMaskColor": "#FF808080",
+                    "Rotation": 0.0,
+                    "UseRotation": false,
+                    "CanResize": true,
+                    "BackgroundColor": "#FFDC143C",
+                    "BlurRadius": 0.0,
+                    "EnableBlur": false,
+                    "BorderStyle": {
+                      "$id": "104",
+                      "BorderColor": "#FFFFFFFF",
+                      "BorderTop": 0,
+                      "BorderBottom": 0,
+                      "BorderLeft": 0,
+                      "BorderRight": 0,
+                      "RadiusTopLeft": 0,
+                      "RadiusTopRight": 0,
+                      "RadiusBottomLeft": 0,
+                      "RadiusBottomRight": 0,
+                      "Bindings": {
+                        "$id": "105"
+                      }
+                    },
+                    "Height": 100.0,
+                    "Left": 1038.0,
+                    "Opacity": 100.0,
+                    "Top": 0.0,
+                    "Visible": true,
+                    "BlinkDelay": 250.0,
+                    "BlinkEnabled": false,
+                    "Width": 100.0,
+                    "BorderBottom": 0,
+                    "BorderColor": "#FFFFFFFF",
+                    "BorderLeft": 0,
+                    "BorderRight": 0,
+                    "BorderTop": 0,
+                    "Id": "3eec891c-34d8-4586-8ae6-677a8cf85293",
+                    "IsFreezed": false,
+                    "IsSelected": false,
+                    "Name": "Gap2",
+                    "RenderingSkip": 0,
+                    "Sid": 0,
+                    "Bindings": {
+                      "$id": "106",
+                      "Text": {
+                        "$id": "107",
+                        "FormatString": "0.0",
+                        "Formula": {
+                          "$id": "108",
+                          "Expression": "if([DahlDesign.CarBehind02Gap] < 20, \r\nif([DahlDesign.CarBehind02Gap]-[DahlDesign.CarBehind01Gap] < 1.1, '', \r\n[DahlDesign.CarBehind02Gap]-[DahlDesign.CarBehind01Gap]), '')"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Text"
+                      },
+                      "Left": {
+                        "$id": "109",
+                        "Formula": {
+                          "$id": "110",
+                          "Expression": "1286-([DahlDesign.CarBehind02Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Left"
+                      },
+                      "Width": {
+                        "$id": "111",
+                        "Formula": {
+                          "$id": "112",
+                          "Expression": "([DahlDesign.CarBehind02Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Width"
+                      },
+                      "BackgroundColor": {
+                        "$id": "113",
+                        "Formula": {
+                          "$id": "114",
+                          "Expression": "if ([DahlDesign.CarBehind02Gap]-[DahlDesign.CarBehind01Gap] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind02Gap]-[DahlDesign.CarBehind01Gap] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind02Gap]-[DahlDesign.CarBehind01Gap] > 3, 'orange', 'red')))\r\n"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "BackgroundColor"
+                      },
+                      "TextColor": {
+                        "$id": "115",
+                        "Formula": {
+                          "$id": "116",
+                          "Expression": "if ([DahlDesign.CarBehind02Gap]-[DahlDesign.CarBehind01Gap] > 8, 'white',\r\nif ([DahlDesign.CarBehind02Gap]-[DahlDesign.CarBehind01Gap] > 5, 'black', 'white'))\r\n\r\n"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "TextColor"
+                      }
+                    }
+                  },
+                  {
+                    "$id": "117",
+                    "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                    "IsRectangleItem": true,
+                    "Rotation": 0.0,
+                    "UseRotation": false,
+                    "CanResize": true,
+                    "BackgroundColor": "#00FFFFFF",
+                    "BlurRadius": 0.0,
+                    "EnableBlur": false,
+                    "BorderStyle": {
+                      "$id": "118",
+                      "BorderColor": "#FFFFFFFF",
+                      "BorderTop": 3,
+                      "BorderBottom": 3,
+                      "BorderLeft": 3,
+                      "BorderRight": 3,
+                      "RadiusTopLeft": 0,
+                      "RadiusTopRight": 0,
+                      "RadiusBottomLeft": 0,
+                      "RadiusBottomRight": 0,
+                      "Bindings": {
+                        "$id": "119",
+                        "BorderColor": {
+                          "$id": "120",
+                          "Formula": {
+                            "$id": "121",
+                            "Expression": "if ([DahlDesign.CarBehind02IsInPit], 'peru', 'white')"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "BorderColor"
+                        }
+                      }
+                    },
+                    "Height": 100.0,
+                    "Left": 1031.0,
+                    "Opacity": 100.0,
+                    "Top": 0.0,
+                    "Visible": true,
+                    "BlinkDelay": 250.0,
+                    "BlinkEnabled": false,
+                    "Width": 6.0,
+                    "BorderBottom": 3,
+                    "BorderColor": "#FFFFFFFF",
+                    "BorderLeft": 3,
+                    "BorderRight": 3,
+                    "BorderTop": 3,
+                    "Id": "83c33d8f-e14d-4b6a-a0ef-0ec61c8698ed",
+                    "IsFreezed": false,
+                    "IsSelected": false,
+                    "Name": "Car2",
+                    "RenderingSkip": 0,
+                    "Sid": 0,
+                    "Bindings": {
+                      "$id": "122",
+                      "Left": {
+                        "$id": "123",
+                        "Formula": {
+                          "$id": "124",
+                          "Expression": "1280-([DahlDesign.CarBehind02Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Left"
+                      }
+                    }
+                  }
+                ]
+              },
+              "Group": false,
+              "UseRotation": false,
+              "EnableBlur": false,
+              "Left": 1031.0,
+              "Opacity": 100.0,
+              "Top": 0.0,
+              "Visible": true,
+              "BlinkDelay": 250.0,
+              "BlinkEnabled": false,
+              "BorderBottom": 0,
+              "BorderColor": "#FFFFFFFF",
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderTop": 0,
+              "Id": "4b231aaa-ab6e-4e7f-b1c5-99c3e23b0331",
+              "IsSelected": false,
+              "Name": "Car2",
+              "Sid": 0,
+              "Bindings": {
+                "$id": "125",
+                "Visible": {
+                  "$id": "126",
+                  "Formula": {
+                    "$id": "127",
+                    "Expression": "!([DahlDesign.CarBehind02Name] = '')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$id": "128",
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Repetitions": 0.0,
+              "RepeatLeftOffset": 0.0,
+              "RepeatTopOffset": 30.0,
+              "Height": 100.0,
+              "Width": 140.0,
+              "BackgroundColor": "#00FFFFFF",
+              "BlurRadius": 0.0,
+              "Rotation": 0.0,
+              "BorderStyle": {
+                "$id": "129",
+                "BorderColor": "#FFFFFFFF",
+                "BorderTop": 0,
+                "BorderBottom": 0,
+                "BorderLeft": 0,
+                "BorderRight": 0,
+                "RadiusTopLeft": 0,
+                "RadiusTopRight": 0,
+                "RadiusBottomLeft": 0,
+                "RadiusBottomRight": 0,
+                "Bindings": {
+                  "$id": "130"
+                }
+              },
+              "RenderingSkip": 0,
+              "ShowSelection": false,
+              "CanResize": false,
+              "Childrens": {
+                "$id": "131",
+                "$values": [
+                  {
+                    "$id": "132",
+                    "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                    "IsTextItem": true,
+                    "ShadowDepth": 0,
+                    "ShadowBlur": 0,
+                    "ShadowDirection": 315,
+                    "ShadowColor": "#FF808080",
+                    "Font": "Segoe UI",
+                    "FontWeight": "Normal",
+                    "TextWrapping": 1,
+                    "FontStyle": "Normal",
+                    "FontSize": 50.0,
+                    "Text": "2.4",
+                    "TextColor": "#FF000000",
+                    "HorizontalAlignment": 0,
+                    "VerticalAlignment": 1,
+                    "UseMonospacedText": false,
+                    "CharWidth": 40.0,
+                    "SpecialCharsWidth": 20.0,
+                    "SpecialChars": ".,:;",
+                    "TextMask": "",
+                    "TextMaskColor": "#FF808080",
+                    "Rotation": 0.0,
+                    "UseRotation": false,
+                    "CanResize": true,
+                    "BackgroundColor": "#FFFFA500",
+                    "BlurRadius": 0.0,
+                    "EnableBlur": false,
+                    "BorderStyle": {
+                      "$id": "133",
+                      "BorderColor": "#FFFFFFFF",
+                      "BorderTop": 0,
+                      "BorderBottom": 0,
+                      "BorderLeft": 0,
+                      "BorderRight": 0,
+                      "RadiusTopLeft": 0,
+                      "RadiusTopRight": 0,
+                      "RadiusBottomLeft": 0,
+                      "RadiusBottomRight": 0,
+                      "Bindings": {
+                        "$id": "134"
+                      }
+                    },
+                    "Height": 100.0,
+                    "Left": 1145.0,
+                    "Opacity": 100.0,
+                    "Top": 0.0,
+                    "Visible": true,
+                    "BlinkDelay": 250.0,
+                    "BlinkEnabled": false,
+                    "Width": 134.0,
+                    "BorderBottom": 0,
+                    "BorderColor": "#FFFFFFFF",
+                    "BorderLeft": 0,
+                    "BorderRight": 0,
+                    "BorderTop": 0,
+                    "Id": "3eec891c-34d8-4586-8ae6-677a8cf85293",
+                    "IsFreezed": false,
+                    "IsSelected": false,
+                    "Name": "Gap1",
+                    "RenderingSkip": 0,
+                    "Sid": 0,
+                    "Bindings": {
+                      "$id": "135",
+                      "Text": {
+                        "$id": "136",
+                        "FormatString": "0.0",
+                        "Formula": {
+                          "$id": "137",
+                          "Expression": "if([DahlDesign.CarBehind01Gap] < 20, \r\nif([DahlDesign.CarBehind01Gap] < 1.1, '', \r\n[DahlDesign.CarBehind01Gap]), '')"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Text"
+                      },
+                      "Left": {
+                        "$id": "138",
+                        "Formula": {
+                          "$id": "139",
+                          "Expression": "1286-([DahlDesign.CarBehind01Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Left"
+                      },
+                      "Width": {
+                        "$id": "140",
+                        "Formula": {
+                          "$id": "141",
+                          "Expression": "([DahlDesign.CarBehind01Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Width"
+                      },
+                      "BackgroundColor": {
+                        "$id": "142",
+                        "Formula": {
+                          "$id": "143",
+                          "Expression": "if ([DahlDesign.CarBehind01Gap] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind01Gap] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind01Gap] > 3, 'orange', 'red')))\r\n"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "BackgroundColor"
+                      },
+                      "TextColor": {
+                        "$id": "144",
+                        "Formula": {
+                          "$id": "145",
+                          "Expression": "if ([DahlDesign.CarBehind01Gap] > 8, 'white',\r\nif ([DahlDesign.CarBehind01Gap] > 5, 'black', 'white'))"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "TextColor"
+                      }
+                    }
+                  },
+                  {
+                    "$id": "146",
+                    "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                    "IsRectangleItem": true,
+                    "Rotation": 0.0,
+                    "UseRotation": false,
+                    "CanResize": true,
+                    "BackgroundColor": "#00FFFFFF",
+                    "BlurRadius": 0.0,
+                    "EnableBlur": false,
+                    "BorderStyle": {
+                      "$id": "147",
+                      "BorderColor": "#FFFFFFFF",
+                      "BorderTop": 3,
+                      "BorderBottom": 3,
+                      "BorderLeft": 3,
+                      "BorderRight": 3,
+                      "RadiusTopLeft": 0,
+                      "RadiusTopRight": 0,
+                      "RadiusBottomLeft": 0,
+                      "RadiusBottomRight": 0,
+                      "Bindings": {
+                        "$id": "148",
+                        "BorderColor": {
+                          "$id": "149",
+                          "Formula": {
+                            "$id": "150",
+                            "Expression": "if ([DahlDesign.CarBehind01IsInPit], 'peru', 'white')"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "BorderColor"
+                        }
+                      }
+                    },
+                    "Height": 100.0,
+                    "Left": 1139.0,
+                    "Opacity": 100.0,
+                    "Top": 0.0,
+                    "Visible": true,
+                    "BlinkDelay": 250.0,
+                    "BlinkEnabled": false,
+                    "Width": 6.0,
+                    "BorderBottom": 3,
+                    "BorderColor": "#FFFFFFFF",
+                    "BorderLeft": 3,
+                    "BorderRight": 3,
+                    "BorderTop": 3,
+                    "Id": "83c33d8f-e14d-4b6a-a0ef-0ec61c8698ed",
+                    "IsFreezed": false,
+                    "IsSelected": false,
+                    "Name": "Car1",
+                    "RenderingSkip": 0,
+                    "Sid": 0,
+                    "Bindings": {
+                      "$id": "151",
+                      "Left": {
+                        "$id": "152",
+                        "Formula": {
+                          "$id": "153",
+                          "Expression": "1280-([DahlDesign.CarBehind01Gap]*1280/20)"
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "Left"
+                      }
+                    }
+                  }
+                ]
+              },
+              "Group": false,
+              "UseRotation": false,
+              "EnableBlur": false,
+              "Left": 1139.0,
+              "Opacity": 100.0,
+              "Top": 0.0,
+              "Visible": true,
+              "BlinkDelay": 250.0,
+              "BlinkEnabled": false,
+              "BorderBottom": 0,
+              "BorderColor": "#FFFFFFFF",
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderTop": 0,
+              "Id": "445cc27f-2e15-4a92-aeb3-f47edda7e245",
+              "IsSelected": false,
+              "Name": "Car1",
+              "Sid": 0,
+              "Bindings": {
+                "$id": "154",
+                "Visible": {
+                  "$id": "155",
+                  "Formula": {
+                    "$id": "156",
+                    "Expression": "!([DahlDesign.CarBehind01Name] = '')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$id": "157",
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "ShadowDepth": 0,
+              "ShadowBlur": 0,
+              "ShadowDirection": 315,
+              "ShadowColor": "#FF808080",
+              "Font": "Segoe UI",
+              "FontWeight": "SemiBold",
+              "TextWrapping": 1,
+              "FontStyle": "Normal",
+              "FontSize": 80.0,
+              "Text": "SAFE TO ENTER",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 2,
+              "UseMonospacedText": false,
+              "CharWidth": 40.0,
+              "SpecialCharsWidth": 20.0,
+              "SpecialChars": ".,:;",
+              "TextMask": "",
+              "TextMaskColor": "#FF808080",
+              "Rotation": 0.0,
+              "UseRotation": false,
+              "CanResize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BlurRadius": 0.0,
+              "EnableBlur": false,
+              "BorderStyle": {
+                "$id": "158",
+                "BorderColor": "#FFFFFFFF",
+                "BorderTop": 0,
+                "BorderBottom": 0,
+                "BorderLeft": 0,
+                "BorderRight": 0,
+                "RadiusTopLeft": 0,
+                "RadiusTopRight": 0,
+                "RadiusBottomLeft": 0,
+                "RadiusBottomRight": 0,
+                "Bindings": {
+                  "$id": "159"
+                }
+              },
+              "Height": 100.0,
+              "Left": 0.0,
+              "Opacity": 100.0,
+              "Top": 0.0,
+              "Visible": false,
+              "BlinkDelay": 250.0,
+              "BlinkEnabled": false,
+              "Width": 1280.0,
+              "BorderBottom": 0,
+              "BorderColor": "#FFFFFFFF",
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderTop": 0,
+              "Id": "e0005625-bfcc-4c95-96cd-89ed0435c4ce",
+              "IsFreezed": true,
+              "IsSelected": true,
+              "Name": "Safe entry",
+              "RenderingSkip": 0,
+              "Sid": 0,
+              "Bindings": {
+                "$id": "160",
+                "Visible": {
+                  "$id": "161",
+                  "Formula": {
+                    "$id": "162",
+                    "Expression": "[DahlDesign.CarBehind01Name] = '' || [DahlDesign.CarBehind01Gap] > 20"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                },
+                "TextColor": {
+                  "$id": "163",
+                  "Formula": {
+                    "$id": "164",
+                    "Expression": "if ([DahlDesign.CarBehind01Name] = '', 'white', 'black')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              }
+            },
+            {
+              "$id": "165",
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "Rotation": 0.0,
+              "UseRotation": false,
+              "CanResize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BlurRadius": 0.0,
+              "EnableBlur": false,
+              "BorderStyle": {
+                "$id": "166",
+                "BorderColor": "#FFFFFFFF",
+                "BorderTop": 0,
+                "BorderBottom": 6,
+                "BorderLeft": 0,
+                "BorderRight": 0,
+                "RadiusTopLeft": 0,
+                "RadiusTopRight": 0,
+                "RadiusBottomLeft": 0,
+                "RadiusBottomRight": 0,
+                "Bindings": {
+                  "$id": "167"
+                }
+              },
+              "Height": 100.0,
+              "Left": 0.0,
+              "Opacity": 100.0,
+              "Top": 0.0,
+              "Visible": true,
+              "BlinkDelay": 250.0,
+              "BlinkEnabled": false,
+              "Width": 1280.0,
+              "BorderBottom": 6,
+              "BorderColor": "#FFFFFFFF",
+              "BorderLeft": 0,
+              "BorderRight": 0,
+              "BorderTop": 0,
+              "Id": "3cee8d02-b897-49b8-b8f2-6fccd3c87000",
+              "IsFreezed": false,
+              "IsSelected": false,
+              "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "Sid": 0,
+              "Bindings": {
+                "$id": "168"
+              }
+            }
+          ]
+        },
+        "Id": "390a1fda-0ce7-4636-94f1-232ea13538dd",
+        "Name": "Screen1",
+        "Sid": 0,
+        "Bindings": {
+          "$id": "169"
+        }
+      }
+    ]
+  },
+  "SnapToGrid": false,
+  "HideLabels": true,
+  "ShowBoundingRectangles": false,
+  "GridSize": 10,
+  "SelectedScreen": {
+    "$ref": "3"
+  },
+  "Images": {
+    "$id": "170",
+    "$values": []
+  },
+  "Metadata": {
+    "$id": "171",
+    "ScreenCount": 1.0,
+    "InGameScreensIndexs": {
+      "$id": "172",
+      "$values": [
+        0
+      ]
+    },
+    "IdleScreensIndexs": {
+      "$id": "173",
+      "$values": []
+    },
+    "MainPreviewIndex": 0,
+    "IsOverlay": false,
+    "ShowInTaskBar": true,
+    "Width": 1280.0,
+    "Height": 100.0,
+    "OverlaySizeWarning": false,
+    "MetadataVersion": 2.0,
+    "EnableOnDashboardMessaging": true,
+    "PitScreensIndexs": {
+      "$id": "174",
+      "$values": []
+    }
+  },
+  "ShowOnScreenControls": true,
+  "ShowInTaskBar": true,
+  "IsOverlay": false,
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true
+}
