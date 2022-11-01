@@ -1,0 +1,65 @@
+{
+  "$id": "1",
+  "Version": 2,
+  "Id": "160a1fb7-1f42-45c7-87a4-0dd9939696bd",
+  "BaseHeight": 400,
+  "BaseWidth": 400,
+  "BackgroundColor": "#FF000000",
+  "Screens": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "RenderingSkip": 0,
+        "IsFreezed": false,
+        "InGameScreen": true,
+        "IdleScreen": false,
+        "PitScreen": false,
+        "ScreenScript": {
+          "$id": "4",
+          "Interpreter": 1
+        },
+        "BackgroundColor": "#FF000000",
+        "IsSelected": true,
+        "Items": {
+          "$id": "5",
+          "$values": []
+        },
+        "Id": "3c240ca9-7e6b-4b43-990b-036fe64aa0e1",
+        "Name": "Screen1",
+        "Sid": 0,
+        "Bindings": {
+          "$id": "6"
+        }
+      }
+    ]
+  },
+  "SnapToGrid": false,
+  "HideLabels": false,
+  "ShowBoundingRectangles": false,
+  "GridSize": 10,
+  "SelectedScreen": {
+    "$ref": "3"
+  },
+  "Images": {
+    "$id": "7",
+    "$values": []
+  },
+  "Metadata": {
+    "$id": "8",
+    "ScreenCount": 0.0,
+    "MainPreviewIndex": 0,
+    "IsOverlay": false,
+    "ShowInTaskBar": true,
+    "Width": 0.0,
+    "Height": 0.0,
+    "OverlaySizeWarning": false,
+    "MetadataVersion": 0.0,
+    "EnableOnDashboardMessaging": false
+  },
+  "ShowOnScreenControls": true,
+  "ShowInTaskBar": true,
+  "IsOverlay": false,
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true
+}
