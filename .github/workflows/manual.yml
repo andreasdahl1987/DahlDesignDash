@@ -1,0 +1,36 @@
+name: Create SimHub Dash Release
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        type: string
+        description: What Properties version does this correspond to?
+        required: true
+      is-pre-release:
+        type: boolean
+        required: true
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v1
+    - name: Zip Folder
+      run: |
+        mv DahlDesignDDUDev DahlDesignDDU
+        zip -r DahlDesignDDU.simhubdash DahlDesignDDU
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "DahlDesignDDU.simhubdash"
+        prerelease: ${{ github.event.inputs.is-pre-release }}
+        replacesArtifacts: true
+        allowUpdates: true
+        name: ${{ github.event.inputs.version }}
+        tag: ${{ github.event.inputs.version }}
+    
