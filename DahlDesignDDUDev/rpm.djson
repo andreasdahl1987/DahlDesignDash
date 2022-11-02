@@ -1,0 +1,664 @@
+{
+  "DashboardDebugManager": {
+    "Maximized": false
+  },
+  "Version": 2,
+  "Id": "e0b3b6d3-a3f4-4dfc-b004-5fe007974263",
+  "BaseHeight": 100,
+  "BaseWidth": 1280,
+  "BackgroundColor": "#FF000000",
+  "Screens": [
+    {
+      "Name": "Rev",
+      "InGameScreen": true,
+      "IdleScreen": false,
+      "PitScreen": false,
+      "ScreenId": "de4432d2-2866-4c4a-8bac-356779ea2ddc",
+      "AllowOverlays": true,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "IsBackgroundLayer": false,
+      "BackgroundColor": "#FF000000",
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+          "IsLinearGauge": true,
+          "GaugeOrientation": 0,
+          "GaugeAlignment": 0,
+          "AutoSize": false,
+          "GaugeColor": "#FFFFFFFF",
+          "AlternateGaugeColor": "#FF008000",
+          "UseAlternateStyle": false,
+          "Minimum": 0.0,
+          "Maximum": 100.0,
+          "Value": 68.0,
+          "Steps": 0.0,
+          "PAW": 870.0,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 100.0,
+          "Left": 0.0,
+          "Top": 0.0,
+          "Visible": true,
+          "BlinkDelay": 100.0,
+          "Width": 1280.0,
+          "Name": "RPM",
+          "Bindings": {
+            "Value": {
+              "Formula": {
+                "Expression": "[DataCorePlugin.GameData.NewData.CarSettings_CurrentDisplayedRPMPercent]"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Value"
+            },
+            "BlinkEnabled": {
+              "Formula": {
+                "Expression": "[DataCorePlugin.GameData.NewData.Rpms]>[DahlDesign.TrueRevLimiter]\r\n&& [DahlDesign.TrueRevLimiter] > 0\r\n&& [DahlDesign.DRSState] = 'None'"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "BlinkEnabled"
+            },
+            "GaugeColor": {
+              "Formula": {
+                "Expression": "if([DahlDesign.ShiftWarning] && [Rpms] > [DahlDesign.ShiftLightRPM], 'orange',\r\nif([DataCorePlugin.GameData.NewData.PitLimiterOn]>0, 'deepskyblue', \r\nif([DataCorePlugin.GameData.NewData.IsInPit]=1, 'yellow',\r\nif([DahlDesign.P2PStatus],'fuchsia',\r\nif([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True',\r\n\r\n\tif([DahlDesign.CenterDashType] = 'Porsche 919' && 100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct],0) = 1, 'red', 'fuchsia'),\r\n\t\r\nif([DahlDesign.DRSState]='Open' || [DahlDesign.NoBoost],'lawngreen',\r\n\r\n'white'))))))"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "GaugeColor"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF000000",
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 30.0,
+          "Left": 160.0,
+          "Top": 70.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "1 Bot"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF000000",
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 30.0,
+          "Left": 160.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "1 Top"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontSize": 30.0,
+          "Text": "1.1",
+          "TextColor": "#FF000000",
+          "HorizontalAlignment": 1,
+          "VerticalAlignment": 0,
+          "TextMask": "0000000000",
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 100.0,
+          "Left": 111.0,
+          "Top": 28.0,
+          "Visible": true,
+          "Width": 100.0,
+          "Name": "1",
+          "Bindings": {
+            "Text": {
+              "FormatString": "0.0",
+              "Formula": {
+                "Expression": "[DahlDesign.TrueRevLimiter]/8000*1"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Text"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF000000",
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 30.0,
+          "Left": 320.0,
+          "Top": 70.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "2 Bot"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF000000",
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 30.0,
+          "Left": 320.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "2 Top"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontSize": 30.0,
+          "Text": "2.3",
+          "TextColor": "#FF000000",
+          "HorizontalAlignment": 1,
+          "VerticalAlignment": 0,
+          "TextMask": "0000000000",
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 100.0,
+          "Left": 272.0,
+          "Top": 28.0,
+          "Visible": true,
+          "Width": 100.0,
+          "Name": "2",
+          "Bindings": {
+            "Text": {
+              "FormatString": "0.0",
+              "Formula": {
+                "Expression": "[DahlDesign.TrueRevLimiter]/8000*2"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Text"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF000000",
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 30.0,
+          "Left": 480.0,
+          "Top": 70.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "3 Bot"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF000000",
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 30.0,
+          "Left": 480.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "3 Top"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontSize": 30.0,
+          "Text": "3.6",
+          "TextColor": "#FF000000",
+          "HorizontalAlignment": 1,
+          "VerticalAlignment": 0,
+          "TextMask": "0000000000",
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 100.0,
+          "Left": 432.0,
+          "Top": 28.0,
+          "Visible": true,
+          "Width": 100.0,
+          "Name": "3",
+          "Bindings": {
+            "Text": {
+              "FormatString": "0.0",
+              "Formula": {
+                "Expression": "[DahlDesign.TrueRevLimiter]/8000*3"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Text"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF000000",
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 30.0,
+          "Left": 645.0,
+          "Top": 70.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "4 Bot"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF000000",
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 30.0,
+          "Left": 645.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "4 Top"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontSize": 30.0,
+          "Text": "4.4",
+          "TextColor": "#FF000000",
+          "HorizontalAlignment": 1,
+          "VerticalAlignment": 0,
+          "TextMask": "0000000000",
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 100.0,
+          "Left": 597.0,
+          "Top": 28.0,
+          "Visible": true,
+          "Width": 100.0,
+          "Name": "4",
+          "Bindings": {
+            "Text": {
+              "FormatString": "0.0",
+              "Formula": {
+                "Expression": "[DahlDesign.TrueRevLimiter]/8000*4"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Text"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF000000",
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 30.0,
+          "Left": 800.0,
+          "Top": 70.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "5 Bot"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF000000",
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 30.0,
+          "Left": 800.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "5 Top"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontSize": 30.0,
+          "Text": "5.7",
+          "TextColor": "#FF000000",
+          "HorizontalAlignment": 1,
+          "VerticalAlignment": 0,
+          "TextMask": "0000000000",
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 100.0,
+          "Left": 752.0,
+          "Top": 28.0,
+          "Visible": true,
+          "Width": 100.0,
+          "Name": "5",
+          "Bindings": {
+            "Text": {
+              "FormatString": "0.0",
+              "Formula": {
+                "Expression": "[DahlDesign.TrueRevLimiter]/8000*5"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Text"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF000000",
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 30.0,
+          "Left": 960.0,
+          "Top": 70.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "6 Bot"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF000000",
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 30.0,
+          "Left": 960.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "6 Top"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontSize": 30.0,
+          "Text": "6.3",
+          "TextColor": "#FF000000",
+          "HorizontalAlignment": 1,
+          "VerticalAlignment": 0,
+          "TextMask": "0000000000",
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 100.0,
+          "Left": 912.0,
+          "Top": 28.0,
+          "Visible": true,
+          "Width": 100.0,
+          "Name": "6",
+          "Bindings": {
+            "Text": {
+              "FormatString": "0.0",
+              "Formula": {
+                "Expression": "[DahlDesign.TrueRevLimiter]/8000*6"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Text"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF000000",
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 30.0,
+          "Left": 1120.0,
+          "Top": 70.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "7 Bot"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF000000",
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 30.0,
+          "Left": 1120.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "7 Top"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontSize": 30.0,
+          "Text": "7.8",
+          "TextColor": "#FF000000",
+          "HorizontalAlignment": 1,
+          "VerticalAlignment": 0,
+          "TextMask": "0000000000",
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 100.0,
+          "Left": 1072.0,
+          "Top": 28.0,
+          "Visible": true,
+          "Width": 100.0,
+          "Name": "7",
+          "Bindings": {
+            "Text": {
+              "FormatString": "0.0",
+              "Formula": {
+                "Expression": "[DahlDesign.TrueRevLimiter]/8000*7"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Text"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "Top": 6.0,
+          "Left": 1000.0,
+          "Height": 93.0,
+          "Width": 104.0,
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderColor": "#FFFF00FF",
+                "BorderTop": 3,
+                "BorderBottom": 3,
+                "BorderLeft": 3,
+                "BorderRight": 3
+              },
+              "Height": 93.0,
+              "Left": 1100.0,
+              "Top": 6.0,
+              "Visible": true,
+              "Width": 4.0,
+              "Name": "Optimal",
+              "Bindings": {
+                "Left": {
+                  "Formula": {
+                    "Expression": "if ([MaxRpm] = 0, 0, 1276*[DahlDesign.OptimalShiftLastGear]/[MaxRpm])"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Left"
+                },
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DahlDesign.OptimalShiftLastGear] != 0 && [DahlDesign.LastGearMaxRPM] != 0"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderColor": "#FF7CFC00",
+                "BorderTop": 3,
+                "BorderBottom": 3,
+                "BorderLeft": 3,
+                "BorderRight": 3
+              },
+              "Height": 92.0,
+              "Left": 1000.0,
+              "Top": 6.0,
+              "Visible": true,
+              "Width": 4.0,
+              "Name": "Performed",
+              "Bindings": {
+                "Left": {
+                  "Formula": {
+                    "Expression": "if ([MaxRpm] = 0, 0, 1276*[DahlDesign.LastGearMaxRPM]/[MaxRpm])"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Left"
+                },
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DahlDesign.OptimalShiftLastGear] != 0 && [DahlDesign.LastGearMaxRPM] != 0"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            }
+          ],
+          "Group": false,
+          "Visible": true,
+          "Name": "Optimal shifting",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "([SessionTypeName] = 'Practice' || [SessionTypeName] = 'Offline Testing' ||[DahlDesign.ShiftTimingAssist]) && ![DahlDesign.NoBoost] && \r\n![GameRawData.Telemetry.ManualBoost]"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": {
+            "BorderTop": 6,
+            "BorderBottom": 6,
+            "BorderLeft": 6,
+            "BorderRight": 6
+          },
+          "Height": 100.0,
+          "Left": 0.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 1280.0,
+          "IsFreezed": true,
+          "Name": "Border"
+        }
+      ]
+    }
+  ],
+  "SnapToGrid": false,
+  "HideLabels": false,
+  "ShowForeground": true,
+  "ForegroundOpacity": 100.0,
+  "ShowBackground": true,
+  "BackgroundOpacity": 100.0,
+  "ShowBoundingRectangles": false,
+  "GridSize": 10,
+  "Images": [],
+  "Metadata": {
+    "ScreenCount": 1.0,
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IdleScreensIndexs": [],
+    "MainPreviewIndex": 0,
+    "IsOverlay": false,
+    "Width": 1280.0,
+    "Height": 100.0,
+    "OverlaySizeWarning": false,
+    "MetadataVersion": 2.0,
+    "EnableOnDashboardMessaging": true,
+    "PitScreensIndexs": []
+  },
+  "ShowOnScreenControls": true,
+  "IsOverlay": false,
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true
+}
