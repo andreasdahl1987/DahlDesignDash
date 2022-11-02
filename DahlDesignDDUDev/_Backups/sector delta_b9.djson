@@ -3,7 +3,7 @@
     "Maximized": false
   },
   "Version": 2,
-  "Id": "d97dbfb9-a31c-48bc-b14d-75f1ac026dad",
+  "Id": "366b39aa-61d6-4c27-aeac-9083ca7949ea",
   "BaseHeight": 420,
   "BaseWidth": 425,
   "BackgroundColor": "#FF000000",
@@ -255,8 +255,8 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Symbol",
-          "FontSize": 55.0,
+          "Font": "Segoe UI",
+          "FontSize": 63.0,
           "Text": "CUR",
           "TextColor": "#FFFFFFFF",
           "HorizontalAlignment": 0,
@@ -265,7 +265,7 @@
           "BackgroundColor": "#00FFFFFF",
           "Height": 75.0,
           "Left": 14.0,
-          "Top": 52.0,
+          "Top": 45.0,
           "Visible": true,
           "Width": 253.0,
           "Name": "TIME"
@@ -273,8 +273,7 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Historic",
-          "FontWeight": "SemiBold",
+          "Font": "Segoe UI Symbol",
           "FontSize": 63.0,
           "Text": "01:24.536",
           "TextColor": "#FFFFFFFF",
@@ -302,8 +301,8 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Symbol",
-          "FontSize": 55.0,
+          "Font": "Segoe UI",
+          "FontSize": 63.0,
           "Text": "EST",
           "TextColor": "#FFFFFFFF",
           "HorizontalAlignment": 0,
@@ -312,7 +311,7 @@
           "BackgroundColor": "#00FFFFFF",
           "Height": 75.0,
           "Left": 14.0,
-          "Top": 121.0,
+          "Top": 114.0,
           "Visible": true,
           "Width": 253.0,
           "Name": "TIME1"
@@ -320,8 +319,7 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Historic",
-          "FontWeight": "SemiBold",
+          "Font": "Segoe UI Symbol",
           "FontSize": 63.0,
           "Text": "02:02.356",
           "TextColor": "#FFFFFFFF",
@@ -356,8 +354,8 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Symbol",
-          "FontSize": 55.0,
+          "Font": "Segoe UI",
+          "FontSize": 63.0,
           "Text": "SB",
           "TextColor": "#FFFFFFFF",
           "HorizontalAlignment": 0,
@@ -366,7 +364,7 @@
           "BackgroundColor": "#00FFFFFF",
           "Height": 75.0,
           "Left": 19.0,
-          "Top": 189.0,
+          "Top": 182.0,
           "Visible": true,
           "Width": 253.0,
           "Name": "TIME2"
@@ -374,8 +372,7 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Historic",
-          "FontWeight": "SemiBold",
+          "Font": "Segoe UI Symbol",
           "FontSize": 63.0,
           "Text": "02:01.425",
           "TextColor": "#FF7CFC00",
@@ -410,8 +407,8 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Symbol",
-          "FontSize": 55.0,
+          "Font": "Segoe UI",
+          "FontSize": 63.0,
           "Text": "LR",
           "TextColor": "#FFFFFFFF",
           "HorizontalAlignment": 0,
@@ -420,7 +417,7 @@
           "BackgroundColor": "#00FFFFFF",
           "Height": 75.0,
           "Left": 19.0,
-          "Top": 259.0,
+          "Top": 252.0,
           "Visible": true,
           "Width": 253.0,
           "Name": "TIME3"
@@ -428,8 +425,7 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Historic",
-          "FontWeight": "SemiBold",
+          "Font": "Segoe UI Symbol",
           "FontSize": 63.0,
           "Text": "01:59.970",
           "TextColor": "#FFFF00FF",
@@ -762,9 +758,8 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Historic",
-          "FontWeight": "SemiBold",
-          "FontSize": 51.0,
+          "Font": "Segoe UI",
+          "FontSize": 54.0,
           "Text": "00:35.754",
           "TextColor": "#FFFFFFFF",
           "HorizontalAlignment": 1,
@@ -869,9 +864,8 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Historic",
-          "FontWeight": "SemiBold",
-          "FontSize": 51.0,
+          "Font": "Segoe UI",
+          "FontSize": 54.0,
           "Text": "00:44.647",
           "TextColor": "#FFFFFFFF",
           "HorizontalAlignment": 1,
@@ -969,9 +963,8 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Historic",
-          "FontWeight": "SemiBold",
-          "FontSize": 51.0,
+          "Font": "Segoe UI",
+          "FontSize": 54.0,
           "Text": "00:17.521",
           "TextColor": "#FFFFFFFF",
           "HorizontalAlignment": 1,
@@ -1256,7 +1249,7 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Historic",
+          "Font": "Segoe UI",
           "FontSize": 54.0,
           "Text": "01:59.897",
           "TextColor": "#FFFF00FF",
@@ -1309,7 +1302,7 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Historic",
+          "Font": "Segoe UI",
           "FontSize": 54.0,
           "Text": "01:58.332",
           "TextColor": "#FFFF00FF",
@@ -1362,7 +1355,7 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Historic",
+          "Font": "Segoe UI",
           "FontSize": 54.0,
           "Text": "02:01.425",
           "TextColor": "#FF7CFC00",
@@ -3052,8 +3045,7 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
           "IsTextItem": true,
-          "Font": "Segoe UI Historic",
-          "FontWeight": "SemiBold",
+          "Font": "Segoe UI",
           "FontSize": 63.0,
           "Text": "02:02.356",
           "TextColor": "#FFFFFFFF",
