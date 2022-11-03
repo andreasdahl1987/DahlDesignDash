@@ -424,9 +424,9 @@ A quick summary/recommendation on what to do. If you’ve got 1 second to look a
 | 5: Rear/Right tires | Toggle rear/right tires                                      | \+ 3 kPA rear/right tires                     | \- 3 kPA rear/right tires                                |
 | 6: Windscreen       | Toggle windscreen clean                                      | Send private message to car ahead             | Send private message to car behind                       |
 | 7: Fuel 2 liter     | Toggle refueling                                             | \+ 2 L fuel                                   | \- 2 L fuel                                              |
-| 8:Fuel 10 liter     | Show the full-screen pit screen (described below)            | \+ 10 L fuel                                  | \- 10 L fuel                                             |
+| 8:Fuel 10 liter     | Toggle refueling							                 | \+ 10 L fuel                                  | \- 10 L fuel                                             |
 | 9:Stopwatch         | Start/stop                                                   | Split                                         | Reset                                                    |
-| 10:Temperatures     | Spotter mode                                                 | \+ System volume                              | \- System volume                                         |
+| 10:Temperatures     | Spotter mode                                                 | Show map			                             | Show pit screen			                                |
 | 11: Fuel save       | Cycle through performance and fuel save delta modes          | Snapshot of pace                              | Live pace                                                |
 | 12: Strategy        | Set fuel target                                              | +0.1 FuelPerLapOffset                         | -0.1 FuelPerLapOffset                                    |
 
