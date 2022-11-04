@@ -4,7 +4,7 @@
     "Maximized": false
   },
   "Version": 2,
-  "Id": "d7ae2118-8f0c-4e67-96b5-c42d12a383b8",
+  "Id": "f0c52590-c81e-4f2f-8dc0-d61ee041a0e0",
   "BaseHeight": 768,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
@@ -162,7 +162,7 @@
             }
           ],
           "Group": false,
-          "Visible": true,
+          "Visible": false,
           "Name": "Plugincheck",
           "Bindings": {
             "Visible": {
@@ -581,7 +581,7 @@
               "Bindings": {
                 "Visible": {
                   "Formula": {
-                    "Expression": "([DahlDesign.DDCDDSMode] = 1 || [DahlDesign.SW1DDSMode] = 1) && [DahlDesign.PitMenu] != 0"
+                    "Expression": "(\r\n([DahlDesign.DDCDDSMode] = 1 || [DahlDesign.SW1DDSMode] = 1)\r\n\r\n||\r\n\r\n([DahlDesign.DDCDDSMode] != 1 && [DahlDesign.SW1DDSMode] != 1 && changed(3000,[DahlDesign.PitMenu]) && !(changed(3100,[DahlDesign.InCarMenu])))\r\n)\r\n\r\n&& \r\n\r\n[DahlDesign.PitMenu] != 0"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
