@@ -186,65 +186,96 @@ Lastly, you can also replace the RPM bar for LEDs (like progressive shift lights
 
 You can change the display that appears dynamically by assigning a button on your wheel or keyboard to the SimHub Action 'A' (cycle left) or 'B' (cycle right) to select the display you want to use.
 
-##### Time 1
+#### TIMING 1
 
-**TIME1** is basic. Worth noting the session best time is only recorded on valid laps. TIME1 and RACE1-3 have a fuel overview and incident counter at the bottom line. To the left is the remaining fuel, to the right the fuel delta. Blue+green shows fuel on the tank, where green is excess fuel. Red is the amount you’re missing and pink is the amount you’re planning to fill.
+<img align="left" src="assets/Screen Shot 2022-10-22 at 9.11.58 PM.png" alt="Screen Shot 2022-10-22 at 9.11.58 PM" style="zoom:50%;" />
 
-<img src="assets/Screen Shot 2022-10-22 at 9.11.58 PM.png" alt="Screen Shot 2022-10-22 at 9.11.58 PM" style="zoom:50%;" />
+TIME1 is basic. Worth noting the session best time is only recorded on valid laps. TIME1 and RACE1-3 have a fuel overview and incident counter at the bottom line. To the left is the remaining fuel, to the right the fuel delta. Blue+green shows fuel on the tank, where green is excess fuel. Red is the amount you’re missing and pink is the amount you’re planning to fill.
 
-##### Time 2
+<br clear="left"/>
+<br/>
 
-**TIME2** is your sector and delta screen. Have a look at sector properties and color coding further up to see how they work. OL is optimal lap time, adding all the best valid sector times together. The value in the lower right corner the maximum brake pressure on your previous brake pedal hit. Deltas on SB and OL refer to personal best.
+#### TIMING 2
 
-<img src="assets/Screen Shot 2022-10-22 at 9.12.32 PM.png" alt="Screen Shot 2022-10-22 at 9.12.32 PM" style="zoom:50%;" />
+<img align="left" src="assets/Screen Shot 2022-10-22 at 9.12.32 PM.png" alt="Screen Shot 2022-10-22 at 9.12.32 PM" style="zoom:50%;" />
 
-##### TIme 3
+TIME2 is your sector and delta screen. Have a look at sector properties and color coding further up to see how they work. OL is optimal lap time, adding all the best valid sector times together. The value in the lower right corner the maximum brake pressure on your previous brake pedal hit. Deltas on SB and OL refer to personal best.
 
-**TIME3** is an overview of your previous 8 laps with delta to session best. Laps are color coded according to status.
+<br clear="left"/>
+<br/>
 
-<img src="assets/Screen Shot 2022-10-22 at 9.12.54 PM.png" alt="Screen Shot 2022-10-22 at 9.12.54 PM" style="zoom:50%;" />
+#### TIMING 3
 
-##### Quali
+<img align="left" src="assets/Screen Shot 2022-10-22 at 9.12.54 PM.png" alt="Screen Shot 2022-10-22 at 9.12.54 PM" style="zoom:50%;" />
 
-**QUALI** is designed for hot lapping. It shows your current position on fastest lap leaderboard, as well as live position prediction for current lap.
+TIME3 is an overview of your previous 8 laps with delta to session best. Laps are color coded according to status.
 
-<img src="assets/Screen Shot 2022-10-22 at 9.13.19 PM.png" alt="Screen Shot 2022-10-22 at 9.13.19 PM" style="zoom:50%;" />
+<br clear="left"/>
 
-##### Race 1
+<br/>
+
+
+#### QUALIFYING
+
+<img align="left" src="assets/Screen Shot 2022-10-22 at 9.13.19 PM.png" alt="Screen Shot 2022-10-22 at 9.13.19 PM" style="zoom:50%;" />
+
+QUALI is designed for hot lapping. It shows your current position on fastest lap leaderboard, as well as live position prediction for current lap.
+
+<br clear="left"/>
+<br/>
+
+#### RACE 1
+
+<img align="left" src="assets/Screen Shot 2022-10-22 at 9.13.41 PM.png" alt="Screen Shot 2022-10-22 at 9.13.41 PM" style="zoom:50%;" />
 
 **RACE 1** is extended info on the car ahead and behind on track. Including joker lap count, licence and iRating, as well as last lap delta (comparing yours and his). Color coded for car track position. In this case the car ahead has a blue flag and the car behind is fighting you for your position. For Indycar it will display if P2P is active and the P2P count.
 
-<img src="assets/Screen Shot 2022-10-22 at 9.13.41 PM.png" alt="Screen Shot 2022-10-22 at 9.13.41 PM" style="zoom:50%;" />
+<br clear="left"/>
+<br/>
 
-##### Race 2
+#### RACE 2
 
-**RACE 2** is pretty straight forward. See color coding for cars ahead/behind on track. Joker status and P2P status will also show up when relevant.
+<img align="left" src="assets/Screen Shot 2022-10-22 at 9.14.08 PM.png" alt="Screen Shot 2022-10-22 at 9.14.08 PM" style="zoom:50%;" />
 
-<img src="assets/Screen Shot 2022-10-22 at 9.14.08 PM.png" alt="Screen Shot 2022-10-22 at 9.14.08 PM" style="zoom:50%;" />
+RACE 2 is pretty straight forward. See color coding for cars ahead/behind on track. Joker status and P2P status will also show up when relevant.
 
-##### Race 3
+<br clear="left"/>
+<br/>
 
-**RACE 3** has a lot of info in a tight space. In comparison to RACE1, it shows the race position ahead and behind, regardless where this driver is on the track compared to you. Color coded with regards to overtake prediction, see color codes above. In the middle is a compressed RACE2. Same class cars will get a black border if they are within 5 seconds of you.
+
+#### RACE 3
+
+<img align="left" src="assets/Screen Shot 2022-10-22 at 9.14.40 PM.png" alt="Screen Shot 2022-10-22 at 9.14.40 PM" style="zoom:50%;" />
+
+RACE 3 has a lot of info in a tight space. In comparison to RACE1, it shows the race position ahead and behind, regardless where this driver is on the track compared to you. Color coded with regards to overtake prediction, see color codes above. In the middle is a compressed RACE2. Same class cars will get a black border if they are within 5 seconds of you.
 
 Pace delta and estimated time of overtake is also displayed. Lap 13 + 3 means you’re on lap 13 and will overtake in 3 laps time. FIN + 2 means P5 looks like he will overtake you 2 laps after the race ends, so this is a good thing. The “!” means this driver's last lap was quite slow compared to his best lap time. That might just be a bad lap, but could also mean damaged car or tires degrading. If it was a single bad lap, the overtake predictions might be misleading for this lap.
 
 For Indycar it will display if P2P is active and the P2P count. The properties used in RACE3 will need a few laps to have enough data to display anything.
 
-<img src="assets/Screen Shot 2022-10-22 at 9.14.40 PM.png" alt="Screen Shot 2022-10-22 at 9.14.40 PM" style="zoom:50%;" />
+<br clear="left"/>
+<br/>
 
-##### Practice 1
+#### PRACTICE 1
 
-**PRAC 1** shows your minimum corner speed for the last corner as well as straight line speed for the last straight. The three boxes on top are your sectors with color coded lap status. The value is the sector score.
+<img align="left" src="assets/Screen Shot 2022-10-22 at 9.15.16 PM.png" alt="Screen Shot 2022-10-22 at 9.15.16 PM" style="zoom:50%;" />
+
+PRAC 1 shows your minimum corner speed for the last corner as well as straight line speed for the last straight. The three boxes on top are your sectors with color coded lap status. The value is the sector score.
 
 Sector score is based on variation in sector times and incidents in this sector. 8 identical sector times in a row, all incident free is max score (10).
 
-<img src="assets/Screen Shot 2022-10-22 at 9.15.16 PM.png" alt="Screen Shot 2022-10-22 at 9.15.16 PM" style="zoom:50%;" />
+<br clear="left"/>
+<br/>
 
-##### Practice 2
+#### PRACTICE 2
 
-**PRAC 2** shows a 4 second recording of your previous brake input, as well as a 3 second recording of your previous throttle input. The three value boxes are peak brake pressure, area under brake curve and throttle agro (top to bottom).
+<img align="left" src="assets/Screen Shot 2022-10-22 at 9.16.42 PM.png" alt="Screen Shot 2022-10-22 at 9.16.42 PM" style="zoom:50%;" />
 
-<img src="assets/Screen Shot 2022-10-22 at 9.16.42 PM.png" alt="Screen Shot 2022-10-22 at 9.16.42 PM" style="zoom:50%;" />
+PRAC 2 shows a 4 second recording of your previous brake input, as well as a 3 second recording of your previous throttle input. The three value boxes are peak brake pressure, area under brake curve and throttle agro (top to bottom).
+
+<br clear="left"/>
+
+<br/>
 
 ### Right Multi Function Display (MFD)
 
