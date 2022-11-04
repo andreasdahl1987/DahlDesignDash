@@ -4,7 +4,7 @@
     "Maximized": false
   },
   "Version": 2,
-  "Id": "d7ae2118-8f0c-4e67-96b5-c42d12a383b8",
+  "Id": "8f5b0c41-4f63-48d4-acd3-230feb5c7034",
   "BaseHeight": 768,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
@@ -162,7 +162,7 @@
             }
           ],
           "Group": false,
-          "Visible": true,
+          "Visible": false,
           "Name": "Plugincheck",
           "Bindings": {
             "Visible": {
