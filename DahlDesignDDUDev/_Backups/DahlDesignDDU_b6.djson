@@ -4,7 +4,7 @@
     "Maximized": false
   },
   "Version": 2,
-  "Id": "8f5b0c41-4f63-48d4-acd3-230feb5c7034",
+  "Id": "0311573b-6674-4322-ac00-175f13f24888",
   "BaseHeight": 768,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
@@ -581,7 +581,7 @@
               "Bindings": {
                 "Visible": {
                   "Formula": {
-                    "Expression": "([DahlDesign.DDCDDSMode] = 1 || [DahlDesign.SW1DDSMode] = 1) && [DahlDesign.PitMenu] != 0"
+                    "Expression": "(\r\n([DahlDesign.DDCDDSMode] = 1 || [DahlDesign.SW1DDSMode] = 1)\r\n\r\n||\r\n\r\n([DahlDesign.DDCDDSMode] = 0 && [DahlDesign.SW1DDSMode] = 0 && changed(3000,[DahlDesign.PitMenu]) && !(changed(3100,[DahlDesign.InCarMenu])))\r\n)\r\n\r\n&& \r\n\r\n[DahlDesign.PitMenu] != 0"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
