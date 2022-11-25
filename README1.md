@@ -26,9 +26,28 @@
   </p>
 </div>
 
-  <h5 align="center">Welcome to the repository!  <br />  To get the most out of this dashboard, I highly recommend checking out the manual.</h5>
+  <h5 align="center">Welcome to the repository!  <br /> <br /> 
+    <a href="https://github.com/andreasdahl1987/DahlDesignDash/releases">Download</a> the latest dashboard.
+    It is dependent on both the <a href="https://github.com/andreasdahl1987/DahlDesignProperties/releases">Properties plugin</a> and <a href="https://github.com/andreasdahl1987/DahlDesignLED/releases">LED plugin. </a> <br /> <br />  
+    To get the most out of this dashboard, I highly recommend checking out the manual.</h5>
  <h2 <p align="center"> <a href=https://dahl-design.gitbook.io/dashboard/>MANUAL</a>
 </h2>
+
+
+
+**How To Contribute / Collaborate**
+
+
+
+1. Use your favorite Git client to clone this repo to a preferred location (not in your `SimHub `folder).
+
+2. Hard link the folder containing the dash itself to the SimHub directory so you can make changes and use them, while also having `git` able to see the files and their changes (example from my machine):
+   
+   > mklink /J "C:\Program Files (x86)\SimHub\DashTemplates\DahlDesignDDU" "C:\Users\Matt Cowger\Desktop\DahlDesignDashDev\DahlDesignDDUDev"
+
+3. 
+   Do your thing and send in PRs!
+
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
