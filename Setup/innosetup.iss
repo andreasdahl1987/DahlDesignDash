@@ -7,7 +7,9 @@ AppName=Dahl Design Dashboard & Plugin
 AppVersion={#PluginVersion}
 OutputBaseFilename=DahlDesignSetup
 WizardStyle=modern
+UsePreviousAppDir=no
 DefaultDirName={autopf}\SimHub
+AlwaysShowDirOnReadyPage=yes
 Compression=lzma2
 SolidCompression=yes
 
