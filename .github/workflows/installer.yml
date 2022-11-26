@@ -38,3 +38,4 @@ jobs:
         replacesArtifacts: true
         allowUpdates: true
         name: ${{ github.event.inputs.version }}      
+        tag: ${{ github.event.inputs.version }}      
