@@ -33,4 +33,23 @@ jobs:
         allowUpdates: true
         name: ${{ github.event.inputs.version }}
         tag: ${{ github.event.inputs.version }}
-    
+      
+  setup:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.5.0
+      
+    - name: Building the installer
+      run: |
+        "%programfiles(x86)%\Inno Setup 6\iscc.exe" "Setup\innosetup.iss"
+      shell: cmd
+       
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "Setup/Output/DahlDesignSetup.exe"
+        prerelease: ${{ github.event.inputs.is-pre-release }}
+        replacesArtifacts: true
+        allowUpdates: true
+        name: ${{ github.event.inputs.version }}  
