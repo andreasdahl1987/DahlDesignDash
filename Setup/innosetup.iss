@@ -1,5 +1,5 @@
-#define PluginVersion '1.10.1'
-#define DashVersion '1.11.0'
+#define PluginVersion '1.12.0'
+#define DashVersion '1.12.0'
 #define LEDVersion '1.1.0'
 
 [Setup]
