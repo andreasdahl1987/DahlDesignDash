@@ -10,7 +10,7 @@ In the example above, you've got 2.2 seconds headroom, and can slow down more to
 
 The fuel delta is calculated from the last lap consumption, so it will be updated from lap to lap. A single lap of coast/lifting will give you some answers.&#x20;
 
-For the first 30% distance of your lap, the delta will refer to your previous lap time, so you'll get time to evaluate the situation. Then it will go live for the remaining 70%.  For these first 30 % of the lap the background color will change to <mark style="background-color:orange;">gray.</mark>
+For the first 30% distance of your lap, the delta will refer to your previous lap time, so you'll get time to evaluate the situation. Then it will go live for the remaining 70%.  For these first 30 % of the lap the background color will change to <mark style="background-color:gray;">gray.</mark>
 
 An **essential** part of using this delta is to **lock the pace** used for calculations. The algorithm need to compare your current lap times to the theoretical lap times you'd have if you'd done the pit stop. If you dont lock the pace for calculations, and you start slowing down to save fuel, your calculated race pace will be much slower that what you'd expect after the pit stop, and the minium accepted lap time will also be much slower than it actually is.&#x20;
 
