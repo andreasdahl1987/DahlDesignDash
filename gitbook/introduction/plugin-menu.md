@@ -10,7 +10,7 @@ Have a look at the dashboard settings tab, note the options. There are none you 
 
 #### Dashboard controls
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p> </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p> </p></figcaption></figure>
 
 Here you can map buttons for controlling elements of the dashboard. None of these are absolutely necessary to map, since the PitMenu can do much of the same, but **Radio** should be mapped if you use  push-to-talk. Just map the same button you use for push-to-talk.
 
