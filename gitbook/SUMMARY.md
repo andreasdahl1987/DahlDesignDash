@@ -43,3 +43,7 @@
     * [Pace screen](dashboard/fullscreen-screens/pace-screen.md)
     * [Splash screen](dashboard/fullscreen-screens/splash-screen.md)
     * [Message screen](dashboard/fullscreen-screens/message-screen.md)
+* [Fuel strategy](fuel-strategy/README.md)
+  * [Tier 1: Fuel delta](fuel-strategy/tier-1-fuel-delta.md)
+  * [Tier 2: Using PitMenu](fuel-strategy/tier-2-using-pitmenu.md)
+  * [Tier 3: More information](fuel-strategy/tier-3-more-information.md)
