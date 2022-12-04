@@ -4038,6 +4038,13 @@
                       },
                       "Mode": 2,
                       "TargetPropertyName": "FontSize"
+                    },
+                    "TextColor": {
+                      "Formula": {
+                        "Expression": "if([DahlDesign.FuelPerLapTargetLocked], 'fuchsia','deepskyblue')"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "TextColor"
                     }
                   }
                 },
