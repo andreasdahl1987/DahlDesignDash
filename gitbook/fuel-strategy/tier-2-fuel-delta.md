@@ -1,10 +1,10 @@
-# Tier 1: Fuel delta
+# Tier 2: Fuel delta
 
-The simplesy way to use the fuel calculator is to look at the fuel delta. It is a calculation showing you the difference:&#x20;
+The most basic value that gives you the most information is the fuel delta. It is a calculation showing you the difference between the fuel needed to complete the session and the fuel you have available in the car:&#x20;
 
 * Delta = Current fuel - Fuel needed to get through the session
 
-This value is particulary helpful in a session where you're aiming not to stop for fuel.&#x20;
+_This value is particulary useful in a session where you're aiming not to stop for fuel._ For races with two or more pit stops, the delta value becomes very large and impractical.
 
 The delta value can be found here:
 

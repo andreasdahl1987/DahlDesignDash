@@ -47,4 +47,6 @@
   * [Tier 1: Raw data](fuel-strategy/tier-1-raw-data.md)
   * [Tier 2: Fuel delta](fuel-strategy/tier-2-fuel-delta.md)
   * [Tier 3: Using PitMenu](fuel-strategy/tier-3-using-pitmenu.md)
-  * [Tier 4: More information](fuel-strategy/tier-4-more-information.md)
+  * [Tier 4: Main Screen info](fuel-strategy/tier-4-main-screen-info.md)
+  * [Tier 5: Pit Screen](fuel-strategy/tier-5-pit-screen.md)
+  * [Tier 6: Stint planning](fuel-strategy/tier-6-stint-planning.md)

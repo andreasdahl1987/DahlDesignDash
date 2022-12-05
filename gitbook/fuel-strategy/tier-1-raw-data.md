@@ -1,6 +1,6 @@
 # Tier 1: Raw data
 
-I've set this as the first tier because it is the most basic information available. That doesn't mean you should use it. Infact, it doesn't tell you anything directly related to race/strategy, but I've got the impression that a lot of people want to do the calculations themselves, and are used to looking at the raw data only.&#x20;
+I've set this as the first tier because it is the most basic information available. That doesn't mean you should use it. Infact, it doesn't tell you anything directly about your race/strategy, but I've got the impression that a lot of people want to do the calculations themselves, and are used to looking at the raw data only.&#x20;
 
 This data is not given much space in the dashboard, but can be found in the **Mini Fuel Bar.** The values at the bottom will be covered from left to right:
 

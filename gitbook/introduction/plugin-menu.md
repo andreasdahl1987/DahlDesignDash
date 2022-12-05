@@ -32,7 +32,7 @@ It is simply pit a menu with 12 positions, each positions have 3 possible action
 
 A multiposition switch (with a minimum of 12 positions ) gives direct access to whichever menu position the switch points to, and allows you to label the switch accordingly, like the left rotary switch on the 1st generation Dahl Design SW1 below.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you control the menu with an encoder (increment/decrement bindings), the pitmenu will always start in position 12 on boot, and there is no use in labeling it.&#x20;
 
