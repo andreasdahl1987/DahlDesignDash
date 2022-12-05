@@ -50,3 +50,5 @@
   * [Tier 4: Main Screen info](fuel-strategy/tier-4-main-screen-info.md)
   * [Tier 5: Pit Screen](fuel-strategy/tier-5-pit-screen.md)
   * [Tier 6: Stint planning](fuel-strategy/tier-6-stint-planning.md)
+  * [Tier 7: Fuel/lap control](fuel-strategy/tier-7-fuel-lap-control.md)
+  * [Tier 8: Fuel save analysis](fuel-strategy/tier-8-fuel-save-analysis.md)
