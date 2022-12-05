@@ -73,7 +73,7 @@
                   "$id": "10",
                   "Formula": {
                     "$id": "11",
-                    "Expression": "if ([DahlDesign.CarBehind01Name] = '' || \r\n[DahlDesign.CarBehind02Name] = '' ||\r\n[DahlDesign.CarBehind03Name] = '' ||\r\n[DahlDesign.CarBehind04Name] = '' ||\r\n[DahlDesign.CarBehind05Name] = '' ||\r\n[DahlDesign.CarBehind01Gap] > 20 , 'fuchsia', 'dimgray')"
+                    "Expression": "if ([DahlDesign.CarBehind01Name] = '' || \r\n[DahlDesign.CarBehind02Name] = '' ||\r\n[DahlDesign.CarBehind03Name] = '' ||\r\n[DahlDesign.CarBehind04Name] = '' ||\r\n[DahlDesign.CarBehind05Name] = '' ||\r\n[DahlDesign.CarBehind01Relative] > 20 , 'fuchsia', 'dimgray')"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "BackgroundColor"
@@ -182,7 +182,7 @@
                         "FormatString": "0.0",
                         "Formula": {
                           "$id": "21",
-                          "Expression": "if([DahlDesign.CarBehind05Gap] < 20, \r\nif([DahlDesign.CarBehind05Gap]-[DahlDesign.CarBehind04Gap] < 1, '', \r\n[DahlDesign.CarBehind05Gap]-[DahlDesign.CarBehind04Gap]), '')"
+                          "Expression": "if([DahlDesign.CarBehind05Relative] < 20, \r\nif([DahlDesign.CarBehind05Relative]-[DahlDesign.CarBehind04Relative] < 1, '', \r\n[DahlDesign.CarBehind05Relative]-[DahlDesign.CarBehind04Relative]), '')"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Text"
@@ -191,7 +191,7 @@
                         "$id": "22",
                         "Formula": {
                           "$id": "23",
-                          "Expression": "1286-([DahlDesign.CarBehind05Gap]*1280/20)"
+                          "Expression": "1286-([DahlDesign.CarBehind05Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Left"
@@ -200,7 +200,7 @@
                         "$id": "24",
                         "Formula": {
                           "$id": "25",
-                          "Expression": "([DahlDesign.CarBehind05Gap]*1280/20)"
+                          "Expression": "([DahlDesign.CarBehind05Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Width"
@@ -209,7 +209,7 @@
                         "$id": "26",
                         "Formula": {
                           "$id": "27",
-                          "Expression": "if ([DahlDesign.CarBehind05Gap]-[DahlDesign.CarBehind04Gap] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind05Gap]-[DahlDesign.CarBehind04Gap] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind05Gap]-[DahlDesign.CarBehind04Gap] > 3, 'orange', 'red')))\r\n"
+                          "Expression": "if ([DahlDesign.CarBehind05Relative]-[DahlDesign.CarBehind04Relative] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind05Relative]-[DahlDesign.CarBehind04Relative] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind05Relative]-[DahlDesign.CarBehind04Relative] > 3, 'orange', 'red')))\r\n"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "BackgroundColor"
@@ -218,7 +218,7 @@
                         "$id": "28",
                         "Formula": {
                           "$id": "29",
-                          "Expression": "if ([DahlDesign.CarBehind05Gap]-[DahlDesign.CarBehind04Gap] > 8, 'white',\r\nif ([DahlDesign.CarBehind05Gap]-[DahlDesign.CarBehind04Gap] > 5, 'black', 'white'))"
+                          "Expression": "if ([DahlDesign.CarBehind05Relative]-[DahlDesign.CarBehind04Relative] > 8, 'white',\r\nif ([DahlDesign.CarBehind05Relative]-[DahlDesign.CarBehind04Relative] > 5, 'black', 'white'))"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "TextColor"
@@ -284,7 +284,7 @@
                         "$id": "36",
                         "Formula": {
                           "$id": "37",
-                          "Expression": "1280-([DahlDesign.CarBehind05Gap]*1280/20)"
+                          "Expression": "1280-([DahlDesign.CarBehind05Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Left"
@@ -426,7 +426,7 @@
                         "FormatString": "0.0",
                         "Formula": {
                           "$id": "50",
-                          "Expression": "if([DahlDesign.CarBehind04Gap] < 20, \r\nif([DahlDesign.CarBehind04Gap]-[DahlDesign.CarBehind03Gap] < 1, '', \r\n[DahlDesign.CarBehind04Gap]-[DahlDesign.CarBehind03Gap]), '')"
+                          "Expression": "if([DahlDesign.CarBehind04Relative] < 20, \r\nif([DahlDesign.CarBehind04Relative]-[DahlDesign.CarBehind03Relative] < 1, '', \r\n[DahlDesign.CarBehind04Relative]-[DahlDesign.CarBehind03Relative]), '')"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Text"
@@ -435,7 +435,7 @@
                         "$id": "51",
                         "Formula": {
                           "$id": "52",
-                          "Expression": "1286-([DahlDesign.CarBehind04Gap]*1280/20)"
+                          "Expression": "1286-([DahlDesign.CarBehind04Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Left"
@@ -444,7 +444,7 @@
                         "$id": "53",
                         "Formula": {
                           "$id": "54",
-                          "Expression": "([DahlDesign.CarBehind04Gap]*1280/20)"
+                          "Expression": "([DahlDesign.CarBehind04Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Width"
@@ -453,7 +453,7 @@
                         "$id": "55",
                         "Formula": {
                           "$id": "56",
-                          "Expression": "if ([DahlDesign.CarBehind04Gap]-[DahlDesign.CarBehind03Gap] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind04Gap]-[DahlDesign.CarBehind03Gap] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind04Gap]-[DahlDesign.CarBehind03Gap] > 3, 'orange', 'red')))\r\n"
+                          "Expression": "if ([DahlDesign.CarBehind04Relative]-[DahlDesign.CarBehind03Relative] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind04Relative]-[DahlDesign.CarBehind03Relative] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind04Relative]-[DahlDesign.CarBehind03Relative] > 3, 'orange', 'red')))\r\n"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "BackgroundColor"
@@ -462,7 +462,7 @@
                         "$id": "57",
                         "Formula": {
                           "$id": "58",
-                          "Expression": "if ([DahlDesign.CarBehind04Gap]-[DahlDesign.CarBehind03Gap] > 8, 'white',\r\nif ([DahlDesign.CarBehind04Gap]-[DahlDesign.CarBehind03Gap] > 5, 'black', 'white'))"
+                          "Expression": "if ([DahlDesign.CarBehind04Relative]-[DahlDesign.CarBehind03Relative] > 8, 'white',\r\nif ([DahlDesign.CarBehind04Relative]-[DahlDesign.CarBehind03Relative] > 5, 'black', 'white'))"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "TextColor"
@@ -528,7 +528,7 @@
                         "$id": "65",
                         "Formula": {
                           "$id": "66",
-                          "Expression": "1280-([DahlDesign.CarBehind04Gap]*1280/20)"
+                          "Expression": "1280-([DahlDesign.CarBehind04Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Left"
@@ -670,7 +670,7 @@
                         "FormatString": "0.0",
                         "Formula": {
                           "$id": "79",
-                          "Expression": "if([DahlDesign.CarBehind03Gap] < 20, \r\nif([DahlDesign.CarBehind03Gap]-[DahlDesign.CarBehind02Gap] < 1, '', \r\n[DahlDesign.CarBehind03Gap]-[DahlDesign.CarBehind02Gap]), '')"
+                          "Expression": "if([DahlDesign.CarBehind03Relative] < 20, \r\nif([DahlDesign.CarBehind03Relative]-[DahlDesign.CarBehind02Relative] < 1, '', \r\n[DahlDesign.CarBehind03Relative]-[DahlDesign.CarBehind02Relative]), '')"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Text"
@@ -679,7 +679,7 @@
                         "$id": "80",
                         "Formula": {
                           "$id": "81",
-                          "Expression": "1286-([DahlDesign.CarBehind03Gap]*1280/20)"
+                          "Expression": "1286-([DahlDesign.CarBehind03Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Left"
@@ -688,7 +688,7 @@
                         "$id": "82",
                         "Formula": {
                           "$id": "83",
-                          "Expression": "([DahlDesign.CarBehind03Gap]*1280/20)"
+                          "Expression": "([DahlDesign.CarBehind03Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Width"
@@ -697,7 +697,7 @@
                         "$id": "84",
                         "Formula": {
                           "$id": "85",
-                          "Expression": "if ([DahlDesign.CarBehind03Gap]-[DahlDesign.CarBehind02Gap] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind03Gap]-[DahlDesign.CarBehind02Gap] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind03Gap]-[DahlDesign.CarBehind02Gap] > 3, 'orange', 'red')))\r\n"
+                          "Expression": "if ([DahlDesign.CarBehind03Relative]-[DahlDesign.CarBehind02Relative] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind03Relative]-[DahlDesign.CarBehind02Relative] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind03Relative]-[DahlDesign.CarBehind02Relative] > 3, 'orange', 'red')))\r\n"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "BackgroundColor"
@@ -706,7 +706,7 @@
                         "$id": "86",
                         "Formula": {
                           "$id": "87",
-                          "Expression": "if ([DahlDesign.CarBehind03Gap]-[DahlDesign.CarBehind02Gap] > 8, 'white',\r\nif ([DahlDesign.CarBehind03Gap]-[DahlDesign.CarBehind02Gap] > 5, 'black', 'white'))"
+                          "Expression": "if ([DahlDesign.CarBehind03Relative]-[DahlDesign.CarBehind02Relative] > 8, 'white',\r\nif ([DahlDesign.CarBehind03Relative]-[DahlDesign.CarBehind02Relative] > 5, 'black', 'white'))"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "TextColor"
@@ -772,7 +772,7 @@
                         "$id": "94",
                         "Formula": {
                           "$id": "95",
-                          "Expression": "1280-([DahlDesign.CarBehind03Gap]*1280/20)"
+                          "Expression": "1280-([DahlDesign.CarBehind03Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Left"
@@ -914,7 +914,7 @@
                         "FormatString": "0.0",
                         "Formula": {
                           "$id": "108",
-                          "Expression": "if([DahlDesign.CarBehind02Gap] < 20, \r\nif([DahlDesign.CarBehind02Gap]-[DahlDesign.CarBehind01Gap] < 1.1, '', \r\n[DahlDesign.CarBehind02Gap]-[DahlDesign.CarBehind01Gap]), '')"
+                          "Expression": "if([DahlDesign.CarBehind02Relative] < 20, \r\nif([DahlDesign.CarBehind02Relative]-[DahlDesign.CarBehind01Relative] < 1.1, '', \r\n[DahlDesign.CarBehind02Relative]-[DahlDesign.CarBehind01Relative]), '')"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Text"
@@ -923,7 +923,7 @@
                         "$id": "109",
                         "Formula": {
                           "$id": "110",
-                          "Expression": "1286-([DahlDesign.CarBehind02Gap]*1280/20)"
+                          "Expression": "1286-([DahlDesign.CarBehind02Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Left"
@@ -932,7 +932,7 @@
                         "$id": "111",
                         "Formula": {
                           "$id": "112",
-                          "Expression": "([DahlDesign.CarBehind02Gap]*1280/20)"
+                          "Expression": "([DahlDesign.CarBehind02Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Width"
@@ -941,7 +941,7 @@
                         "$id": "113",
                         "Formula": {
                           "$id": "114",
-                          "Expression": "if ([DahlDesign.CarBehind02Gap]-[DahlDesign.CarBehind01Gap] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind02Gap]-[DahlDesign.CarBehind01Gap] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind02Gap]-[DahlDesign.CarBehind01Gap] > 3, 'orange', 'red')))\r\n"
+                          "Expression": "if ([DahlDesign.CarBehind02Relative]-[DahlDesign.CarBehind01Relative] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind02Relative]-[DahlDesign.CarBehind01Relative] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind02Relative]-[DahlDesign.CarBehind01Relative] > 3, 'orange', 'red')))\r\n"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "BackgroundColor"
@@ -950,7 +950,7 @@
                         "$id": "115",
                         "Formula": {
                           "$id": "116",
-                          "Expression": "if ([DahlDesign.CarBehind02Gap]-[DahlDesign.CarBehind01Gap] > 8, 'white',\r\nif ([DahlDesign.CarBehind02Gap]-[DahlDesign.CarBehind01Gap] > 5, 'black', 'white'))\r\n\r\n"
+                          "Expression": "if ([DahlDesign.CarBehind02Relative]-[DahlDesign.CarBehind01Relative] > 8, 'white',\r\nif ([DahlDesign.CarBehind02Relative]-[DahlDesign.CarBehind01Relative] > 5, 'black', 'white'))\r\n\r\n"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "TextColor"
@@ -1016,7 +1016,7 @@
                         "$id": "123",
                         "Formula": {
                           "$id": "124",
-                          "Expression": "1280-([DahlDesign.CarBehind02Gap]*1280/20)"
+                          "Expression": "1280-([DahlDesign.CarBehind02Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Left"
@@ -1158,7 +1158,7 @@
                         "FormatString": "0.0",
                         "Formula": {
                           "$id": "137",
-                          "Expression": "if([DahlDesign.CarBehind01Gap] < 20, \r\nif([DahlDesign.CarBehind01Gap] < 1.1, '', \r\n[DahlDesign.CarBehind01Gap]), '')"
+                          "Expression": "if([DahlDesign.CarBehind01Relative] < 20, \r\nif([DahlDesign.CarBehind01Relative] < 1.1, '', \r\n[DahlDesign.CarBehind01Relative]), '')"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Text"
@@ -1167,7 +1167,7 @@
                         "$id": "138",
                         "Formula": {
                           "$id": "139",
-                          "Expression": "1286-([DahlDesign.CarBehind01Gap]*1280/20)"
+                          "Expression": "1286-([DahlDesign.CarBehind01Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Left"
@@ -1176,7 +1176,7 @@
                         "$id": "140",
                         "Formula": {
                           "$id": "141",
-                          "Expression": "([DahlDesign.CarBehind01Gap]*1280/20)"
+                          "Expression": "([DahlDesign.CarBehind01Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Width"
@@ -1185,7 +1185,7 @@
                         "$id": "142",
                         "Formula": {
                           "$id": "143",
-                          "Expression": "if ([DahlDesign.CarBehind01Gap] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind01Gap] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind01Gap] > 3, 'orange', 'red')))\r\n"
+                          "Expression": "if ([DahlDesign.CarBehind01Relative] > 8, 'lawngreen',\r\nif ([DahlDesign.CarBehind01Relative] > 5, 'yellow',\r\nif ([DahlDesign.CarBehind01Relative] > 3, 'orange', 'red')))\r\n"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "BackgroundColor"
@@ -1194,7 +1194,7 @@
                         "$id": "144",
                         "Formula": {
                           "$id": "145",
-                          "Expression": "if ([DahlDesign.CarBehind01Gap] > 8, 'white',\r\nif ([DahlDesign.CarBehind01Gap] > 5, 'black', 'white'))"
+                          "Expression": "if ([DahlDesign.CarBehind01Relative] > 8, 'white',\r\nif ([DahlDesign.CarBehind01Relative] > 5, 'black', 'white'))"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "TextColor"
@@ -1260,7 +1260,7 @@
                         "$id": "152",
                         "Formula": {
                           "$id": "153",
-                          "Expression": "1280-([DahlDesign.CarBehind01Gap]*1280/20)"
+                          "Expression": "1280-([DahlDesign.CarBehind01Relative]*1280/20)"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Left"
@@ -1369,7 +1369,7 @@
                   "$id": "161",
                   "Formula": {
                     "$id": "162",
-                    "Expression": "[DahlDesign.CarBehind01Name] = '' || [DahlDesign.CarBehind01Gap] > 20"
+                    "Expression": "[DahlDesign.CarBehind01Name] = '' || [DahlDesign.CarBehind01Relative] > 20"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
