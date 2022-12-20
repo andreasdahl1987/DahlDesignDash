@@ -1561,7 +1561,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([DahlDesign.Lap01Status] = 2, 'red',\r\nif ([DahlDesign.Lap01Status] = 3, 'deepskyblue',\r\nif ([DahlDesign.Lap01Status] = 5, 'black',\r\nif ([DahlDesign.Lap01Status] = 6, 'orange',\r\nif ([DahlDesign.Lap01Status] = 1, \r\n\tif (timespantoseconds([LastLapTime]) = timespantoseconds([PersistantTrackerPlugin.AllTimeBest]), 'fuchsia',\r\n\tif (timespantoseconds([LastLapTime]) <= timespantoseconds([DahlDesign.Pace]), 'lawngreen', 'dimgray')), 'black')))))"
+                    "Expression": "if ([DahlDesign.Lap01Status] = 2, 'red',\r\nif ([DahlDesign.Lap01Status] = 3, 'deepskyblue',\r\nif ([DahlDesign.Lap01Status] = 5, 'black',\r\nif ([DahlDesign.Lap01Status] = 6, 'orange',\r\nif ([DahlDesign.Lap01Status] = 1, \r\n\tif (timespantoseconds([LastLapTime]) = timespantoseconds([DahlDesign.LapRecord]), 'fuchsia',\r\n\tif (timespantoseconds([LastLapTime]) <= timespantoseconds([DahlDesign.Pace]), 'lawngreen', 'dimgray')), 'black')))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "TextColor"
@@ -1596,7 +1596,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([DahlDesign.Lap01Status] = 2, 'red',\r\nif ([DahlDesign.Lap01Status] = 3, 'deepskyblue',\r\nif ([DahlDesign.Lap01Status] = 5, 'black',\r\nif ([DahlDesign.Lap01Status] = 6, 'orange',\r\nif ([DahlDesign.Lap01Status] = 1, \r\n\tif (timespantoseconds([LastLapTime]) = timespantoseconds([PersistantTrackerPlugin.AllTimeBest]), 'fuchsia',\r\n\tif (timespantoseconds([LastLapTime]) <= timespantoseconds([DahlDesign.Pace]), 'lawngreen', 'dimgray')), 'black')))))"
+                    "Expression": "if ([DahlDesign.Lap01Status] = 2, 'red',\r\nif ([DahlDesign.Lap01Status] = 3, 'deepskyblue',\r\nif ([DahlDesign.Lap01Status] = 5, 'black',\r\nif ([DahlDesign.Lap01Status] = 6, 'orange',\r\nif ([DahlDesign.Lap01Status] = 1, \r\n\tif (timespantoseconds([LastLapTime]) = timespantoseconds([DahlDesign.LapRecord]), 'fuchsia',\r\n\tif (timespantoseconds([LastLapTime]) <= timespantoseconds([DahlDesign.Pace]), 'lawngreen', 'dimgray')), 'black')))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "TextColor"
