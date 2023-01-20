@@ -2088,9 +2088,7 @@
   ],
   "Metadata": {
     "ScreenCount": 1.0,
-    "InGameScreensIndexs": [
-      0
-    ],
+    "InGameScreensIndexs": [0],
     "IdleScreensIndexs": [],
     "MainPreviewIndex": 0,
     "IsOverlay": false,

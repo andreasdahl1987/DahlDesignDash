@@ -2995,9 +2995,7 @@
     "ScreenCount": 1.0,
     "InGameScreensIndexs": {
       "$id": "242",
-      "$values": [
-        0
-      ]
+      "$values": [0]
     },
     "IdleScreensIndexs": {
       "$id": "243",

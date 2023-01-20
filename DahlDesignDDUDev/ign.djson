@@ -1,1 +1,222 @@
-{"DashboardDebugManager":{"Maximized":false},"Version":2,"Id":"625f6c25-6a2a-44fb-9a88-50d45ac8b5e3","BaseHeight":768,"BaseWidth":1280,"BackgroundColor":"#FF000000","Screens":[{"Name":"Screen1","InGameScreen":true,"IdleScreen":false,"PitScreen":false,"ScreenId":"e1c2709b-6777-4005-8fbc-32d7c7bc3664","AllowOverlays":true,"IsForegroundLayer":false,"IsOverlayLayer":false,"OverlayTriggerExpression":{"Expression":""},"ScreenEnabledExpression":{"Expression":""},"OverlayMaxDuration":0,"OverlayMinDuration":0,"IsBackgroundLayer":false,"BackgroundColor":"#FF000000","Items":[{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins","IsRectangleItem":true,"BackgroundColor":"#FF000000","BorderStyle":{"BorderColor":"#FF808080","BorderTop":6,"BorderBottom":6,"BorderLeft":6,"BorderRight":6},"Height":768.0,"Left":0.0,"Top":0.0,"Visible":true,"Width":1280.0,"Name":"RectangleItem0"},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins","IsRectangleItem":true,"BackgroundColor":"#00FFFFFF","BorderStyle":{"BorderColor":"#FF808080","BorderTop":6,"BorderBottom":6,"BorderLeft":6,"BorderRight":6},"Height":100.0,"Left":0.0,"Top":0.0,"Visible":true,"Width":1280.0,"Name":"Border"},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins","IsRectangleItem":true,"BackgroundColor":"#00FFFFFF","BorderStyle":{"BorderColor":"#FF808080","BorderTop":6,"BorderBottom":6,"BorderLeft":6,"BorderRight":6},"Height":598.0,"Left":420.0,"Top":94.0,"Visible":true,"Width":450.0,"Name":"Border1"},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins","IsRectangleItem":true,"BackgroundColor":"#00FFFFFF","BorderStyle":{"BorderColor":"#FF808080","BorderTop":6,"BorderBottom":6,"BorderLeft":6,"BorderRight":6},"Height":82.0,"Left":0.0,"Top":686.0,"Visible":true,"Width":1280.0,"Name":"Border2"},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins","Image":"white logo","AutoSize":true,"AutoSizeScale":0.6,"BackgroundColor":"#00FFFFFF","Height":495.59999999999997,"Left":486.26624794052088,"Top":140.97851240706385,"Visible":true,"Width":317.4,"Name":"ImageItem0"}]}],"SnapToGrid":false,"HideLabels":false,"ShowForeground":true,"ForegroundOpacity":100.0,"ShowBackground":true,"BackgroundOpacity":100.0,"ShowBoundingRectangles":false,"GridSize":10,"Images":[{"Name":"white logo","Extension":".png","Modified":false,"Optimized":true,"Width":529,"Height":826,"Length":28150,"MD5":"a5617fb2fab6687f9b6f64373c40634e"},{"Name":"volkswagen-withdraw-from-wrc","Extension":".jpg","Modified":true,"Optimized":true,"Length":664468,"MD5":"0f731455eaef2a261414b4ffb9ce552d"},{"Name":"Lights Off","Extension":".png","Modified":true,"Optimized":true,"Length":57351,"MD5":"028b09d61c503c97043a71cae39817d9"},{"Name":"Background","Extension":".png","Modified":true,"Optimized":true,"Length":162165,"MD5":"0b5df11c68e280ef739baba7d8ed17fe"},{"Name":"Background3","Extension":".png","Modified":true,"Optimized":true,"Length":198340,"MD5":"e1f8aad1cb1581215173109b7988ba0a"},{"Name":"clouds","Extension":".png","Modified":true,"Optimized":true,"Length":2794,"MD5":"f62dab6888fbf6920cc8cb1c5b714fdc"},{"Name":"clouds-sun","Extension":".png","Modified":true,"Optimized":true,"Length":4187,"MD5":"6f2bad9030e0ad408d5c708e9b475080"},{"Name":"cloud-sun","Extension":".png","Modified":true,"Optimized":true,"Length":3404,"MD5":"91db09cc235c6c31478351e95ddf736d"},{"Name":"sun","Extension":".png","Modified":true,"Optimized":true,"Length":3751,"MD5":"dfc7397669f71749ea4871afb84fd6d6"},{"Name":"Logo white","Extension":".png","Modified":true,"Optimized":true,"Length":6271,"MD5":"af7b6fe1ef3b6e49bea1d0de4fbc190b"}],"Metadata":{"ScreenCount":1.0,"InGameScreensIndexs":[0],"IdleScreensIndexs":[],"MainPreviewIndex":0,"IsOverlay":false,"Width":1280.0,"Height":768.0,"OverlaySizeWarning":true,"MetadataVersion":2.0,"EnableOnDashboardMessaging":true,"PitScreensIndexs":[]},"ShowOnScreenControls":true,"IsOverlay":false,"EnableClickThroughOverlay":true,"EnableOnDashboardMessaging":true}
+{
+  "DashboardDebugManager": { "Maximized": false },
+  "Version": 2,
+  "Id": "625f6c25-6a2a-44fb-9a88-50d45ac8b5e3",
+  "BaseHeight": 768,
+  "BaseWidth": 1280,
+  "BackgroundColor": "#FF000000",
+  "Screens": [
+    {
+      "Name": "Screen1",
+      "InGameScreen": true,
+      "IdleScreen": false,
+      "PitScreen": false,
+      "ScreenId": "e1c2709b-6777-4005-8fbc-32d7c7bc3664",
+      "AllowOverlays": true,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "OverlayTriggerExpression": { "Expression": "" },
+      "ScreenEnabledExpression": { "Expression": "" },
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "IsBackgroundLayer": false,
+      "BackgroundColor": "#FF000000",
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF000000",
+          "BorderStyle": {
+            "BorderColor": "#FF808080",
+            "BorderTop": 6,
+            "BorderBottom": 6,
+            "BorderLeft": 6,
+            "BorderRight": 6
+          },
+          "Height": 768.0,
+          "Left": 0.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 1280.0,
+          "Name": "RectangleItem0"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": {
+            "BorderColor": "#FF808080",
+            "BorderTop": 6,
+            "BorderBottom": 6,
+            "BorderLeft": 6,
+            "BorderRight": 6
+          },
+          "Height": 100.0,
+          "Left": 0.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 1280.0,
+          "Name": "Border"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": {
+            "BorderColor": "#FF808080",
+            "BorderTop": 6,
+            "BorderBottom": 6,
+            "BorderLeft": 6,
+            "BorderRight": 6
+          },
+          "Height": 598.0,
+          "Left": 420.0,
+          "Top": 94.0,
+          "Visible": true,
+          "Width": 450.0,
+          "Name": "Border1"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": {
+            "BorderColor": "#FF808080",
+            "BorderTop": 6,
+            "BorderBottom": 6,
+            "BorderLeft": 6,
+            "BorderRight": 6
+          },
+          "Height": 82.0,
+          "Left": 0.0,
+          "Top": 686.0,
+          "Visible": true,
+          "Width": 1280.0,
+          "Name": "Border2"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+          "Image": "white logo",
+          "AutoSize": true,
+          "AutoSizeScale": 0.6,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 495.59999999999997,
+          "Left": 486.26624794052088,
+          "Top": 140.97851240706385,
+          "Visible": true,
+          "Width": 317.4,
+          "Name": "ImageItem0"
+        }
+      ]
+    }
+  ],
+  "SnapToGrid": false,
+  "HideLabels": false,
+  "ShowForeground": true,
+  "ForegroundOpacity": 100.0,
+  "ShowBackground": true,
+  "BackgroundOpacity": 100.0,
+  "ShowBoundingRectangles": false,
+  "GridSize": 10,
+  "Images": [
+    {
+      "Name": "white logo",
+      "Extension": ".png",
+      "Modified": false,
+      "Optimized": true,
+      "Width": 529,
+      "Height": 826,
+      "Length": 28150,
+      "MD5": "a5617fb2fab6687f9b6f64373c40634e"
+    },
+    {
+      "Name": "volkswagen-withdraw-from-wrc",
+      "Extension": ".jpg",
+      "Modified": true,
+      "Optimized": true,
+      "Length": 664468,
+      "MD5": "0f731455eaef2a261414b4ffb9ce552d"
+    },
+    {
+      "Name": "Lights Off",
+      "Extension": ".png",
+      "Modified": true,
+      "Optimized": true,
+      "Length": 57351,
+      "MD5": "028b09d61c503c97043a71cae39817d9"
+    },
+    {
+      "Name": "Background",
+      "Extension": ".png",
+      "Modified": true,
+      "Optimized": true,
+      "Length": 162165,
+      "MD5": "0b5df11c68e280ef739baba7d8ed17fe"
+    },
+    {
+      "Name": "Background3",
+      "Extension": ".png",
+      "Modified": true,
+      "Optimized": true,
+      "Length": 198340,
+      "MD5": "e1f8aad1cb1581215173109b7988ba0a"
+    },
+    {
+      "Name": "clouds",
+      "Extension": ".png",
+      "Modified": true,
+      "Optimized": true,
+      "Length": 2794,
+      "MD5": "f62dab6888fbf6920cc8cb1c5b714fdc"
+    },
+    {
+      "Name": "clouds-sun",
+      "Extension": ".png",
+      "Modified": true,
+      "Optimized": true,
+      "Length": 4187,
+      "MD5": "6f2bad9030e0ad408d5c708e9b475080"
+    },
+    {
+      "Name": "cloud-sun",
+      "Extension": ".png",
+      "Modified": true,
+      "Optimized": true,
+      "Length": 3404,
+      "MD5": "91db09cc235c6c31478351e95ddf736d"
+    },
+    {
+      "Name": "sun",
+      "Extension": ".png",
+      "Modified": true,
+      "Optimized": true,
+      "Length": 3751,
+      "MD5": "dfc7397669f71749ea4871afb84fd6d6"
+    },
+    {
+      "Name": "Logo white",
+      "Extension": ".png",
+      "Modified": true,
+      "Optimized": true,
+      "Length": 6271,
+      "MD5": "af7b6fe1ef3b6e49bea1d0de4fbc190b"
+    }
+  ],
+  "Metadata": {
+    "ScreenCount": 1.0,
+    "InGameScreensIndexs": [0],
+    "IdleScreensIndexs": [],
+    "MainPreviewIndex": 0,
+    "IsOverlay": false,
+    "Width": 1280.0,
+    "Height": 768.0,
+    "OverlaySizeWarning": true,
+    "MetadataVersion": 2.0,
+    "EnableOnDashboardMessaging": true,
+    "PitScreensIndexs": []
+  },
+  "ShowOnScreenControls": true,
+  "IsOverlay": false,
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true
+}

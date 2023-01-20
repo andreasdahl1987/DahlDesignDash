@@ -1,1 +1,453 @@
-{"DashboardDebugManager":{"Maximized":false},"Version":2,"Id":"bd4b1ee6-8af2-4d82-a248-5a1c34fbe62a","BaseHeight":80,"BaseWidth":425,"BackgroundColor":"#FF000000","Screens":[{"Name":"Screen1","InGameScreen":true,"IdleScreen":false,"PitScreen":false,"ScreenId":"1c0f4b85-65eb-41fe-9994-100c84b615c4","AllowOverlays":true,"IsForegroundLayer":false,"IsOverlayLayer":false,"OverlayTriggerExpression":{"Expression":""},"ScreenEnabledExpression":{"Expression":""},"OverlayMaxDuration":0,"OverlayMinDuration":0,"IsBackgroundLayer":false,"BackgroundColor":"#FF000000","Items":[{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins","IsLinearGauge":true,"GaugeOrientation":0,"GaugeAlignment":0,"AutoSize":false,"GaugeColor":"#FFFF0000","AlternateGaugeColor":"#FF008000","UseAlternateStyle":false,"Minimum":0.0,"Maximum":100.0,"Value":30.0,"Steps":0.0,"PAW":106.0,"BackgroundColor":"#00FFFFFF","Height":40.0,"Left":73.0,"Top":0.0,"Visible":true,"Width":352.0,"Name":"Negative","Bindings":{"Maximum":{"Formula":{"Expression":"[MaxFuel]"},"Mode":2,"TargetPropertyName":"Maximum"},"Value":{"Formula":{"Expression":"-[DahlDesign.FuelDelta]+[Fuel]"},"Mode":2,"TargetPropertyName":"Value"},"Visible":{"Formula":{"Interpreter":1,"Expression":"var delta = $prop('DahlDesign.FuelDelta');\r\nvar session = $prop('SessionTypeName');\r\n\r\nif (session == 'Offline Testing') {return false;}\r\nif (delta == '-') {return false;}\r\n\r\nreturn true;"},"Mode":2,"TargetPropertyName":"Visible"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins","IsLinearGauge":true,"GaugeOrientation":0,"GaugeAlignment":0,"AutoSize":false,"GaugeColor":"#00FFFFFF","AlternateGaugeColor":"#FF008000","UseAlternateStyle":false,"Minimum":0.0,"Maximum":100.0,"Value":50.0,"Steps":0.0,"PAW":176.0,"BackgroundColor":"#00FFFFFF","Height":40.0,"Left":73.0,"Top":0.0,"Visible":true,"Width":352.0,"Name":"Filling","Bindings":{"Maximum":{"Formula":{"Expression":"[MaxFuel]"},"Mode":2,"TargetPropertyName":"Maximum"},"Value":{"Formula":{"Expression":"[DahlDesign.PitServiceFuelTarget]"},"Mode":2,"TargetPropertyName":"Value"},"GaugeColor":{"Formula":{"Expression":"if([DahlDesign.PitToggleFuel], 0, 1)"},"StartColor":"#FFFF00FF","EnableMiddleColor":false,"MiddleColor":"#FF000000","MiddleColorValue":1.0,"EndColor":"#00FFFFFF","StartColorValue":0.0,"EndColorValue":1.0,"Mode":4,"TargetPropertyName":"GaugeColor"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins","IsLinearGauge":true,"GaugeOrientation":0,"GaugeAlignment":0,"AutoSize":false,"GaugeColor":"#FF00BFFF","AlternateGaugeColor":"#FF008000","UseAlternateStyle":false,"Minimum":0.0,"Maximum":100.0,"Value":20.0,"Steps":0.0,"PAW":70.0,"BackgroundColor":"#00FFFFFF","Height":40.0,"Left":73.0,"Top":0.0,"Visible":true,"Width":352.0,"Name":"Fuel","Bindings":{"Maximum":{"Formula":{"Expression":"[MaxFuel]"},"Mode":2,"TargetPropertyName":"Maximum"},"Value":{"Formula":{"Expression":"[Fuel]"},"Mode":2,"TargetPropertyName":"Value"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins","IsRectangleItem":true,"BackgroundColor":"#FF7CFC00","Height":40.0,"Left":73.0,"Top":0.0,"Visible":false,"Width":100.0,"Name":"Positive","Bindings":{"Left":{"Formula":{"Interpreter":1,"Expression":"var delta = $prop('DahlDesign.FuelDelta')\r\nvar fuelmax = $prop('MaxFuel')\r\nvar fuel = $prop('Fuel')\r\n\r\nif (delta == 0 || fuelmax == 0) {return 1000;}\r\n\r\nvar posLeft = 73+((352/fuelmax)*(fuel-delta));\r\n\r\n\r\nif (delta>fuel) {return 73;}\r\n\r\nreturn posLeft;"},"Mode":2,"TargetPropertyName":"Left"},"Width":{"Formula":{"Interpreter":1,"Expression":"var delta = $prop('DahlDesign.FuelDelta')\r\nvar fuelmax = $prop('MaxFuel')\r\n\r\nif (delta == 0 || fuelmax == 0) {return -500;}\r\n\r\nreturn (352/fuelmax)*delta;"},"Mode":2,"TargetPropertyName":"Width"},"Visible":{"Formula":{"Interpreter":1,"Expression":"var delta = $prop('DahlDesign.FuelDelta');\r\nvar session = $prop('SessionTypeName');\r\n\r\nif (session == 'Offline Testing') {return false;}\r\nif (delta == 0) {return false;}\r\n\r\nreturn true;"},"Mode":2,"TargetPropertyName":"Visible"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins","IsRectangleItem":true,"BackgroundColor":"#00FFFFFF","BorderStyle":{"BorderRight":4},"Height":80.0,"Left":0.0,"Top":0.0,"Visible":true,"Width":73.0,"IsFreezed":true,"Name":"INCbox","Bindings":{"BackgroundColor":{"Formula":{"Interpreter":1,"Expression":"var session = $prop('SessionTypeName');\r\nvar myIncidents = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount');\r\nvar allowedInc = $prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit');\r\n\r\nif (session != 'Race') \r\n{\r\n\treturn 'transparent';\r\n}\r\n\r\nelse if (myIncidents/allowedInc > 0.9)\r\n{\r\n\treturn 'red';\r\n}\r\n\r\nelse if (myIncidents/allowedInc > 0.5)\r\n{\r\n\treturn 'orange';\r\n}\r\n\r\nelse \r\n{\r\n\treturn 'transparent';\r\n}\r\n"},"Mode":2,"TargetPropertyName":"BackgroundColor"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Segoe UI","FontWeight":"Bold","FontSize":36.0,"Text":"4","TextColor":"#FFFFFFFF","HorizontalAlignment":1,"VerticalAlignment":1,"BackgroundColor":"#00FFFFFF","Height":80.0,"Left":0.0,"Top":12.0,"Visible":true,"Width":73.0,"Name":"INC","Bindings":{"Text":{"Formula":{"Expression":"[GameRawData.Telemetry.PlayerCarTeamIncidentCount]"},"Mode":2,"TargetPropertyName":"Text"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Segoe UI","FontSize":32.0,"Text":"INC","TextColor":"#FFFFFFFF","HorizontalAlignment":1,"VerticalAlignment":1,"BackgroundColor":"#00FFFFFF","Height":80.0,"Left":2.0,"Top":-20.0,"Visible":true,"Width":73.0,"Name":"INC1"},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins","IsRectangleItem":true,"BackgroundColor":"#00FFFFFF","BorderStyle":{"BorderTop":4,"BorderLeft":6},"Height":80.0,"Left":0.0,"Top":0.0,"Visible":true,"Width":425.0,"IsFreezed":true,"Name":"Bakcgrnd"},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins","IsRectangleItem":true,"BackgroundColor":"#00FFFFFF","BorderStyle":{"BorderTop":2,"BorderBottom":2,"BorderLeft":2,"BorderRight":2},"Height":41.0,"Left":303.0,"Top":41.0,"Visible":true,"Width":2.0,"Name":"BRD2"},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Segoe UI","FontWeight":"Bold","FontSize":36.0,"Text":"-1420","TextColor":"#FFFFFFFF","HorizontalAlignment":1,"VerticalAlignment":1,"BackgroundColor":"#00FFFFFF","Height":100.0,"Left":300.0,"Top":8.0,"Visible":true,"Width":124.0,"Name":"Delta","Bindings":{"Text":{"FormatString":"0.0","Formula":{"Expression":"if([DahlDesign.FuelDelta]<-1000,format([DahlDesign.FuelDelta],'0'),format([DahlDesign.FuelDelta],'0.0',1))"},"Mode":2,"TargetPropertyName":"Text"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Segoe UI","FontSize":32.0,"Text":"L","TextColor":"#FFFFFFFF","HorizontalAlignment":1,"VerticalAlignment":0,"BackgroundColor":"#00FFFFFF","Height":40.0,"Left":188.0,"Top":37.0,"Visible":true,"Width":40.0,"Name":"L"},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Segoe UI","FontSize":32.0,"Text":"/L","TextColor":"#FFFFFFFF","HorizontalAlignment":1,"VerticalAlignment":0,"BackgroundColor":"#00FFFFFF","Height":40.0,"Left":72.0,"Top":37.0,"Visible":true,"Width":40.0,"Name":"/L"},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins","IsRectangleItem":true,"BackgroundColor":"#00FFFFFF","BorderStyle":{"BorderTop":2,"BorderBottom":2,"BorderLeft":2,"BorderRight":2},"Height":2.0,"Left":71.0,"Top":39.0,"Visible":true,"Width":360.0,"Name":"Divider"},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Segoe UI","FontSize":32.0,"Text":"1.54","TextColor":"#FFFFFFFF","HorizontalAlignment":0,"VerticalAlignment":1,"BackgroundColor":"#00FFFFFF","Height":40.0,"Left":108.0,"Top":38.0,"Visible":true,"Width":97.0,"Name":"TextItem0","Bindings":{"Text":{"FormatString":"0.00","Formula":{"Expression":"[DahlDesign.CalcFuelPerLap]+[DahlDesign.FuelPerLapOffset]"},"Mode":2,"TargetPropertyName":"Text"},"TextColor":{"Formula":{"Expression":"if (Round([DahlDesign.FuelPerLapOffset],1) = 0, 'white', 'deepskyblue')"},"Mode":2,"TargetPropertyName":"TextColor"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Segoe UI","FontSize":32.0,"Text":"8.5","TextColor":"#FFFFFFFF","HorizontalAlignment":0,"VerticalAlignment":1,"BackgroundColor":"#00FFFFFF","Height":40.0,"Left":219.0,"Top":38.0,"Visible":true,"Width":97.0,"Name":"TextItem1","Bindings":{"Text":{"FormatString":"0.0","Formula":{"Expression":"if ([Fuel] = 0, 0, [Fuel]/([DahlDesign.CalcFuelPerLap]+[DahlDesign.FuelPerLapOffset]))"},"Mode":2,"TargetPropertyName":"Text"}}}]}],"SnapToGrid":false,"HideLabels":true,"ShowForeground":true,"ForegroundOpacity":100.0,"ShowBackground":true,"BackgroundOpacity":100.0,"ShowBoundingRectangles":false,"GridSize":10,"Images":[],"Metadata":{"Title":"Fuel bar","ScreenCount":1.0,"InGameScreensIndexs":[0],"IdleScreensIndexs":[],"MainPreviewIndex":0,"IsOverlay":false,"Width":425.0,"Height":80.0,"OverlaySizeWarning":false,"MetadataVersion":2.0,"EnableOnDashboardMessaging":true,"PitScreensIndexs":[]},"ShowOnScreenControls":true,"IsOverlay":false,"EnableClickThroughOverlay":true,"EnableOnDashboardMessaging":true}
+{
+  "DashboardDebugManager": { "Maximized": false },
+  "Version": 2,
+  "Id": "bd4b1ee6-8af2-4d82-a248-5a1c34fbe62a",
+  "BaseHeight": 80,
+  "BaseWidth": 425,
+  "BackgroundColor": "#FF000000",
+  "Screens": [
+    {
+      "Name": "Screen1",
+      "InGameScreen": true,
+      "IdleScreen": false,
+      "PitScreen": false,
+      "ScreenId": "1c0f4b85-65eb-41fe-9994-100c84b615c4",
+      "AllowOverlays": true,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "OverlayTriggerExpression": { "Expression": "" },
+      "ScreenEnabledExpression": { "Expression": "" },
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "IsBackgroundLayer": false,
+      "BackgroundColor": "#FF000000",
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+          "IsLinearGauge": true,
+          "GaugeOrientation": 0,
+          "GaugeAlignment": 0,
+          "AutoSize": false,
+          "GaugeColor": "#FFFF0000",
+          "AlternateGaugeColor": "#FF008000",
+          "UseAlternateStyle": false,
+          "Minimum": 0.0,
+          "Maximum": 100.0,
+          "Value": 30.0,
+          "Steps": 0.0,
+          "PAW": 106.0,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 40.0,
+          "Left": 73.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 352.0,
+          "Name": "Negative",
+          "Bindings": {
+            "Maximum": {
+              "Formula": { "Expression": "[MaxFuel]" },
+              "Mode": 2,
+              "TargetPropertyName": "Maximum"
+            },
+            "Value": {
+              "Formula": { "Expression": "-[DahlDesign.FuelDelta]+[Fuel]" },
+              "Mode": 2,
+              "TargetPropertyName": "Value"
+            },
+            "Visible": {
+              "Formula": {
+                "Interpreter": 1,
+                "Expression": "var delta = $prop('DahlDesign.FuelDelta');\r\nvar session = $prop('SessionTypeName');\r\n\r\nif (session == 'Offline Testing') {return false;}\r\nif (delta == '-') {return false;}\r\n\r\nreturn true;"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+          "IsLinearGauge": true,
+          "GaugeOrientation": 0,
+          "GaugeAlignment": 0,
+          "AutoSize": false,
+          "GaugeColor": "#00FFFFFF",
+          "AlternateGaugeColor": "#FF008000",
+          "UseAlternateStyle": false,
+          "Minimum": 0.0,
+          "Maximum": 100.0,
+          "Value": 50.0,
+          "Steps": 0.0,
+          "PAW": 176.0,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 40.0,
+          "Left": 73.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 352.0,
+          "Name": "Filling",
+          "Bindings": {
+            "Maximum": {
+              "Formula": { "Expression": "[MaxFuel]" },
+              "Mode": 2,
+              "TargetPropertyName": "Maximum"
+            },
+            "Value": {
+              "Formula": { "Expression": "[DahlDesign.PitServiceFuelTarget]" },
+              "Mode": 2,
+              "TargetPropertyName": "Value"
+            },
+            "GaugeColor": {
+              "Formula": {
+                "Expression": "if([DahlDesign.PitToggleFuel], 0, 1)"
+              },
+              "StartColor": "#FFFF00FF",
+              "EnableMiddleColor": false,
+              "MiddleColor": "#FF000000",
+              "MiddleColorValue": 1.0,
+              "EndColor": "#00FFFFFF",
+              "StartColorValue": 0.0,
+              "EndColorValue": 1.0,
+              "Mode": 4,
+              "TargetPropertyName": "GaugeColor"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+          "IsLinearGauge": true,
+          "GaugeOrientation": 0,
+          "GaugeAlignment": 0,
+          "AutoSize": false,
+          "GaugeColor": "#FF00BFFF",
+          "AlternateGaugeColor": "#FF008000",
+          "UseAlternateStyle": false,
+          "Minimum": 0.0,
+          "Maximum": 100.0,
+          "Value": 20.0,
+          "Steps": 0.0,
+          "PAW": 70.0,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 40.0,
+          "Left": 73.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 352.0,
+          "Name": "Fuel",
+          "Bindings": {
+            "Maximum": {
+              "Formula": { "Expression": "[MaxFuel]" },
+              "Mode": 2,
+              "TargetPropertyName": "Maximum"
+            },
+            "Value": {
+              "Formula": { "Expression": "[Fuel]" },
+              "Mode": 2,
+              "TargetPropertyName": "Value"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#FF7CFC00",
+          "Height": 40.0,
+          "Left": 73.0,
+          "Top": 0.0,
+          "Visible": false,
+          "Width": 100.0,
+          "Name": "Positive",
+          "Bindings": {
+            "Left": {
+              "Formula": {
+                "Interpreter": 1,
+                "Expression": "var delta = $prop('DahlDesign.FuelDelta')\r\nvar fuelmax = $prop('MaxFuel')\r\nvar fuel = $prop('Fuel')\r\n\r\nif (delta == 0 || fuelmax == 0) {return 1000;}\r\n\r\nvar posLeft = 73+((352/fuelmax)*(fuel-delta));\r\n\r\n\r\nif (delta>fuel) {return 73;}\r\n\r\nreturn posLeft;"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Left"
+            },
+            "Width": {
+              "Formula": {
+                "Interpreter": 1,
+                "Expression": "var delta = $prop('DahlDesign.FuelDelta')\r\nvar fuelmax = $prop('MaxFuel')\r\n\r\nif (delta == 0 || fuelmax == 0) {return -500;}\r\n\r\nreturn (352/fuelmax)*delta;"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Width"
+            },
+            "Visible": {
+              "Formula": {
+                "Interpreter": 1,
+                "Expression": "var delta = $prop('DahlDesign.FuelDelta');\r\nvar session = $prop('SessionTypeName');\r\n\r\nif (session == 'Offline Testing') {return false;}\r\nif (delta == 0) {return false;}\r\n\r\nreturn true;"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": { "BorderRight": 4 },
+          "Height": 80.0,
+          "Left": 0.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 73.0,
+          "IsFreezed": true,
+          "Name": "INCbox",
+          "Bindings": {
+            "BackgroundColor": {
+              "Formula": {
+                "Interpreter": 1,
+                "Expression": "var session = $prop('SessionTypeName');\r\nvar myIncidents = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount');\r\nvar allowedInc = $prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit');\r\n\r\nif (session != 'Race') \r\n{\r\n\treturn 'transparent';\r\n}\r\n\r\nelse if (myIncidents/allowedInc > 0.9)\r\n{\r\n\treturn 'red';\r\n}\r\n\r\nelse if (myIncidents/allowedInc > 0.5)\r\n{\r\n\treturn 'orange';\r\n}\r\n\r\nelse \r\n{\r\n\treturn 'transparent';\r\n}\r\n"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "BackgroundColor"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontWeight": "Bold",
+          "FontSize": 36.0,
+          "Text": "4",
+          "TextColor": "#FFFFFFFF",
+          "HorizontalAlignment": 1,
+          "VerticalAlignment": 1,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 80.0,
+          "Left": 0.0,
+          "Top": 12.0,
+          "Visible": true,
+          "Width": 73.0,
+          "Name": "INC",
+          "Bindings": {
+            "Text": {
+              "Formula": {
+                "Expression": "[GameRawData.Telemetry.PlayerCarTeamIncidentCount]"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Text"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontSize": 32.0,
+          "Text": "INC",
+          "TextColor": "#FFFFFFFF",
+          "HorizontalAlignment": 1,
+          "VerticalAlignment": 1,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 80.0,
+          "Left": 2.0,
+          "Top": -20.0,
+          "Visible": true,
+          "Width": 73.0,
+          "Name": "INC1"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": { "BorderTop": 4, "BorderLeft": 6 },
+          "Height": 80.0,
+          "Left": 0.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 425.0,
+          "IsFreezed": true,
+          "Name": "Bakcgrnd"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": {
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 41.0,
+          "Left": 303.0,
+          "Top": 41.0,
+          "Visible": true,
+          "Width": 2.0,
+          "Name": "BRD2"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontWeight": "Bold",
+          "FontSize": 36.0,
+          "Text": "-1420",
+          "TextColor": "#FFFFFFFF",
+          "HorizontalAlignment": 1,
+          "VerticalAlignment": 1,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 100.0,
+          "Left": 300.0,
+          "Top": 8.0,
+          "Visible": true,
+          "Width": 124.0,
+          "Name": "Delta",
+          "Bindings": {
+            "Text": {
+              "FormatString": "0.0",
+              "Formula": {
+                "Expression": "if([DahlDesign.FuelDelta]<-1000,format([DahlDesign.FuelDelta],'0'),format([DahlDesign.FuelDelta],'0.0',1))"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Text"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontSize": 32.0,
+          "Text": "L",
+          "TextColor": "#FFFFFFFF",
+          "HorizontalAlignment": 1,
+          "VerticalAlignment": 0,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 40.0,
+          "Left": 188.0,
+          "Top": 37.0,
+          "Visible": true,
+          "Width": 40.0,
+          "Name": "L"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontSize": 32.0,
+          "Text": "/L",
+          "TextColor": "#FFFFFFFF",
+          "HorizontalAlignment": 1,
+          "VerticalAlignment": 0,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 40.0,
+          "Left": 72.0,
+          "Top": 37.0,
+          "Visible": true,
+          "Width": 40.0,
+          "Name": "/L"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": {
+            "BorderTop": 2,
+            "BorderBottom": 2,
+            "BorderLeft": 2,
+            "BorderRight": 2
+          },
+          "Height": 2.0,
+          "Left": 71.0,
+          "Top": 39.0,
+          "Visible": true,
+          "Width": 360.0,
+          "Name": "Divider"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontSize": 32.0,
+          "Text": "1.54",
+          "TextColor": "#FFFFFFFF",
+          "HorizontalAlignment": 0,
+          "VerticalAlignment": 1,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 40.0,
+          "Left": 108.0,
+          "Top": 38.0,
+          "Visible": true,
+          "Width": 97.0,
+          "Name": "TextItem0",
+          "Bindings": {
+            "Text": {
+              "FormatString": "0.00",
+              "Formula": {
+                "Expression": "[DahlDesign.CalcFuelPerLap]+[DahlDesign.FuelPerLapOffset]"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Text"
+            },
+            "TextColor": {
+              "Formula": {
+                "Expression": "if (Round([DahlDesign.FuelPerLapOffset],1) = 0, 'white', 'deepskyblue')"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "TextColor"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontSize": 32.0,
+          "Text": "8.5",
+          "TextColor": "#FFFFFFFF",
+          "HorizontalAlignment": 0,
+          "VerticalAlignment": 1,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 40.0,
+          "Left": 219.0,
+          "Top": 38.0,
+          "Visible": true,
+          "Width": 97.0,
+          "Name": "TextItem1",
+          "Bindings": {
+            "Text": {
+              "FormatString": "0.0",
+              "Formula": {
+                "Expression": "if ([Fuel] = 0, 0, [Fuel]/([DahlDesign.CalcFuelPerLap]+[DahlDesign.FuelPerLapOffset]))"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Text"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "SnapToGrid": false,
+  "HideLabels": true,
+  "ShowForeground": true,
+  "ForegroundOpacity": 100.0,
+  "ShowBackground": true,
+  "BackgroundOpacity": 100.0,
+  "ShowBoundingRectangles": false,
+  "GridSize": 10,
+  "Images": [],
+  "Metadata": {
+    "Title": "Fuel bar",
+    "ScreenCount": 1.0,
+    "InGameScreensIndexs": [0],
+    "IdleScreensIndexs": [],
+    "MainPreviewIndex": 0,
+    "IsOverlay": false,
+    "Width": 425.0,
+    "Height": 80.0,
+    "OverlaySizeWarning": false,
+    "MetadataVersion": 2.0,
+    "EnableOnDashboardMessaging": true,
+    "PitScreensIndexs": []
+  },
+  "ShowOnScreenControls": true,
+  "IsOverlay": false,
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true
+}
