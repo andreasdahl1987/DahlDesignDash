@@ -1,7 +1,7 @@
 {
   "DashboardDebugManager": { "Maximized": false },
   "Version": 2,
-  "Id": "8dda82dd-a822-4a68-8cb4-680c4e771c30",
+  "Id": "4be5924d-1c0a-41ab-989d-70ddc78c5fce",
   "BaseHeight": 180,
   "BaseWidth": 425,
   "BackgroundColor": "#FF000000",
@@ -4693,7 +4693,7 @@
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
           "Top": -17.0,
           "Left": -3.0,
-          "Height": 194.0,
+          "Height": 196.0,
           "Width": 1413.0,
           "BackgroundColor": "#00FFFFFF",
           "Childrens": [
@@ -6732,12 +6732,12 @@
               "IsRectangleItem": true,
               "BackgroundColor": "#00FFFFFF",
               "BorderStyle": {
-                "BorderTop": 2,
-                "BorderBottom": 2,
-                "BorderLeft": 2,
-                "BorderRight": 2
+                "BorderTop": 3,
+                "BorderBottom": 3,
+                "BorderLeft": 3,
+                "BorderRight": 3
               },
-              "Height": 4.0,
+              "Height": 6.0,
               "Left": 0.0,
               "Top": 173.0,
               "Visible": true,

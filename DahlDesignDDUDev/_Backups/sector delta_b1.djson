@@ -1,7 +1,7 @@
 {
   "DashboardDebugManager": { "Maximized": false },
   "Version": 2,
-  "Id": "675eeacd-13a4-4ac1-a22c-10597f737ec3",
+  "Id": "d3e42da3-6858-45a4-bbaf-63256c9e3bcb",
   "BaseHeight": 420,
   "BaseWidth": 425,
   "BackgroundColor": "#FF000000",
@@ -303,7 +303,7 @@
                 "Text": {
                   "FormatString": "mm\\:ss\\.fff",
                   "Formula": {
-                    "Expression": "if([DataCorePlugin.GameRunning],if(timespantoseconds([DataCorePlugin.GameData.NewData.CurrentLapTime])=0,'00:00.000',\r\n[PersistantTrackerPlugin.EstimatedLapTime])\r\n,'00:00.000')\r\n"
+                    "Expression": "if([DataCorePlugin.GameRunning],if(timespantoseconds([DataCorePlugin.GameData.NewData.CurrentLapTime])=0,'00:00.000',\r\n[DahlDesign.PredictedLapTime])\r\n,'00:00.000')\r\n"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
@@ -712,7 +712,7 @@
                   "BorderColor": {
                     "Formula": {
                       "Interpreter": 1,
-                      "Expression": "var est = timespantoseconds($prop('PersistantTrackerPlugin.EstimatedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 2)\r\n{\r\n\treturn 'red';\r\n}\r\nelse if (status == 3)\r\n{\r\n\treturn 'deepskyblue';\r\n}\t\r\nelse if (est != 0 && est < record)\r\n{\r\n\treturn 'fuchsia';\r\n}\r\nelse if (est != 0 && est < session)\r\n{\r\n\treturn 'lawngreen';\r\n}\r\n\r\nreturn 'white';"
+                      "Expression": "var est = timespantoseconds($prop('DahlDesign.PredictedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 2)\r\n{\r\n\treturn 'red';\r\n}\r\nelse if (status == 3)\r\n{\r\n\treturn 'deepskyblue';\r\n}\t\r\nelse if (status == 5)\r\n{\r\n\treturn 'yellow';\r\n}\t\r\nelse if (est != 0 && est < record)\r\n{\r\n\treturn 'fuchsia';\r\n}\r\nelse if (est != 0 && est < session)\r\n{\r\n\treturn 'lawngreen';\r\n}\r\n\r\nreturn 'white';"
                     },
                     "Mode": 2,
                     "TargetPropertyName": "BorderColor"
@@ -753,7 +753,7 @@
                   "BorderColor": {
                     "Formula": {
                       "Interpreter": 1,
-                      "Expression": "var est = timespantoseconds($prop('PersistantTrackerPlugin.EstimatedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 2)\r\n{\r\n\treturn 'red';\r\n}\r\nelse if (status == 3)\r\n{\r\n\treturn 'deepskyblue';\r\n}\t\r\nelse if (est != 0 && est < record)\r\n{\r\n\treturn 'fuchsia';\r\n}\r\nelse if (est != 0 && est < session)\r\n{\r\n\treturn 'lawngreen';\r\n}\r\n\r\nreturn 'white';"
+                      "Expression": "var est = timespantoseconds($prop('DahlDesign.PredictedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 2)\r\n{\r\n\treturn 'red';\r\n}\r\nelse if (status == 3)\r\n{\r\n\treturn 'deepskyblue';\r\n}\t\r\nelse if (status == 5)\r\n{\r\n\treturn 'yellow';\r\n}\t\r\nelse if (est != 0 && est < record)\r\n{\r\n\treturn 'fuchsia';\r\n}\r\nelse if (est != 0 && est < session)\r\n{\r\n\treturn 'lawngreen';\r\n}\r\n\r\nreturn 'white';"
                     },
                     "Mode": 2,
                     "TargetPropertyName": "BorderColor"
@@ -794,7 +794,7 @@
                   "BorderColor": {
                     "Formula": {
                       "Interpreter": 1,
-                      "Expression": "var est = timespantoseconds($prop('PersistantTrackerPlugin.EstimatedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 2)\r\n{\r\n\treturn 'red';\r\n}\r\nelse if (status == 3)\r\n{\r\n\treturn 'deepskyblue';\r\n}\t\r\nelse if (est != 0 && est < record)\r\n{\r\n\treturn 'fuchsia';\r\n}\r\nelse if (est != 0 && est < session)\r\n{\r\n\treturn 'lawngreen';\r\n}\r\n\r\nreturn 'white';"
+                      "Expression": "var est = timespantoseconds($prop('DahlDesign.PredictedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 2)\r\n{\r\n\treturn 'red';\r\n}\r\nelse if (status == 3)\r\n{\r\n\treturn 'deepskyblue';\r\n}\t\r\nelse if (status == 5)\r\n{\r\n\treturn 'yellow';\r\n}\t\r\nelse if (est != 0 && est < record)\r\n{\r\n\treturn 'fuchsia';\r\n}\r\nelse if (est != 0 && est < session)\r\n{\r\n\treturn 'lawngreen';\r\n}\r\n\r\nreturn 'white';"
                     },
                     "Mode": 2,
                     "TargetPropertyName": "BorderColor"
@@ -834,7 +834,7 @@
                 "Visible": {
                   "Formula": {
                     "Interpreter": 1,
-                    "Expression": "var est = timespantoseconds($prop('PersistantTrackerPlugin.EstimatedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\n\r\nif (session == 0)\r\n{\r\n\treturn false;\r\n}\r\nelse if (status == 1 && est != 0 && (est < record || est < session))\r\n{\r\n\treturn false;\r\n}\r\n\r\n\r\nreturn true;"
+                    "Expression": "var est = timespantoseconds($prop('DahlDesign.PredictedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\n\r\nif (session == 0)\r\n{\r\n\treturn false;\r\n}\r\nelse if (status == 1 && est != 0 && (est < record || est < session))\r\n{\r\n\treturn false;\r\n}\r\n\r\n\r\nreturn true;"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
@@ -857,7 +857,7 @@
                 "Visible": {
                   "Formula": {
                     "Interpreter": 1,
-                    "Expression": "var est = timespantoseconds($prop('PersistantTrackerPlugin.EstimatedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\n\r\nif (record == 0)\r\n{\r\n\treturn false;\r\n}\r\nelse if (status == 1 && est != 0 && est < record)\r\n{\r\n\treturn false;\r\n}\r\n\r\n\r\nreturn true;"
+                    "Expression": "var est = timespantoseconds($prop('DahlDesign.PredictedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\n\r\nif (record == 0)\r\n{\r\n\treturn false;\r\n}\r\nelse if (status == 1 && est != 0 && est < record)\r\n{\r\n\treturn false;\r\n}\r\n\r\n\r\nreturn true;"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
@@ -891,7 +891,7 @@
                   "BorderColor": {
                     "Formula": {
                       "Interpreter": 1,
-                      "Expression": "var est = timespantoseconds($prop('PersistantTrackerPlugin.EstimatedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 2)\r\n{\r\n\treturn 'red';\r\n}\r\nelse if (status == 3)\r\n{\r\n\treturn 'deepskyblue';\r\n}\t\r\nelse if (status == 5)\r\n{\r\n\treturn 'yellow';\r\n}\r\nelse if (est != 0 && est < record)\r\n{\r\n\treturn 'fuchsia';\r\n}\r\nelse if (est != 0 && est < session)\r\n{\r\n\treturn 'lawngreen';\r\n}\r\n\r\nreturn 'white';"
+                      "Expression": "var est = timespantoseconds($prop('DahlDesign.PredictedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 2)\r\n{\r\n\treturn 'red';\r\n}\r\nelse if (status == 3)\r\n{\r\n\treturn 'deepskyblue';\r\n}\t\r\nelse if (status == 5)\r\n{\r\n\treturn 'yellow';\r\n}\r\nelse if (est != 0 && est < record)\r\n{\r\n\treturn 'fuchsia';\r\n}\r\nelse if (est != 0 && est < session)\r\n{\r\n\treturn 'lawngreen';\r\n}\r\n\r\nreturn 'white';"
                     },
                     "Mode": 2,
                     "TargetPropertyName": "BorderColor"
@@ -908,7 +908,7 @@
                 "Height": {
                   "Formula": {
                     "Interpreter": 1,
-                    "Expression": "var est = timespantoseconds($prop('PersistantTrackerPlugin.EstimatedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 1 && est != 0 && est < record)\r\n{\r\n\treturn 185;\r\n}\r\nelse if (status == 1 && est != 0 && est < session)\r\n{\r\n\treturn 115;\r\n}\r\n\r\nreturn 45;"
+                    "Expression": "var est = timespantoseconds($prop('DahlDesign.PredictedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 1 && est != 0 && est < record)\r\n{\r\n\treturn 185;\r\n}\r\nelse if (status == 1 && est != 0 && est < session)\r\n{\r\n\treturn 115;\r\n}\r\n\r\nreturn 45;"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Height"
@@ -928,7 +928,7 @@
                   "BorderColor": {
                     "Formula": {
                       "Interpreter": 1,
-                      "Expression": "var est = timespantoseconds($prop('PersistantTrackerPlugin.EstimatedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 2)\r\n{\r\n\treturn 'red';\r\n}\r\nelse if (status == 3)\r\n{\r\n\treturn 'deepskyblue';\r\n}\t\r\nelse if (status == 5)\r\n{\r\n\treturn 'yellow';\r\n}\r\nelse if (est != 0 && est < record)\r\n{\r\n\treturn 'fuchsia';\r\n}\r\nelse if (est != 0 && est < session)\r\n{\r\n\treturn 'lawngreen';\r\n}\r\n\r\nreturn 'white';"
+                      "Expression": "var est = timespantoseconds($prop('DahlDesign.PredictedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 2)\r\n{\r\n\treturn 'red';\r\n}\r\nelse if (status == 3)\r\n{\r\n\treturn 'deepskyblue';\r\n}\t\r\nelse if (status == 5)\r\n{\r\n\treturn 'yellow';\r\n}\r\nelse if (est != 0 && est < record)\r\n{\r\n\treturn 'fuchsia';\r\n}\r\nelse if (est != 0 && est < session)\r\n{\r\n\treturn 'lawngreen';\r\n}\r\n\r\nreturn 'white';"
                     },
                     "Mode": 2,
                     "TargetPropertyName": "BorderColor"
@@ -945,7 +945,7 @@
                 "Top": {
                   "Formula": {
                     "Interpreter": 1,
-                    "Expression": "var est = timespantoseconds($prop('PersistantTrackerPlugin.EstimatedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 1 && est != 0 && est < record)\r\n{\r\n\treturn 298;\r\n}\r\nelse if (status == 1 && est != 0 && est < session)\r\n{\r\n\treturn 228;\r\n}\r\n\r\nreturn 158;"
+                    "Expression": "var est = timespantoseconds($prop('DahlDesign.PredictedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 1 && est != 0 && est < record)\r\n{\r\n\treturn 298;\r\n}\r\nelse if (status == 1 && est != 0 && est < session)\r\n{\r\n\treturn 228;\r\n}\r\n\r\nreturn 158;"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Top"
@@ -975,7 +975,7 @@
                   "Bindings": {
                     "Visible": {
                       "Formula": {
-                        "Expression": "[DahlDesign.LapStatus] != 5 &&  [DahlDesign.LapStatus] != 3 && [DahlDesign.LapStatus] != 2\r\n&&\r\n(timespantoseconds([PersistantTrackerPlugin.EstimatedLapTime]) > timespantoseconds([DahlDesign.SessionBestLap]) || timespantoseconds([DahlDesign.SessionBestLap]) = 0)\r\n&&\r\n(timespantoseconds([PersistantTrackerPlugin.EstimatedLapTime]) > timespantoseconds([DahlDesign.LapRecord]) || timespantoseconds([DahlDesign.LapRecord]) = 0)\r\n||\r\ntimespantoseconds([PersistantTrackerPlugin.EstimatedLapTime]) = 0\r\n"
+                        "Expression": "[DahlDesign.LapStatus] != 5 &&  [DahlDesign.LapStatus] != 3 && [DahlDesign.LapStatus] != 2\r\n&&\r\n(timespantoseconds([DahlDesign.PredictedLapTime]) > timespantoseconds([DahlDesign.SessionBestLap]) || timespantoseconds([DahlDesign.SessionBestLap]) = 0)\r\n&&\r\n(timespantoseconds([DahlDesign.PredictedLapTime]) > timespantoseconds([DahlDesign.LapRecord]) || timespantoseconds([DahlDesign.LapRecord]) = 0)\r\n||\r\ntimespantoseconds([DahlDesign.PredictedLapTime]) = 0\r\n"
                       },
                       "Mode": 2,
                       "TargetPropertyName": "Visible"
@@ -1037,7 +1037,7 @@
                   "Bindings": {
                     "Visible": {
                       "Formula": {
-                        "Expression": "[DahlDesign.LapStatus] = 1 \r\n&& \r\ntimespantoseconds([PersistantTrackerPlugin.EstimatedLapTime]) < timespantoseconds([DahlDesign.SessionBestLap]) \r\n&& \r\ntimespantoseconds([PersistantTrackerPlugin.EstimatedLapTime]) > 0 \r\n&& \r\ntimespantoseconds([PersistantTrackerPlugin.EstimatedLapTime]) > timespantoseconds([DahlDesign.LapRecord]) "
+                        "Expression": "[DahlDesign.LapStatus] = 1 \r\n&& \r\ntimespantoseconds([DahlDesign.PredictedLapTime]) < timespantoseconds([DahlDesign.SessionBestLap]) \r\n&& \r\ntimespantoseconds([DahlDesign.PredictedLapTime]) > 0 \r\n&& \r\ntimespantoseconds([DahlDesign.PredictedLapTime]) > timespantoseconds([DahlDesign.LapRecord]) "
                       },
                       "Mode": 2,
                       "TargetPropertyName": "Visible"
@@ -1045,7 +1045,7 @@
                     "Top": {
                       "Formula": {
                         "Interpreter": 1,
-                        "Expression": "var est = timespantoseconds($prop('PersistantTrackerPlugin.EstimatedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 1 && est != 0 && est < session)\r\n{\r\n\treturn 216;\r\n}\r\n\r\nreturn 146;"
+                        "Expression": "var est = timespantoseconds($prop('DahlDesign.PredictedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 1 && est != 0 && est < session)\r\n{\r\n\treturn 216;\r\n}\r\n\r\nreturn 146;"
                       },
                       "Mode": 2,
                       "TargetPropertyName": "Top"
@@ -1067,7 +1067,7 @@
                   "Bindings": {
                     "Visible": {
                       "Formula": {
-                        "Expression": "[DahlDesign.LapStatus] = 1 && timespantoseconds([PersistantTrackerPlugin.EstimatedLapTime]) < timespantoseconds([DahlDesign.LapRecord]) && timespantoseconds([PersistantTrackerPlugin.EstimatedLapTime]) > 0"
+                        "Expression": "[DahlDesign.LapStatus] = 1 && timespantoseconds([DahlDesign.PredictedLapTime]) < timespantoseconds([DahlDesign.LapRecord]) && timespantoseconds([DahlDesign.PredictedLapTime]) > 0"
                       },
                       "Mode": 2,
                       "TargetPropertyName": "Visible"
@@ -1075,7 +1075,7 @@
                     "Top": {
                       "Formula": {
                         "Interpreter": 1,
-                        "Expression": "var est = timespantoseconds($prop('PersistantTrackerPlugin.EstimatedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 1 && est != 0 && est < record)\r\n{\r\n\treturn 286;\r\n}\r\n\r\nreturn 146;"
+                        "Expression": "var est = timespantoseconds($prop('DahlDesign.PredictedLapTime'))\r\nvar record = timespantoseconds($prop('DahlDesign.LapRecord'))\r\nvar session = timespantoseconds($prop('DahlDesign.SessionBestLap'))\r\nvar status = $prop('DahlDesign.LapStatus')\r\n\r\nif (status == 1 && est != 0 && est < record)\r\n{\r\n\treturn 286;\r\n}\r\n\r\nreturn 146;"
                       },
                       "Mode": 2,
                       "TargetPropertyName": "Top"
@@ -1120,7 +1120,16 @@
           ],
           "Group": false,
           "Visible": true,
-          "Name": "Arrow"
+          "Name": "Arrow",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "timespantoseconds([DahlDesign.PredictedLapTime])!=0"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          }
         }
       ]
     },
@@ -2069,7 +2078,7 @@
             },
             "Visible": {
               "Formula": {
-                "Expression": "timespantoseconds([PersistantTrackerPlugin.SessionBest]) - timespantoseconds([PersistantTrackerPlugin.AllTimeBest]) != 0"
+                "Expression": "timespantoseconds([PersistantTrackerPlugin.SessionBest]) - timespantoseconds([DahlDesign.LapRecord]) != 0"
               },
               "Mode": 2,
               "TargetPropertyName": "Visible"
@@ -2097,7 +2106,7 @@
               "FormatString": "0.000",
               "Formula": {
                 "Interpreter": 1,
-                "Expression": "var time = timespantoseconds($prop('DahlDesign.OptimalLapTime'));\r\n\r\nvar best = timespantoseconds($prop('PersistantTrackerPlugin.AllTimeBest'));\r\n\r\nvar result =  time - best;\r\nif (result == 0 || time == 0) {return '0.000'}\r\nresult = format((time-best),'0.000',1)\r\nif (Math.abs(result) > 10) {\r\n\tresult = format((time-best),'0.00',1)\r\n\t}\r\n\r\nreturn result;"
+                "Expression": "var time = timespantoseconds($prop('DahlDesign.OptimalLapTime'));\r\n\r\nvar best = timespantoseconds($prop('DahlDesign.LapRecord'));\r\n\r\nvar result =  time - best;\r\nif (result == 0 || time == 0) {return '0.000'}\r\nresult = format((time-best),'0.000',1)\r\nif (Math.abs(result) > 10) {\r\n\tresult = format((time-best),'0.00',1)\r\n\t}\r\n\r\nreturn result;"
               },
               "Mode": 2,
               "TargetPropertyName": "Text"
@@ -2112,7 +2121,7 @@
             "Visible": {
               "Formula": {
                 "Interpreter": 1,
-                "Expression": "var time = timespantoseconds($prop('DahlDesign.OptimalLapTime'));\r\n\r\nvar best = timespantoseconds($prop('PersistantTrackerPlugin.AllTimeBest'));\r\n\r\nvar result =  time - best;\r\nif (result == 0 || time == 0) {result = 0}\r\n\r\nif (result == 0) {return false;} else {return true;}"
+                "Expression": "var time = timespantoseconds($prop('DahlDesign.OptimalLapTime'));\r\n\r\nvar best = timespantoseconds($prop('DahlDesign.LapRecord'));\r\n\r\nvar result =  time - best;\r\nif (result == 0 || time == 0) {result = 0}\r\n\r\nif (result == 0) {return false;} else {return true;}"
               },
               "Mode": 2,
               "TargetPropertyName": "Visible"
@@ -3590,14 +3599,14 @@
           "Bindings": {
             "Text": {
               "Formula": {
-                "Expression": "if([DahlDesign.LapStatus]=5 or [DahlDesign.LapStatus] = 3, '-',if(timespantoseconds([DataCorePlugin.GameData.NewData.CurrentLapTime])=0,'-',\r\nif(timespantoseconds([PersistantTrackerPlugin.EstimatedLapTime])=0,'-',if([DahlDesign.HotLapLivePosition]=0,'-',\r\n'P'+[DahlDesign.HotLapLivePosition]))))"
+                "Expression": "if([DahlDesign.LapStatus]=5 or [DahlDesign.LapStatus] = 3, '-',if(timespantoseconds([DataCorePlugin.GameData.NewData.CurrentLapTime])=0,'-',\r\nif(timespantoseconds([DahlDesign.PredictedLapTime])=0,'-',if([DahlDesign.HotLapLivePosition]=0,'-',\r\n'P'+[DahlDesign.HotLapLivePosition]))))"
               },
               "Mode": 2,
               "TargetPropertyName": "Text"
             },
             "TextColor": {
               "Formula": {
-                "Expression": "if(timespantoseconds([PersistantTrackerPlugin.SessionBest])=0,'white',if([DahlDesign.LapStatus]=5 or [DahlDesign.LapStatus]=3, 'white',if([DahlDesign.LapStatus]=2,'white',if([DahlDesign.HotLapLivePosition]=0,'white',if([DataCorePlugin.GameData.NewData.PlayerClassOpponentsCount]/[DahlDesign.HotLapLivePosition]<2,'red',if([DataCorePlugin.GameData.NewData.PlayerClassOpponentsCount]/[DahlDesign.HotLapLivePosition]<5,'deepskyblue',if([DahlDesign.HotLapLivePosition]>1,'lawngreen',if(timespantoseconds([PersistantTrackerPlugin.EstimatedLapTime])=0,'white','fuchsia'))))))))"
+                "Expression": "if(timespantoseconds([PersistantTrackerPlugin.SessionBest])=0,'white',if([DahlDesign.LapStatus]=5 or [DahlDesign.LapStatus]=3, 'white',if([DahlDesign.LapStatus]=2,'white',if([DahlDesign.HotLapLivePosition]=0,'white',if([DataCorePlugin.GameData.NewData.PlayerClassOpponentsCount]/[DahlDesign.HotLapLivePosition]<2,'red',if([DataCorePlugin.GameData.NewData.PlayerClassOpponentsCount]/[DahlDesign.HotLapLivePosition]<5,'deepskyblue',if([DahlDesign.HotLapLivePosition]>1,'lawngreen',if(timespantoseconds([DahlDesign.PredictedLapTime])=0,'white','fuchsia'))))))))"
               },
               "Mode": 2,
               "TargetPropertyName": "TextColor"
@@ -3624,14 +3633,14 @@
           "Bindings": {
             "TextColor": {
               "Formula": {
-                "Expression": "if([DahlDesign.LapStatus]=5 or [DahlDesign.LapStatus]=3, 'white',if([DahlDesign.LapStatus]=2,'white',if(timespantoseconds([PersistantTrackerPlugin.EstimatedLapTime])<timespantoseconds([PersistantTrackerPlugin.AllTimeBest]),'fuchsia',if(timespantoseconds([PersistantTrackerPlugin.EstimatedLapTime])<timespantoseconds([DahlDesign.SessionBestLap]),'lawngreen','white'))))"
+                "Expression": "if([DahlDesign.LapStatus]=5 or [DahlDesign.LapStatus]=3, 'white',if([DahlDesign.LapStatus]=2,'white',if(timespantoseconds([DahlDesign.PredictedLapTime])<timespantoseconds([DahlDesign.LapRecord]),'fuchsia',if(timespantoseconds([DahlDesign.PredictedLapTime])<timespantoseconds([DahlDesign.SessionBestLap]),'lawngreen','white'))))"
               },
               "Mode": 2,
               "TargetPropertyName": "TextColor"
             },
             "Text": {
               "Formula": {
-                "Expression": "if(timespantoseconds([PersistantTrackerPlugin.EstimatedLapTime])=0,if(timespantoseconds([DataCorePlugin.GameData.NewData.CurrentLapTime])=0,'EST','CUR'),'EST')"
+                "Expression": "if(timespantoseconds([DahlDesign.PredictedLapTime])=0,if(timespantoseconds([DataCorePlugin.GameData.NewData.CurrentLapTime])=0,'EST','CUR'),'EST')"
               },
               "Mode": 2,
               "TargetPropertyName": "Text"
@@ -3660,14 +3669,14 @@
             "Text": {
               "FormatString": "mm\\:ss\\.fff",
               "Formula": {
-                "Expression": "if(timespantoseconds([DataCorePlugin.GameData.NewData.CurrentLapTime])=0,'00:00.000',if(timespantoseconds([PersistantTrackerPlugin.EstimatedLapTime])=0,[DataCorePlugin.GameData.NewData.CurrentLapTime],if([DataCorePlugin.GameRunning],\r\n[PersistantTrackerPlugin.EstimatedLapTime]\r\n,'00:00.000')))\r\n"
+                "Expression": "if(timespantoseconds([DataCorePlugin.GameData.NewData.CurrentLapTime])=0,'00:00.000',if(timespantoseconds([DahlDesign.PredictedLapTime])=0,[DataCorePlugin.GameData.NewData.CurrentLapTime],if([DataCorePlugin.GameRunning],\r\n[DahlDesign.PredictedLapTime]\r\n,'00:00.000')))\r\n"
               },
               "Mode": 2,
               "TargetPropertyName": "Text"
             },
             "TextColor": {
               "Formula": {
-                "Expression": "if([DahlDesign.LapStatus]=5 or [DahlDesign.LapStatus]=3, 'white',if([DahlDesign.LapStatus]=2,'white',if(timespantoseconds([PersistantTrackerPlugin.EstimatedLapTime])<timespantoseconds([PersistantTrackerPlugin.AllTimeBest]),'fuchsia',if(timespantoseconds([PersistantTrackerPlugin.EstimatedLapTime])<timespantoseconds([DahlDesign.SessionBestLap]),'lawngreen','white'))))"
+                "Expression": "if([DahlDesign.LapStatus]=5 or [DahlDesign.LapStatus]=3, 'white',if([DahlDesign.LapStatus]=2,'white',if(timespantoseconds([DahlDesign.PredictedLapTime])<timespantoseconds([DahlDesign.LapRecord]),'fuchsia',if(timespantoseconds([DahlDesign.PredictedLapTime])<timespantoseconds([DahlDesign.SessionBestLap]),'lawngreen','white'))))"
               },
               "Mode": 2,
               "TargetPropertyName": "TextColor"
@@ -3694,7 +3703,7 @@
           "Bindings": {
             "TextColor": {
               "Formula": {
-                "Expression": "if(timespantoseconds([PersistantTrackerPlugin.SessionBest])=0,'white',if([DahlDesign.LapStatus]=5 or [DahlDesign.LapStatus]=3, 'white',if([DahlDesign.LapStatus]=2,'white',if([DahlDesign.HotLapLivePosition]=0,'white',if([DataCorePlugin.GameData.NewData.PlayerClassOpponentsCount]/[DahlDesign.HotLapLivePosition]<2,'red',if([DataCorePlugin.GameData.NewData.PlayerClassOpponentsCount]/[DahlDesign.HotLapLivePosition]<5,'deepskyblue',if([DahlDesign.HotLapLivePosition]>1,'lawngreen',if(timespantoseconds([PersistantTrackerPlugin.EstimatedLapTime])=0,'white','fuchsia'))))))))"
+                "Expression": "if(timespantoseconds([PersistantTrackerPlugin.SessionBest])=0,'white',if([DahlDesign.LapStatus]=5 or [DahlDesign.LapStatus]=3, 'white',if([DahlDesign.LapStatus]=2,'white',if([DahlDesign.HotLapLivePosition]=0,'white',if([DataCorePlugin.GameData.NewData.PlayerClassOpponentsCount]/[DahlDesign.HotLapLivePosition]<2,'red',if([DataCorePlugin.GameData.NewData.PlayerClassOpponentsCount]/[DahlDesign.HotLapLivePosition]<5,'deepskyblue',if([DahlDesign.HotLapLivePosition]>1,'lawngreen',if(timespantoseconds([DahlDesign.PredictedLapTime])=0,'white','fuchsia'))))))))"
               },
               "Mode": 2,
               "TargetPropertyName": "TextColor"
