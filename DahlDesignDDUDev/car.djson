@@ -1,7 +1,7 @@
 {
   "DashboardDebugManager": { "Maximized": false },
   "Version": 2,
-  "Id": "b6679ce7-bd8b-4161-a40a-ebef6b30b280",
+  "Id": "3874264c-caca-4e62-b69e-37f243b4c7fc",
   "BaseHeight": 113,
   "BaseWidth": 410,
   "BackgroundColor": "#FF000000",
@@ -54,7 +54,7 @@
               "Bindings": {
                 "Value": {
                   "Formula": {
-                    "Expression": "if ([DahlDesign.LapsRemaining] = 0 and [CompletedLaps] = 0, 0,\r\n100*[CompletedLaps]/([CompletedLaps]+[DahlDesign.LapsRemaining]))"
+                    "Expression": "if ([SessionTypeName] = 'Offline Testing', 0,\r\nif ([DahlDesign.LapsRemaining] = 0 and [CompletedLaps] = 0, 0,\r\n100*[CompletedLaps]/([CompletedLaps]+[DahlDesign.LapsRemaining])))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Value"
