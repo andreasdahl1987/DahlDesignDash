@@ -1,146 +1,88 @@
 {
-  "$id": "1",
+  "DashboardDebugManager": { "Maximized": false },
   "Version": 2,
-  "Id": "0132ffcf-7de4-4d20-b66e-e958f288107e",
-  "BaseHeight": 101,
+  "Id": "3874264c-caca-4e62-b69e-37f243b4c7fc",
+  "BaseHeight": 113,
   "BaseWidth": 410,
   "BackgroundColor": "#FF000000",
-  "Screens": {
-    "$id": "2",
-    "$values": [
-      {
-        "$id": "3",
-        "RenderingSkip": 0,
-        "InGameScreen": true,
-        "IdleScreen": false,
-        "PitScreen": false,
-        "ScreenScript": {
-          "$id": "4",
-          "Interpreter": 1
-        },
-        "BackgroundColor": "#FF000000",
-        "IsSelected": true,
-        "Items": {
-          "$id": "5",
-          "$values": [
+  "Screens": [
+    {
+      "Name": "Screen1",
+      "InGameScreen": true,
+      "IdleScreen": false,
+      "PitScreen": false,
+      "ScreenId": "66e42536-e1e6-4bc2-b6eb-b49e0f165906",
+      "AllowOverlays": true,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "OverlayTriggerExpression": { "Expression": "" },
+      "ScreenEnabledExpression": { "Expression": "" },
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "IsBackgroundLayer": false,
+      "BackgroundColor": "#FF000000",
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "Top": 0.0,
+          "Left": 0.0,
+          "Height": 109.5,
+          "Width": 368.0,
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
             {
-              "$id": "6",
-              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
-              "IsRectangleItem": true,
-              "Rotation": 0.0,
-              "UseRotation": false,
-              "CanResize": true,
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+              "IsLinearGauge": true,
+              "GaugeOrientation": 0,
+              "GaugeAlignment": 0,
+              "AutoSize": false,
+              "GaugeColor": "#FF808080",
+              "AlternateGaugeColor": "#FF008000",
+              "UseAlternateStyle": false,
+              "Minimum": 0.0,
+              "Maximum": 100.0,
+              "Value": 20.0,
+              "Steps": 0.0,
+              "PAW": 47.0,
               "BackgroundColor": "#00FFFFFF",
-              "BlurRadius": 0.0,
-              "EnableBlur": false,
-              "BorderStyle": {
-                "$id": "7",
-                "BorderColor": "#FFFFFFFF",
-                "BorderTop": 6,
-                "BorderBottom": 6,
-                "BorderLeft": 0,
-                "BorderRight": 6,
-                "RadiusTopLeft": 0,
-                "RadiusTopRight": 0,
-                "RadiusBottomLeft": 0,
-                "RadiusBottomRight": 0,
-                "Bindings": {
-                  "$id": "8"
-                }
-              },
-              "Height": 101.0,
-              "Left": 0.0,
-              "Opacity": 100.0,
-              "Top": 0.0,
+              "Height": 107.0,
+              "Left": 113.0,
+              "Top": 2.5,
               "Visible": true,
-              "BlinkDelay": 250.0,
-              "BlinkEnabled": false,
-              "Width": 410.0,
-              "BorderBottom": 6,
-              "BorderColor": "#FFFFFFFF",
-              "BorderLeft": 0,
-              "BorderRight": 6,
-              "BorderTop": 6,
-              "Id": "6b23801f-2570-4ff3-ac6e-cd63ec25b429",
-              "IsFreezed": true,
-              "IsSelected": false,
-              "Name": "RectangleItem0",
-              "RenderingSkip": 0,
-              "Sid": 0,
+              "Width": 236.0,
+              "Name": "LinearGaugeItem",
               "Bindings": {
-                "$id": "9"
+                "Value": {
+                  "Formula": {
+                    "Expression": "if ([SessionTypeName] = 'Offline Testing', 0,\r\nif ([DahlDesign.LapsRemaining] = 0 and [CompletedLaps] = 0, 0,\r\n100*[CompletedLaps]/([CompletedLaps]+[DahlDesign.LapsRemaining])))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Value"
+                }
               }
             },
             {
-              "$id": "10",
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
               "IsTextItem": true,
-              "ShadowDepth": 0,
-              "ShadowBlur": 0,
-              "ShadowDirection": 315,
-              "ShadowColor": "#FF808080",
               "Font": "Segoe UI",
-              "FontWeight": "Normal",
-              "TextWrapping": 1,
-              "FontStyle": "Normal",
-              "FontSize": 25.0,
-              "Text": "SOF 1320 IR +104",
+              "FontSize": 32.0,
+              "Text": "SOF 1320 +104",
               "TextColor": "#FFFFFFFF",
               "HorizontalAlignment": 1,
               "VerticalAlignment": 0,
-              "UseMonospacedText": false,
-              "CharWidth": 40.0,
-              "SpecialCharsWidth": 20.0,
-              "SpecialChars": ".,:;",
               "TextMask": "0000000000",
-              "TextMaskColor": "#FF808080",
-              "Rotation": 0.0,
-              "UseRotation": false,
-              "CanResize": true,
               "BackgroundColor": "#00FFFFFF",
-              "BlurRadius": 0.0,
-              "EnableBlur": false,
-              "BorderStyle": {
-                "$id": "11",
-                "BorderColor": "#FFFFFFFF",
-                "BorderTop": 0,
-                "BorderBottom": 0,
-                "BorderLeft": 0,
-                "BorderRight": 0,
-                "RadiusTopLeft": 0,
-                "RadiusTopRight": 0,
-                "RadiusBottomLeft": 0,
-                "RadiusBottomRight": 0,
-                "Bindings": {
-                  "$id": "12"
-                }
-              },
-              "Height": 101.0,
-              "Left": -23.0,
-              "Opacity": 100.0,
-              "Top": 10.0,
+              "Height": 37.0,
+              "Left": 112.0,
+              "Top": 9.0,
               "Visible": true,
-              "BlinkDelay": 250.0,
-              "BlinkEnabled": false,
-              "Width": 279.0,
-              "BorderBottom": 0,
-              "BorderColor": "#FFFFFFFF",
-              "BorderLeft": 0,
-              "BorderRight": 0,
-              "BorderTop": 0,
-              "Id": "8fb6a337-dcea-404e-a76a-dd3a3a4efe77",
-              "IsFreezed": false,
-              "IsSelected": true,
+              "Width": 237.0,
               "Name": "Tag Time Remaining",
               "RenderingSkip": 59,
-              "Sid": 0,
               "Bindings": {
-                "$id": "13",
                 "Text": {
-                  "$id": "14",
                   "Formula": {
-                    "$id": "15",
-                    "Expression": "if (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Offline Testing', 'TEST SESSION',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Warmup', 'WARMUP',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Practice' and ([GameRawData.Telemetry.SessionState] =5 or [GameRawData.Telemetry.SessionState] =6)  , 'SESSION CLOSING',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Practice', 'SOF ' + [DahlDesign.SoF],\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Race' and [GameRawData.Telemetry.SessionState] =2, 'GRID',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Race' and ([GameRawData.Telemetry.SessionState] =4 || [GameRawData.Telemetry.SessionState] = 5) , 'SOF ' + [DahlDesign.SoF] + ' IR ' + format([DahlDesign.IRchange],1,1),\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Race' and ([DahlDesign.RaceFinished] or [GameRawData.Telemetry.SessionState] =6), 'FINISHED:' + ' IR ' + format([DahlDesign.IRchange],1,1),\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Lone Qualify', 'LONE QUALY',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Open Qualify', 'OPEN QUALY',\r\nisnull([DataCorePlugin.GameData.NewData.SessionTypeName],''))))))))))"
+                    "Expression": "if (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Offline Testing', 'TEST SESSION',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Warmup', 'WARMUP',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Practice' and ([GameRawData.Telemetry.SessionState] =5 or [GameRawData.Telemetry.SessionState] =6)  , 'SESSION CLOSING',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Practice', 'SOF ' + [DahlDesign.SoF] + ' IR',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Race' and [GameRawData.Telemetry.SessionState] =2, 'GRID',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Race' and ([GameRawData.Telemetry.SessionState] =4 || [GameRawData.Telemetry.SessionState] = 5) , 'SOF ' + [DahlDesign.SoF] + format([DahlDesign.IRchange],1,1),\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Race' and ([DahlDesign.RaceFinished] or [GameRawData.Telemetry.SessionState] =6), 'FINISHED:' + format([DahlDesign.IRchange],1,1),\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Lone Qualify', 'LONE QUALY',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Open Qualify', 'OPEN QUALY',\r\nisnull([DataCorePlugin.GameData.NewData.SessionTypeName],''))))))))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
@@ -148,75 +90,31 @@
               }
             },
             {
-              "$id": "16",
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
               "IsTextItem": true,
-              "ShadowDepth": 0,
-              "ShadowBlur": 0,
-              "ShadowDirection": 315,
-              "ShadowColor": "#FF808080",
               "Font": "Segoe UI",
-              "FontWeight": "Normal",
-              "TextWrapping": 1,
-              "FontStyle": "Normal",
-              "FontSize": 40.0,
+              "FontSize": 50.0,
               "Text": "00:00:38",
               "TextColor": "#FFFFFFFF",
               "HorizontalAlignment": 1,
               "VerticalAlignment": 1,
-              "UseMonospacedText": false,
-              "CharWidth": 40.0,
-              "SpecialCharsWidth": 20.0,
-              "SpecialChars": ".,:;",
               "TextMask": "0000000000",
-              "TextMaskColor": "#FF808080",
-              "Rotation": 0.0,
-              "UseRotation": false,
-              "CanResize": true,
               "BackgroundColor": "#00FFFFFF",
-              "BlurRadius": 0.0,
-              "EnableBlur": false,
               "BorderStyle": {
-                "$id": "17",
                 "BorderColor": "#FF808080",
-                "BorderTop": 0,
-                "BorderBottom": 0,
-                "BorderLeft": 0,
-                "BorderRight": 0,
-                "RadiusTopLeft": 0,
-                "RadiusTopRight": 0,
-                "RadiusBottomLeft": 0,
-                "RadiusBottomRight": 10,
-                "Bindings": {
-                  "$id": "18"
-                }
+                "RadiusBottomRight": 10
               },
-              "Height": 100.0,
-              "Left": -20.0,
-              "Opacity": 100.0,
-              "Top": 14.0,
+              "Height": 53.0,
+              "Left": 92.0,
+              "Top": 47.0,
               "Visible": true,
-              "BlinkDelay": 250.0,
-              "BlinkEnabled": false,
               "Width": 276.0,
-              "BorderBottom": 0,
-              "BorderColor": "#FF808080",
-              "BorderLeft": 0,
-              "BorderRight": 0,
-              "BorderTop": 0,
-              "Id": "8d6e4144-2bd0-47e8-847b-d4d2cd551e7a",
-              "IsFreezed": true,
-              "IsSelected": false,
               "Name": "Time Remaining Value",
               "RenderingSkip": 5,
-              "Sid": 0,
               "Bindings": {
-                "$id": "19",
                 "Text": {
-                  "$id": "20",
                   "FormatString": "hh\\:mm\\:ss",
                   "Formula": {
-                    "$id": "21",
                     "Expression": "if(![DataCorePlugin.GameRunning],'--:--.---',(\r\n\r\nif(isnull([DataCorePlugin.CurrentGame],0)=='IRacing'\r\n,\r\n(\r\nif(\r\n(isnull([DataCorePlugin.GameRawData.Telemetry.SessionTimeRemain],0)<>604800),\r\nsecondstotimespan(isnull([DataCorePlugin.GameRawData.Telemetry.SessionTimeRemain],0)),'∞')\r\n)\r\n,isnull([DataCorePlugin.GameData.NewData.SessionTimeLeft],0))\r\n))"
                   },
                   "Mode": 2,
@@ -225,238 +123,434 @@
               }
             },
             {
-              "$id": "22",
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Top": 0.0,
+              "Left": 0.0,
+              "Height": 0.0,
+              "Width": 0.0,
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [],
+              "Group": false,
+              "Visible": true,
+              "Name": "Colors"
+            }
+          ],
+          "Group": true,
+          "Visible": true,
+          "Name": "Session"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "Top": 0.0,
+          "Left": 0.0,
+          "Height": 113.0,
+          "Width": 111.0,
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
-              "Rotation": 0.0,
-              "UseRotation": false,
-              "CanResize": true,
               "BackgroundColor": "#00FFFFFF",
-              "BlurRadius": 0.0,
-              "EnableBlur": false,
-              "BorderStyle": {
-                "$id": "23",
-                "BorderColor": "#FFFFFFFF",
-                "BorderTop": 6,
-                "BorderBottom": 6,
-                "BorderLeft": 6,
-                "BorderRight": 6,
-                "RadiusTopLeft": 0,
-                "RadiusTopRight": 0,
-                "RadiusBottomLeft": 0,
-                "RadiusBottomRight": 0,
-                "Bindings": {
-                  "$id": "24"
-                }
-              },
-              "Height": 63.0,
-              "Left": 242.0,
-              "Opacity": 100.0,
-              "Top": 21.0,
+              "Height": 113.0,
+              "Left": 0.0,
+              "Top": 0.0,
               "Visible": true,
-              "BlinkDelay": 250.0,
-              "BlinkEnabled": false,
-              "Width": 4.0,
-              "BorderBottom": 6,
-              "BorderColor": "#FFFFFFFF",
-              "BorderLeft": 6,
-              "BorderRight": 6,
-              "BorderTop": 6,
-              "Id": "8a338b77-101a-4e61-838f-8bbfb6a651d0",
-              "IsFreezed": false,
-              "IsSelected": false,
-              "Name": "RectangleItem1",
-              "RenderingSkip": 0,
-              "Sid": 0,
-              "Bindings": {
-                "$id": "25"
-              }
+              "Width": 111.0,
+              "Name": "RectangleItem2"
             },
             {
-              "$id": "26",
-              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.TimeText, SimHub.Plugins",
-              "Category": "System",
-              "Format": "HH:mm",
-              "TextBeforeValue": "",
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
               "IsTextItem": true,
-              "ShadowDepth": 0,
-              "ShadowBlur": 0,
-              "ShadowDirection": 315,
-              "ShadowColor": "#FF808080",
               "Font": "Segoe UI",
-              "FontWeight": "Normal",
-              "TextWrapping": 1,
-              "FontStyle": "Normal",
-              "FontSize": 40.0,
+              "FontSize": 45.0,
+              "Text": "17",
               "TextColor": "#FFFFFFFF",
               "HorizontalAlignment": 1,
               "VerticalAlignment": 1,
-              "UseMonospacedText": false,
-              "CharWidth": 40.0,
-              "SpecialCharsWidth": 20.0,
-              "SpecialChars": ".,:;",
-              "TextMask": "0000000000",
-              "TextMaskColor": "#FF808080",
-              "Rotation": 0.0,
-              "UseRotation": false,
-              "CanResize": true,
               "BackgroundColor": "#00FFFFFF",
-              "BlurRadius": 0.0,
-              "EnableBlur": false,
-              "BorderStyle": {
-                "$id": "27",
-                "BorderColor": "#FF808080",
-                "BorderTop": 0,
-                "BorderBottom": 0,
-                "BorderLeft": 0,
-                "BorderRight": 0,
-                "RadiusTopLeft": 0,
-                "RadiusTopRight": 10,
-                "RadiusBottomLeft": 0,
-                "RadiusBottomRight": 10,
-                "Bindings": {
-                  "$id": "28"
-                }
-              },
-              "Height": 100.0,
-              "Left": 253.0,
-              "Opacity": 100.0,
-              "Top": 14.0,
+              "Height": 54.0,
+              "Left": 38.0,
+              "Top": 51.0,
               "Visible": true,
-              "BlinkDelay": 250.0,
-              "BlinkEnabled": false,
-              "Width": 150.0,
-              "BorderBottom": 0,
-              "BorderColor": "#FF808080",
-              "BorderLeft": 0,
-              "BorderRight": 0,
-              "BorderTop": 0,
-              "Id": "2fa72c87-4485-44a1-832d-3cdce4a3dfcd",
-              "IsFreezed": false,
-              "IsSelected": false,
-              "Name": "IRL Time",
-              "RenderingSkip": 59,
-              "Sid": 0,
+              "Width": 70.0,
+              "Name": "Limit",
               "Bindings": {
-                "$id": "29"
+                "Text": {
+                  "Formula": {
+                    "Expression": "if ([GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit] = 'unlimited'\r\nor\r\nisnull([GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit], '∞') = '∞',\r\n'∞',[GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit])"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Interpreter": 1,
+                    "Expression": "var calc = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount') / isnull ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'), 1);\r\nvar session = isnull($prop('SessionTypeName'), \"\");\r\n\r\nif ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit') == \"unlimited\")\r\n{\r\n\treturn \"white\";\r\n}\r\n\r\nif (session == \"Race\" || session == \"Lone qualify\" || session == \"Open qualify\")\r\n{\r\n\tif (calc == 0) {return \"fuchsia\"};\r\n\tif (calc < 0.3) {return \"lawngreen\"};\r\n\tif (calc < 0.6) {return \"yellow\"};\r\n\tif (calc < 0.85) {return \"orange\"};\r\n\treturn \"red\";\r\n}\r\n\r\nreturn \"white\";"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                },
+                "FontSize": {
+                  "Formula": {
+                    "Expression": "if ([GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit] != 'unlimited'\r\nand\r\n[GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit] > 99, 40, 45)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "FontSize"
+                }
               }
             },
             {
-              "$id": "30",
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
               "IsTextItem": true,
-              "ShadowDepth": 0,
-              "ShadowBlur": 0,
-              "ShadowDirection": 315,
-              "ShadowColor": "#FF808080",
               "Font": "Segoe UI",
-              "FontWeight": "Normal",
-              "TextWrapping": 1,
-              "FontStyle": "Normal",
-              "FontSize": 25.0,
-              "Text": "TIME",
-              "TextColor": "#FFFFFFFF",
+              "FontSize": 45.0,
+              "Text": "15",
+              "TextColor": "#FFFF0000",
               "HorizontalAlignment": 1,
-              "VerticalAlignment": 0,
-              "UseMonospacedText": false,
-              "CharWidth": 40.0,
-              "SpecialCharsWidth": 20.0,
-              "SpecialChars": ".,:;",
-              "TextMask": "0000000000",
-              "TextMaskColor": "#FF808080",
-              "Rotation": 0.0,
-              "UseRotation": false,
-              "CanResize": true,
+              "VerticalAlignment": 1,
               "BackgroundColor": "#00FFFFFF",
-              "BlurRadius": 0.0,
-              "EnableBlur": false,
+              "Height": 54.0,
+              "Left": 1.0,
+              "Top": 6.0,
+              "Visible": true,
+              "Width": 70.0,
+              "Name": "Incidents",
+              "Bindings": {
+                "Text": {
+                  "Formula": {
+                    "Expression": "isnull([GameRawData.Telemetry.PlayerCarTeamIncidentCount], '0')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Interpreter": 1,
+                    "Expression": "var calc = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount') / isnull ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'), 1);\r\nvar session = isnull($prop('SessionTypeName'), \"\");\r\n\r\nif ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit') == \"unlimited\")\r\n{\r\n\treturn \"white\";\r\n}\r\n\r\nif (session == \"Race\" || session == \"Lone qualify\" || session == \"Open qualify\")\r\n{\r\n\tif (calc == 0) {return \"fuchsia\"};\r\n\tif (calc < 0.3) {return \"lawngreen\"};\r\n\tif (calc < 0.6) {return \"yellow\"};\r\n\tif (calc < 0.85) {return \"orange\"};\r\n\treturn \"red\";\r\n}\r\n\r\nreturn \"white\";"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                },
+                "FontSize": {
+                  "Formula": {
+                    "Expression": "if ([GameRawData.Telemetry.PlayerCarTeamIncidentCount] > 99, 38, 45)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "FontSize"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "Rotation": 50.0,
+              "BackgroundColor": "#00FFFFFF",
               "BorderStyle": {
-                "$id": "31",
-                "BorderColor": "#FFFFFFFF",
-                "BorderTop": 0,
-                "BorderBottom": 0,
-                "BorderLeft": 0,
-                "BorderRight": 0,
-                "RadiusTopLeft": 0,
-                "RadiusTopRight": 0,
-                "RadiusBottomLeft": 0,
-                "RadiusBottomRight": 0,
+                "BorderColor": "#FFFF0000",
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2,
                 "Bindings": {
-                  "$id": "32"
+                  "BorderColor": {
+                    "Formula": {
+                      "Interpreter": 1,
+                      "Expression": "var calc = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount') / isnull ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'), 1);\r\nvar session = isnull($prop('SessionTypeName'), \"\");\r\n\r\nif ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit') == \"unlimited\")\r\n{\r\n\treturn \"white\";\r\n}\r\n\r\nif (session == \"Race\" || session == \"Lone qualify\" || session == \"Open qualify\")\r\n{\r\n\tif (calc == 0) {return \"fuchsia\"};\r\n\tif (calc < 0.3) {return \"lawngreen\"};\r\n\tif (calc < 0.6) {return \"yellow\"};\r\n\tif (calc < 0.85) {return \"orange\"};\r\n\treturn \"red\";\r\n}\r\n\r\nreturn \"white\";"
+                    },
+                    "Mode": 2,
+                    "TargetPropertyName": "BorderColor"
+                  }
                 }
               },
-              "Height": 100.0,
-              "Left": 255.0,
-              "Opacity": 100.0,
-              "Top": 10.0,
+              "Height": 63.0,
+              "Left": 56.0,
+              "Top": 23.0,
               "Visible": true,
-              "BlinkDelay": 250.0,
-              "BlinkEnabled": false,
-              "Width": 150.0,
-              "BorderBottom": 0,
-              "BorderColor": "#FFFFFFFF",
-              "BorderLeft": 0,
-              "BorderRight": 0,
-              "BorderTop": 0,
-              "Id": "8fb6a337-dcea-404e-a76a-dd3a3a4efe77",
-              "IsFreezed": true,
-              "IsSelected": false,
-              "Name": "Tag IRL Time",
-              "RenderingSkip": 59,
-              "Sid": 0,
-              "Bindings": {
-                "$id": "33"
-              }
+              "Width": 3.0,
+              "Name": "RectangleItem"
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "Rotation": 50.0,
+              "BackgroundColor": "#FFFF0000",
+              "BorderStyle": {
+                "BorderColor": "#FFFF0000",
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2,
+                "Bindings": {
+                  "BorderColor": {
+                    "Formula": {
+                      "Interpreter": 1,
+                      "Expression": "var calc = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount') / isnull ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'), 1);\r\nvar session = isnull($prop('SessionTypeName'), \"\");\r\n\r\nif ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit') == \"unlimited\")\r\n{\r\n\treturn \"white\";\r\n}\r\n\r\nif (session == \"Race\" || session == \"Lone qualify\" || session == \"Open qualify\")\r\n{\r\n\tif (calc == 0) {return \"fuchsia\"};\r\n\tif (calc < 0.3) {return \"lawngreen\"};\r\n\tif (calc < 0.6) {return \"yellow\"};\r\n\tif (calc < 0.85) {return \"orange\"};\r\n\treturn \"red\";\r\n}\r\n\r\nreturn \"white\";"
+                    },
+                    "Mode": 2,
+                    "TargetPropertyName": "BorderColor"
+                  }
+                }
+              },
+              "Height": 15.0,
+              "Left": 92.0,
+              "Top": 18.0,
+              "Visible": true,
+              "Width": 3.0,
+              "Name": "RectangleItem2"
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "Rotation": -40.0,
+              "BackgroundColor": "#FFFF0000",
+              "BorderStyle": {
+                "BorderColor": "#FFFF0000",
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2,
+                "Bindings": {
+                  "BorderColor": {
+                    "Formula": {
+                      "Interpreter": 1,
+                      "Expression": "var calc = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount') / isnull ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'), 1);\r\nvar session = isnull($prop('SessionTypeName'), \"\");\r\n\r\nif ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit') == \"unlimited\")\r\n{\r\n\treturn \"white\";\r\n}\r\n\r\nif (session == \"Race\" || session == \"Lone qualify\" || session == \"Open qualify\")\r\n{\r\n\tif (calc == 0) {return \"fuchsia\"};\r\n\tif (calc < 0.3) {return \"lawngreen\"};\r\n\tif (calc < 0.6) {return \"yellow\"};\r\n\tif (calc < 0.85) {return \"orange\"};\r\n\treturn \"red\";\r\n}\r\n\r\nreturn \"white\";"
+                    },
+                    "Mode": 2,
+                    "TargetPropertyName": "BorderColor"
+                  }
+                }
+              },
+              "Height": 15.0,
+              "Left": 93.0,
+              "Top": 18.0,
+              "Visible": true,
+              "Width": 3.0,
+              "Name": "RectangleItem3"
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "Rotation": 50.0,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderColor": "#FFFF0000",
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2,
+                "Bindings": {
+                  "BorderColor": {
+                    "Formula": {
+                      "Interpreter": 1,
+                      "Expression": "var calc = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount') / isnull ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'), 1);\r\nvar session = isnull($prop('SessionTypeName'), \"\");\r\n\r\nif ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit') == \"unlimited\")\r\n{\r\n\treturn \"white\";\r\n}\r\n\r\nif (session == \"Race\" || session == \"Lone qualify\" || session == \"Open qualify\")\r\n{\r\n\tif (calc == 0) {return \"fuchsia\"};\r\n\tif (calc < 0.3) {return \"lawngreen\"};\r\n\tif (calc < 0.6) {return \"yellow\"};\r\n\tif (calc < 0.85) {return \"orange\"};\r\n\treturn \"red\";\r\n}\r\n\r\nreturn \"white\";"
+                    },
+                    "Mode": 2,
+                    "TargetPropertyName": "BorderColor"
+                  }
+                }
+              },
+              "Height": 15.0,
+              "Left": 19.0,
+              "Top": 77.0,
+              "Visible": true,
+              "Width": 3.0,
+              "Name": "RectangleItem4"
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "Rotation": -40.0,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderColor": "#FFFF0000",
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2,
+                "Bindings": {
+                  "BorderColor": {
+                    "Formula": {
+                      "Interpreter": 1,
+                      "Expression": "var calc = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount') / isnull ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'), 1);\r\nvar session = isnull($prop('SessionTypeName'), \"\");\r\n\r\nif ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit') == \"unlimited\")\r\n{\r\n\treturn \"white\";\r\n}\r\n\r\nif (session == \"Race\" || session == \"Lone qualify\" || session == \"Open qualify\")\r\n{\r\n\tif (calc == 0) {return \"fuchsia\"};\r\n\tif (calc < 0.3) {return \"lawngreen\"};\r\n\tif (calc < 0.6) {return \"yellow\"};\r\n\tif (calc < 0.85) {return \"orange\"};\r\n\treturn \"red\";\r\n}\r\n\r\nreturn \"white\";"
+                    },
+                    "Mode": 2,
+                    "TargetPropertyName": "BorderColor"
+                  }
+                }
+              },
+              "Height": 15.0,
+              "Left": 20.0,
+              "Top": 77.0,
+              "Visible": true,
+              "Width": 3.0,
+              "Name": "RectangleItem5"
             }
-          ]
+          ],
+          "Group": true,
+          "Visible": true,
+          "Name": "Incidents"
         },
-        "Id": "3e959bcb-77e5-44e3-94ee-3989bdf8511c",
-        "Name": "Screen1",
-        "Sid": 0,
-        "Bindings": {
-          "$id": "34"
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "Top": 4.0,
+          "Left": 355.0,
+          "Height": 101.0,
+          "Width": 45.0,
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.TimeText, SimHub.Plugins",
+              "Format": "HH:mm",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontSize": 40.0,
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 0,
+              "VerticalAlignment": 1,
+              "CharWidth": 45.0,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 45.0,
+              "Left": 356.0,
+              "Top": 4.0,
+              "Visible": true,
+              "Width": 44.0,
+              "Name": "TimeText"
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.TimeText, SimHub.Plugins",
+              "Format": "HH:mm",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontSize": 40.0,
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 2,
+              "VerticalAlignment": 1,
+              "CharWidth": 45.0,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 45.0,
+              "Left": 355.0,
+              "Top": 60.0,
+              "Visible": true,
+              "Width": 44.0,
+              "Name": "TimeText2"
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 3,
+                "BorderBottom": 3,
+                "BorderLeft": 3,
+                "BorderRight": 3
+              },
+              "Height": 6.0,
+              "Left": 365.0,
+              "Top": 55.0,
+              "Visible": true,
+              "Width": 6.0,
+              "Name": "RectangleItem2"
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 3,
+                "BorderBottom": 3,
+                "BorderLeft": 3,
+                "BorderRight": 3
+              },
+              "Height": 6.0,
+              "Left": 383.0,
+              "Top": 55.0,
+              "Visible": true,
+              "Width": 6.0,
+              "Name": "RectangleItem"
+            }
+          ],
+          "Group": true,
+          "Visible": true,
+          "Name": "Clock"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": {
+            "BorderTop": 6,
+            "BorderBottom": 6,
+            "BorderLeft": 6,
+            "BorderRight": 6
+          },
+          "Height": 113.0,
+          "Left": 348.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "Border2"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": {
+            "BorderTop": 6,
+            "BorderBottom": 6,
+            "BorderLeft": 6,
+            "BorderRight": 6
+          },
+          "Height": 113.0,
+          "Left": 110.0,
+          "Top": 2.0,
+          "Visible": true,
+          "Width": 4.0,
+          "Name": "Border"
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": {
+            "BorderTop": 6,
+            "BorderBottom": 6,
+            "BorderRight": 6
+          },
+          "Height": 113.0,
+          "Left": 0.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 410.0,
+          "IsFreezed": true,
+          "Name": "Background"
         }
-      }
-    ]
-  },
+      ]
+    }
+  ],
   "SnapToGrid": false,
-  "HideLabels": false,
+  "HideLabels": true,
+  "ShowForeground": true,
+  "ForegroundOpacity": 100.0,
+  "ShowBackground": true,
+  "BackgroundOpacity": 100.0,
   "ShowBoundingRectangles": false,
   "GridSize": 10,
-  "SelectedScreen": {
-    "$ref": "3"
-  },
-  "Images": {
-    "$id": "35",
-    "$values": []
-  },
+  "Images": [],
   "Metadata": {
-    "$id": "36",
-    "Title": "Time",
+    "Title": "Session info",
     "ScreenCount": 1.0,
-    "InGameScreensIndexs": {
-      "$id": "37",
-      "$values": [0]
-    },
-    "IdleScreensIndexs": {
-      "$id": "38",
-      "$values": []
-    },
+    "InGameScreensIndexs": [0],
+    "IdleScreensIndexs": [],
     "MainPreviewIndex": 0,
     "IsOverlay": false,
-    "ShowInTaskBar": true,
     "Width": 410.0,
-    "Height": 101.0,
+    "Height": 113.0,
     "OverlaySizeWarning": false,
     "MetadataVersion": 2.0,
     "EnableOnDashboardMessaging": true,
-    "PitScreensIndexs": {
-      "$id": "39",
-      "$values": []
-    }
+    "PitScreensIndexs": []
   },
   "ShowOnScreenControls": true,
-  "ShowInTaskBar": true,
   "IsOverlay": false,
   "EnableClickThroughOverlay": true,
   "EnableOnDashboardMessaging": true
