@@ -1,302 +1,162 @@
 {
-  "$id": "1",
+  "DashboardDebugManager": {
+    "Maximized": false
+  },
   "Version": 2,
-  "Id": "26b13850-1ed8-428a-8cf1-589f346bfc59",
+  "Id": "97527051-64ed-4e36-aa60-3b5f9d07f48d",
   "BaseHeight": 100,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
-  "Screens": {
-    "$id": "2",
-    "$values": [
-      {
-        "$id": "3",
-        "RenderingSkip": 0,
-        "InGameScreen": true,
-        "IdleScreen": false,
-        "PitScreen": false,
-        "ScreenScript": {
-          "$id": "4",
-          "Interpreter": 1
+  "Screens": [
+    {
+      "Name": "Screen1",
+      "InGameScreen": true,
+      "IdleScreen": false,
+      "PitScreen": false,
+      "ScreenId": "e0c7ecf2-b548-4651-869e-d1c31f82b36b",
+      "AllowOverlays": true,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "IsBackgroundLayer": false,
+      "BackgroundColor": "#FF000000",
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "IsRectangleItem": true,
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": {
+            "BorderTop": 6,
+            "BorderBottom": 6,
+            "BorderLeft": 6,
+            "BorderRight": 6
+          },
+          "Height": 100.0,
+          "Left": 0.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 1280.0,
+          "Name": "background"
         },
-        "BackgroundColor": "#FF000000",
-        "IsSelected": true,
-        "Items": {
-          "$id": "5",
-          "$values": [
-            {
-              "$id": "6",
-              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
-              "IsRectangleItem": true,
-              "Rotation": 0.0,
-              "UseRotation": false,
-              "CanResize": true,
-              "BackgroundColor": "#00FFFFFF",
-              "BlurRadius": 0.0,
-              "EnableBlur": false,
-              "BorderStyle": {
-                "$id": "7",
-                "BorderColor": "#FFFFFFFF",
-                "BorderTop": 6,
-                "BorderBottom": 6,
-                "BorderLeft": 6,
-                "BorderRight": 6,
-                "RadiusTopLeft": 0,
-                "RadiusTopRight": 0,
-                "RadiusBottomLeft": 0,
-                "RadiusBottomRight": 0,
-                "Bindings": {
-                  "$id": "8"
-                }
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+          "IsLinearGauge": true,
+          "GaugeOrientation": 0,
+          "GaugeAlignment": 0,
+          "AutoSize": false,
+          "GaugeColor": "#FF00BFFF",
+          "AlternateGaugeColor": "#FF008000",
+          "UseAlternateStyle": false,
+          "Minimum": 0.0,
+          "Maximum": 100.0,
+          "Value": 20.0,
+          "Steps": 0.0,
+          "PAW": 254.0,
+          "BackgroundColor": "#FFFFFFFF",
+          "Height": 88.0,
+          "Left": 6.0,
+          "Top": 6.0,
+          "Visible": true,
+          "Width": 1268.0,
+          "Name": "LinearGaugeItem0",
+          "Bindings": {
+            "Maximum": {
+              "Formula": {
+                "Expression": "[MaxSpeedKmh]"
               },
-              "Height": 100.0,
-              "Left": 0.0,
-              "Opacity": 100.0,
-              "Top": 0.0,
-              "Visible": true,
-              "BlinkDelay": 250.0,
-              "BlinkEnabled": false,
-              "Width": 1280.0,
-              "BorderBottom": 6,
-              "BorderColor": "#FFFFFFFF",
-              "BorderLeft": 6,
-              "BorderRight": 6,
-              "BorderTop": 6,
-              "Id": "33b719df-70ae-4550-9270-4da68ede208c",
-              "IsFreezed": false,
-              "IsSelected": true,
-              "Name": "background",
-              "RenderingSkip": 0,
-              "Sid": 0,
-              "Bindings": {
-                "$id": "9"
-              }
+              "Mode": 2,
+              "TargetPropertyName": "Maximum"
             },
-            {
-              "$id": "10",
-              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
-              "IsLinearGauge": true,
-              "GaugeAlignment": 0,
-              "AutoSize": false,
-              "AutoSizeScale": 1.0,
-              "GaugeColor": "#FF00BFFF",
-              "Minimum": 0.0,
-              "Maximum": 100.0,
-              "Value": 20.0,
-              "Steps": 0.0,
-              "PAW": 254.0,
-              "Rotation": 0.0,
-              "UseRotation": false,
-              "CanResize": true,
-              "BackgroundColor": "#FFFFFFFF",
-              "BlurRadius": 0.0,
-              "EnableBlur": false,
-              "BorderStyle": {
-                "$id": "11",
-                "BorderColor": "#FFFFFFFF",
-                "BorderTop": 0,
-                "BorderBottom": 0,
-                "BorderLeft": 0,
-                "BorderRight": 0,
-                "RadiusTopLeft": 0,
-                "RadiusTopRight": 0,
-                "RadiusBottomLeft": 0,
-                "RadiusBottomRight": 0,
-                "Bindings": {
-                  "$id": "12"
-                }
+            "Minimum": {
+              "Formula": {
+                "Expression": "left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2)"
               },
-              "Height": 88.0,
-              "Left": 6.0,
-              "Opacity": 100.0,
-              "Top": 6.0,
-              "Visible": true,
-              "BlinkDelay": 250.0,
-              "BlinkEnabled": false,
-              "Width": 1268.0,
-              "BorderBottom": 0,
-              "BorderColor": "#FFFFFFFF",
-              "BorderLeft": 0,
-              "BorderRight": 0,
-              "BorderTop": 0,
-              "Id": "17e89cb1-4f48-4deb-b327-99d79fa413f2",
-              "IsFreezed": false,
-              "IsSelected": false,
-              "Name": "LinearGaugeItem0",
-              "RenderingSkip": 0,
-              "Sid": 0,
-              "Bindings": {
-                "$id": "13",
-                "Maximum": {
-                  "$id": "14",
-                  "Formula": {
-                    "$id": "15",
-                    "Expression": "[MaxSpeedKmh]"
-                  },
-                  "Mode": 2,
-                  "TargetPropertyName": "Maximum"
-                },
-                "Minimum": {
-                  "$id": "16",
-                  "Formula": {
-                    "$id": "17",
-                    "Expression": "left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2)"
-                  },
-                  "Mode": 2,
-                  "TargetPropertyName": "Minimum"
-                },
-                "GaugeColor": {
-                  "$id": "18",
-                  "Formula": {
-                    "$id": "19",
-                    "Expression": "if([IsInPitLane]=1 and round([SpeedKmh],0)-2.5>left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2),'red',if(round([SpeedKmh],0)-2.5<left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2),'deepskyblue','deepskyblue'))"
-                  },
-                  "Mode": 2,
-                  "TargetPropertyName": "GaugeColor"
-                },
-                "BackgroundColor": {
-                  "$id": "20",
-                  "Formula": {
-                    "$id": "21",
-                    "Expression": "if([IsInPitLane]=1 and round([SpeedKmh],0)-2.5>left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2),'white',if(round([SpeedKmh],0)-2.5<left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2),'deepskyblue','white'))"
-                  },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
-                },
-                "Value": {
-                  "$id": "22",
-                  "Formula": {
-                    "$id": "23",
-                    "Expression": "[SpeedLocal]"
-                  },
-                  "Mode": 2,
-                  "TargetPropertyName": "Value"
-                }
-              }
+              "Mode": 2,
+              "TargetPropertyName": "Minimum"
             },
-            {
-              "$id": "24",
-              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
-              "IsTextItem": true,
-              "ShadowDepth": 0,
-              "ShadowBlur": 0,
-              "ShadowDirection": 315,
-              "ShadowColor": "#FF808080",
-              "Font": "Segoe UI",
-              "FontWeight": "Bold",
-              "TextWrapping": 1,
-              "FontStyle": "Normal",
-              "FontSize": 100.0,
-              "Text": "LIM REACHED",
-              "TextColor": "#FFFFFFFF",
-              "HorizontalAlignment": 1,
-              "VerticalAlignment": 1,
-              "UseMonospacedText": false,
-              "CharWidth": 40.0,
-              "SpecialCharsWidth": 20.0,
-              "SpecialChars": ".,:;",
-              "TextMask": "",
-              "TextMaskColor": "#FF808080",
-              "Rotation": 0.0,
-              "UseRotation": false,
-              "CanResize": true,
-              "BackgroundColor": "#00FFFFFF",
-              "BlurRadius": 0.0,
-              "EnableBlur": false,
-              "BorderStyle": {
-                "$id": "25",
-                "BorderColor": "#FFFFFFFF",
-                "BorderTop": 0,
-                "BorderBottom": 0,
-                "BorderLeft": 0,
-                "BorderRight": 0,
-                "RadiusTopLeft": 0,
-                "RadiusTopRight": 0,
-                "RadiusBottomLeft": 0,
-                "RadiusBottomRight": 0,
-                "Bindings": {
-                  "$id": "26"
-                }
+            "GaugeColor": {
+              "Formula": {
+                "Expression": "if([IsInPitLane]=0 and [PitLimiterOn] = 0, 'yellow',\r\nif([IsInPitLane]=1 and round([SpeedKmh],0)-2.5>left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2),'red',\r\nif(round([SpeedKmh],0)-2.5<left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2),'deepskyblue',\r\n'deepskyblue')))"
               },
-              "Height": 100.0,
-              "Left": 0.0,
-              "Opacity": 100.0,
-              "Top": -5.0,
-              "Visible": false,
-              "BlinkDelay": 250.0,
-              "BlinkEnabled": false,
-              "Width": 1280.0,
-              "BorderBottom": 0,
-              "BorderColor": "#FFFFFFFF",
-              "BorderLeft": 0,
-              "BorderRight": 0,
-              "BorderTop": 0,
-              "Id": "fea150c2-a586-418a-a5a6-dd7720aa13bf",
-              "IsFreezed": false,
-              "IsSelected": false,
-              "Name": "lim reached",
-              "RenderingSkip": 0,
-              "Sid": 0,
-              "Bindings": {
-                "$id": "27",
-                "Visible": {
-                  "$id": "28",
-                  "Formula": {
-                    "$id": "29",
-                    "Expression": "round([SpeedKmh],0)-1<left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2) and [PitLimiterOn]=1 and [StintOdo]>1000\r\n"
-                  },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
-                }
-              }
+              "Mode": 2,
+              "TargetPropertyName": "GaugeColor"
+            },
+            "BackgroundColor": {
+              "Formula": {
+                "Expression": "if([IsInPitLane]=1 and round([SpeedKmh],0)-2.5>left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2),'white',if(round([SpeedKmh],0)-2.5<left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2),'deepskyblue','white'))"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "BackgroundColor"
+            },
+            "Value": {
+              "Formula": {
+                "Expression": "[SpeedLocal]"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Value"
             }
-          ]
+          }
         },
-        "Id": "773a5079-6fde-4a6d-8e9a-498f20092da2",
-        "Name": "Screen1",
-        "Sid": 0,
-        "Bindings": {
-          "$id": "30"
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "IsTextItem": true,
+          "Font": "Segoe UI",
+          "FontWeight": "Bold",
+          "FontSize": 100.0,
+          "Text": "LIM REACHED",
+          "TextColor": "#FFFFFFFF",
+          "HorizontalAlignment": 1,
+          "VerticalAlignment": 1,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 100.0,
+          "Left": 0.0,
+          "Top": -5.0,
+          "Visible": false,
+          "Width": 1280.0,
+          "Name": "lim reached",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "round([SpeedKmh],0)-1<left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2) and [PitLimiterOn]=1 and [StintOdo]>1000\r\n"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          }
         }
-      }
-    ]
-  },
+      ]
+    }
+  ],
   "SnapToGrid": false,
   "HideLabels": true,
+  "ShowForeground": true,
+  "ForegroundOpacity": 100.0,
+  "ShowBackground": true,
+  "BackgroundOpacity": 100.0,
   "ShowBoundingRectangles": false,
   "GridSize": 10,
-  "SelectedScreen": {
-    "$ref": "3"
-  },
-  "Images": {
-    "$id": "31",
-    "$values": []
-  },
+  "Images": [],
   "Metadata": {
-    "$id": "32",
     "ScreenCount": 1.0,
-    "InGameScreensIndexs": {
-      "$id": "33",
-      "$values": [0]
-    },
-    "IdleScreensIndexs": {
-      "$id": "34",
-      "$values": []
-    },
+    "InGameScreensIndexs": [0],
+    "IdleScreensIndexs": [],
     "MainPreviewIndex": 0,
     "IsOverlay": false,
-    "ShowInTaskBar": true,
     "Width": 1280.0,
     "Height": 100.0,
     "OverlaySizeWarning": false,
     "MetadataVersion": 2.0,
     "EnableOnDashboardMessaging": true,
-    "PitScreensIndexs": {
-      "$id": "35",
-      "$values": []
-    }
+    "PitScreensIndexs": []
   },
   "ShowOnScreenControls": true,
-  "ShowInTaskBar": true,
   "IsOverlay": false,
   "EnableClickThroughOverlay": true,
   "EnableOnDashboardMessaging": true
