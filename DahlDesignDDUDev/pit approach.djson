@@ -3,7 +3,7 @@
     "Maximized": false
   },
   "Version": 2,
-  "Id": "97527051-64ed-4e36-aa60-3b5f9d07f48d",
+  "Id": "49323963-2c0d-42dd-83a3-59a75a2eeba1",
   "BaseHeight": 100,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
@@ -90,7 +90,7 @@
             },
             "BackgroundColor": {
               "Formula": {
-                "Expression": "if([IsInPitLane]=1 and round([SpeedKmh],0)-2.5>left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2),'white',if(round([SpeedKmh],0)-2.5<left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2),'deepskyblue','white'))"
+                "Expression": "if([IsInPitLane]=1 and round([SpeedKmh],0)-2.5>left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2),'white',if(round([SpeedKmh],0)-2.5<left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2),\r\nif ([PitLimiterOn]=1,'deepskyblue','yellow')\r\n,'white'))"
               },
               "Mode": 2,
               "TargetPropertyName": "BackgroundColor"
@@ -118,16 +118,23 @@
           "Height": 100.0,
           "Left": 0.0,
           "Top": -5.0,
-          "Visible": false,
+          "Visible": true,
           "Width": 1280.0,
           "Name": "lim reached",
           "Bindings": {
             "Visible": {
               "Formula": {
-                "Expression": "round([SpeedKmh],0)-1<left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2) and [PitLimiterOn]=1 and [StintOdo]>1000\r\n"
+                "Expression": "round([SpeedKmh],0)-1<left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2) \r\nand ([PitLimiterOn]=1 or ([PitLimiterOn]=0 && [DahlDesign.PitEntry])) \r\nand [StintOdo]>1000\r\n"
               },
               "Mode": 2,
               "TargetPropertyName": "Visible"
+            },
+            "TextColor": {
+              "Formula": {
+                "Expression": "if([PitLimiterOn]=1, 'white', 'black')"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "TextColor"
             }
           }
         }

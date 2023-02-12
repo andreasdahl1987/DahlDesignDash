@@ -4,7 +4,7 @@
     "Maximized": false
   },
   "Version": 2,
-  "Id": "8fab46d7-efbc-45c6-bc22-84ced008c153",
+  "Id": "2235a3cc-a96b-4f46-ad21-8d85c2656811",
   "BaseHeight": 768,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
@@ -684,7 +684,7 @@
           ],
           "Group": false,
           "Visible": true,
-          "Name": "TOP text"
+          "Name": "RPM Bar widgets"
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
