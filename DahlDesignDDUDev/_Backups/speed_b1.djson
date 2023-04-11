@@ -107,9 +107,9 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
           "Top": -6.0,
-          "Left": 40.0,
+          "Left": 4.9999999999999858,
           "Height": 205.0,
-          "Width": 362.0,
+          "Width": 397.0,
           "BackgroundColor": "#00FFFFFF",
           "Childrens": [
             {
@@ -195,49 +195,28 @@
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
               "Top": 115.0,
-              "Left": 154.0,
-              "Height": 47.980000000000018,
-              "Width": 39.980000000000018,
+              "Left": 4.9999999999999858,
+              "Height": 41.600000000000023,
+              "Width": 41.6,
               "BackgroundColor": "#00FFFFFF",
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
-                  "Image": "White arrow",
+                  "Image": "white-arrow-image-png-14",
                   "AutoSize": true,
-                  "AutoSizeScale": 0.02,
+                  "AutoSizeScale": 0.13,
+                  "Rotation": 270.0,
                   "BackgroundColor": "#00FFFFFF",
-                  "Height": 39.980000000000004,
-                  "Left": 5.0,
+                  "Height": 41.6,
+                  "Left": 3.0,
                   "Top": 115.0,
                   "Visible": true,
-                  "Width": 39.980000000000004,
+                  "Width": 41.6,
                   "Name": "ImageItem",
                   "Bindings": {
                     "Left": {
                       "Formula": {
-                        "Expression": "if([DahlDesign.ShowMapEnabled],154, 5)"
-                      },
-                      "Mode": 2,
-                      "TargetPropertyName": "Left"
-                    }
-                  }
-                },
-                {
-                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
-                  "Image": "White arrow",
-                  "AutoSize": true,
-                  "AutoSizeScale": 0.02,
-                  "BackgroundColor": "#00FFFFFF",
-                  "Height": 39.980000000000004,
-                  "Left": 5.0,
-                  "Top": 123.0,
-                  "Visible": true,
-                  "Width": 39.980000000000004,
-                  "Name": "ImageItem2",
-                  "Bindings": {
-                    "Left": {
-                      "Formula": {
-                        "Expression": "if([DahlDesign.ShowMapEnabled],154, 5)"
+                        "Expression": "if([DahlDesign.ShowMapEnabled],152, 3)"
                       },
                       "Mode": 2,
                       "TargetPropertyName": "Left"
@@ -322,6 +301,16 @@
       "Height": 1999,
       "Length": 18301,
       "MD5": "39eb3540e95b54cb28981960d7e85fc4"
+    },
+    {
+      "Name": "white-arrow-image-png-14",
+      "Extension": ".png",
+      "Modified": false,
+      "Optimized": true,
+      "Width": 320,
+      "Height": 320,
+      "Length": 4965,
+      "MD5": "72b71d6a58f0c9ed268ecbf7717b46e9"
     }
   ],
   "Metadata": {
