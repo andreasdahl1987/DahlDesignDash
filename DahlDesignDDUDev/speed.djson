@@ -1,10 +1,8 @@
 {
-  "DashboardDebugManager": {
-    "LastPlacement": "48,1283,415,183",
-    "Maximized": false
-  },
+  "Variables": { "DashboardVariables": [] },
+  "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "10be7a6e-aa69-41e9-aa9b-79ef12e07491",
+  "Id": "d0d81225-f034-430c-bb9d-acf478dae998",
   "BaseHeight": 173,
   "BaseWidth": 415,
   "BackgroundColor": "#FF000000",
@@ -107,9 +105,9 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
           "Top": -6.0,
-          "Left": 4.9999999999999858,
+          "Left": 2.9999999999999858,
           "Height": 205.0,
-          "Width": 397.0,
+          "Width": 394.0,
           "BackgroundColor": "#00FFFFFF",
           "Childrens": [
             {
@@ -145,18 +143,25 @@
               "IsTextItem": true,
               "Font": "Segoe UI",
               "FontSize": 55.0,
-              "Text": "KPH",
+              "Text": "MPH",
               "TextColor": "#FFFFFFFF",
-              "HorizontalAlignment": 0,
+              "HorizontalAlignment": 2,
               "VerticalAlignment": 0,
               "TextMask": "0000000000",
               "BackgroundColor": "#00FFFFFF",
               "Height": 69.0,
-              "Left": 293.0,
+              "Left": 280.0,
               "Top": 99.0,
               "Visible": true,
-              "Width": 109.0,
-              "Name": "SPD"
+              "Width": 116.0,
+              "Name": "SPD",
+              "Bindings": {
+                "Text": {
+                  "Formula": { "Expression": "[SpeedLocalUnit]" },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              }
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -195,7 +200,7 @@
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
               "Top": 115.0,
-              "Left": 4.9999999999999858,
+              "Left": 2.9999999999999858,
               "Height": 41.600000000000023,
               "Width": 41.6,
               "BackgroundColor": "#00FFFFFF",
@@ -239,6 +244,8 @@
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "in pit.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 174.0,
           "Left": 0.0,
@@ -262,6 +269,8 @@
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "pit speed.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 173.0,
           "Left": 0.0,
