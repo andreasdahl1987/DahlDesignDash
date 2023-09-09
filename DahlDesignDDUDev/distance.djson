@@ -1,7 +1,8 @@
 {
-  "DashboardDebugManager": { "Maximized": false },
+  "Variables": { "DashboardVariables": [] },
+  "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "2d8ab275-6e99-4de9-9e03-72dc3ca4bb04",
+  "Id": "dd167b8f-b703-4870-99c3-dccace02af7c",
   "BaseHeight": 220,
   "BaseWidth": 412,
   "BackgroundColor": "#FF000000",
@@ -3773,7 +3774,7 @@
           "Bindings": {
             "Text": {
               "Formula": {
-                "Expression": "'T:' + Round([GameRawData.Telemetry.TrackTemp],1) + ' / ' +  'A:' + Round([GameRawData.Telemetry.AirTemp],1)"
+                "Expression": "if(\r\n    [TemperatureUnit] == 'Fahrenheit',\r\n    \r\n    'T:' + Round(([GameRawData.Telemetry.TrackTemp])*(9/5)+32,1) + ' / ' +  'A:' + Round(([GameRawData.Telemetry.AirTemp]*(9/5)+32),1), \r\n    \r\n    'T:' + Round([GameRawData.Telemetry.TrackTemp],1) + ' / ' +  'A:' + Round([GameRawData.Telemetry.AirTemp],1)\r\n)"
               },
               "Mode": 2,
               "TargetPropertyName": "Text"
