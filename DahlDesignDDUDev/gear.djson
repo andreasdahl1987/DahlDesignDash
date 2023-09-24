@@ -1,10 +1,10 @@
 {
-  "DashboardDebugManager": {
-    "LastPlacement": "152,119,675,897",
-    "Maximized": false
+  "Variables": {
+    "DashboardVariables": []
   },
+  "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "f06b8ba7-ffb5-4bcb-b97e-80d50aa6cade",
+  "Id": "37fbff74-23b3-46a0-8526-58931a7b12ab",
   "BaseHeight": 598,
   "BaseWidth": 450,
   "BackgroundColor": "#FF000000",
@@ -18,8 +18,12 @@
       "AllowOverlays": true,
       "IsForegroundLayer": false,
       "IsOverlayLayer": false,
-      "OverlayTriggerExpression": { "Expression": "" },
-      "ScreenEnabledExpression": { "Expression": "" },
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
       "OverlayMaxDuration": 0,
       "OverlayMinDuration": 0,
       "IsBackgroundLayer": false,
@@ -28,7 +32,7 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
           "Top": 0.0,
-          "Left": -2.8421709430404007e-14,
+          "Left": -2.8421709430404007E-14,
           "Height": 598.0,
           "Width": 450.0,
           "BackgroundColor": "#00FFFFFF",
@@ -81,7 +85,7 @@
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
               "Top": 0.0,
-              "Left": -2.8421709430404007e-14,
+              "Left": -2.8421709430404007E-14,
               "Height": 598.0,
               "Width": 450.0,
               "BackgroundColor": "#00FFFFFF",
@@ -124,7 +128,9 @@
                       "TargetPropertyName": "Maximum"
                     },
                     "Value": {
-                      "Formula": { "Expression": "[Rpms]" },
+                      "Formula": {
+                        "Expression": "[Rpms]"
+                      },
                       "Mode": 2,
                       "TargetPropertyName": "Value"
                     },
@@ -175,7 +181,9 @@
                       "TargetPropertyName": "Maximum"
                     },
                     "Value": {
-                      "Formula": { "Expression": "[Rpms]" },
+                      "Formula": {
+                        "Expression": "[Rpms]"
+                      },
                       "Mode": 2,
                       "TargetPropertyName": "Value"
                     },
@@ -226,7 +234,9 @@
                       "TargetPropertyName": "Minimum"
                     },
                     "Value": {
-                      "Formula": { "Expression": "[Rpms]" },
+                      "Formula": {
+                        "Expression": "[Rpms]"
+                      },
                       "Mode": 2,
                       "TargetPropertyName": "Value"
                     },
@@ -313,7 +323,9 @@
           "Name": "Map",
           "Bindings": {
             "Visible": {
-              "Formula": { "Expression": "[DahlDesign.ShowMapEnabled]" },
+              "Formula": {
+                "Expression": "[DahlDesign.ShowMapEnabled]"
+              },
               "Mode": 2,
               "TargetPropertyName": "Visible"
             }
@@ -354,7 +366,9 @@
                   "TargetPropertyName": "BlinkEnabled"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -380,7 +394,9 @@
               "Name": "Gear",
               "Bindings": {
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -392,7 +408,9 @@
                   "TargetPropertyName": "TextColor"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -417,7 +435,9 @@
               "Name": "RectangleItem0",
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "[DahlDesign.HasABS]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.HasABS]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 },
@@ -449,7 +469,9 @@
               "Name": "RectangleItem1",
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "[DahlDesign.HasABS]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.HasABS]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 },
@@ -481,7 +503,9 @@
               "Name": "RectangleItem0",
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "[DahlDesign.HasABS]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.HasABS]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 },
@@ -513,7 +537,9 @@
               "Name": "RectangleItem1",
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "[DahlDesign.HasABS]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.HasABS]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 },
@@ -593,7 +619,9 @@
                   "TargetPropertyName": "BlinkEnabled"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -619,7 +647,9 @@
               "Name": "Gear",
               "Bindings": {
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -631,7 +661,9 @@
                   "TargetPropertyName": "TextColor"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -659,7 +691,10 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#00FFFFFF",
-              "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
+              "BorderStyle": {
+                "BorderTop": 6,
+                "BorderRight": 6
+              },
               "Height": 103.0,
               "Left": 0.0,
               "Top": 493.0,
@@ -1496,7 +1531,9 @@
                   "TargetPropertyName": "BlinkEnabled"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -1522,7 +1559,9 @@
               "Name": "Gear",
               "Bindings": {
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -1534,7 +1573,9 @@
                   "TargetPropertyName": "TextColor"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -1619,7 +1660,9 @@
                   "TargetPropertyName": "TextColor"
                 },
                 "Text": {
-                  "Formula": { "Expression": "[ABSLevel]" },
+                  "Formula": {
+                    "Expression": "[ABSLevel]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 }
@@ -2105,7 +2148,9 @@
                   "TargetPropertyName": "BlinkEnabled"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -2131,7 +2176,9 @@
               "Name": "Gear",
               "Bindings": {
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -2143,7 +2190,9 @@
                   "TargetPropertyName": "TextColor"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -2228,7 +2277,9 @@
                   "TargetPropertyName": "TextColor"
                 },
                 "Text": {
-                  "Formula": { "Expression": "[ABSLevel]" },
+                  "Formula": {
+                    "Expression": "[ABSLevel]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 }
@@ -2380,7 +2431,7 @@
             }
           ],
           "Group": false,
-          "Visible": true,
+          "Visible": false,
           "Name": "TC/ABS",
           "Bindings": {
             "Visible": {
@@ -2426,7 +2477,9 @@
                   "TargetPropertyName": "BlinkEnabled"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -2560,7 +2613,9 @@
               "Name": "Gear",
               "Bindings": {
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -2572,7 +2627,9 @@
                   "TargetPropertyName": "TextColor"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -2671,7 +2728,9 @@
                   "TargetPropertyName": "TextColor"
                 },
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.P2PCount]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.P2PCount]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -2704,7 +2763,9 @@
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
-                  "Formula": { "Expression": "[BrakeBias]" },
+                  "Formula": {
+                    "Expression": "[BrakeBias]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -4073,7 +4134,9 @@
               "Name": "Jackers",
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "[DahlDesign.TrackType] > 4" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.TrackType] > 4"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -4145,7 +4208,9 @@
                   "TargetPropertyName": "BlinkEnabled"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -4171,7 +4236,9 @@
               "Name": "Gear",
               "Bindings": {
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -4183,7 +4250,9 @@
                   "TargetPropertyName": "TextColor"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -4216,7 +4285,10 @@
               "HorizontalAlignment": 1,
               "VerticalAlignment": 0,
               "BackgroundColor": "#00FFFFFF",
-              "BorderStyle": { "BorderBottom": 4, "BorderLeft": 4 },
+              "BorderStyle": {
+                "BorderBottom": 4,
+                "BorderLeft": 4
+              },
               "Height": 130.0,
               "Left": 146.0,
               "Top": 5.0,
@@ -4243,7 +4315,10 @@
               "HorizontalAlignment": 1,
               "VerticalAlignment": 0,
               "BackgroundColor": "#00FFFFFF",
-              "BorderStyle": { "BorderBottom": 4, "BorderRight": 4 },
+              "BorderStyle": {
+                "BorderBottom": 4,
+                "BorderRight": 4
+              },
               "Height": 130.0,
               "Left": 0.0,
               "Top": 5.0,
@@ -4270,7 +4345,10 @@
               "HorizontalAlignment": 1,
               "VerticalAlignment": 0,
               "BackgroundColor": "#00FFFFFF",
-              "BorderStyle": { "BorderBottom": 4, "BorderLeft": 4 },
+              "BorderStyle": {
+                "BorderBottom": 4,
+                "BorderLeft": 4
+              },
               "Height": 130.0,
               "Left": 294.0,
               "Top": 5.0,
@@ -4437,7 +4515,9 @@
                   "TargetPropertyName": "BlinkEnabled"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -4518,7 +4598,9 @@
               "Name": "Gear",
               "Bindings": {
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -4537,7 +4619,9 @@
                   "TargetPropertyName": "FontSize"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -4769,7 +4853,10 @@
               "HorizontalAlignment": 1,
               "VerticalAlignment": 2,
               "BackgroundColor": "#00FFFFFF",
-              "BorderStyle": { "BorderTop": 4, "BorderLeft": 4 },
+              "BorderStyle": {
+                "BorderTop": 4,
+                "BorderLeft": 4
+              },
               "Height": 68.0,
               "Left": 222.0,
               "Top": 526.0,
@@ -4803,7 +4890,10 @@
               "HorizontalAlignment": 1,
               "VerticalAlignment": 2,
               "BackgroundColor": "#00FFFFFF",
-              "BorderStyle": { "BorderTop": 4, "BorderRight": 4 },
+              "BorderStyle": {
+                "BorderTop": 4,
+                "BorderRight": 4
+              },
               "Height": 68.0,
               "Left": 80.0,
               "Top": 526.0,
@@ -5110,7 +5200,9 @@
                   "TargetPropertyName": "BlinkEnabled"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -5192,7 +5284,9 @@
               "Name": "Gear",
               "Bindings": {
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -5211,7 +5305,9 @@
                   "TargetPropertyName": "FontSize"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -5359,7 +5455,9 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#00FFFFFF",
-              "BorderStyle": { "BorderBottom": 4 },
+              "BorderStyle": {
+                "BorderBottom": 4
+              },
               "Height": 116.0,
               "Left": 368.0,
               "Top": 5.0,
@@ -5380,7 +5478,9 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FF00BFFF",
-              "BorderStyle": { "BorderBottom": 4 },
+              "BorderStyle": {
+                "BorderBottom": 4
+              },
               "Height": 118.0,
               "Left": 368.0,
               "Top": 121.0,
@@ -5401,7 +5501,9 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#00FFFFFF",
-              "BorderStyle": { "BorderBottom": 4 },
+              "BorderStyle": {
+                "BorderBottom": 4
+              },
               "Height": 118.0,
               "Left": 368.0,
               "Top": 239.0,
@@ -5422,7 +5524,9 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#00FFFFFF",
-              "BorderStyle": { "BorderBottom": 4 },
+              "BorderStyle": {
+                "BorderBottom": 4
+              },
               "Height": 118.0,
               "Left": 368.0,
               "Top": 357.0,
@@ -5820,7 +5924,9 @@
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
-                  "Formula": { "Expression": "[BrakeBias]" },
+                  "Formula": {
+                    "Expression": "[BrakeBias]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -5950,7 +6056,9 @@
                   "TargetPropertyName": "BlinkEnabled"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -6019,7 +6127,9 @@
               "Name": "Gear",
               "Bindings": {
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -6038,7 +6148,9 @@
                   "TargetPropertyName": "FontSize"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -6417,7 +6529,9 @@
                   "TargetPropertyName": "TextColor"
                 },
                 "Text": {
-                  "Formula": { "Expression": "[ABSLevel]" },
+                  "Formula": {
+                    "Expression": "[ABSLevel]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -6626,7 +6740,9 @@
                   "TargetPropertyName": "BlinkEnabled"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -6670,7 +6786,9 @@
               "Name": "Gear",
               "Bindings": {
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -6689,7 +6807,9 @@
                   "TargetPropertyName": "FontSize"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -6715,7 +6835,9 @@
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
-                  "Formula": { "Expression": "[BrakeBias]" },
+                  "Formula": {
+                    "Expression": "[BrakeBias]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -6864,7 +6986,9 @@
                   "TargetPropertyName": "BlinkEnabled"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -6908,7 +7032,9 @@
               "Name": "Gear",
               "Bindings": {
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -6927,7 +7053,9 @@
                   "TargetPropertyName": "FontSize"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -6953,7 +7081,9 @@
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
-                  "Formula": { "Expression": "[BrakeBias]" },
+                  "Formula": {
+                    "Expression": "[BrakeBias]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -7247,7 +7377,9 @@
               "Name": "ARB rear",
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ARBswapped]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ARBswapped]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -7534,7 +7666,9 @@
               "Name": "ARB front",
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ARBswapped]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ARBswapped]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -7821,7 +7955,9 @@
               "Name": "ARB rear2",
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "[DahlDesign.ARBswapped]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.ARBswapped]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -8108,7 +8244,9 @@
               "Name": "ARB front2",
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "[DahlDesign.ARBswapped]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.ARBswapped]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -8131,7 +8269,7 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
           "Top": -104.0,
-          "Left": -2.8421709430404007e-14,
+          "Left": -2.8421709430404007E-14,
           "Height": 704.0,
           "Width": 450.0,
           "BackgroundColor": "#00FFFFFF",
@@ -8160,22 +8298,30 @@
               "Name": "Blue",
               "Bindings": {
                 "Minimum": {
-                  "Formula": { "Expression": "[CarSettings_RedLineRPM]*0.75" },
+                  "Formula": {
+                    "Expression": "[CarSettings_RedLineRPM]*0.75"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Minimum"
                 },
                 "Maximum": {
-                  "Formula": { "Expression": "[CarSettings_RedLineRPM]*0.85" },
+                  "Formula": {
+                    "Expression": "[CarSettings_RedLineRPM]*0.85"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Maximum"
                 },
                 "Value": {
-                  "Formula": { "Expression": "[Rpms]" },
+                  "Formula": {
+                    "Expression": "[Rpms]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Value"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -8205,22 +8351,30 @@
               "Name": "Green",
               "Bindings": {
                 "Minimum": {
-                  "Formula": { "Expression": "[CarSettings_RedLineRPM]*0.85" },
+                  "Formula": {
+                    "Expression": "[CarSettings_RedLineRPM]*0.85"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Minimum"
                 },
                 "Maximum": {
-                  "Formula": { "Expression": "[CarSettings_RedLineRPM]*0.95" },
+                  "Formula": {
+                    "Expression": "[CarSettings_RedLineRPM]*0.95"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Maximum"
                 },
                 "Value": {
-                  "Formula": { "Expression": "[Rpms]" },
+                  "Formula": {
+                    "Expression": "[Rpms]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Value"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -8250,22 +8404,30 @@
               "Name": "Red",
               "Bindings": {
                 "Maximum": {
-                  "Formula": { "Expression": "[CarSettings_RedLineRPM]*1.02" },
+                  "Formula": {
+                    "Expression": "[CarSettings_RedLineRPM]*1.02"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Maximum"
                 },
                 "Minimum": {
-                  "Formula": { "Expression": "[CarSettings_RedLineRPM]*0.95" },
+                  "Formula": {
+                    "Expression": "[CarSettings_RedLineRPM]*0.95"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Minimum"
                 },
                 "Value": {
-                  "Formula": { "Expression": "[Rpms]" },
+                  "Formula": {
+                    "Expression": "[Rpms]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Value"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -8297,7 +8459,9 @@
                   "TargetPropertyName": "BlinkEnabled"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -8323,7 +8487,9 @@
               "Name": "Gear",
               "Bindings": {
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -8335,7 +8501,9 @@
                   "TargetPropertyName": "TextColor"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -8406,7 +8574,9 @@
                   "TargetPropertyName": "BlinkEnabled"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -8432,7 +8602,9 @@
               "Name": "Gear",
               "Bindings": {
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -8444,7 +8616,9 @@
                   "TargetPropertyName": "TextColor"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -8917,7 +9091,9 @@
                   "TargetPropertyName": "BlinkEnabled"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -8943,7 +9119,9 @@
               "Name": "Gear",
               "Bindings": {
                 "Text": {
-                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -8955,7 +9133,9 @@
                   "TargetPropertyName": "TextColor"
                 },
                 "Visible": {
-                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -9040,7 +9220,9 @@
                   "TargetPropertyName": "TextColor"
                 },
                 "Text": {
-                  "Formula": { "Expression": "[ABSLevel]" },
+                  "Formula": {
+                    "Expression": "[ABSLevel]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 }
@@ -9406,7 +9588,9 @@
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
-                  "Formula": { "Expression": "[BrakeBias]" },
+                  "Formula": {
+                    "Expression": "[BrakeBias]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
@@ -9432,6 +9616,576 @@
               "TargetPropertyName": "Visible"
             }
           }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "Top": 0.0,
+          "Left": 0.0,
+          "Height": 598.0,
+          "Width": 450.0,
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 598.0,
+              "Left": 0.0,
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 450.0,
+              "Name": "pit",
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                },
+                "BlinkEnabled": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BlinkEnabled"
+                },
+                "Visible": {
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#FF7CFC00",
+              "Height": 87.0,
+              "Left": 81.0,
+              "Top": 3.0,
+              "Visible": true,
+              "Width": 144.0,
+              "Name": "SOC box",
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if (isnull([GameRawData.Telemetry.DRS_Status],0) > 0, 'lawngreen','transparent')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontSize": 70.0,
+              "Text": "100",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 1,
+              "TextMask": "0000000000",
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 86.0,
+              "Left": 80.0,
+              "Top": 4.0,
+              "Visible": true,
+              "Width": 146.0,
+              "Name": "SOC percent",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "[DahlDesign.SF23.P2PCooldownTimer]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if(([PitLimiterOn]=0 and [IsInPitLane]=1) || isnull([GameRawData.Telemetry.DRS_Status],0) > 0, 'black','white')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontWeight": "Bold",
+              "FontSize": 440.0,
+              "Text": "1",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 1,
+              "TextMask": "0000000000",
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 428.0,
+              "Left": 72.0,
+              "Top": 25.0,
+              "Visible": true,
+              "Width": 306.0,
+              "Name": "Gear",
+              "Bindings": {
+                "Text": {
+                  "Formula": {
+                    "Expression": "[DahlDesign.SmoothGear]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                },
+                "FontSize": {
+                  "Formula": {
+                    "Expression": "if([DahlDesign.SmoothGear]='N', 400, 440)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "FontSize"
+                },
+                "Visible": {
+                  "Formula": {
+                    "Expression": "![DahlDesign.ShowMapEnabled]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+              "IsLinearGauge": true,
+              "GaugeOrientation": 0,
+              "GaugeAlignment": 0,
+              "AutoSize": false,
+              "GaugeImage": "",
+              "GaugeColor": "#FFFF0000",
+              "AlternateGaugeColor": "#FF008000",
+              "UseAlternateStyle": false,
+              "Minimum": 0.0,
+              "Maximum": 100.0,
+              "Value": 7.0,
+              "Steps": 0.0,
+              "PAW": 38.0,
+              "Rotation": -90.0,
+              "BackgroundColor": "#FF000000",
+              "Height": 80.0,
+              "Left": -228.0,
+              "Top": 284.0,
+              "Visible": true,
+              "Width": 540.0,
+              "Name": "SOC gauge",
+              "Bindings": {
+                "Value": {
+                  "Formula": {
+                    "Expression": "[DahlDesign.SF23.P2PCooldownTimer]\r\n"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Value"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 87.0,
+              "Left": 225.0,
+              "Top": 4.0,
+              "Visible": true,
+              "Width": 144.0,
+              "Name": "DPL box",
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if (isnull([GameRawData.Telemetry.DRS_Status],0) > 1, 'lawngreen','transparent')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontSize": 70.0,
+              "Text": "100",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 1,
+              "TextMask": "0000000000",
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 86.0,
+              "Left": 222.0,
+              "Top": 4.0,
+              "Visible": true,
+              "Width": 146.0,
+              "Name": "DPLpercent",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "[DahlDesign.SF23.P2PTimeLeft]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if(([PitLimiterOn]=0 and [IsInPitLane]=1) || isnull([GameRawData.Telemetry.DRS_Status],0) > 1, 'black','white')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+              "IsLinearGauge": true,
+              "GaugeOrientation": 0,
+              "GaugeAlignment": 0,
+              "AutoSize": false,
+              "GaugeColor": "#FFFFF0F5",
+              "AlternateGaugeColor": "#FF008000",
+              "UseAlternateStyle": false,
+              "Minimum": 0.0,
+              "Maximum": 200.0,
+              "Value": 7.0,
+              "Steps": 0.0,
+              "PAW": 19.0,
+              "Rotation": -90.0,
+              "BackgroundColor": "#FF000000",
+              "Height": 80.0,
+              "Left": 138.0,
+              "Top": 284.0,
+              "Visible": true,
+              "Width": 540.0,
+              "Name": "DPL gauge",
+              "Bindings": {
+                "Value": {
+                  "Formula": {
+                    "Expression": "[DahlDesign.SF23.P2PTimeLeft]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Value"
+                },
+                "GaugeColor": {
+                  "Formula": {
+                    "Expression": "if([DahlDesign.PitBoxPosition] > 0, 'transparent',\r\nif([DahlDesign.SF23.P2PAllowed] && ![DahlDesign.SF23.P2PActive], 'lawngreen',\r\nif([DahlDesign.SF23.P2PActive], 'deepskyblue',\r\nif([DahlDesign.SF23.P2PCooldownActive], 'red',\r\nif(![DahlDesign.SF23.P2PAllowed], 'red',\r\n'darkgray')))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "GaugeColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontSize": 35.0,
+              "Text": "CD",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 2,
+              "TextMask": "0000000000",
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 45.0,
+              "Left": 2.0,
+              "Top": 5.0,
+              "Visible": true,
+              "Width": 80.0,
+              "Name": "SOC txt",
+              "Bindings": {
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontSize": 35.0,
+              "Text": "P2P",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 2,
+              "TextMask": "0000000000",
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 45.0,
+              "Left": 368.0,
+              "Top": 5.0,
+              "Visible": true,
+              "Width": 80.0,
+              "Name": "DPL txt",
+              "Bindings": {
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontSize": 45.0,
+              "Text": "TC 3",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 1,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 4,
+                "BorderLeft": 4
+              },
+              "Height": 68.0,
+              "Left": 222.0,
+              "Top": 526.0,
+              "Visible": true,
+              "Width": 146.0,
+              "Name": "TC",
+              "Bindings": {
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                },
+                "Text": {
+                  "Formula": {
+                    "Expression": "'TC ' + [GameRawData.Telemetry.dcTractionControl]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontSize": 45.0,
+              "Text": "THR 6",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 1,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 4,
+                "BorderRight": 4
+              },
+              "Height": 68.0,
+              "Left": 80.0,
+              "Top": 526.0,
+              "Visible": true,
+              "Width": 146.0,
+              "Name": "THR",
+              "Bindings": {
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                },
+                "Text": {
+                  "Formula": {
+                    "Expression": "'THR ' + [GameRawData.Telemetry.dcThrottleShape]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 4.0,
+              "Left": 0.0,
+              "Top": 52.0,
+              "Visible": true,
+              "Width": 80.0,
+              "Name": "RectangleItem0"
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 4.0,
+              "Left": 368.0,
+              "Top": 52.0,
+              "Visible": true,
+              "Width": 80.0,
+              "Name": "RectangleItem1"
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 598.0,
+              "Left": 79.0,
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 4.0,
+              "Name": "RectangleItem2"
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 598.0,
+              "Left": 366.0,
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 4.0,
+              "Name": "RectangleItem3"
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 4.0,
+              "Left": 80.0,
+              "Top": 88.0,
+              "Visible": true,
+              "Width": 287.0,
+              "Name": "RectangleItem4"
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 90.0,
+              "Left": 223.0,
+              "Top": 2.0,
+              "Visible": true,
+              "Width": 4.0,
+              "Name": "RectangleItem5"
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 6,
+                "BorderBottom": 5,
+                "BorderLeft": 6,
+                "BorderRight": 6
+              },
+              "Height": 598.0,
+              "Left": 0.0,
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 450.0,
+              "Name": "Border"
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontWeight": "Bold",
+              "FontSize": 90.0,
+              "Text": "57.5",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 1,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 100.0,
+              "Left": 128.0,
+              "Top": 420.0,
+              "Visible": true,
+              "Width": 194.0,
+              "Name": "BB",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0.0",
+                  "Formula": {
+                    "Interpreter": 1,
+                    "Expression": "return $prop('BrakeBias')\r\n\r\n"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\nif ([PitLimiterOn] = 1, 'white',\r\nif (changed(2000,[BrakeBias]), 'deepskyblue','white')))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              }
+            }
+          ],
+          "Group": false,
+          "Visible": true,
+          "Name": "SF23",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "[DahlDesign.CenterDashType] = 'SF23'"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          }
         }
       ]
     }
@@ -9448,7 +10202,9 @@
   "Metadata": {
     "Title": "HYS + DRS",
     "ScreenCount": 1.0,
-    "InGameScreensIndexs": [0],
+    "InGameScreensIndexs": [
+      0
+    ],
     "IdleScreensIndexs": [],
     "MainPreviewIndex": 0,
     "IsOverlay": false,
