@@ -1,10 +1,10 @@
 {
-  "DashboardDebugManager": {
-    "LastPlacement": "2383,176,1280,768",
-    "Maximized": false
+  "Variables": {
+    "DashboardVariables": []
   },
+  "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "1ebcf21a-e782-43e0-918b-ef820503cbe5",
+  "Id": "94ce352e-9590-4fc0-84c8-e17892619ad1",
   "BaseHeight": 768,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
@@ -18,8 +18,12 @@
       "AllowOverlays": true,
       "IsForegroundLayer": false,
       "IsOverlayLayer": false,
-      "OverlayTriggerExpression": { "Expression": "" },
-      "ScreenEnabledExpression": { "Expression": "" },
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
       "OverlayMaxDuration": 0,
       "OverlayMinDuration": 0,
       "IsBackgroundLayer": false,
@@ -40,10 +44,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "ign.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 768.0,
           "Left": 0.0,
@@ -63,8 +72,12 @@
       "AllowOverlays": true,
       "IsForegroundLayer": false,
       "IsOverlayLayer": false,
-      "OverlayTriggerExpression": { "Expression": "" },
-      "ScreenEnabledExpression": { "Expression": "" },
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
       "OverlayMaxDuration": 0,
       "OverlayMinDuration": 0,
       "IsBackgroundLayer": false,
@@ -73,10 +86,15 @@
       "Items": [
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "adjust.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 102.0,
           "Left": 870.0,
@@ -87,10 +105,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "speed.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 173.0,
           "Left": 868.0,
@@ -101,10 +124,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 2,
           "PreviousScreenCommand": 1,
           "AutoSize": true,
           "FileName": "sector delta.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 420.0,
           "Left": 0.0,
@@ -115,10 +143,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "delta.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 180.0,
           "Left": 0.0,
@@ -129,10 +162,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 5,
           "PreviousScreenCommand": 4,
           "AutoSize": true,
           "FileName": "distance.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 220.0,
           "Left": 868.0,
@@ -143,10 +181,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "car.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 113.0,
           "Left": 870.0,
@@ -157,10 +200,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "gear.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 598.0,
           "Left": 424.0,
@@ -171,10 +219,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "BrakeAndThrottleCenter.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 598.0,
           "Left": 317.0,
@@ -194,10 +247,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "rpm.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 100.0,
           "Left": 0.0,
@@ -354,7 +412,9 @@
           "Name": "LEDs",
           "Bindings": {
             "Visible": {
-              "Formula": { "Expression": "[DahlDesign.DashLEDEnabled]" },
+              "Formula": {
+                "Expression": "[DahlDesign.DashLEDEnabled]"
+              },
               "Mode": 2,
               "TargetPropertyName": "Visible"
             }
@@ -362,10 +422,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "brake and throttle.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 82.0,
           "Left": 0.0,
@@ -376,10 +441,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "rotary menu.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 82.0,
           "Left": 0.0,
@@ -462,10 +532,15 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
               "FileName": "pit menu info bar.djson",
+              "InitialScreenIndex": 0,
+              "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 100.0,
               "Left": 0.0,
@@ -494,7 +569,9 @@
               "HorizontalAlignment": 1,
               "VerticalAlignment": 1,
               "BackgroundColor": "#FFFF00FF",
-              "BorderStyle": { "BorderBottom": 6 },
+              "BorderStyle": {
+                "BorderBottom": 6
+              },
               "Height": 106.0,
               "Left": 0.0,
               "Top": -6.0,
@@ -527,10 +604,15 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
               "FileName": "pit approach.djson",
+              "InitialScreenIndex": 0,
+              "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 100.0,
               "Left": 0.0,
@@ -625,10 +707,15 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
               "FileName": "pit hit.djson",
+              "InitialScreenIndex": 0,
+              "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 100.0,
               "Left": 0.0,
@@ -638,7 +725,9 @@
               "Name": "pit hit",
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "[DahlDesign.PitBoxApproach]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.PitBoxApproach]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -646,10 +735,15 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
               "FileName": "offtrack.djson",
+              "InitialScreenIndex": 0,
+              "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 100.0,
               "Left": 0.0,
@@ -659,7 +753,9 @@
               "Name": "Track reentry",
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "[DahlDesign.TrackEntry]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.TrackEntry]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -672,10 +768,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "messages.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 768.0,
           "Left": 0.0,
@@ -746,7 +847,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFFF00FF",
-                  "BorderStyle": { "RadiusBottomLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 16.0,
                   "Top": 222.0,
@@ -829,7 +932,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFFF00FF",
-                  "BorderStyle": { "RadiusBottomRight": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomRight": 10
+                  },
                   "Height": 45.0,
                   "Left": 147.0,
                   "Top": 222.0,
@@ -1021,7 +1126,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FF7CFC00",
-                  "BorderStyle": { "RadiusBottomLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 26.0,
                   "Top": 404.0,
@@ -1104,7 +1211,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFADFF2F",
-                  "BorderStyle": { "RadiusBottomRight": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomRight": 10
+                  },
                   "Height": 45.0,
                   "Left": 148.0,
                   "Top": 404.0,
@@ -1309,7 +1418,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFFF00FF",
-                  "BorderStyle": { "RadiusBottomLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 356.0,
                   "Top": 222.0,
@@ -1392,7 +1503,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFFF00FF",
-                  "BorderStyle": { "RadiusBottomRight": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomRight": 10
+                  },
                   "Height": 45.0,
                   "Left": 488.0,
                   "Top": 222.0,
@@ -1434,7 +1547,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFADFF2F",
-                  "BorderStyle": { "RadiusBottomLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 366.0,
                   "Top": 404.0,
@@ -1517,7 +1632,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FF7CFC00",
-                  "BorderStyle": { "RadiusBottomRight": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomRight": 10
+                  },
                   "Height": 45.0,
                   "Left": 488.0,
                   "Top": 404.0,
@@ -1572,7 +1689,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFC0C0C0",
-                  "BorderStyle": { "RadiusTopLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusTopLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 16.0,
                   "Top": 638.0,
@@ -1865,7 +1984,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FF7CFC00",
-                  "BorderStyle": { "RadiusTopLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusTopLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 26.0,
                   "Top": 456.0,
@@ -1948,7 +2069,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FF7CFC00",
-                  "BorderStyle": { "RadiusTopRight": 10 },
+                  "BorderStyle": {
+                    "RadiusTopRight": 10
+                  },
                   "Height": 45.0,
                   "Left": 148.0,
                   "Top": 456.0,
@@ -2153,7 +2276,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFC0C0C0",
-                  "BorderStyle": { "RadiusTopLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusTopLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 356.0,
                   "Top": 638.0,
@@ -2236,7 +2361,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFC0C0C0",
-                  "BorderStyle": { "RadiusTopRight": 10 },
+                  "BorderStyle": {
+                    "RadiusTopRight": 10
+                  },
                   "Height": 45.0,
                   "Left": 488.0,
                   "Top": 638.0,
@@ -2278,7 +2405,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FF7CFC00",
-                  "BorderStyle": { "RadiusTopLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusTopLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 366.0,
                   "Top": 456.0,
@@ -2361,7 +2490,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FF7CFC00",
-                  "BorderStyle": { "RadiusTopRight": 10 },
+                  "BorderStyle": {
+                    "RadiusTopRight": 10
+                  },
                   "Height": 45.0,
                   "Left": 488.0,
                   "Top": 456.0,
@@ -2948,7 +3079,9 @@
                   "Name": "Water red",
                   "Bindings": {
                     "Visible": {
-                      "Formula": { "Expression": "[WaterTemperature] >= 110" },
+                      "Formula": {
+                        "Expression": "[WaterTemperature] >= 110"
+                      },
                       "Mode": 2,
                       "TargetPropertyName": "Visible"
                     }
@@ -2968,7 +3101,9 @@
                   "Name": "Oil white",
                   "Bindings": {
                     "Visible": {
-                      "Formula": { "Expression": "[OilTemperature] < 110" },
+                      "Formula": {
+                        "Expression": "[OilTemperature] < 110"
+                      },
                       "Mode": 2,
                       "TargetPropertyName": "Visible"
                     }
@@ -2988,7 +3123,9 @@
                   "Name": "Water white",
                   "Bindings": {
                     "Visible": {
-                      "Formula": { "Expression": "[WaterTemperature] < 110" },
+                      "Formula": {
+                        "Expression": "[WaterTemperature] < 110"
+                      },
                       "Mode": 2,
                       "TargetPropertyName": "Visible"
                     }
@@ -3034,7 +3171,9 @@
                   "Name": "Oil red",
                   "Bindings": {
                     "Visible": {
-                      "Formula": { "Expression": "[OilTemperature] >= 110" },
+                      "Formula": {
+                        "Expression": "[OilTemperature] >= 110"
+                      },
                       "Mode": 2,
                       "TargetPropertyName": "Visible"
                     }
@@ -3113,7 +3252,9 @@
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
-                      "Formula": { "Expression": "[WaterTemperature]" },
+                      "Formula": {
+                        "Expression": "[WaterTemperature]"
+                      },
                       "Mode": 2,
                       "TargetPropertyName": "Text"
                     },
@@ -3145,7 +3286,9 @@
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
-                      "Formula": { "Expression": "[OilTemperature]" },
+                      "Formula": {
+                        "Expression": "[OilTemperature]"
+                      },
                       "Mode": 2,
                       "TargetPropertyName": "Text"
                     },
@@ -3165,10 +3308,15 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
               "FileName": "pit exit.djson",
+              "InitialScreenIndex": 0,
+              "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 681.0,
               "Left": 560.0,
@@ -3179,10 +3327,15 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
               "FileName": "pit approach vert.djson",
+              "InitialScreenIndex": 0,
+              "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 681.0,
               "Left": 560.0,
@@ -3202,10 +3355,15 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
               "FileName": "pit hit vert.djson",
+              "InitialScreenIndex": 0,
+              "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 681.0,
               "Left": 560.0,
@@ -3215,7 +3373,9 @@
               "Name": "PIT HIT",
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "[DahlDesign.PitBoxApproach]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.PitBoxApproach]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
                 }
@@ -3223,10 +3383,15 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
               "FileName": "brake and throttle.djson",
+              "InitialScreenIndex": 0,
+              "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 82.0,
               "Left": 0.0,
@@ -3237,10 +3402,15 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
               "FileName": "pit gear and info.djson",
+              "InitialScreenIndex": 0,
+              "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 340.0,
               "Left": 0.0,
@@ -3252,10 +3422,15 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
               "FileName": "adjust.djson",
+              "InitialScreenIndex": 0,
+              "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 102.0,
               "Left": 759.0,
@@ -3266,10 +3441,15 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
               "FileName": "rotary menu.djson",
+              "InitialScreenIndex": 0,
+              "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 82.0,
               "Left": 0.0,
@@ -3341,10 +3521,15 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
               "FileName": "pit fuel.djson",
+              "InitialScreenIndex": 0,
+              "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 692.0,
               "Left": 1164.0,
@@ -3355,10 +3540,15 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
               "FileName": "pit messages.djson",
+              "InitialScreenIndex": 0,
+              "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 345.0,
               "Left": 1062.0,
@@ -3521,7 +3711,9 @@
                   "Name": "Pitwindowred",
                   "Bindings": {
                     "Visible": {
-                      "Formula": { "Expression": "[DahlDesign.FuelAlert]" },
+                      "Formula": {
+                        "Expression": "[DahlDesign.FuelAlert]"
+                      },
                       "Mode": 2,
                       "TargetPropertyName": "Visible"
                     }
@@ -4314,7 +4506,9 @@
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
-                      "Formula": { "Expression": "[DahlDesign.PitTimeFuel]" },
+                      "Formula": {
+                        "Expression": "[DahlDesign.PitTimeFuel]"
+                      },
                       "Mode": 2,
                       "TargetPropertyName": "Text"
                     }
@@ -4347,7 +4541,9 @@
                   "Name": "pink fuel",
                   "Bindings": {
                     "Visible": {
-                      "Formula": { "Expression": "[DahlDesign.PitToggleFuel]" },
+                      "Formula": {
+                        "Expression": "[DahlDesign.PitToggleFuel]"
+                      },
                       "Mode": 2,
                       "TargetPropertyName": "Visible"
                     }
@@ -4871,7 +5067,9 @@
           "Name": "Pit screen",
           "Bindings": {
             "Visible": {
-              "Formula": { "Expression": "[DahlDesign.PitScreen]" },
+              "Formula": {
+                "Expression": "[DahlDesign.PitScreen]"
+              },
               "Mode": 2,
               "TargetPropertyName": "Visible"
             }
@@ -4879,10 +5077,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "dual clutch.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 768.0,
           "Left": 0.0,
@@ -4903,10 +5106,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "splash.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 768.0,
           "Left": 0.0,
@@ -4917,7 +5125,9 @@
           "Name": "Splash",
           "Bindings": {
             "Visible": {
-              "Formula": { "Expression": "[DahlDesign.PitBoxPosition] = 0" },
+              "Formula": {
+                "Expression": "[DahlDesign.PitBoxPosition] = 0"
+              },
               "Mode": 2,
               "TargetPropertyName": "Visible"
             }
@@ -4925,10 +5135,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "warning led.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 768.0,
           "Left": 0.0,
@@ -4939,7 +5154,9 @@
           "Name": "Warning LEDs",
           "Bindings": {
             "Visible": {
-              "Formula": { "Expression": "[DahlDesign.LEDWarnings]" },
+              "Formula": {
+                "Expression": "[DahlDesign.LEDWarnings]"
+              },
               "Mode": 2,
               "TargetPropertyName": "Visible"
             }
@@ -5108,10 +5325,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "ign.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 768.0,
           "Left": 0.0,
@@ -5132,10 +5354,15 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "SW1.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 768.0,
           "Left": 0.0,
@@ -5146,7 +5373,9 @@
           "Name": "SW1",
           "Bindings": {
             "Visible": {
-              "Formula": { "Expression": "[DahlDesign.SW1Enabled]" },
+              "Formula": {
+                "Expression": "[DahlDesign.SW1Enabled]"
+              },
               "Mode": 2,
               "TargetPropertyName": "Visible"
             }
@@ -5558,8 +5787,12 @@
     "Description": "Informative and simple",
     "Author": "Andreas Dahl",
     "ScreenCount": 2.0,
-    "InGameScreensIndexs": [1],
-    "IdleScreensIndexs": [0],
+    "InGameScreensIndexs": [
+      1
+    ],
+    "IdleScreensIndexs": [
+      0
+    ],
     "MainPreviewIndex": 1,
     "IsOverlay": false,
     "Width": 1280.0,

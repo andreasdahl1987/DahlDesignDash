@@ -4,7 +4,7 @@
   },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "37fbff74-23b3-46a0-8526-58931a7b12ab",
+  "Id": "e18bfe16-dbc4-4067-b888-0ed3ed245f0f",
   "BaseHeight": 598,
   "BaseWidth": 450,
   "BackgroundColor": "#FF000000",
@@ -9700,7 +9700,7 @@
                 "Text": {
                   "FormatString": "0",
                   "Formula": {
-                    "Expression": "[DahlDesign.SF23.P2PCooldownTimer]"
+                    "Expression": "[DahlDesign.SF23.OTCooldownTimer]"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
@@ -9789,7 +9789,7 @@
               "Bindings": {
                 "Value": {
                   "Formula": {
-                    "Expression": "[DahlDesign.SF23.P2PCooldownTimer]\r\n"
+                    "Expression": "[DahlDesign.SF23.OTCooldownTimer]\r\n"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Value"
@@ -9837,7 +9837,7 @@
                 "Text": {
                   "FormatString": "0",
                   "Formula": {
-                    "Expression": "[DahlDesign.SF23.P2PTimeLeft]"
+                    "Expression": "[DahlDesign.SF23.OTTimeLeft]"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
@@ -9876,14 +9876,14 @@
               "Bindings": {
                 "Value": {
                   "Formula": {
-                    "Expression": "[DahlDesign.SF23.P2PTimeLeft]"
+                    "Expression": "[DahlDesign.SF23.OTTimeLeft]"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Value"
                 },
                 "GaugeColor": {
                   "Formula": {
-                    "Expression": "if([DahlDesign.PitBoxPosition] > 0, 'transparent',\r\nif(![DahlDesign.SF23.P2PAllowed], 'lawngreen',\r\nif([DahlDesign.SF23.P2PActive], 'deepskyblue',\r\nif([DahlDesign.SF23.P2PCooldownActive], 'red',\r\n'darkgray'))))"
+                    "Expression": "if([DahlDesign.PitBoxPosition] > 0, 'transparent',\r\nif([DahlDesign.SF23.OTAllowed] && ![DahlDesign.SF23.OTActive], 'lawngreen',\r\nif([DahlDesign.SF23.OTActive], 'deepskyblue',\r\nif([DahlDesign.SF23.OTCooldownActive], 'red',\r\nif(![DahlDesign.SF23.OTAllowed], 'red',\r\n'darkgray')))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "GaugeColor"
