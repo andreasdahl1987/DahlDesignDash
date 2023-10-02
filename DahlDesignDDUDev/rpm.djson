@@ -1,9 +1,8 @@
 {
-  "DashboardDebugManager": {
-    "Maximized": false
-  },
+  "Variables": { "DashboardVariables": [] },
+  "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "e0b3b6d3-a3f4-4dfc-b004-5fe007974263",
+  "Id": "62eab651-0cf2-4bcb-8de2-8ac316b7fbdb",
   "BaseHeight": 100,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
@@ -17,12 +16,8 @@
       "AllowOverlays": true,
       "IsForegroundLayer": false,
       "IsOverlayLayer": false,
-      "OverlayTriggerExpression": {
-        "Expression": ""
-      },
-      "ScreenEnabledExpression": {
-        "Expression": ""
-      },
+      "OverlayTriggerExpression": { "Expression": "" },
+      "ScreenEnabledExpression": { "Expression": "" },
       "OverlayMaxDuration": 0,
       "OverlayMinDuration": 0,
       "IsBackgroundLayer": false,
@@ -67,7 +62,7 @@
             },
             "GaugeColor": {
               "Formula": {
-                "Expression": "if([DahlDesign.ShiftWarning] && [Rpms] > [DahlDesign.ShiftLightRPM], 'orange',\r\nif([DataCorePlugin.GameData.NewData.PitLimiterOn]>0, 'deepskyblue', \r\nif([DataCorePlugin.GameData.NewData.IsInPit]=1, 'yellow',\r\nif([DahlDesign.P2PStatus],'fuchsia',\r\nif([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True',\r\n\r\n\tif([DahlDesign.CenterDashType] = 'Porsche 919' && 100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct],0) = 1, 'red', 'fuchsia'),\r\n\t\r\nif([DahlDesign.DRSState]='Open' || [DahlDesign.NoBoost],'lawngreen',\r\n\r\n'white'))))))"
+                "Expression": "if([DahlDesign.ShiftWarning] && [Rpms] > [DahlDesign.ShiftLightRPM], 'orange',\r\nif([DataCorePlugin.GameData.NewData.PitLimiterOn]>0, 'deepskyblue', \r\nif([DataCorePlugin.GameData.NewData.IsInPit]=1, 'yellow',\r\nif([DahlDesign.SF23.OTActive], 'deepskyblue',\r\nif([DahlDesign.P2PStatus],'fuchsia',\r\nif([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True',\r\n\r\n\tif([DahlDesign.CenterDashType] = 'Porsche 919' && 100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct],0) = 1, 'red', 'fuchsia'),\r\n\t\r\nif([DahlDesign.DRSState]='Open' || [DahlDesign.NoBoost],'lawngreen',\r\n\r\n'white')))))))"
               },
               "Mode": 2,
               "TargetPropertyName": "GaugeColor"
@@ -130,9 +125,7 @@
           "Bindings": {
             "Text": {
               "FormatString": "0.0",
-              "Formula": {
-                "Expression": "[DahlDesign.TrueRevLimiter]/8000*1"
-              },
+              "Formula": { "Expression": "[DahlDesign.TrueRevLimiter]/8000*1" },
               "Mode": 2,
               "TargetPropertyName": "Text"
             }
@@ -194,9 +187,7 @@
           "Bindings": {
             "Text": {
               "FormatString": "0.0",
-              "Formula": {
-                "Expression": "[DahlDesign.TrueRevLimiter]/8000*2"
-              },
+              "Formula": { "Expression": "[DahlDesign.TrueRevLimiter]/8000*2" },
               "Mode": 2,
               "TargetPropertyName": "Text"
             }
@@ -258,9 +249,7 @@
           "Bindings": {
             "Text": {
               "FormatString": "0.0",
-              "Formula": {
-                "Expression": "[DahlDesign.TrueRevLimiter]/8000*3"
-              },
+              "Formula": { "Expression": "[DahlDesign.TrueRevLimiter]/8000*3" },
               "Mode": 2,
               "TargetPropertyName": "Text"
             }
@@ -322,9 +311,7 @@
           "Bindings": {
             "Text": {
               "FormatString": "0.0",
-              "Formula": {
-                "Expression": "[DahlDesign.TrueRevLimiter]/8000*4"
-              },
+              "Formula": { "Expression": "[DahlDesign.TrueRevLimiter]/8000*4" },
               "Mode": 2,
               "TargetPropertyName": "Text"
             }
@@ -386,9 +373,7 @@
           "Bindings": {
             "Text": {
               "FormatString": "0.0",
-              "Formula": {
-                "Expression": "[DahlDesign.TrueRevLimiter]/8000*5"
-              },
+              "Formula": { "Expression": "[DahlDesign.TrueRevLimiter]/8000*5" },
               "Mode": 2,
               "TargetPropertyName": "Text"
             }
@@ -450,9 +435,7 @@
           "Bindings": {
             "Text": {
               "FormatString": "0.0",
-              "Formula": {
-                "Expression": "[DahlDesign.TrueRevLimiter]/8000*6"
-              },
+              "Formula": { "Expression": "[DahlDesign.TrueRevLimiter]/8000*6" },
               "Mode": 2,
               "TargetPropertyName": "Text"
             }
@@ -514,9 +497,7 @@
           "Bindings": {
             "Text": {
               "FormatString": "0.0",
-              "Formula": {
-                "Expression": "[DahlDesign.TrueRevLimiter]/8000*7"
-              },
+              "Formula": { "Expression": "[DahlDesign.TrueRevLimiter]/8000*7" },
               "Mode": 2,
               "TargetPropertyName": "Text"
             }

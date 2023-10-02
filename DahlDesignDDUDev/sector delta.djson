@@ -1,7 +1,8 @@
 {
-  "DashboardDebugManager": { "Maximized": false },
+  "Variables": { "DashboardVariables": [] },
+  "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "cd933686-b734-4ae1-8050-b3b2585fd070",
+  "Id": "574c9a09-cc82-49c0-a055-e08caa5ec180",
   "BaseHeight": 420,
   "BaseWidth": 425,
   "BackgroundColor": "#FF000000",
@@ -4650,7 +4651,7 @@
               "Bindings": {
                 "Visible": {
                   "Formula": {
-                    "Expression": "[DahlDesign.CarAhead01ClassDifference] = 0 && [DahlDesign.HasOvertake]"
+                    "Expression": "[DahlDesign.CarAhead01ClassDifference] = 0 && [DahlDesign.HasOvertake] && [DahlDesign.AnimationType] != 'SF23'"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
@@ -5071,7 +5072,7 @@
               "Bindings": {
                 "Visible": {
                   "Formula": {
-                    "Expression": "[DahlDesign.CarBehind01ClassDifference] = 0 && [DahlDesign.HasOvertake]"
+                    "Expression": "[DahlDesign.CarBehind01ClassDifference] = 0 && [DahlDesign.HasOvertake] && [DahlDesign.AnimationType] != 'SF23'"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
@@ -5106,10 +5107,13 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": { "DashboardVariables": [] },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "fuel bar.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 80.0,
           "Left": 0.0,
@@ -7518,10 +7522,13 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": { "DashboardVariables": [] },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "fuel bar.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 80.0,
           "Left": 0.0,
@@ -7861,7 +7868,7 @@
               "Bindings": {
                 "Visible": {
                   "Formula": {
-                    "Expression": "[DahlDesign.AheadGap] != 0 && [DahlDesign.HasOvertake]"
+                    "Expression": "[DahlDesign.AheadGap] != 0 && [DahlDesign.HasOvertake] && [DahlDesign.AnimationType] != 'SF23'"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
@@ -8271,7 +8278,7 @@
               "Bindings": {
                 "Visible": {
                   "Formula": {
-                    "Expression": "[DahlDesign.BehindGap] != 0 && [DahlDesign.HasOvertake]"
+                    "Expression": "[DahlDesign.BehindGap] != 0 && [DahlDesign.HasOvertake] && [DahlDesign.AnimationType] != 'SF23'"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
@@ -9208,10 +9215,13 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "Variables": { "DashboardVariables": [] },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
           "FileName": "fuel bar.djson",
+          "InitialScreenIndex": 0,
+          "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 80.0,
           "Left": 0.0,
