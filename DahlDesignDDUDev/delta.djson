@@ -1,7 +1,10 @@
 {
-  "DashboardDebugManager": { "Maximized": false },
+  "Variables": {
+    "DashboardVariables": []
+  },
+  "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "ee170101-11c3-4c6f-b34b-f9e52f3aa552",
+  "Id": "215bf249-b7a0-4e3b-a0e3-2aca09f7a288",
   "BaseHeight": 180,
   "BaseWidth": 425,
   "BackgroundColor": "#FF000000",
@@ -15,8 +18,12 @@
       "AllowOverlays": true,
       "IsForegroundLayer": false,
       "IsOverlayLayer": false,
-      "OverlayTriggerExpression": { "Expression": "" },
-      "ScreenEnabledExpression": { "Expression": "" },
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
       "OverlayMaxDuration": 0,
       "OverlayMinDuration": 0,
       "IsBackgroundLayer": false,
@@ -34,7 +41,9 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FF000000",
-              "BorderStyle": { "BorderBottom": 4 },
+              "BorderStyle": {
+                "BorderBottom": 4
+              },
               "Height": 176.0,
               "Left": 0.0,
               "Top": 0.0,
@@ -232,7 +241,9 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FF000000",
-              "BorderStyle": { "BorderBottom": 4 },
+              "BorderStyle": {
+                "BorderBottom": 4
+              },
               "Height": 176.0,
               "Left": 0.0,
               "Top": 0.0,
@@ -353,7 +364,9 @@
               "Bindings": {
                 "Text": {
                   "FormatString": "0.00",
-                  "Formula": { "Expression": "[DahlDesign.FuelPerLapTarget]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.FuelPerLapTarget]"
+                  },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 }
@@ -512,7 +525,7 @@
                 "Text": {
                   "FormatString": "0.00",
                   "Formula": {
-                    "Expression": "if([IsInPit]=1,'PIT',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'OUT',\r\n\r\nif (abs([DahlDesign.DeltaLapRecord]) > 100, '-', format([DahlDesign.DeltaLapRecord],'0.00',1))))"
+                    "Expression": "if([IsInPit]=1,'PIT',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'OUT',\r\n\r\nif (abs([DahlDesign.DeltaLapRecord]) > 100, '-', format([DahlDesign.SpeedDeltaLapRecord],'0.00',1))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
@@ -2464,7 +2477,10 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FFC0C0C0",
-              "BorderStyle": { "BorderLeft": 3, "BorderRight": 2 },
+              "BorderStyle": {
+                "BorderLeft": 3,
+                "BorderRight": 2
+              },
               "Height": 80.0,
               "Left": 410.0,
               "Opacity": 50.0,
@@ -2563,7 +2579,7 @@
             }
           ],
           "Group": false,
-          "Visible": false,
+          "Visible": true,
           "Name": "LapRecordDelta",
           "Bindings": {
             "Visible": {
@@ -4578,7 +4594,10 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FFC0C0C0",
-              "BorderStyle": { "BorderLeft": 3, "BorderRight": 2 },
+              "BorderStyle": {
+                "BorderLeft": 3,
+                "BorderRight": 2
+              },
               "Height": 80.0,
               "Left": 410.0,
               "Opacity": 50.0,
@@ -6692,7 +6711,10 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FFC0C0C0",
-              "BorderStyle": { "BorderLeft": 3, "BorderRight": 2 },
+              "BorderStyle": {
+                "BorderLeft": 3,
+                "BorderRight": 2
+              },
               "Height": 80.0,
               "Left": 410.0,
               "Opacity": 50.0,
@@ -6791,7 +6813,7 @@
             }
           ],
           "Group": false,
-          "Visible": true,
+          "Visible": false,
           "Name": "LastLapDelta",
           "Bindings": {
             "Visible": {
@@ -6936,7 +6958,9 @@
   "Metadata": {
     "Title": "Delta",
     "ScreenCount": 1.0,
-    "InGameScreensIndexs": [0],
+    "InGameScreensIndexs": [
+      0
+    ],
     "IdleScreensIndexs": [],
     "MainPreviewIndex": 0,
     "IsOverlay": false,
