@@ -1,7 +1,8 @@
 {
-  "DashboardDebugManager": { "Maximized": false },
+  "Variables": { "DashboardVariables": [] },
+  "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "f8d99ede-a651-4e10-b4bd-340477a1f5f3",
+  "Id": "8757fd56-3d0c-4e66-b565-51a8f9814066",
   "BaseHeight": 102,
   "BaseWidth": 410,
   "BackgroundColor": "#FF000000",
@@ -19518,6 +19519,3680 @@
                 "Visible": {
                   "Formula": {
                     "Expression": "[DahlDesign.MenuType] = 'Ferrari 488 GTE'\r\n"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Top": -21.0,
+              "Left": -3.0,
+              "Height": 142.0,
+              "Width": 413.0,
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "Top": -21.0,
+                  "Left": -2.0,
+                  "Height": 142.0,
+                  "Width": 412.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
+                      "Height": 102.0,
+                      "Left": 0.0,
+                      "Top": 0.0,
+                      "Visible": true,
+                      "Width": 410.0,
+                      "Name": "RectangleItem0"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 40.0,
+                      "Text": "BB",
+                      "TextColor": "#FF00BFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": -21.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "BIAS"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 40.0,
+                      "Text": "53.9",
+                      "TextColor": "#FF00BFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": 19.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "BB value",
+                      "Bindings": {
+                        "Text": {
+                          "FormatString": "0.0",
+                          "Formula": {
+                            "Expression": "[DataCorePlugin.GameData.NewData.BrakeBias]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFF0000",
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 55.0,
+                      "Left": 250.0,
+                      "Top": 9.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "50"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 310.0,
+                      "Top": 22.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "55"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFF0000",
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 50.0,
+                      "Left": 130.0,
+                      "Top": 17.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "40"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFF0000",
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 50.0,
+                      "Left": 370.0,
+                      "Top": 17.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "60"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 190.0,
+                      "Top": 22.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "50"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 201.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "1"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 225.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "2"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 238.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "3"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 213.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "4"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 141.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "5"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 165.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "6"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 178.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "7"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 153.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "8"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 262.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "9"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 286.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "10"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 299.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "11"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 274.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "12"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 321.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "13"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 345.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "14"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 358.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "15"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 333.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "16"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FF00BFFF",
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 80.0,
+                      "Left": 299.0,
+                      "Top": 12.0,
+                      "Visible": true,
+                      "Width": 4.0,
+                      "Name": "17",
+                      "Bindings": {
+                        "Left": {
+                          "Formula": {
+                            "Expression": "(([BrakeBias])-50)*(120/10)+250"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Left"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 107.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "18"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 119.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "19"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 381.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "20"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 394.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "21"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 30.0,
+                      "Text": "50",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 38.0,
+                      "Left": 230.0,
+                      "Top": 60.0,
+                      "Visible": true,
+                      "Width": 42.0,
+                      "Name": "Txt50"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 30.0,
+                      "Text": "R",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 38.0,
+                      "Left": 95.0,
+                      "Top": 60.0,
+                      "Visible": true,
+                      "Width": 42.0,
+                      "Name": "R"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 30.0,
+                      "Text": "F",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 38.0,
+                      "Left": 365.0,
+                      "Top": 60.0,
+                      "Visible": true,
+                      "Width": 42.0,
+                      "Name": "F"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 100.0,
+                      "Left": 95.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 4.0,
+                      "Name": "RectangleItem0"
+                    }
+                  ],
+                  "Group": false,
+                  "Visible": false,
+                  "Name": "BB",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=1" },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "Top": -21.0,
+                  "Left": -2.0,
+                  "Height": 142.0,
+                  "Width": 412.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
+                      "Height": 102.0,
+                      "Left": 0.0,
+                      "Top": 0.0,
+                      "Visible": true,
+                      "Width": 410.0,
+                      "Name": "RectangleItem0"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 40.0,
+                      "Text": "BB",
+                      "TextColor": "#FF00BFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": -21.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "BIAS"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 40.0,
+                      "Text": "53.9",
+                      "TextColor": "#FF00BFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": 19.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "BB value",
+                      "Bindings": {
+                        "Text": {
+                          "FormatString": "0.0",
+                          "Formula": {
+                            "Expression": "[DataCorePlugin.GameData.NewData.BrakeBias]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFF0000",
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 55.0,
+                      "Left": 250.0,
+                      "Top": 9.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "50"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 310.0,
+                      "Top": 22.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "55"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFF0000",
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 50.0,
+                      "Left": 130.0,
+                      "Top": 17.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "40"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFF0000",
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 50.0,
+                      "Left": 370.0,
+                      "Top": 17.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "60"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 190.0,
+                      "Top": 22.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "50"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 201.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "1"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 225.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "2"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 238.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "3"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 213.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "4"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 141.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "5"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 165.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "6"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 178.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "7"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 153.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "8"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 262.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "9"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 286.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "10"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 299.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "11"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 274.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "12"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 321.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "13"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 345.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "14"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 358.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "15"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 333.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "16"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FF00BFFF",
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 80.0,
+                      "Left": 299.0,
+                      "Top": 12.0,
+                      "Visible": true,
+                      "Width": 4.0,
+                      "Name": "17",
+                      "Bindings": {
+                        "Left": {
+                          "Formula": {
+                            "Expression": "(([BrakeBias])-50)*(120/10)+250"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Left"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 107.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "18"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 119.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "19"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 381.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "20"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 30.0,
+                      "Left": 394.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 2.0,
+                      "Name": "21"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 30.0,
+                      "Text": "50",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 38.0,
+                      "Left": 230.0,
+                      "Top": 60.0,
+                      "Visible": true,
+                      "Width": 42.0,
+                      "Name": "Txt50"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 30.0,
+                      "Text": "R",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 38.0,
+                      "Left": 95.0,
+                      "Top": 60.0,
+                      "Visible": true,
+                      "Width": 42.0,
+                      "Name": "R"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 30.0,
+                      "Text": "F",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 38.0,
+                      "Left": 365.0,
+                      "Top": 60.0,
+                      "Visible": true,
+                      "Width": 42.0,
+                      "Name": "F"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 100.0,
+                      "Left": 95.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 4.0,
+                      "Name": "RectangleItem0"
+                    }
+                  ],
+                  "Group": false,
+                  "Visible": false,
+                  "Name": "BB1",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=2" },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "Top": -21.0,
+                  "Left": -2.0,
+                  "Height": 142.0,
+                  "Width": 412.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
+                      "Height": 102.0,
+                      "Left": 0.0,
+                      "Top": 0.0,
+                      "Visible": true,
+                      "Width": 410.0,
+                      "Name": "Background"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 100.0,
+                      "Left": 95.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 4.0,
+                      "Name": "Border"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 40.0,
+                      "Text": "BRK",
+                      "TextColor": "#FF00BFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": -21.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "Parameter"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 40.0,
+                      "Text": "MIG",
+                      "TextColor": "#FF00BFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": 19.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "Parameter2"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 119.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line1"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 143.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line2"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 167.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line3"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 191.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line4"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 215.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line5"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 239.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line6"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 263.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line7"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 287.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line8"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 311.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line9"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 335.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line10"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FF00BFFF",
+                        "BorderTop": 5,
+                        "BorderBottom": 5,
+                        "BorderLeft": 5,
+                        "BorderRight": 5,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if ([GameRawData.Telemetry.dcPeakBrakeBias] = 1, 'red', 'deepskyblue')"
+                            },
+                            "Mode": 2,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 40.0,
+                      "Left": 116.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 9.0,
+                      "Name": "Value line marker",
+                      "Bindings": {
+                        "Left": {
+                          "Formula": {
+                            "Expression": "116 + ([GameRawData.Telemetry.dcPeakBrakeBias]-1)*24\r\n"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Left"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 30.0,
+                      "Text": "1",
+                      "TextColor": "#FF00BFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#FF000000",
+                      "Height": 34.0,
+                      "Left": 100.0,
+                      "Top": 10.0,
+                      "Visible": true,
+                      "Width": 39.0,
+                      "Name": "Value text marker",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "[GameRawData.Telemetry.dcPeakBrakeBias]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        },
+                        "Left": {
+                          "Formula": {
+                            "Expression": "100 + ([GameRawData.Telemetry.dcPeakBrakeBias]-1)*24"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Left"
+                        },
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if ([GameRawData.Telemetry.dcPeakBrakeBias] = 1, 'red', 'deepskyblue')"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "TextColor"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 30.0,
+                      "Text": "OFF",
+                      "TextColor": "#FFFF0000",
+                      "HorizontalAlignment": 0,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 30.0,
+                      "Left": 106.0,
+                      "Top": 65.0,
+                      "Visible": true,
+                      "Width": 120.0,
+                      "Name": "OFF"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 30.0,
+                      "Text": "FRONT",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 2,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 30.0,
+                      "Left": 199.0,
+                      "Top": 65.0,
+                      "Visible": true,
+                      "Width": 144.0,
+                      "Name": "Text right"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "SemiBold",
+                      "FontSize": 36.0,
+                      "Text": "9%",
+                      "TextColor": "#FF00BFFF",
+                      "HorizontalAlignment": 2,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 82.0,
+                      "Left": 333.0,
+                      "Top": 4.0,
+                      "Visible": true,
+                      "Width": 67.0,
+                      "Name": "Text right",
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if ([GameRawData.Telemetry.dcPeakBrakeBias] = 1, 'red', 'deepskyblue')"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Expression": "format([GameRawData.Telemetry.dcPeakBrakeBias]-1,1) + '%'"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    }
+                  ],
+                  "Group": false,
+                  "Visible": false,
+                  "Name": "Bmig",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=3" },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "Top": -21.0,
+                  "Left": -2.0,
+                  "Height": 142.0,
+                  "Width": 412.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
+                      "Height": 102.0,
+                      "Left": 0.0,
+                      "Top": 0.0,
+                      "Visible": true,
+                      "Width": 410.0,
+                      "Name": "Background"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 100.0,
+                      "Left": 95.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 4.0,
+                      "Name": "Border"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 40.0,
+                      "Text": "ENG",
+                      "TextColor": "#FFFF0000",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": -21.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "Parameter"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 40.0,
+                      "Text": "BRK",
+                      "TextColor": "#FFFF0000",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": 19.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "Parameter2"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 119.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line1"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 143.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line2"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 167.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line3"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 191.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line4"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 215.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line5"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 239.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line6"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 263.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line7"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 287.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line8"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 311.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line9"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 335.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line10"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 359.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line11"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 383.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line12"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFF0000",
+                        "BorderTop": 5,
+                        "BorderBottom": 5,
+                        "BorderLeft": 5,
+                        "BorderRight": 5
+                      },
+                      "Height": 40.0,
+                      "Left": 116.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 9.0,
+                      "Name": "Value line marker",
+                      "Bindings": {
+                        "Left": {
+                          "Formula": {
+                            "Expression": "116 + ([GameRawData.Telemetry.dcEngineBraking]-1)*24\r\n"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Left"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 30.0,
+                      "Text": "1",
+                      "TextColor": "#FFFF0000",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#FF000000",
+                      "Height": 34.0,
+                      "Left": 100.0,
+                      "Top": 10.0,
+                      "Visible": true,
+                      "Width": 39.0,
+                      "Name": "Value text marker",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "[GameRawData.Telemetry.dcEngineBraking]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        },
+                        "Left": {
+                          "Formula": {
+                            "Expression": "100 + ([GameRawData.Telemetry.dcEngineBraking]-1)*24"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Left"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 30.0,
+                      "Text": "HIGH",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 0,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 30.0,
+                      "Left": 106.0,
+                      "Top": 65.0,
+                      "Visible": true,
+                      "Width": 120.0,
+                      "Name": "Text left"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 30.0,
+                      "Text": "LOW",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 2,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 30.0,
+                      "Left": 257.0,
+                      "Top": 65.0,
+                      "Visible": true,
+                      "Width": 144.0,
+                      "Name": "Text right"
+                    }
+                  ],
+                  "Group": false,
+                  "Visible": false,
+                  "Name": "EB",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=5" },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "Top": 0.0,
+                  "Left": 0.0,
+                  "Height": 103.0,
+                  "Width": 410.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "SemiBold",
+                      "FontSize": 70.0,
+                      "Text": "ATK",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#FFFF0000",
+                      "Height": 102.0,
+                      "Left": 0.0,
+                      "Top": 1.0,
+                      "Visible": true,
+                      "Width": 205.0,
+                      "Name": "DPL Mode",
+                      "Bindings": {
+                        "Text": {
+                          "FormatString": "0",
+                          "Formula": {
+                            "Expression": "if ([GameRawData.Telemetry.dcMGUKDeployMode] = 0, 'OFF',\r\nif ([GameRawData.Telemetry.dcMGUKDeployMode] = 1, 'QLY',\r\nif ([GameRawData.Telemetry.dcMGUKDeployMode] = 2, 'ATK',\r\nif ([GameRawData.Telemetry.dcMGUKDeployMode] = 3, 'BAL', 'ECO'))))\r\n"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if ([GameRawData.Telemetry.dcMGUKDeployMode] = 0, 'orange',\r\nif ([GameRawData.Telemetry.dcMGUKDeployMode] = 1, 'fuchsia',\r\nif ([GameRawData.Telemetry.dcMGUKDeployMode] = 2, 'red',\r\nif ([GameRawData.Telemetry.dcMGUKDeployMode] = 3, 'deepskyblue', 'lawngreen'))))\r\n"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "BackgroundColor"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
+                      "Height": 102.0,
+                      "Left": 0.0,
+                      "Top": 0.0,
+                      "Visible": true,
+                      "Width": 410.0,
+                      "Name": "Background",
+                      "Bindings": {
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DataCorePlugin.ExternalScript.tractionToggleScript]>0, 'red', 'transparent')"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "BackgroundColor"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 102.0,
+                      "Left": 203.0,
+                      "Top": 0.0,
+                      "Visible": true,
+                      "Width": 4.0,
+                      "Name": "RectangleItem0"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 70.0,
+                      "Text": "4/4",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 0,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 100.0,
+                      "Left": 211.0,
+                      "Top": 2.0,
+                      "Visible": true,
+                      "Width": 189.0,
+                      "Name": "TextItem0",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "format([DahlDesign.ERSCharges],1) + ' / 4'"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    }
+                  ],
+                  "Group": false,
+                  "Visible": false,
+                  "Name": "ERS MODE",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=6" },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "Top": -21.0,
+                  "Left": -2.0,
+                  "Height": 142.0,
+                  "Width": 399.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
+                      "Height": 102.0,
+                      "Left": 0.0,
+                      "Top": 0.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Background"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 100.0,
+                      "Left": 95.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 4.0,
+                      "Name": "Border"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 40.0,
+                      "Text": "DIFF",
+                      "TextColor": "#FFFFA500",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": -21.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "Parameter"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 40.0,
+                      "Text": "ENT",
+                      "TextColor": "#FFFFA500",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": 19.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "Parameter2"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 30.0,
+                      "Text": "LOCK",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 2,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 30.0,
+                      "Left": 269.0,
+                      "Top": 65.0,
+                      "Visible": true,
+                      "Width": 128.0,
+                      "Name": "Text left"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 30.0,
+                      "Text": "OPEN",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 0,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 30.0,
+                      "Left": 104.0,
+                      "Top": 65.0,
+                      "Visible": true,
+                      "Width": 144.0,
+                      "Name": "Text right"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 4,
+                        "BorderBottom": 4,
+                        "BorderLeft": 4,
+                        "BorderRight": 4
+                      },
+                      "Height": 40.0,
+                      "Left": 119.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line1"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 143.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line2"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 167.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line3"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 191.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line4"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 215.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line5"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 239.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line6"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 263.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line7"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 287.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line8"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 311.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line9"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 4,
+                        "BorderBottom": 4,
+                        "BorderLeft": 4,
+                        "BorderRight": 4
+                      },
+                      "Height": 40.0,
+                      "Left": 335.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line10"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 4,
+                        "BorderBottom": 4,
+                        "BorderLeft": 4,
+                        "BorderRight": 4
+                      },
+                      "Height": 40.0,
+                      "Left": 359.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line11"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 4,
+                        "BorderBottom": 4,
+                        "BorderLeft": 4,
+                        "BorderRight": 4
+                      },
+                      "Height": 40.0,
+                      "Left": 383.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line12"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFFA500",
+                        "BorderTop": 5,
+                        "BorderBottom": 5,
+                        "BorderLeft": 5,
+                        "BorderRight": 5,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([GameRawData.Telemetry.dcTractionControl] = 1, 'red' ,\r\nif([GameRawData.Telemetry.dcTractionControl] = 12, 'lawngreen' ,\r\n'orange'))"
+                            },
+                            "Mode": 2,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 40.0,
+                      "Left": 284.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 9.0,
+                      "Name": "Value line marker",
+                      "Bindings": {
+                        "Left": {
+                          "Formula": {
+                            "Expression": "116 + ([GameRawData.Telemetry.dcDiffEntry]-1)*24"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Left"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 30.0,
+                      "Text": "8",
+                      "TextColor": "#FFFFA500",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#FF000000",
+                      "Height": 34.0,
+                      "Left": 269.0,
+                      "Top": 10.0,
+                      "Visible": true,
+                      "Width": 39.0,
+                      "Name": "Value text marker",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "[GameRawData.Telemetry.dcDiffEntry]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        },
+                        "Left": {
+                          "Formula": {
+                            "Expression": "100 + ([GameRawData.Telemetry.dcDiffEntry]-1)*24"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Left"
+                        }
+                      }
+                    }
+                  ],
+                  "Group": false,
+                  "Visible": false,
+                  "Name": "Ent",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "Top": -21.0,
+                  "Left": -2.0,
+                  "Height": 142.0,
+                  "Width": 399.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
+                      "Height": 102.0,
+                      "Left": 0.0,
+                      "Top": 0.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Background"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 100.0,
+                      "Left": 95.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 4.0,
+                      "Name": "Border"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 40.0,
+                      "Text": "DIFF",
+                      "TextColor": "#FFFFA500",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": -21.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "Parameter"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 40.0,
+                      "Text": "MID",
+                      "TextColor": "#FFFFA500",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": 19.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "Parameter2"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 4,
+                        "BorderBottom": 4,
+                        "BorderLeft": 4,
+                        "BorderRight": 4
+                      },
+                      "Height": 40.0,
+                      "Left": 119.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line1"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 143.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line2"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 167.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line3"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 191.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line4"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 215.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line5"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 239.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line6"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 263.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line7"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 287.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line8"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 311.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line9"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 4,
+                        "BorderBottom": 4,
+                        "BorderLeft": 4,
+                        "BorderRight": 4
+                      },
+                      "Height": 40.0,
+                      "Left": 335.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line10"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 4,
+                        "BorderBottom": 4,
+                        "BorderLeft": 4,
+                        "BorderRight": 4
+                      },
+                      "Height": 40.0,
+                      "Left": 359.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line11"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 4,
+                        "BorderBottom": 4,
+                        "BorderLeft": 4,
+                        "BorderRight": 4
+                      },
+                      "Height": 40.0,
+                      "Left": 383.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line12"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFFA500",
+                        "BorderTop": 5,
+                        "BorderBottom": 5,
+                        "BorderLeft": 5,
+                        "BorderRight": 5,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([GameRawData.Telemetry.dcTractionControl] = 1, 'red' ,\r\nif([GameRawData.Telemetry.dcTractionControl] = 12, 'lawngreen' ,\r\n'orange'))"
+                            },
+                            "Mode": 2,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 40.0,
+                      "Left": 380.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 9.0,
+                      "Name": "Value line marker",
+                      "Bindings": {
+                        "Left": {
+                          "Formula": {
+                            "Expression": "116 + ([GameRawData.Telemetry.dcDiffMiddle]-1)*24"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Left"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 30.0,
+                      "Text": "1",
+                      "TextColor": "#FFFFA500",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#FF000000",
+                      "Height": 34.0,
+                      "Left": 100.0,
+                      "Top": 10.0,
+                      "Visible": true,
+                      "Width": 39.0,
+                      "Name": "Value text marker",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "[GameRawData.Telemetry.dcDiffMiddle]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        },
+                        "Left": {
+                          "Formula": {
+                            "Expression": "100 + ([GameRawData.Telemetry.dcDiffMiddle]-1)*24"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Left"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 30.0,
+                      "Text": "LOCK",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 2,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 30.0,
+                      "Left": 269.0,
+                      "Top": 65.0,
+                      "Visible": true,
+                      "Width": 128.0,
+                      "Name": "Text left"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 30.0,
+                      "Text": "OPEN",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 0,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 30.0,
+                      "Left": 104.0,
+                      "Top": 65.0,
+                      "Visible": true,
+                      "Width": 144.0,
+                      "Name": "Text right"
+                    }
+                  ],
+                  "Group": false,
+                  "Visible": false,
+                  "Name": "Mid",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "Top": -21.0,
+                  "Left": -2.0,
+                  "Height": 142.0,
+                  "Width": 399.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
+                      "Height": 102.0,
+                      "Left": 0.0,
+                      "Top": 0.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Background"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 100.0,
+                      "Left": 95.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 4.0,
+                      "Name": "Border"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 40.0,
+                      "Text": "DIFF",
+                      "TextColor": "#FFFFA500",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": -21.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "Parameter"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 40.0,
+                      "Text": "EXIT",
+                      "TextColor": "#FFFFA500",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": 19.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "Parameter2"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 4,
+                        "BorderBottom": 4,
+                        "BorderLeft": 4,
+                        "BorderRight": 4
+                      },
+                      "Height": 40.0,
+                      "Left": 119.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line1"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 143.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line2"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 167.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line3"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 191.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line4"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 215.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line5"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 239.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line6"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 263.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line7"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 287.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line8"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 311.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line9"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 4,
+                        "BorderBottom": 4,
+                        "BorderLeft": 4,
+                        "BorderRight": 4
+                      },
+                      "Height": 40.0,
+                      "Left": 335.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line10"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 4,
+                        "BorderBottom": 4,
+                        "BorderLeft": 4,
+                        "BorderRight": 4
+                      },
+                      "Height": 40.0,
+                      "Left": 359.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line11"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 4,
+                        "BorderBottom": 4,
+                        "BorderLeft": 4,
+                        "BorderRight": 4
+                      },
+                      "Height": 40.0,
+                      "Left": 383.0,
+                      "Top": 23.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line12"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFFA500",
+                        "BorderTop": 5,
+                        "BorderBottom": 5,
+                        "BorderLeft": 5,
+                        "BorderRight": 5,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([GameRawData.Telemetry.dcTractionControl] = 1, 'red' ,\r\nif([GameRawData.Telemetry.dcTractionControl] = 12, 'lawngreen' ,\r\n'orange'))"
+                            },
+                            "Mode": 2,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 40.0,
+                      "Left": 380.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 9.0,
+                      "Name": "Value line marker",
+                      "Bindings": {
+                        "Left": {
+                          "Formula": {
+                            "Expression": "116 + ([GameRawData.Telemetry.dcDiffExit]-1)*24"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Left"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 30.0,
+                      "Text": "1",
+                      "TextColor": "#FFFFA500",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#FF000000",
+                      "Height": 34.0,
+                      "Left": 100.0,
+                      "Top": 10.0,
+                      "Visible": true,
+                      "Width": 39.0,
+                      "Name": "Value text marker",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "[GameRawData.Telemetry.dcDiffExit]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        },
+                        "Left": {
+                          "Formula": {
+                            "Expression": "100 + ([GameRawData.Telemetry.dcDiffExit]-1)*24"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Left"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 30.0,
+                      "Text": "LOCK",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 2,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 30.0,
+                      "Left": 269.0,
+                      "Top": 65.0,
+                      "Visible": true,
+                      "Width": 128.0,
+                      "Name": "Text left"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 30.0,
+                      "Text": "OPEN",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 0,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 30.0,
+                      "Left": 104.0,
+                      "Top": 65.0,
+                      "Visible": true,
+                      "Width": 144.0,
+                      "Name": "Text right"
+                    }
+                  ],
+                  "Group": false,
+                  "Visible": false,
+                  "Name": "Exit",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "Top": -12.0,
+                  "Left": 0.0,
+                  "Height": 114.0,
+                  "Width": 410.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
+                      "Height": 102.0,
+                      "Left": 0.0,
+                      "Top": 0.0,
+                      "Visible": true,
+                      "Width": 410.0,
+                      "Name": "Background"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 140.0,
+                      "Text": "-",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 100.0,
+                      "Left": 155.0,
+                      "Top": -12.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "TextItem0"
+                    }
+                  ],
+                  "Group": false,
+                  "Visible": false,
+                  "Name": "RotaryL10",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DahlDesign.InCarMenu] = 10"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "Top": -19.0,
+                  "Left": -3.0,
+                  "Height": 140.0,
+                  "Width": 413.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
+                      "Height": 102.0,
+                      "Left": 0.0,
+                      "Top": 0.0,
+                      "Visible": true,
+                      "Width": 410.0,
+                      "Name": "Background"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 100.0,
+                      "Left": 95.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 4.0,
+                      "Name": "Border"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 35.0,
+                      "Text": "FW",
+                      "TextColor": "#FFFFFF00",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -2.0,
+                      "Top": -19.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "Parameter"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 114.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line1"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 384.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line16"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFFFF00",
+                        "BorderTop": 6,
+                        "BorderBottom": 6,
+                        "BorderLeft": 6,
+                        "BorderRight": 6
+                      },
+                      "Height": 40.0,
+                      "Left": 381.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 9.0,
+                      "Name": "Value line marker",
+                      "Bindings": {
+                        "Left": {
+                          "Formula": {
+                            "Expression": "111 + ([GameRawData.Telemetry.dpWingFront]+5)*6.75\r\n"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Left"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 30.0,
+                      "Text": "LDF",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 0,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 30.0,
+                      "Left": 108.0,
+                      "Top": 65.0,
+                      "Visible": true,
+                      "Width": 120.0,
+                      "Name": "Text left"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 30.0,
+                      "Text": "HDF",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 2,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 30.0,
+                      "Left": 275.0,
+                      "Top": 65.0,
+                      "Visible": true,
+                      "Width": 120.0,
+                      "Name": "Text right"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 35.0,
+                      "Text": "+4.75",
+                      "TextColor": "#FFFFFF00",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 102.0,
+                      "Left": -3.0,
+                      "Top": 19.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "Parameter",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "format([GameRawData.Telemetry.dpWingFront],'0.00',1)"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 4.0,
+                      "Left": 115.0,
+                      "Top": 45.0,
+                      "Visible": true,
+                      "Width": 272.0,
+                      "Name": "RectangleItem0"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FF7CFC00",
+                        "BorderTop": 2,
+                        "BorderBottom": 2,
+                        "BorderLeft": 2,
+                        "BorderRight": 2
+                      },
+                      "Height": 40.0,
+                      "Left": 249.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "Width": 3.0,
+                      "Name": "Line1"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFF00FF",
+                        "BorderTop": 6,
+                        "BorderBottom": 6,
+                        "BorderLeft": 6,
+                        "BorderRight": 6
+                      },
+                      "Height": 40.0,
+                      "Left": 262.0,
+                      "Top": 27.0,
+                      "Visible": true,
+                      "BlinkEnabled": true,
+                      "Width": 4.0,
+                      "Name": "Value line marker",
+                      "Bindings": {
+                        "Left": {
+                          "Formula": {
+                            "Expression": "114 + ([DahlDesign.CurrentFrontWing]+5)*6.75\r\n"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Left"
+                        },
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "[DahlDesign.CurrentFrontWing] != [GameRawData.Telemetry.dpWingFront]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      }
+                    }
+                  ],
+                  "Group": false,
+                  "Visible": false,
+                  "Name": "FRONT WING",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DahlDesign.InCarMenu] = 11"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "Top": -12.0,
+                  "Left": 0.0,
+                  "Height": 114.0,
+                  "Width": 410.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "IsRectangleItem": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
+                      "Height": 102.0,
+                      "Left": 0.0,
+                      "Top": 0.0,
+                      "Visible": true,
+                      "Width": 410.0,
+                      "Name": "Background"
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontSize": 140.0,
+                      "Text": "-",
+                      "TextColor": "#FFFFFFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 100.0,
+                      "Left": 155.0,
+                      "Top": -12.0,
+                      "Visible": true,
+                      "Width": 100.0,
+                      "Name": "TextItem0"
+                    }
+                  ],
+                  "Group": false,
+                  "Visible": false,
+                  "Name": "RotaryL4",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 4" },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  }
+                }
+              ],
+              "Group": false,
+              "Visible": false,
+              "Name": "Mercedes W13",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DahlDesign.MenuType] = 'Mercedes W13'"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"

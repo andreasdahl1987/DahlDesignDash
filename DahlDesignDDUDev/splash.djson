@@ -1,10 +1,8 @@
 {
-  "DashboardDebugManager": {
-    "LastPlacement": "178,106,1920,1152",
-    "Maximized": false
-  },
+  "Variables": { "DashboardVariables": [] },
+  "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "a4df0da9-a570-4bde-a3ef-448c88d1b1f3",
+  "Id": "65b92592-ed50-4b76-98a9-0198fbdcc040",
   "BaseHeight": 768,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
@@ -2316,6 +2314,531 @@
             "Visible": {
               "Formula": {
                 "Expression": "[DahlDesign.MenuType] = 'Mclaren F1'"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "Top": -58.0,
+          "Left": 0.0,
+          "Height": 892.0,
+          "Width": 1280.0,
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Top": -58.0,
+              "Left": 0.0,
+              "Height": 892.0,
+              "Width": 1280.0,
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "IsRectangleItem": true,
+                  "BackgroundColor": "#FFFFFFFF",
+                  "BorderStyle": {
+                    "BorderTop": 2,
+                    "BorderBottom": 2,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 768.0,
+                  "Left": 0.0,
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "bkgr"
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontWeight": "SemiBold",
+                  "FontSize": 200.0,
+                  "Text": "ENTRY",
+                  "TextColor": "#FF000000",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 335.0,
+                  "Left": 0.0,
+                  "Top": -58.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "txt"
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontWeight": "SemiBold",
+                  "FontSize": 650.0,
+                  "Text": "8",
+                  "TextColor": "#FF000000",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 800.0,
+                  "Left": 0.0,
+                  "Top": 34.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "value",
+                  "Bindings": {
+                    "Text": {
+                      "Formula": {
+                        "Expression": "[GameRawData.Telemetry.dcDiffEntry]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  }
+                }
+              ],
+              "Group": false,
+              "Visible": false,
+              "Name": "ent",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "changed(2000,[GameRawData.Telemetry.dcDiffEntry]) && !isnull([GameRawData.Telemetry.dcDiffEntry])\r\n\r\n"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Top": -58.0,
+              "Left": 0.0,
+              "Height": 892.0,
+              "Width": 1280.0,
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "IsRectangleItem": true,
+                  "BackgroundColor": "#FFFFFFFF",
+                  "BorderStyle": {
+                    "BorderTop": 2,
+                    "BorderBottom": 2,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 768.0,
+                  "Left": 0.0,
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "bkgr"
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontWeight": "SemiBold",
+                  "FontSize": 200.0,
+                  "Text": "MID",
+                  "TextColor": "#FF000000",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 335.0,
+                  "Left": 0.0,
+                  "Top": -58.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "txt"
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontWeight": "SemiBold",
+                  "FontSize": 650.0,
+                  "Text": "8",
+                  "TextColor": "#FF000000",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 800.0,
+                  "Left": 0.0,
+                  "Top": 34.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "value",
+                  "Bindings": {
+                    "Text": {
+                      "Formula": {
+                        "Expression": "[GameRawData.Telemetry.dcDiffMiddle]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  }
+                }
+              ],
+              "Group": false,
+              "Visible": false,
+              "Name": "mid",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "changed(2000,[GameRawData.Telemetry.dcDiffMiddle]) && !isnull([GameRawData.Telemetry.dcDiffMiddle])\r\n\r\n"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Top": -58.0,
+              "Left": 0.0,
+              "Height": 892.0,
+              "Width": 1280.0,
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "IsRectangleItem": true,
+                  "BackgroundColor": "#FFFFFFFF",
+                  "BorderStyle": {
+                    "BorderTop": 2,
+                    "BorderBottom": 2,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 768.0,
+                  "Left": 0.0,
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "bkgr"
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontWeight": "SemiBold",
+                  "FontSize": 200.0,
+                  "Text": "EXIT",
+                  "TextColor": "#FF000000",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 335.0,
+                  "Left": 0.0,
+                  "Top": -58.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "txt"
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontWeight": "SemiBold",
+                  "FontSize": 650.0,
+                  "Text": "8",
+                  "TextColor": "#FF000000",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 800.0,
+                  "Left": 0.0,
+                  "Top": 34.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "value",
+                  "Bindings": {
+                    "Text": {
+                      "Formula": {
+                        "Expression": "[GameRawData.Telemetry.dcDiffExit]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  }
+                }
+              ],
+              "Group": false,
+              "Visible": false,
+              "Name": "xit",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "changed(2000,[GameRawData.Telemetry.dcDiffExit]) && !isnull([GameRawData.Telemetry.dcDiffExit])\r\n\r\n"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Top": -58.0,
+              "Left": 0.0,
+              "Height": 892.0,
+              "Width": 1280.0,
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "IsRectangleItem": true,
+                  "BackgroundColor": "#FFFFFFFF",
+                  "BorderStyle": {
+                    "BorderTop": 2,
+                    "BorderBottom": 2,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 768.0,
+                  "Left": 0.0,
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "bkgr"
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontWeight": "SemiBold",
+                  "FontSize": 200.0,
+                  "Text": "BMIG",
+                  "TextColor": "#FF000000",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 335.0,
+                  "Left": 0.0,
+                  "Top": -58.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "txt"
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontWeight": "SemiBold",
+                  "FontSize": 650.0,
+                  "Text": "8",
+                  "TextColor": "#FF000000",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 800.0,
+                  "Left": 0.0,
+                  "Top": 34.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "value",
+                  "Bindings": {
+                    "Text": {
+                      "Formula": {
+                        "Expression": "[GameRawData.Telemetry.dcPeakBrakeBias]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  }
+                }
+              ],
+              "Group": false,
+              "Visible": false,
+              "Name": "bmig",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "changed(2000,[GameRawData.Telemetry.dcPeakBrakeBias]) && !isnull([GameRawData.Telemetry.dcPeakBrakeBias]) && [DahlDesign.PitBoxPosition] = 0\r\n\r\n"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Top": -58.0,
+              "Left": 0.0,
+              "Height": 892.0,
+              "Width": 1280.0,
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "IsRectangleItem": true,
+                  "BackgroundColor": "#FFFFFFFF",
+                  "BorderStyle": {
+                    "BorderTop": 2,
+                    "BorderBottom": 2,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 768.0,
+                  "Left": 0.0,
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "bkgr"
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontWeight": "SemiBold",
+                  "FontSize": 200.0,
+                  "Text": "B BAL",
+                  "TextColor": "#FF000000",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 335.0,
+                  "Left": 0.0,
+                  "Top": -58.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "txt"
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontWeight": "SemiBold",
+                  "FontSize": 550.0,
+                  "Text": "54.7",
+                  "TextColor": "#FF000000",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 800.0,
+                  "Left": 0.0,
+                  "Top": 34.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "value",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0.0",
+                      "Formula": { "Expression": "[BrakeBias]" },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  }
+                }
+              ],
+              "Group": false,
+              "Visible": false,
+              "Name": "bias",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "changed(2000,[BrakeBias]) && !isnull([BrakeBias])\r\n\r\n"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Top": -58.0,
+              "Left": 0.0,
+              "Height": 892.0,
+              "Width": 1280.0,
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "IsRectangleItem": true,
+                  "BackgroundColor": "#FFFFFFFF",
+                  "BorderStyle": {
+                    "BorderTop": 2,
+                    "BorderBottom": 2,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 768.0,
+                  "Left": 0.0,
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "bkgr"
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontWeight": "SemiBold",
+                  "FontSize": 200.0,
+                  "Text": "ENG BRAKE",
+                  "TextColor": "#FF000000",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 335.0,
+                  "Left": 0.0,
+                  "Top": -58.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "txt"
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontWeight": "SemiBold",
+                  "FontSize": 650.0,
+                  "Text": "8",
+                  "TextColor": "#FF000000",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 800.0,
+                  "Left": 0.0,
+                  "Top": 34.0,
+                  "Visible": true,
+                  "Width": 1280.0,
+                  "Name": "value",
+                  "Bindings": {
+                    "Text": {
+                      "Formula": {
+                        "Expression": "[GameRawData.Telemetry.dcEngineBraking]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  }
+                }
+              ],
+              "Group": false,
+              "Visible": false,
+              "Name": "engb",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "changed(2000,[GameRawData.Telemetry.dcEngineBraking]) && !isnull([GameRawData.Telemetry.dcEngineBraking])\r\n\r\n"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            }
+          ],
+          "Group": false,
+          "Visible": false,
+          "Name": "Mercedes W13",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "[DahlDesign.MenuType] = 'Mercedes W13'"
               },
               "Mode": 2,
               "TargetPropertyName": "Visible"

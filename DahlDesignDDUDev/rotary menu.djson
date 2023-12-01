@@ -1,10 +1,8 @@
 {
-  "DashboardDebugManager": {
-    "LastPlacement": "287,448,1280,82",
-    "Maximized": false
-  },
+  "Variables": { "DashboardVariables": [] },
+  "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "e94dc653-4c57-4181-babc-f53b9f6204b4",
+  "Id": "929c0ad1-fa86-4d97-8524-ff893f39545b",
   "BaseHeight": 82,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
@@ -10354,6 +10352,949 @@
                     "Visible": {
                       "Formula": {
                         "Expression": "[DahlDesign.MenuType]='Mercedes AMG GT3'"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "Top": 6.0,
+                  "Left": 5.0,
+                  "Height": 36.0,
+                  "Width": 1270.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "BB 0.5",
+                      "TextColor": "#FF00BFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FF00BFFF",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu]=1,0,1)"
+                            },
+                            "StartColor": "#FF000000",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF00BFFF",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 5.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "BB",
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu]=1,1,0)"
+                          },
+                          "StartColor": "#FF00BFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu]=1,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF00BFFF",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "BB 0.1",
+                      "TextColor": "#FF00BFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FF00BFFF",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu]=2,0,1)"
+                            },
+                            "StartColor": "#FF000000",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF00BFFF",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 111.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "BB",
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu]=2,1,0)"
+                          },
+                          "StartColor": "#FF00BFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu]=2,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF00BFFF",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "BMIG 5",
+                      "TextColor": "#FF00BFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FF00BFFF",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu]=3,0,1)"
+                            },
+                            "StartColor": "#FF000000",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF00BFFF",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 217.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "Bimg",
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu]=3,1,0)"
+                          },
+                          "StartColor": "#FF00BFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu]=3,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF00BFFF",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'BMIG '\r\n+\r\n[GameRawData.Telemetry.dcPeakBrakeBias]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "ENG B 12",
+                      "TextColor": "#FFFF0000",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFF0000",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 5,0,1)"
+                            },
+                            "StartColor": "#FF000000",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FFFF0000",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 429.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "EB",
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 5,1,0)"
+                          },
+                          "StartColor": "#FFFF0000",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 5,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFFF0000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'ENG B '\r\n+\r\n[GameRawData.Telemetry.dcEngineBraking]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "ATK",
+                      "TextColor": "#FFC0C0C0",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFF00FF",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 6,0,1)"
+                            },
+                            "StartColor": "#FF000000",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FFFF00FF",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 535.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "HYS MODE",
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 6,1,0)"
+                          },
+                          "StartColor": "#FFFF00FF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 6,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFFF00FF",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Expression": "if ([GameRawData.Telemetry.dcMGUKDeployMode] = 0, 'OFF',\r\nif ([GameRawData.Telemetry.dcMGUKDeployMode] = 1, 'QLY',\r\nif ([GameRawData.Telemetry.dcMGUKDeployMode] = 2, 'ATK',\r\nif ([GameRawData.Telemetry.dcMGUKDeployMode] = 3, 'BAL', 'ECO'))))\r\n"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "ENT 12",
+                      "TextColor": "#FFFFA500",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFFA500",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 7,0,1)"
+                            },
+                            "StartColor": "#FF000000",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FFFFA500",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 641.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "Ent",
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 7,1,0)"
+                          },
+                          "StartColor": "#FFFFA500",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 7,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFFFA500",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'ENT' + [GameRawData.Telemetry.dcDiffEntry]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "MID 5",
+                      "TextColor": "#FFFFA500",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFFA500",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 8,0,1)"
+                            },
+                            "StartColor": "#FF000000",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FFFFA500",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 747.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "mid",
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 8,1,0)"
+                          },
+                          "StartColor": "#FFFFA500",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 8,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFFFA500",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'MID ' + [GameRawData.Telemetry.dcDiffMiddle]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "EXIT 3",
+                      "TextColor": "#FFFFA500",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFFA500",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 9,0,1)"
+                            },
+                            "StartColor": "#FF000000",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FFFFA500",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 853.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "exit",
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 9,1,0)"
+                          },
+                          "StartColor": "#FFFFA500",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 9,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFFFA500",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'EXIT ' + [GameRawData.Telemetry.dcDiffExit]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "PIT",
+                      "TextColor": "#FF000000",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#FFFFFF00",
+                      "BorderStyle": {
+                        "BorderColor": "#FF000000",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 12,1,0)"
+                            },
+                            "StartColor": "#FFFFFF00",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF000000",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 1170.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.0,
+                      "Name": "PIT",
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 12,1,0)"
+                          },
+                          "StartColor": "#FFFFFF00",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 12,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFFFFF00",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Interpreter": 1,
+                            "Expression": "if ($prop('DahlDesign.CoupleInCarToPit') == false) {\r\n\treturn \"-\"\r\n} \r\nelse {\r\n\treturn \"PIT\"\r\n}"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "FW -5",
+                      "TextColor": "#FFCD853F",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFFFF00",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 11,0,1)"
+                            },
+                            "StartColor": "#FF000000",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FFFFFF00",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 1065.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "FW",
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 11,1,0)"
+                          },
+                          "StartColor": "#FFFFFF00",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 11,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFFFFF00",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'FW '\r\n+\r\n[GameRawData.Telemetry.dpWingFront]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "-",
+                      "TextColor": "#FFFFFF00",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFC0C0C0",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 10,0,1)"
+                            },
+                            "StartColor": "#FF000000",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FFC0C0C0",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 959.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "RotaryL10",
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 10,1,0)"
+                          },
+                          "StartColor": "#FFC0C0C0",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 10,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFC0C0C0",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "-",
+                      "TextColor": "#FF00BFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFC0C0C0",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 4,0,1)"
+                            },
+                            "StartColor": "#FF000000",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FFC0C0C0",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 323.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "RotaryL4",
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 4,1,0)"
+                          },
+                          "StartColor": "#FFC0C0C0",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 4,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFC0C0C0",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        }
+                      }
+                    }
+                  ],
+                  "Group": false,
+                  "Visible": false,
+                  "Name": "Mercedes W13",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DahlDesign.MenuType] = 'Mercedes W13'"
                       },
                       "Mode": 2,
                       "TargetPropertyName": "Visible"
