@@ -2,12 +2,13 @@
   "Variables": { "DashboardVariables": [] },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "de20cae5-eff5-402c-8e95-c6d23d90afbc",
+  "Id": "b0f535d7-801d-4059-afec-51c1b4ec93d2",
   "BaseHeight": 598,
   "BaseWidth": 450,
   "BackgroundColor": "#FF000000",
   "Screens": [
     {
+      "RenderingSkip": 0,
       "Name": "Default",
       "InGameScreen": true,
       "IdleScreen": false,
@@ -47,7 +48,9 @@
               "Visible": true,
               "Width": 450.0,
               "IsFreezed": true,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -59,6 +62,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -106,6 +111,8 @@
                   "Visible": true,
                   "Width": 598.0,
                   "Name": "Blue",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Minimum": {
                       "Formula": {
@@ -157,6 +164,8 @@
                   "Visible": true,
                   "Width": 598.0,
                   "Name": "Green",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Minimum": {
                       "Formula": {
@@ -208,6 +217,8 @@
                   "Visible": true,
                   "Width": 598.0,
                   "Name": "Red",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Maximum": {
                       "Formula": {
@@ -241,6 +252,8 @@
               "Group": false,
               "Visible": false,
               "Name": "Rally graphics",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": {
@@ -261,6 +274,8 @@
               "CursorColor": "#FFFF0000",
               "DisplayScale": 1.0,
               "MapShadow": true,
+              "OverrideColorsWithCarClassColors": true,
+              "ForcePlayerDotBorderContrastWhenUsingCarClassColors": true,
               "MinimumTrackBorderWidth": 0.0,
               "MinimumTrackWidth": 5.0,
               "OpponentStyle": {
@@ -272,10 +287,6 @@
                 "DotBordercolor": "#FFFFFFFF",
                 "DotRadius": 30.0
               },
-              "PlayerPulse": true,
-              "PlayerPulseColor": "#FFFF0000",
-              "PlayerPulseRadius": 100.0,
-              "PlayerPulseThickness": 4.0,
               "PlayerStyle": {
                 "LabelFont": "Segoe UI",
                 "LabelFontSize": 14.0,
@@ -303,12 +314,16 @@
               "Top": 9.0,
               "Visible": true,
               "Width": 435.0,
-              "Name": "GeneratedMapItem"
+              "Name": "GeneratedMapItem",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
           "Group": false,
           "Visible": false,
           "Name": "Map",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": { "Expression": "[DahlDesign.ShowMapEnabled]" },
@@ -336,6 +351,8 @@
               "Width": 450.0,
               "IsFreezed": true,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -376,6 +393,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -413,6 +432,8 @@
               "Visible": true,
               "Width": 160.0,
               "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.HasABS]" },
@@ -445,6 +466,8 @@
               "Visible": true,
               "Width": 160.0,
               "Name": "RectangleItem1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.HasABS]" },
@@ -477,6 +500,8 @@
               "Visible": true,
               "Width": 160.0,
               "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.HasABS]" },
@@ -509,6 +534,8 @@
               "Visible": true,
               "Width": 160.0,
               "Name": "RectangleItem1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.HasABS]" },
@@ -540,12 +567,16 @@
               "Visible": true,
               "Width": 450.0,
               "IsFreezed": true,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
           "Group": false,
           "Visible": false,
           "Name": "Default",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -575,6 +606,8 @@
               "Width": 450.0,
               "IsFreezed": true,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -615,6 +648,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -651,7 +686,9 @@
               "Visible": true,
               "Width": 450.0,
               "IsFreezed": true,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -664,7 +701,9 @@
               "Visible": true,
               "Width": 450.0,
               "IsFreezed": true,
-              "Name": "RectangleItem0"
+              "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -684,6 +723,8 @@
               "Visible": true,
               "Width": 142.0,
               "Name": "BB value",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
@@ -718,7 +759,9 @@
               "Top": 503.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "50"
+              "Name": "50",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -736,7 +779,9 @@
               "Top": 516.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "55"
+              "Name": "55",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -754,7 +799,9 @@
               "Top": 511.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "30"
+              "Name": "30",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -772,7 +819,9 @@
               "Top": 511.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "70"
+              "Name": "70",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -790,7 +839,9 @@
               "Top": 516.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "1"
+              "Name": "1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -816,7 +867,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "2"
+              "Name": "2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -842,7 +895,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "3"
+              "Name": "3",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -868,7 +923,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "4"
+              "Name": "4",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -894,7 +951,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "5"
+              "Name": "5",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -920,7 +979,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "6"
+              "Name": "6",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -946,7 +1007,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "7"
+              "Name": "7",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -972,7 +1035,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "8"
+              "Name": "8",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -998,7 +1063,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "9"
+              "Name": "9",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1024,7 +1091,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "10"
+              "Name": "10",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1050,7 +1119,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "11"
+              "Name": "11",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1076,7 +1147,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "12"
+              "Name": "12",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1102,7 +1175,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "13"
+              "Name": "13",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1128,7 +1203,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "14"
+              "Name": "14",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1154,7 +1231,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "15"
+              "Name": "15",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1180,7 +1259,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "16"
+              "Name": "16",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1206,7 +1287,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "17"
+              "Name": "17",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1234,6 +1317,8 @@
               "Visible": true,
               "Width": 4.0,
               "Name": "18",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Left": {
                   "Formula": {
@@ -1268,7 +1353,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "19"
+              "Name": "19",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1294,7 +1381,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "20"
+              "Name": "20",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1320,7 +1409,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "21"
+              "Name": "21",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1346,7 +1437,9 @@
               "Top": 521.0,
               "Visible": true,
               "Width": 2.0,
-              "Name": "22"
+              "Name": "22",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -1365,6 +1458,8 @@
               "Visible": true,
               "Width": 42.0,
               "Name": "Txt50",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -1390,7 +1485,9 @@
               "Top": 500.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem1"
+              "Name": "RectangleItem1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -1409,6 +1506,8 @@
               "Visible": true,
               "Width": 42.0,
               "Name": "Txt1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -1436,6 +1535,8 @@
               "Visible": true,
               "Width": 42.0,
               "Name": "Txt2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -1450,6 +1551,8 @@
           "Group": false,
           "Visible": false,
           "Name": "BiasOnly",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -1478,6 +1581,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -1518,6 +1623,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -1554,6 +1661,8 @@
               "Visible": true,
               "Width": 137.0,
               "Name": "ABS frame",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -1581,6 +1690,8 @@
               "Visible": true,
               "Width": 137.0,
               "Name": "ABS",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -1608,6 +1719,8 @@
               "Visible": true,
               "Width": 137.0,
               "Name": "ABS val",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -1639,6 +1752,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TCframe",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -1666,6 +1781,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TC",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -1693,6 +1810,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TC val",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -1731,6 +1850,8 @@
               "Visible": false,
               "Width": 132.0,
               "Name": "TRC disable warning",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
@@ -1764,7 +1885,9 @@
               "Top": 474.0,
               "Visible": true,
               "Width": 132.0,
-              "Name": "BB frame"
+              "Name": "BB frame",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -1783,6 +1906,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "BB",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -1810,6 +1935,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "BB val",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -1852,6 +1979,8 @@
                   "Visible": true,
                   "Width": 132.0,
                   "Name": "Mapframe",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
@@ -1879,6 +2008,8 @@
                   "Visible": true,
                   "Width": 132.0,
                   "Name": "Map",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -1906,6 +2037,8 @@
                   "Visible": true,
                   "Width": 132.0,
                   "Name": "Map1",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -1927,6 +2060,8 @@
               "Group": false,
               "Visible": true,
               "Name": "MapframeDefault",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": {
@@ -1960,7 +2095,9 @@
                   "Top": 474.0,
                   "Visible": true,
                   "Width": 132.0,
-                  "Name": "Mapframe"
+                  "Name": "Mapframe",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -1979,6 +2116,8 @@
                   "Visible": true,
                   "Width": 132.0,
                   "Name": "THR",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -2006,6 +2145,8 @@
                   "Visible": true,
                   "Width": 132.0,
                   "Name": "Map1",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -2027,6 +2168,8 @@
               "Group": false,
               "Visible": false,
               "Name": "Throttle frame Audi",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": {
@@ -2053,12 +2196,16 @@
               "Visible": true,
               "Width": 450.0,
               "IsFreezed": true,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
           "Group": false,
           "Visible": false,
           "Name": "GT3",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -2087,6 +2234,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -2127,6 +2276,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -2163,6 +2314,8 @@
               "Visible": true,
               "Width": 137.0,
               "Name": "ABS frame",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -2190,6 +2343,8 @@
               "Visible": true,
               "Width": 137.0,
               "Name": "ABS",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -2217,6 +2372,8 @@
               "Visible": true,
               "Width": 137.0,
               "Name": "ABS val",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -2248,6 +2405,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TCframe",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -2275,6 +2434,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TC",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -2302,6 +2463,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TC val",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -2340,6 +2503,8 @@
               "Visible": false,
               "Width": 132.0,
               "Name": "TRC disable warning",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
@@ -2374,12 +2539,16 @@
               "Visible": true,
               "Width": 450.0,
               "IsFreezed": true,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
           "Group": false,
           "Visible": false,
           "Name": "TC/ABS",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -2408,6 +2577,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -2441,6 +2612,8 @@
               "BlinkDelay": 100.0,
               "Width": 450.0,
               "Name": "P2P",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -2467,6 +2640,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "Mapframe",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -2494,6 +2669,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "Map",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -2521,6 +2698,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "Map1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -2556,6 +2735,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -2592,6 +2773,8 @@
               "Visible": false,
               "Width": 132.0,
               "Name": "p2pframe",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -2626,6 +2809,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "p2p",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -2660,6 +2845,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "p2p",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -2699,6 +2886,8 @@
               "Visible": true,
               "Width": 194.0,
               "Name": "BB",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
@@ -2730,7 +2919,9 @@
               "Top": 473.0,
               "Visible": true,
               "Width": 132.0,
-              "Name": "ARBR frame"
+              "Name": "ARBR frame",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -2749,6 +2940,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "ARBR",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -2776,6 +2969,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "ARBR val",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -2808,7 +3003,9 @@
               "Top": 473.0,
               "Visible": true,
               "Width": 132.0,
-              "Name": "ARBFframe1"
+              "Name": "ARBFframe1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -2827,6 +3024,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "ARBF1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -2854,6 +3053,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "ARFRval1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -2903,7 +3104,9 @@
                   "Top": 461.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem0"
+                  "Name": "RectangleItem0",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -2929,7 +3132,9 @@
                   "Top": 444.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem1"
+                  "Name": "RectangleItem1",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -2955,7 +3160,9 @@
                   "Top": 427.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem2"
+                  "Name": "RectangleItem2",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -2981,7 +3188,9 @@
                   "Top": 409.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem3"
+                  "Name": "RectangleItem3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3007,7 +3216,9 @@
                   "Top": 392.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem3"
+                  "Name": "RectangleItem3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3033,7 +3244,9 @@
                   "Top": 375.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem4"
+                  "Name": "RectangleItem4",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3059,7 +3272,9 @@
                   "Top": 357.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem5"
+                  "Name": "RectangleItem5",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3085,7 +3300,9 @@
                   "Top": 340.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem6"
+                  "Name": "RectangleItem6",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3111,7 +3328,9 @@
                   "Top": 323.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem7"
+                  "Name": "RectangleItem7",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3137,7 +3356,9 @@
                   "Top": 306.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem8"
+                  "Name": "RectangleItem8",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3163,7 +3384,9 @@
                   "Top": 288.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem9"
+                  "Name": "RectangleItem9",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3189,7 +3412,9 @@
                   "Top": 272.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem12"
+                  "Name": "RectangleItem12",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3215,7 +3440,9 @@
                   "Top": 254.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem13"
+                  "Name": "RectangleItem13",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3241,7 +3468,9 @@
                   "Top": 237.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem14"
+                  "Name": "RectangleItem14",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3267,7 +3496,9 @@
                   "Top": 220.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem15"
+                  "Name": "RectangleItem15",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3293,7 +3524,9 @@
                   "Top": 202.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem16"
+                  "Name": "RectangleItem16",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3319,7 +3552,9 @@
                   "Top": 185.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem17"
+                  "Name": "RectangleItem17",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3345,7 +3580,9 @@
                   "Top": 168.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem18"
+                  "Name": "RectangleItem18",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3371,7 +3608,9 @@
                   "Top": 151.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem19"
+                  "Name": "RectangleItem19",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3397,7 +3636,9 @@
                   "Top": 133.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem20"
+                  "Name": "RectangleItem20",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3423,7 +3664,9 @@
                   "Top": 461.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem10"
+                  "Name": "RectangleItem10",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3449,7 +3692,9 @@
                   "Top": 444.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem11"
+                  "Name": "RectangleItem11",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3475,7 +3720,9 @@
                   "Top": 427.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem21"
+                  "Name": "RectangleItem21",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3501,7 +3748,9 @@
                   "Top": 409.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem22"
+                  "Name": "RectangleItem22",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3527,7 +3776,9 @@
                   "Top": 392.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem23"
+                  "Name": "RectangleItem23",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3553,7 +3804,9 @@
                   "Top": 375.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem24"
+                  "Name": "RectangleItem24",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3579,7 +3832,9 @@
                   "Top": 357.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem25"
+                  "Name": "RectangleItem25",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3605,7 +3860,9 @@
                   "Top": 340.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem26"
+                  "Name": "RectangleItem26",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3631,7 +3888,9 @@
                   "Top": 323.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem27"
+                  "Name": "RectangleItem27",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3657,7 +3916,9 @@
                   "Top": 306.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem28"
+                  "Name": "RectangleItem28",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3683,7 +3944,9 @@
                   "Top": 288.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem29"
+                  "Name": "RectangleItem29",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3709,7 +3972,9 @@
                   "Top": 272.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem30"
+                  "Name": "RectangleItem30",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3735,7 +4000,9 @@
                   "Top": 254.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem31"
+                  "Name": "RectangleItem31",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3761,7 +4028,9 @@
                   "Top": 237.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem32"
+                  "Name": "RectangleItem32",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3787,7 +4056,9 @@
                   "Top": 220.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem33"
+                  "Name": "RectangleItem33",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3813,7 +4084,9 @@
                   "Top": 202.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem34"
+                  "Name": "RectangleItem34",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3839,7 +4112,9 @@
                   "Top": 185.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem35"
+                  "Name": "RectangleItem35",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3865,7 +4140,9 @@
                   "Top": 168.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem36"
+                  "Name": "RectangleItem36",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3891,7 +4168,9 @@
                   "Top": 151.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem37"
+                  "Name": "RectangleItem37",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3917,7 +4196,9 @@
                   "Top": 133.0,
                   "Visible": true,
                   "Width": 60.0,
-                  "Name": "RectangleItem38"
+                  "Name": "RectangleItem38",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3936,6 +4217,8 @@
                   "Visible": true,
                   "Width": 70.0,
                   "Name": "Marker",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Top": {
                       "Formula": {
@@ -3970,6 +4253,8 @@
                   "Visible": false,
                   "Width": 70.0,
                   "Name": "Marker minus",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Top": {
                       "Formula": {
@@ -4004,6 +4289,8 @@
                   "Visible": true,
                   "Width": 132.0,
                   "Name": "JCK",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -4029,7 +4316,9 @@
                   "Top": 2.0,
                   "Visible": true,
                   "Width": 132.0,
-                  "Name": "jck frame"
+                  "Name": "jck frame",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -4048,6 +4337,8 @@
                   "Visible": true,
                   "Width": 132.0,
                   "Name": "jck val",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -4069,6 +4360,8 @@
               "Group": true,
               "Visible": false,
               "Name": "Jackers",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.TrackType] > 4" },
@@ -4093,12 +4386,16 @@
               "Visible": true,
               "Width": 450.0,
               "IsFreezed": true,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
           "Group": false,
           "Visible": false,
           "Name": "Indycar",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -4127,6 +4424,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -4167,6 +4466,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -4202,7 +4503,9 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 450.0,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -4221,6 +4524,8 @@
               "Visible": true,
               "Width": 150.0,
               "Name": "Mid",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -4248,6 +4553,8 @@
               "Visible": true,
               "Width": 150.0,
               "Name": "Entry",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -4275,6 +4582,8 @@
               "Visible": true,
               "Width": 150.0,
               "Name": "Exit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -4302,6 +4611,8 @@
               "Visible": true,
               "Width": 100.0,
               "Name": "TextItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": {
@@ -4336,6 +4647,8 @@
               "Visible": true,
               "Width": 100.0,
               "Name": "TextItem1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": {
@@ -4370,6 +4683,8 @@
               "Visible": true,
               "Width": 100.0,
               "Name": "TextItem2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": {
@@ -4391,6 +4706,8 @@
           "Group": false,
           "Visible": false,
           "Name": "Williams F1",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -4419,6 +4736,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -4451,6 +4770,8 @@
               "Visible": true,
               "Width": 144.0,
               "Name": "SOC box",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -4478,6 +4799,8 @@
               "Visible": true,
               "Width": 146.0,
               "Name": "SOC percent",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0",
@@ -4514,6 +4837,8 @@
               "Visible": true,
               "Width": 306.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -4564,6 +4889,8 @@
               "Visible": true,
               "Width": 540.0,
               "Name": "SOC gauge",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Value": {
                   "Formula": {
@@ -4605,6 +4932,8 @@
               "Visible": true,
               "Width": 144.0,
               "Name": "DPL box",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -4632,6 +4961,8 @@
               "Visible": true,
               "Width": 146.0,
               "Name": "DPLpercent",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0",
@@ -4672,6 +5003,8 @@
               "Visible": true,
               "Width": 540.0,
               "Name": "DPL gauge",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Value": {
                   "Formula": {
@@ -4720,6 +5053,8 @@
               "Visible": true,
               "Width": 80.0,
               "Name": "SOC txt",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -4747,6 +5082,8 @@
               "Visible": true,
               "Width": 80.0,
               "Name": "DPL txt",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -4774,6 +5111,8 @@
               "Visible": true,
               "Width": 146.0,
               "Name": "PRE",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -4808,6 +5147,8 @@
               "Visible": true,
               "Width": 146.0,
               "Name": "ENT",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -4843,6 +5184,8 @@
               "BlinkEnabled": true,
               "Width": 81.0,
               "Name": "SET ERS",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Top": {
                   "Formula": {
@@ -4887,6 +5230,8 @@
               "Visible": true,
               "Width": 81.0,
               "Name": "Target ERS",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Top": {
                   "Formula": {
@@ -4919,7 +5264,9 @@
               "Top": 52.0,
               "Visible": true,
               "Width": 80.0,
-              "Name": "RectangleItem0"
+              "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -4936,7 +5283,9 @@
               "Top": 52.0,
               "Visible": true,
               "Width": 80.0,
-              "Name": "RectangleItem1"
+              "Name": "RectangleItem1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -4953,7 +5302,9 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem2"
+              "Name": "RectangleItem2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -4970,7 +5321,9 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem3"
+              "Name": "RectangleItem3",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -4987,7 +5340,9 @@
               "Top": 88.0,
               "Visible": true,
               "Width": 287.0,
-              "Name": "RectangleItem4"
+              "Name": "RectangleItem4",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -5004,7 +5359,9 @@
               "Top": 2.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem5"
+              "Name": "RectangleItem5",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -5022,7 +5379,9 @@
               "Visible": true,
               "Width": 450.0,
               "IsFreezed": true,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -5041,6 +5400,8 @@
               "Visible": true,
               "Width": 194.0,
               "Name": "BB",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
@@ -5064,6 +5425,8 @@
           "Group": false,
           "Visible": false,
           "Name": "Mclaren F1",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -5092,6 +5455,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -5124,6 +5489,8 @@
               "Visible": true,
               "Width": 144.0,
               "Name": "SOC box",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -5152,6 +5519,8 @@
               "Visible": true,
               "Width": 146.0,
               "Name": "SOC percent",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0",
@@ -5188,6 +5557,8 @@
               "Visible": true,
               "Width": 306.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -5238,6 +5609,8 @@
               "Visible": true,
               "Width": 540.0,
               "Name": "SOC gauge",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Value": {
                   "Formula": {
@@ -5287,6 +5660,8 @@
               "Visible": true,
               "Width": 80.0,
               "Name": "SOC txt",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -5307,6 +5682,8 @@
               "Visible": true,
               "Width": 144.0,
               "Name": "DPL box",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -5335,6 +5712,8 @@
               "Visible": true,
               "Width": 143.0,
               "Name": "DPL Mode",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0",
@@ -5364,6 +5743,8 @@
               "Visible": true,
               "Width": 78.0,
               "Name": "ATK",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -5385,6 +5766,8 @@
               "Visible": true,
               "Width": 78.0,
               "Name": "BAL",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -5406,6 +5789,8 @@
               "Visible": true,
               "Width": 78.0,
               "Name": "ECO",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -5427,6 +5812,8 @@
               "Visible": true,
               "Width": 78.0,
               "Name": "QLY",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -5447,6 +5834,8 @@
               "Visible": true,
               "Width": 78.0,
               "Name": "OFF",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -5472,7 +5861,9 @@
               "Top": 52.0,
               "Visible": true,
               "Width": 80.0,
-              "Name": "RectangleItem0"
+              "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -5489,7 +5880,9 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem2"
+              "Name": "RectangleItem2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -5506,7 +5899,9 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem3"
+              "Name": "RectangleItem3",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -5523,7 +5918,9 @@
               "Top": 88.0,
               "Visible": true,
               "Width": 287.0,
-              "Name": "RectangleItem4"
+              "Name": "RectangleItem4",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -5540,7 +5937,9 @@
               "Top": 2.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem5"
+              "Name": "RectangleItem5",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -5562,6 +5961,8 @@
               "Visible": true,
               "Width": 50.0,
               "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -5592,6 +5993,8 @@
               "Visible": true,
               "Width": 50.0,
               "Name": "RectangleItem1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -5622,6 +6025,8 @@
               "Visible": true,
               "Width": 50.0,
               "Name": "RectangleItem2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -5652,6 +6057,8 @@
               "Visible": true,
               "Width": 50.0,
               "Name": "RectangleItem3",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -5678,6 +6085,8 @@
               "Visible": false,
               "Width": 286.0,
               "Name": "Magic",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": {
@@ -5712,6 +6121,8 @@
               "Visible": true,
               "Width": 100.0,
               "Name": "TextItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0",
@@ -5747,6 +6158,8 @@
               "Visible": true,
               "Width": 100.0,
               "Name": "TextItem1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": {
@@ -5781,6 +6194,8 @@
               "Visible": true,
               "Width": 100.0,
               "Name": "TextItem2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": {
@@ -5815,6 +6230,8 @@
               "Visible": true,
               "Width": 194.0,
               "Name": "BB",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
@@ -5846,7 +6263,9 @@
               "Top": 500.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem0"
+              "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -5863,7 +6282,9 @@
               "Top": 499.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem1"
+              "Name": "RectangleItem1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -5880,7 +6301,9 @@
               "Top": 496.0,
               "Visible": true,
               "Width": 286.0,
-              "Name": "RectangleItem2"
+              "Name": "RectangleItem2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -5898,12 +6321,16 @@
               "Visible": true,
               "Width": 450.0,
               "IsFreezed": true,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
           "Group": false,
           "Visible": false,
           "Name": "Mercedes W12",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -5932,6 +6359,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -5972,6 +6401,8 @@
               "Visible": true,
               "Width": 146.0,
               "Name": "SOC percent",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0",
@@ -6015,6 +6446,8 @@
               "Visible": true,
               "Width": 306.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -6065,6 +6498,8 @@
               "Visible": true,
               "Width": 540.0,
               "Name": "SOC",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Value": {
                   "Formula": {
@@ -6118,6 +6553,8 @@
               "Visible": true,
               "Width": 540.0,
               "Name": "DPL gauge  others",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Value": {
                   "Formula": {
@@ -6167,6 +6604,8 @@
               "Visible": true,
               "Width": 80.0,
               "Name": "SOC txt",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -6202,6 +6641,8 @@
               "Visible": true,
               "Width": 80.0,
               "Name": "DPL txt",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -6237,6 +6678,8 @@
               "Visible": true,
               "Width": 146.0,
               "Name": "DPLpercentothers",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0",
@@ -6291,6 +6734,8 @@
               "Visible": true,
               "Width": 146.0,
               "Name": "TRC Val",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -6333,6 +6778,8 @@
               "Width": 146.0,
               "IsFreezed": true,
               "Name": "TRC",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -6366,6 +6813,8 @@
               "Width": 146.0,
               "IsFreezed": true,
               "Name": "TRC disable warning",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
@@ -6406,6 +6855,8 @@
               "Visible": true,
               "Width": 146.0,
               "Name": "BRS value",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -6445,6 +6896,8 @@
               "Visible": true,
               "Width": 146.0,
               "Name": "BRS",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -6470,7 +6923,9 @@
               "Top": 52.0,
               "Visible": true,
               "Width": 80.0,
-              "Name": "RectangleItem0"
+              "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -6487,7 +6942,9 @@
               "Top": 52.0,
               "Visible": true,
               "Width": 80.0,
-              "Name": "RectangleItem1"
+              "Name": "RectangleItem1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -6504,7 +6961,9 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem2"
+              "Name": "RectangleItem2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -6521,7 +6980,9 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem3"
+              "Name": "RectangleItem3",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -6538,7 +6999,9 @@
               "Top": 88.0,
               "Visible": true,
               "Width": 287.0,
-              "Name": "RectangleItem4"
+              "Name": "RectangleItem4",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -6555,7 +7018,9 @@
               "Top": 2.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem5"
+              "Name": "RectangleItem5",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -6573,12 +7038,16 @@
               "Visible": true,
               "Width": 450.0,
               "IsFreezed": true,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
           "Group": false,
           "Visible": false,
           "Name": "Porsche 919",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -6608,6 +7077,8 @@
               "BlinkEnabled": true,
               "Width": 450.0,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -6646,7 +7117,9 @@
               "Visible": true,
               "Width": 450.0,
               "IsFreezed": true,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -6666,6 +7139,8 @@
               "Visible": true,
               "Width": 306.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -6710,6 +7185,8 @@
               "Visible": true,
               "Width": 300.0,
               "Name": "BB",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
@@ -6742,6 +7219,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "p2pframe",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -6769,6 +7248,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "p2p",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -6796,6 +7277,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "p2p1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -6817,6 +7300,8 @@
           "Group": false,
           "Visible": false,
           "Name": "Formula Renault 3.5",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -6846,6 +7331,8 @@
               "BlinkEnabled": true,
               "Width": 450.0,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -6884,7 +7371,9 @@
               "Visible": true,
               "Width": 450.0,
               "IsFreezed": true,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -6904,6 +7393,8 @@
               "Visible": true,
               "Width": 306.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -6948,6 +7439,8 @@
               "Visible": true,
               "Width": 300.0,
               "Name": "BB",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
@@ -6987,7 +7480,9 @@
                   "Top": 0.0,
                   "Visible": true,
                   "Width": 80.0,
-                  "Name": "ARB rear"
+                  "Name": "ARB rear",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7005,7 +7500,9 @@
                   "Top": 46.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem"
+                  "Name": "RectangleItem",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7023,7 +7520,9 @@
                   "Top": 92.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem2"
+                  "Name": "RectangleItem2",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7041,7 +7540,9 @@
                   "Top": 138.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem3"
+                  "Name": "RectangleItem3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7059,7 +7560,9 @@
                   "Top": 184.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem4"
+                  "Name": "RectangleItem4",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7077,7 +7580,9 @@
                   "Top": 230.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem5"
+                  "Name": "RectangleItem5",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7095,7 +7600,9 @@
                   "Top": 276.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem6"
+                  "Name": "RectangleItem6",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7113,7 +7620,9 @@
                   "Top": 322.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem7"
+                  "Name": "RectangleItem7",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7131,7 +7640,9 @@
                   "Top": 368.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem8"
+                  "Name": "RectangleItem8",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7149,7 +7660,9 @@
                   "Top": 414.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem9"
+                  "Name": "RectangleItem9",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7167,7 +7680,9 @@
                   "Top": 460.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem10"
+                  "Name": "RectangleItem10",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7185,7 +7700,9 @@
                   "Top": 506.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem11"
+                  "Name": "RectangleItem11",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7203,7 +7720,9 @@
                   "Top": 552.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem12"
+                  "Name": "RectangleItem12",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -7222,6 +7741,8 @@
                   "Visible": true,
                   "Width": 60.0,
                   "Name": "TextItem",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
@@ -7243,6 +7764,8 @@
               "Group": true,
               "Visible": true,
               "Name": "ARB rear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ARBswapped]" },
@@ -7274,7 +7797,9 @@
                   "Top": 0.0,
                   "Visible": true,
                   "Width": 80.0,
-                  "Name": "RAB front"
+                  "Name": "RAB front",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7292,7 +7817,9 @@
                   "Top": 46.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem"
+                  "Name": "RectangleItem",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7310,7 +7837,9 @@
                   "Top": 92.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem2"
+                  "Name": "RectangleItem2",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7328,7 +7857,9 @@
                   "Top": 138.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem3"
+                  "Name": "RectangleItem3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7346,7 +7877,9 @@
                   "Top": 184.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem4"
+                  "Name": "RectangleItem4",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7364,7 +7897,9 @@
                   "Top": 230.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem5"
+                  "Name": "RectangleItem5",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7382,7 +7917,9 @@
                   "Top": 276.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem6"
+                  "Name": "RectangleItem6",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7400,7 +7937,9 @@
                   "Top": 322.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem7"
+                  "Name": "RectangleItem7",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7418,7 +7957,9 @@
                   "Top": 368.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem8"
+                  "Name": "RectangleItem8",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7436,7 +7977,9 @@
                   "Top": 414.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem9"
+                  "Name": "RectangleItem9",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7454,7 +7997,9 @@
                   "Top": 460.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem10"
+                  "Name": "RectangleItem10",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7472,7 +8017,9 @@
                   "Top": 506.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem11"
+                  "Name": "RectangleItem11",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7490,7 +8037,9 @@
                   "Top": 552.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem12"
+                  "Name": "RectangleItem12",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -7509,6 +8058,8 @@
                   "Visible": true,
                   "Width": 60.0,
                   "Name": "TextItem2",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
@@ -7530,6 +8081,8 @@
               "Group": true,
               "Visible": true,
               "Name": "ARB front",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ARBswapped]" },
@@ -7561,7 +8114,9 @@
                   "Top": 0.0,
                   "Visible": true,
                   "Width": 80.0,
-                  "Name": "ARB rear"
+                  "Name": "ARB rear",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7579,7 +8134,9 @@
                   "Top": 48.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem"
+                  "Name": "RectangleItem",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7597,7 +8154,9 @@
                   "Top": 94.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem2"
+                  "Name": "RectangleItem2",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7615,7 +8174,9 @@
                   "Top": 140.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem3"
+                  "Name": "RectangleItem3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7633,7 +8194,9 @@
                   "Top": 186.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem4"
+                  "Name": "RectangleItem4",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7651,7 +8214,9 @@
                   "Top": 232.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem5"
+                  "Name": "RectangleItem5",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7669,7 +8234,9 @@
                   "Top": 278.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem6"
+                  "Name": "RectangleItem6",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7687,7 +8254,9 @@
                   "Top": 324.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem7"
+                  "Name": "RectangleItem7",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7705,7 +8274,9 @@
                   "Top": 370.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem8"
+                  "Name": "RectangleItem8",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7723,7 +8294,9 @@
                   "Top": 416.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem9"
+                  "Name": "RectangleItem9",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7741,7 +8314,9 @@
                   "Top": 462.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem10"
+                  "Name": "RectangleItem10",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7759,7 +8334,9 @@
                   "Top": 508.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem11"
+                  "Name": "RectangleItem11",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7777,7 +8354,9 @@
                   "Top": 554.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem12"
+                  "Name": "RectangleItem12",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -7796,6 +8375,8 @@
                   "Visible": true,
                   "Width": 60.0,
                   "Name": "TextItem",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
@@ -7817,6 +8398,8 @@
               "Group": true,
               "Visible": false,
               "Name": "ARB rear2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.ARBswapped]" },
@@ -7848,7 +8431,9 @@
                   "Top": 0.0,
                   "Visible": true,
                   "Width": 80.0,
-                  "Name": "RAB front"
+                  "Name": "RAB front",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7866,7 +8451,9 @@
                   "Top": 48.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem"
+                  "Name": "RectangleItem",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7884,7 +8471,9 @@
                   "Top": 94.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem2"
+                  "Name": "RectangleItem2",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7902,7 +8491,9 @@
                   "Top": 140.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem3"
+                  "Name": "RectangleItem3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7920,7 +8511,9 @@
                   "Top": 186.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem4"
+                  "Name": "RectangleItem4",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7938,7 +8531,9 @@
                   "Top": 232.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem5"
+                  "Name": "RectangleItem5",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7956,7 +8551,9 @@
                   "Top": 278.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem6"
+                  "Name": "RectangleItem6",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7974,7 +8571,9 @@
                   "Top": 324.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem7"
+                  "Name": "RectangleItem7",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7992,7 +8591,9 @@
                   "Top": 370.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem8"
+                  "Name": "RectangleItem8",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -8010,7 +8611,9 @@
                   "Top": 416.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem9"
+                  "Name": "RectangleItem9",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -8028,7 +8631,9 @@
                   "Top": 462.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem10"
+                  "Name": "RectangleItem10",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -8046,7 +8651,9 @@
                   "Top": 508.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem11"
+                  "Name": "RectangleItem11",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -8064,7 +8671,9 @@
                   "Top": 554.0,
                   "Visible": true,
                   "Width": 15.0,
-                  "Name": "RectangleItem12"
+                  "Name": "RectangleItem12",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -8083,6 +8692,8 @@
                   "Visible": true,
                   "Width": 60.0,
                   "Name": "TextItem2",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
@@ -8104,6 +8715,8 @@
               "Group": true,
               "Visible": false,
               "Name": "ARB front2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.ARBswapped]" },
@@ -8116,6 +8729,8 @@
           "Group": false,
           "Visible": false,
           "Name": "Supercar",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -8156,6 +8771,8 @@
               "Visible": true,
               "Width": 598.0,
               "Name": "Blue",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Minimum": {
                   "Formula": { "Expression": "[CarSettings_RedLineRPM]*0.75" },
@@ -8201,6 +8818,8 @@
               "Visible": true,
               "Width": 598.0,
               "Name": "Green",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Minimum": {
                   "Formula": { "Expression": "[CarSettings_RedLineRPM]*0.85" },
@@ -8246,6 +8865,8 @@
               "Visible": true,
               "Width": 598.0,
               "Name": "Red",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Maximum": {
                   "Formula": { "Expression": "[CarSettings_RedLineRPM]*1.02" },
@@ -8279,6 +8900,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -8319,6 +8942,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -8354,12 +8979,16 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 450.0,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
           "Group": false,
           "Visible": false,
           "Name": "Rally",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -8388,6 +9017,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -8428,6 +9059,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -8464,6 +9097,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TCframe",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -8491,6 +9126,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TC",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -8518,6 +9155,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TC val",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -8556,6 +9195,8 @@
               "Visible": false,
               "Width": 132.0,
               "Name": "TRC disable warning",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
@@ -8589,7 +9230,9 @@
               "Top": 474.0,
               "Visible": true,
               "Width": 132.0,
-              "Name": "BB frame"
+              "Name": "BB frame",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -8608,6 +9251,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "BB",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -8635,6 +9280,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "BB val",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -8669,6 +9316,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TC2frame",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -8696,6 +9345,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TC2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -8723,6 +9374,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TC val2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -8756,6 +9409,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "Pahead frame",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": {
@@ -8783,6 +9438,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "Pahead",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -8824,6 +9481,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "Paheadval",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -8865,12 +9524,16 @@
               "Visible": true,
               "Width": 450.0,
               "IsFreezed": true,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
           "Group": false,
           "Visible": false,
           "Name": "Dallara LMP2",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -8899,6 +9562,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -8939,6 +9604,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -8975,6 +9642,8 @@
               "Visible": true,
               "Width": 137.0,
               "Name": "ABS frame",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -9002,6 +9671,8 @@
               "Visible": true,
               "Width": 137.0,
               "Name": "ABS",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -9029,6 +9700,8 @@
               "Visible": true,
               "Width": 137.0,
               "Name": "ABS val",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -9068,6 +9741,8 @@
                   "Visible": true,
                   "Width": 132.0,
                   "Name": "Mapframe",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
@@ -9095,6 +9770,8 @@
                   "Visible": true,
                   "Width": 132.0,
                   "Name": "Map",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -9122,6 +9799,8 @@
                   "Visible": true,
                   "Width": 132.0,
                   "Name": "Map1",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -9143,6 +9822,8 @@
               "Group": false,
               "Visible": true,
               "Name": "MapframeDefault",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": {
@@ -9169,7 +9850,9 @@
               "Visible": true,
               "Width": 450.0,
               "IsFreezed": true,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -9187,6 +9870,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TCframe",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -9214,6 +9899,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TC",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -9241,6 +9928,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TC val",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -9279,6 +9968,8 @@
               "Visible": false,
               "Width": 132.0,
               "Name": "TRC disable warning",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
@@ -9313,6 +10004,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TC2frame",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -9340,6 +10033,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TC2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -9367,6 +10062,8 @@
               "Visible": true,
               "Width": 132.0,
               "Name": "TC val2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -9401,6 +10098,8 @@
               "Visible": true,
               "Width": 194.0,
               "Name": "BB",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
@@ -9421,6 +10120,8 @@
           "Group": false,
           "Visible": false,
           "Name": "Porsche 911 GT3R",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -9449,6 +10150,8 @@
               "Visible": true,
               "Width": 450.0,
               "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -9481,6 +10184,8 @@
               "Visible": true,
               "Width": 144.0,
               "Name": "CD box",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -9508,6 +10213,8 @@
               "Visible": true,
               "Width": 146.0,
               "Name": "CD percent",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0",
@@ -9544,6 +10251,8 @@
               "Visible": true,
               "Width": 306.0,
               "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
@@ -9594,6 +10303,8 @@
               "Visible": true,
               "Width": 540.0,
               "Name": "CD gauge",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Value": {
                   "Formula": {
@@ -9614,6 +10325,8 @@
               "Visible": true,
               "Width": 144.0,
               "Name": "OTS box",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
@@ -9641,6 +10354,8 @@
               "Visible": true,
               "Width": 146.0,
               "Name": "OTSpercent",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0",
@@ -9679,6 +10394,8 @@
               "Visible": true,
               "Width": 540.0,
               "Name": "OTS gauge",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Value": {
                   "Formula": { "Expression": "[DahlDesign.SF23.OTTimeLeft]" },
@@ -9711,6 +10428,8 @@
               "Visible": true,
               "Width": 80.0,
               "Name": "CD txt",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -9738,6 +10457,8 @@
               "Visible": true,
               "Width": 80.0,
               "Name": "OTS txt",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -9765,6 +10486,8 @@
               "Visible": true,
               "Width": 146.0,
               "Name": "LNC",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -9799,6 +10522,8 @@
               "Visible": true,
               "Width": 146.0,
               "Name": "THR",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -9833,6 +10558,8 @@
               "Visible": true,
               "Width": 76.0,
               "Name": "Race percent",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Top": {
                   "Formula": {
@@ -9858,7 +10585,9 @@
               "Top": 52.0,
               "Visible": true,
               "Width": 80.0,
-              "Name": "RectangleItem0"
+              "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -9875,7 +10604,9 @@
               "Top": 52.0,
               "Visible": true,
               "Width": 80.0,
-              "Name": "RectangleItem1"
+              "Name": "RectangleItem1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -9892,7 +10623,9 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem2"
+              "Name": "RectangleItem2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -9909,7 +10642,9 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem3"
+              "Name": "RectangleItem3",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -9926,7 +10661,9 @@
               "Top": 88.0,
               "Visible": true,
               "Width": 287.0,
-              "Name": "RectangleItem4"
+              "Name": "RectangleItem4",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -9943,7 +10680,9 @@
               "Top": 2.0,
               "Visible": true,
               "Width": 4.0,
-              "Name": "RectangleItem5"
+              "Name": "RectangleItem5",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -9960,7 +10699,9 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 450.0,
-              "Name": "Border"
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -9979,6 +10720,8 @@
               "Visible": true,
               "Width": 194.0,
               "Name": "BB",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "0.0",
@@ -10000,8 +10743,10 @@
             }
           ],
           "Group": false,
-          "Visible": true,
+          "Visible": false,
           "Name": "SF23",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -10011,8 +10756,858 @@
               "TargetPropertyName": "Visible"
             }
           }
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "Top": 0.0,
+          "Left": 0.0,
+          "Height": 598.0,
+          "Width": 450.0,
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 598.0,
+              "Left": 0.0,
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 450.0,
+              "Name": "pit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                },
+                "BlinkEnabled": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BlinkEnabled"
+                },
+                "Visible": {
+                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#FF7CFC00",
+              "Height": 87.0,
+              "Left": 81.0,
+              "Top": 3.0,
+              "Visible": true,
+              "Width": 144.0,
+              "Name": "SOC box",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if (isnull([GameRawData.Telemetry.DRS_Status],0) > 0, 'lawngreen','transparent')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontWeight": "SemiBold",
+              "FontSize": 70.0,
+              "Text": "67",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 1,
+              "TextMask": "0000000000",
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 86.0,
+              "Left": 80.0,
+              "Top": 4.0,
+              "Visible": true,
+              "Width": 146.0,
+              "Name": "SOC percent",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct], 0)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if(([PitLimiterOn]=0 and [IsInPitLane]=1) || isnull([GameRawData.Telemetry.DRS_Status],0) > 0, 'black','white')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontWeight": "Bold",
+              "FontSize": 420.0,
+              "Text": "N",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 1,
+              "TextMask": "0000000000",
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 428.0,
+              "Left": 72.0,
+              "Top": 11.0,
+              "Visible": true,
+              "Width": 306.0,
+              "Name": "Gear",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "Text": {
+                  "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                },
+                "FontSize": {
+                  "Formula": {
+                    "Expression": "if([DahlDesign.SmoothGear]='N', 370, 420)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "FontSize"
+                },
+                "Visible": {
+                  "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+              "IsLinearGauge": true,
+              "GaugeOrientation": 0,
+              "GaugeAlignment": 0,
+              "AutoSize": false,
+              "GaugeImage": "",
+              "GaugeColor": "#FFFFFFFF",
+              "AlternateGaugeColor": "#FF008000",
+              "UseAlternateStyle": false,
+              "Minimum": 0.0,
+              "Maximum": 100.0,
+              "Value": 67.0,
+              "Steps": 0.0,
+              "PAW": 362.0,
+              "Rotation": -90.0,
+              "BackgroundColor": "#FF000000",
+              "Height": 80.0,
+              "Left": -228.0,
+              "Top": 284.0,
+              "Visible": true,
+              "Width": 540.0,
+              "Name": "SOC gauge",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "Value": {
+                  "Formula": {
+                    "Expression": "isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct],0)*100\r\n\r\n"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Value"
+                },
+                "GaugeColor": {
+                  "Formula": {
+                    "Expression": "if([PitLimiterOn] = 1, 'white',\r\nif([IsInPit] = 1, 'black',\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct],0)*100 < 25, 'red','white')))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "GaugeColor"
+                },
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True' or [DahlDesign.NoBoost],\r\n1,0)"
+                  },
+                  "StartColor": "#00FFFFFF",
+                  "EnableMiddleColor": true,
+                  "MiddleColor": "#FFFFFFFF",
+                  "MiddleColorValue": 1.0,
+                  "EndColor": "#FFFF0000",
+                  "StartColorValue": 0.0,
+                  "EndColorValue": 2.0,
+                  "Mode": 4,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontWeight": "SemiBold",
+              "FontSize": 35.0,
+              "Text": "SOC",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 2,
+              "TextMask": "0000000000",
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 45.0,
+              "Left": 2.0,
+              "Top": 5.0,
+              "Visible": true,
+              "Width": 80.0,
+              "Name": "SOC txt",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 87.0,
+              "Left": 225.0,
+              "Top": 4.0,
+              "Visible": true,
+              "Width": 144.0,
+              "Name": "DPL box",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if (isnull([GameRawData.Telemetry.DRS_Status],0) > 1, 'lawngreen','transparent')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontWeight": "SemiBold",
+              "FontSize": 70.0,
+              "Text": "BAL",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 1,
+              "TextMask": "0000000000",
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 86.0,
+              "Left": 225.0,
+              "Top": 3.0,
+              "Visible": true,
+              "Width": 143.0,
+              "Name": "DPL Mode",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 0, 'OFF',\r\nif (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 1, 'QLY',\r\nif (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 2, 'ATK',\r\nif (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 3, 'BAL', 'ECO'))))\r\n"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if(([PitLimiterOn]=0 and [IsInPitLane]=1) || isnull([GameRawData.Telemetry.DRS_Status],0) > 1, 'black','white')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": { "BorderBottom": 4 },
+              "Height": 116.0,
+              "Left": 368.0,
+              "Top": 5.0,
+              "Visible": true,
+              "Width": 78.0,
+              "Name": "ATK",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 4, 'lawngreen', 'black')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#FF00BFFF",
+              "BorderStyle": { "BorderBottom": 4 },
+              "Height": 118.0,
+              "Left": 368.0,
+              "Top": 121.0,
+              "Visible": true,
+              "Width": 78.0,
+              "Name": "BAL",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 3, 'deepskyblue', 'black')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": { "BorderBottom": 4 },
+              "Height": 118.0,
+              "Left": 368.0,
+              "Top": 239.0,
+              "Visible": true,
+              "Width": 78.0,
+              "Name": "ECO",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 2, 'red', 'black')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": { "BorderBottom": 4 },
+              "Height": 118.0,
+              "Left": 368.0,
+              "Top": 357.0,
+              "Visible": true,
+              "Width": 78.0,
+              "Name": "QLY",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 1, 'fuchsia', 'black')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 118.0,
+              "Left": 368.0,
+              "Top": 475.0,
+              "Visible": true,
+              "Width": 78.0,
+              "Name": "OFF",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 0, 'orange', 'black')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 4.0,
+              "Left": 0.0,
+              "Top": 52.0,
+              "Visible": true,
+              "Width": 80.0,
+              "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 598.0,
+              "Left": 79.0,
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 4.0,
+              "Name": "RectangleItem2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 598.0,
+              "Left": 366.0,
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 4.0,
+              "Name": "RectangleItem3",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 4.0,
+              "Left": 80.0,
+              "Top": 88.0,
+              "Visible": true,
+              "Width": 287.0,
+              "Name": "RectangleItem4",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 90.0,
+              "Left": 223.0,
+              "Top": 2.0,
+              "Visible": true,
+              "Width": 4.0,
+              "Name": "RectangleItem5",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#FF000000",
+              "BorderStyle": {
+                "BorderTop": 6,
+                "BorderBottom": 6,
+                "BorderLeft": 6,
+                "BorderRight": 6,
+                "RadiusTopLeft": 25,
+                "RadiusTopRight": 25,
+                "RadiusBottomLeft": 25,
+                "RadiusBottomRight": 25
+              },
+              "Height": 50.0,
+              "Left": 382.0,
+              "Top": 94.0,
+              "Visible": true,
+              "Width": 50.0,
+              "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if ([DahlDesign.ERSCharges] = 4, \t\r\n\tif ([Rpms] > 300 && [SpeedKmh] < 75, 'fuchsia', 'Lawngreen'), 'black')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#FF000000",
+              "BorderStyle": {
+                "BorderTop": 6,
+                "BorderBottom": 6,
+                "BorderLeft": 6,
+                "BorderRight": 6,
+                "RadiusTopLeft": 25,
+                "RadiusTopRight": 25,
+                "RadiusBottomLeft": 25,
+                "RadiusBottomRight": 25
+              },
+              "Height": 50.0,
+              "Left": 382.0,
+              "Top": 212.0,
+              "Visible": true,
+              "Width": 50.0,
+              "Name": "RectangleItem1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if ([DahlDesign.ERSCharges] > 2, \r\n\tif ([Rpms] > 300 && [SpeedKmh] < 75, 'fuchsia', 'Lawngreen'), 'black')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#FF7CFC00",
+              "BorderStyle": {
+                "BorderTop": 6,
+                "BorderBottom": 6,
+                "BorderLeft": 6,
+                "BorderRight": 6,
+                "RadiusTopLeft": 25,
+                "RadiusTopRight": 25,
+                "RadiusBottomLeft": 25,
+                "RadiusBottomRight": 25
+              },
+              "Height": 50.0,
+              "Left": 382.0,
+              "Top": 331.0,
+              "Visible": true,
+              "Width": 50.0,
+              "Name": "RectangleItem2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if ([DahlDesign.ERSCharges] > 1,\r\n\tif ([Rpms] > 300 && [SpeedKmh] < 75, 'fuchsia', 'Lawngreen'), 'black')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#FF7CFC00",
+              "BorderStyle": {
+                "BorderTop": 6,
+                "BorderBottom": 6,
+                "BorderLeft": 6,
+                "BorderRight": 6,
+                "RadiusTopLeft": 25,
+                "RadiusTopRight": 25,
+                "RadiusBottomLeft": 25,
+                "RadiusBottomRight": 25
+              },
+              "Height": 50.0,
+              "Left": 382.0,
+              "Top": 448.0,
+              "Visible": true,
+              "Width": 50.0,
+              "Name": "RectangleItem3",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if ([DahlDesign.ERSCharges] > 0,\r\n\tif ([Rpms] > 300 && [SpeedKmh] < 75, 'fuchsia', 'Lawngreen'), 'black')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#FFFF0000",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 98.0,
+              "Left": 81.0,
+              "Top": 498.0,
+              "Visible": false,
+              "Width": 286.0,
+              "Name": "Magic",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "isnull([GameRawData.Telemetry.dcBrakeMisc],0) = 1 || [DahlDesign.DRSState] = 'Open'"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                },
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if ([DahlDesign.DRSState] = 'Open', 'lawngreen', 'red')\r\n"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontWeight": "Bold",
+              "FontSize": 75.0,
+              "Text": "3",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 0,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 100.0,
+              "Left": 226.0,
+              "Top": 497.0,
+              "Visible": true,
+              "Width": 142.0,
+              "Name": "TextItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameRawData.Telemetry.dcTractionControl2]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1 ||  isnull([GameRawData.Telemetry.DRS_Status],0) > 2, 'black',\r\nif([PitLimiterOn]=1, 'white',\r\nif (changed([GameRawData.Telemetry.dcDiffEntry],2000), 'deepskyblue','white')))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontWeight": "Bold",
+              "FontSize": 75.0,
+              "Text": "7",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 0,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 98.0,
+              "Left": 84.0,
+              "Top": 497.0,
+              "Visible": true,
+              "Width": 142.0,
+              "Name": "TextItem1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "Text": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameRawData.Telemetry.dcTractionControl]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1  ||  isnull([GameRawData.Telemetry.DRS_Status],0) > 2, 'black',\r\nif([PitLimiterOn]=1, 'white',\r\nif (changed([GameRawData.Telemetry.dcDiffMiddle],2000), 'deepskyblue','white')))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "IsTextItem": true,
+              "Font": "Segoe UI",
+              "FontWeight": "Bold",
+              "FontSize": 90.0,
+              "Text": "57.5",
+              "TextColor": "#FFFFFFFF",
+              "HorizontalAlignment": 1,
+              "VerticalAlignment": 1,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 100.0,
+              "Left": 128.0,
+              "Top": 394.0,
+              "Visible": true,
+              "Width": 194.0,
+              "Name": "BB",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0.0",
+                  "Formula": { "Expression": "[BrakeBias]" },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\nif ([PitLimiterOn] = 1, 'white',\r\nif (changed(2000,[BrakeBias]), 'deepskyblue','white')))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 97.0,
+              "Left": 225.0,
+              "Top": 499.0,
+              "Visible": true,
+              "Width": 4.0,
+              "Name": "RectangleItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 4.0,
+              "Left": 81.0,
+              "Top": 496.0,
+              "Visible": true,
+              "Width": 286.0,
+              "Name": "RectangleItem2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 6,
+                "BorderBottom": 5,
+                "BorderLeft": 6,
+                "BorderRight": 6
+              },
+              "Height": 598.0,
+              "Left": 0.0,
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 450.0,
+              "IsFreezed": true,
+              "Name": "Border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
+            }
+          ],
+          "Group": false,
+          "Visible": true,
+          "Name": "BMW LMDh",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "[DahlDesign.CenterDashType] = 'BMW LMDh'"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          }
         }
-      ]
+      ],
+      "MinimumRefreshIntervalMS": 0.0
     }
   ],
   "SnapToGrid": false,

@@ -2,12 +2,13 @@
   "Variables": { "DashboardVariables": [] },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "929c0ad1-fa86-4d97-8524-ff893f39545b",
+  "Id": "e220daec-5ae4-4f30-b304-56da07d76787",
   "BaseHeight": 82,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
   "Screens": [
     {
+      "RenderingSkip": 0,
       "Name": "Screen1",
       "InGameScreen": true,
       "IdleScreen": false,
@@ -38,7 +39,9 @@
           "Top": 0.0,
           "Visible": true,
           "Width": 1280.0,
-          "Name": "Border"
+          "Name": "Border",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
@@ -89,6 +92,8 @@
               "Visible": true,
               "Width": 105.5,
               "Name": "PIT1",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -168,6 +173,8 @@
               "Visible": true,
               "Width": 105.5,
               "Name": "PIT2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -247,6 +254,8 @@
               "Visible": true,
               "Width": 105.5,
               "Name": "PIT3",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -326,6 +335,8 @@
               "Visible": true,
               "Width": 105.5,
               "Name": "PIT4",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -412,6 +423,8 @@
               "Visible": true,
               "Width": 105.5,
               "Name": "PIT5",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -498,6 +511,8 @@
               "Visible": true,
               "Width": 105.5,
               "Name": "PIT6",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -577,6 +592,8 @@
               "Visible": true,
               "Width": 105.5,
               "Name": "PIT7",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -664,6 +681,8 @@
               "Visible": true,
               "Width": 105.5,
               "Name": "PIT8",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -751,6 +770,8 @@
               "Visible": true,
               "Width": 105.5,
               "Name": "PIT9",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": { "Expression": "if([DahlDesign.PitMenu]=9,1,0)" },
@@ -826,6 +847,8 @@
               "Visible": true,
               "Width": 105.5,
               "Name": "PIT10",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -898,6 +921,8 @@
               "Visible": true,
               "Width": 105.0,
               "Name": "PIT11",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -963,6 +988,8 @@
               "Visible": true,
               "Width": 105.0,
               "Name": "PIT12",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
@@ -998,6 +1025,8 @@
           "Group": false,
           "Visible": true,
           "Name": "Single",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": { "Expression": "[DahlDesign.MenuType] = 'Single'" },
@@ -1063,6 +1092,8 @@
                   "Visible": true,
                   "Width": 105.5,
                   "Name": "PIT1",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -1142,6 +1173,8 @@
                   "Visible": true,
                   "Width": 105.5,
                   "Name": "PIT2",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -1221,6 +1254,8 @@
                   "Visible": true,
                   "Width": 105.5,
                   "Name": "PIT3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -1300,6 +1335,8 @@
                   "Visible": true,
                   "Width": 105.5,
                   "Name": "PIT4",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -1386,6 +1423,8 @@
                   "Visible": true,
                   "Width": 105.5,
                   "Name": "PIT5",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -1472,6 +1511,8 @@
                   "Visible": true,
                   "Width": 105.5,
                   "Name": "PIT6",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -1551,6 +1592,8 @@
                   "Visible": true,
                   "Width": 105.5,
                   "Name": "PIT7",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -1638,6 +1681,8 @@
                   "Visible": true,
                   "Width": 105.5,
                   "Name": "PIT8",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -1725,6 +1770,8 @@
                   "Visible": true,
                   "Width": 105.5,
                   "Name": "PIT9",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -1804,6 +1851,8 @@
                   "Visible": true,
                   "Width": 105.5,
                   "Name": "PIT10",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -1876,6 +1925,8 @@
                   "Visible": true,
                   "Width": 105.0,
                   "Name": "PIT11",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -1941,6 +1992,8 @@
                   "Visible": true,
                   "Width": 105.0,
                   "Name": "PIT12",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
@@ -1975,7 +2028,9 @@
               ],
               "Group": false,
               "Visible": true,
-              "Name": "PIT"
+              "Name": "PIT",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
@@ -2034,6 +2089,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -2114,6 +2171,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "PBB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -2193,6 +2252,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "Rotary L3",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -2265,6 +2326,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "DIFF ENT",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -2344,6 +2407,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "DIFF PRE",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -2423,6 +2488,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL6",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -2495,6 +2562,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL7",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -2567,6 +2636,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL8",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -2639,6 +2710,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL9",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -2711,6 +2784,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL10",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -2783,6 +2858,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "FW",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -2862,6 +2939,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "RotaryL12",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -2905,6 +2984,8 @@
                   "Group": false,
                   "Visible": false,
                   "Name": "MCL MP4-30",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -2964,6 +3045,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -3044,6 +3127,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "PBB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -3123,6 +3208,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "MAP",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -3202,6 +3289,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "HYS regen",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -3281,6 +3370,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "HYS deploy",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -3360,6 +3451,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "HYS MODE",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -3439,6 +3532,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TCL R",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -3518,6 +3613,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TCL F",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -3597,6 +3694,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TC R",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -3676,6 +3775,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TC F",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -3755,6 +3856,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "PIT",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -3835,6 +3938,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "powersteer",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -3877,6 +3982,8 @@
                   "Group": false,
                   "Visible": false,
                   "Name": "Porsche 919",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -3936,6 +4043,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -4016,6 +4125,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "MAP",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -4095,6 +4206,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "ABS",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -4172,6 +4285,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "THR",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -4251,6 +4366,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TCR",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -4330,6 +4447,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL6",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -4402,6 +4521,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL7",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -4474,6 +4595,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL8",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -4546,6 +4669,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL9",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -4618,6 +4743,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL10",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -4690,6 +4817,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "Rotary L11",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -4762,6 +4891,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "RotaryL12",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -4805,6 +4936,8 @@
                   "Group": false,
                   "Visible": false,
                   "Name": "Ferrari 488 GT3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -4864,6 +4997,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -4944,6 +5079,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "MAP",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -5023,6 +5160,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "THR",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -5102,6 +5241,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TCR",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -5181,6 +5322,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "LTS",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -5260,6 +5403,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL6",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -5332,6 +5477,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL7",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -5404,6 +5551,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL8",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -5476,6 +5625,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL9",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -5548,6 +5699,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL10",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -5620,6 +5773,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "Rotary L11",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -5692,6 +5847,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "RotaryL12",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -5735,6 +5892,8 @@
                   "Group": false,
                   "Visible": false,
                   "Name": "Ferrari 488 GTE",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -5794,6 +5953,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -5874,6 +6035,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "Launch",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -5953,6 +6116,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "THR",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -6032,6 +6197,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL4",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -6104,6 +6271,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL5",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -6176,6 +6345,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL6",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -6248,6 +6419,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL7",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -6320,6 +6493,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL8",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -6392,6 +6567,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL9",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -6464,6 +6641,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL10",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -6536,6 +6715,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "Rotary L11",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -6608,6 +6789,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "RotaryL12",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -6651,6 +6834,8 @@
                   "Group": false,
                   "Visible": false,
                   "Name": "FR 35",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -6710,6 +6895,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -6790,6 +6977,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "MAP",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -6869,6 +7058,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "THR",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -6948,6 +7139,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "ENG pwr",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -7027,6 +7220,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "ENG BR",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -7106,6 +7301,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL6",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -7178,6 +7375,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL7",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -7250,6 +7449,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL8",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -7322,6 +7523,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL9",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -7394,6 +7597,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL10",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -7466,6 +7671,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "Rotary L11",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -7538,6 +7745,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "RotaryL12",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -7581,6 +7790,8 @@
                   "Group": false,
                   "Visible": false,
                   "Name": "Williams FW31",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -7640,6 +7851,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -7720,6 +7933,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TC R",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -7799,6 +8014,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TCL R",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -7878,6 +8095,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL4",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -7950,6 +8169,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "Throttle",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -8029,6 +8250,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL6",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -8101,6 +8324,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL7",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -8173,6 +8398,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL8",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -8245,6 +8472,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL9",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -8317,6 +8546,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL10",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -8389,6 +8620,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "powersteer",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -8468,6 +8701,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "Pit",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -8511,6 +8746,8 @@
                   "Group": false,
                   "Visible": false,
                   "Name": "Dallara P217",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -8570,6 +8807,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -8650,6 +8889,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "Throttle",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -8729,6 +8970,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TCL R",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -8808,6 +9051,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL4",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -8880,6 +9125,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL5",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -8952,6 +9199,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL6",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -9024,6 +9273,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL7",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -9096,6 +9347,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL8",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -9168,6 +9421,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL9",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -9240,6 +9495,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL10",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -9312,6 +9569,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "Rotary L11",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -9384,6 +9643,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "RotaryL12",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -9427,6 +9688,8 @@
                   "Group": false,
                   "Visible": false,
                   "Name": "BMW M4",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -9486,6 +9749,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -9566,6 +9831,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "MAP",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -9645,6 +9912,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "ABS",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -9722,6 +9991,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TCR",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -9801,6 +10072,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL5",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -9873,6 +10146,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL6",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -9945,6 +10220,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL7",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -10017,6 +10294,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL8",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -10089,6 +10368,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL9",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -10161,6 +10442,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL10",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -10233,6 +10516,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "Rotary L11",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -10305,6 +10590,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "RotaryL12",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -10348,6 +10635,8 @@
                   "Group": false,
                   "Visible": false,
                   "Name": "Mercedes AMG GT3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -10407,6 +10696,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -10479,6 +10770,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -10551,6 +10844,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "Bimg",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -10630,6 +10925,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "EB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -10709,6 +11006,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "HYS MODE",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -10788,6 +11087,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "Ent",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -10867,6 +11168,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "mid",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -10946,6 +11249,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "exit",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -11025,6 +11330,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "PIT",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -11105,6 +11412,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "FW",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -11184,6 +11493,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL10",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -11256,6 +11567,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL4",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -11291,6 +11604,8 @@
                   "Group": false,
                   "Visible": false,
                   "Name": "Mercedes W13",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -11350,6 +11665,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -11422,6 +11739,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -11494,6 +11813,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "Bimg",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -11573,6 +11894,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "Magic¨",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -11631,6 +11954,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "EB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -11710,6 +12035,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "HYS MODE",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -11789,6 +12116,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "Ent",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -11868,6 +12197,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "mid",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -11947,6 +12278,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "exit",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -12026,6 +12359,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "PIT",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -12106,6 +12441,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "FW",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -12185,6 +12522,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL10",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -12220,6 +12559,8 @@
                   "Group": false,
                   "Visible": false,
                   "Name": "Mercedes W12",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -12279,6 +12620,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -12359,6 +12702,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TCL R",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -12438,6 +12783,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "Throttle",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -12524,6 +12871,8 @@
                       "Visible": false,
                       "Width": 105.5,
                       "Name": "RotaryL5",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -12603,6 +12952,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL6",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -12675,6 +13026,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL7",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -12747,6 +13100,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL8",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -12819,6 +13174,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL9",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -12891,6 +13248,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "Pit",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -12971,6 +13330,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TCL R",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -13050,6 +13411,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "MAP",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -13129,6 +13492,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "FW",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -13208,6 +13573,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "FW1",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -13250,6 +13617,8 @@
                   "Group": false,
                   "Visible": false,
                   "Name": "Dallara IR18",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -13309,6 +13678,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -13389,6 +13760,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "ABS",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -13466,6 +13839,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "THR",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -13545,6 +13920,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TCR",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -13624,6 +14001,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL5",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -13696,6 +14075,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL6",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -13768,6 +14149,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL7",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -13840,6 +14223,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL8",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -13912,6 +14297,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL9",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -13984,6 +14371,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL10",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -14056,6 +14445,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "Rotary L11",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -14128,6 +14519,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "RotaryL12",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -14171,6 +14564,8 @@
                   "Group": false,
                   "Visible": false,
                   "Name": "Audi R8 GT3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -14230,6 +14625,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -14310,6 +14707,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "ABS",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -14387,6 +14786,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "THR",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -14466,6 +14867,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TCR",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -14545,6 +14948,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL6",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -14617,6 +15022,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL7",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -14689,6 +15096,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL8",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -14761,6 +15170,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL9",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -14833,6 +15244,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL10",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -14905,6 +15318,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "Rotary L11",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -14977,6 +15392,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "RotaryL12",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -15057,6 +15474,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "MAP",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -15099,6 +15518,8 @@
                   "Group": false,
                   "Visible": false,
                   "Name": "Lamborghini Huracan GT3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -15158,6 +15579,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -15238,6 +15661,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "MAP",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -15317,6 +15742,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "ABS",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -15394,6 +15821,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "THR",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -15473,6 +15902,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "TCR",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -15552,6 +15983,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "LTS",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -15631,6 +16064,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL7",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -15703,6 +16138,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL8",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -15775,6 +16212,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL9",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -15847,6 +16286,8 @@
                       "Visible": true,
                       "Width": 105.5,
                       "Name": "RotaryL10",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -15919,6 +16360,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "Rotary L11",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -15991,6 +16434,8 @@
                       "Visible": true,
                       "Width": 105.0,
                       "Name": "RotaryL12",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "TextColor": {
                           "Formula": {
@@ -16032,8 +16477,10 @@
                     }
                   ],
                   "Group": false,
-                  "Visible": true,
+                  "Visible": false,
                   "Name": "Porsche 911 GT3R",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
@@ -16043,16 +16490,983 @@
                       "TargetPropertyName": "Visible"
                     }
                   }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "Top": 6.0,
+                  "Left": 5.0,
+                  "Height": 36.0,
+                  "Width": 1270.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "BB 67.5",
+                      "TextColor": "#FF00BFFF",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FF00BFFF",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 1,0,1)"
+                            },
+                            "StartColor": "#FF000000",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF00BFFF",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 5.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "BB",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 1,1,0)"
+                          },
+                          "StartColor": "#FF00BFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 1,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF00BFFF",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "FormatString": "0.0",
+                          "Formula": {
+                            "Expression": "'BB '\r\n+\r\n[DataCorePlugin.GameData.NewData.BrakeBias]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "GAIN 11",
+                      "TextColor": "#FFC0C0C0",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFFA500",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 2, 1, 0)"
+                            },
+                            "StartColor": "#FFFFA500",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF000000",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 111.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "TC GAIN",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 2,1,0)"
+                          },
+                          "StartColor": "#FFFFA500",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 2,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFFFA500",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'GAIN ' + [GameRawData.Telemetry.dcTractionControl]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "SLIP 4",
+                      "TextColor": "#FFC0C0C0",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFFA500",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 3, 1, 0)"
+                            },
+                            "StartColor": "#FFFFA500",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF000000",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 217.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "TC SLIP",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 3,1,0)"
+                          },
+                          "StartColor": "#FFFFA500",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 3,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFFFA500",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'SLIP ' + [GameRawData.Telemetry.dcTractionControl2]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "ARB F 6",
+                      "TextColor": "#FFC0C0C0",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFFA500",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 4, 1, 0)"
+                            },
+                            "StartColor": "#FFFFA500",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF000000",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 324.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "ARB F",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 4,1,0)"
+                          },
+                          "StartColor": "#FFFFA500",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 4,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFFFA500",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'ARB F ' + isnull([GameRawData.Telemetry.dcAntiRollFront],0)"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "ARB R 6",
+                      "TextColor": "#FFC0C0C0",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFFA500",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 5, 1, 0)"
+                            },
+                            "StartColor": "#FFFFA500",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF000000",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 429.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "ARB R",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 5,1,0)"
+                          },
+                          "StartColor": "#FFFFA500",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 5,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFFFA500",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'ARB R ' + isnull([GameRawData.Telemetry.dcAntiRollRear],0)"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "ATK",
+                      "TextColor": "#FFC0C0C0",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFF00FF",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 6,0,1)"
+                            },
+                            "StartColor": "#FF000000",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FFFF00FF",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 535.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "HYS MODE",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 6,1,0)"
+                          },
+                          "StartColor": "#FFFF00FF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 6,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFFF00FF",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Expression": "if ([GameRawData.Telemetry.dcMGUKDeployMode] = 0, 'OFF',\r\nif ([GameRawData.Telemetry.dcMGUKDeployMode] = 1, 'QLY',\r\nif ([GameRawData.Telemetry.dcMGUKDeployMode] = 2, 'ATK',\r\nif ([GameRawData.Telemetry.dcMGUKDeployMode] = 3, 'BAL', 'ECO'))))\r\n"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "-",
+                      "TextColor": "#FFC0C0C0",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFC0C0C0",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 7, 1, 0)"
+                            },
+                            "StartColor": "#FFC0C0C0",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF000000",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 641.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "RotaryL7",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 7, 1, 0)"
+                          },
+                          "StartColor": "#FFC0C0C0",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 7, 1, 0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFC0C0C0",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "-",
+                      "TextColor": "#FFC0C0C0",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFC0C0C0",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 8, 1, 0)"
+                            },
+                            "StartColor": "#FFC0C0C0",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF000000",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 747.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "RotaryL8",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 8, 1, 0)"
+                          },
+                          "StartColor": "#FFC0C0C0",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 8, 1, 0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFC0C0C0",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "-",
+                      "TextColor": "#FFC0C0C0",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFC0C0C0",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 9, 1, 0)"
+                            },
+                            "StartColor": "#FFC0C0C0",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF000000",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 853.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "RotaryL9",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 9, 1, 0)"
+                          },
+                          "StartColor": "#FFC0C0C0",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 9, 1, 0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFC0C0C0",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "-",
+                      "TextColor": "#FFC0C0C0",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFC0C0C0",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 10, 1, 0)"
+                            },
+                            "StartColor": "#FFC0C0C0",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF000000",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 959.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "RotaryL10",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 10, 1, 0)"
+                          },
+                          "StartColor": "#FFC0C0C0",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 10, 1, 0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFC0C0C0",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "-",
+                      "TextColor": "#FFC0C0C0",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFC0C0C0",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu] = 11, 1, 0)"
+                            },
+                            "StartColor": "#FFC0C0C0",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF000000",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 1065.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.5,
+                      "Name": "RotaryL11",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 11, 1, 0)"
+                          },
+                          "StartColor": "#FFC0C0C0",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu] = 11, 1, 0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFC0C0C0",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        }
+                      }
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "IsTextItem": true,
+                      "Font": "Segoe UI",
+                      "FontWeight": "Bold",
+                      "FontSize": 22.0,
+                      "Text": "PIT",
+                      "TextColor": "#FFFFFF00",
+                      "HorizontalAlignment": 1,
+                      "VerticalAlignment": 1,
+                      "TextMask": "0000000000",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "BorderColor": "#FFFFFF00",
+                        "BorderTop": 3,
+                        "BorderBottom": 3,
+                        "BorderLeft": 3,
+                        "BorderRight": 3,
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "if([DahlDesign.InCarMenu]=12,1,0)"
+                            },
+                            "StartColor": "#FFFFFF00",
+                            "EnableMiddleColor": false,
+                            "MiddleColor": "#FF000000",
+                            "MiddleColorValue": 1.0,
+                            "EndColor": "#FF000000",
+                            "StartColorValue": 0.0,
+                            "EndColorValue": 1.0,
+                            "Mode": 4,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        }
+                      },
+                      "Height": 36.0,
+                      "Left": 1170.0,
+                      "Top": 6.0,
+                      "Visible": true,
+                      "Width": 105.0,
+                      "Name": "Pit",
+                      "RenderingSkip": 0,
+                      "MinimumRefreshIntervalMS": 0.0,
+                      "Bindings": {
+                        "TextColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu]=12,1,0)"
+                          },
+                          "StartColor": "#FFFFFF00",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FF000000",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "TextColor"
+                        },
+                        "BackgroundColor": {
+                          "Formula": {
+                            "Expression": "if([DahlDesign.InCarMenu]=12,1,0)"
+                          },
+                          "StartColor": "#00FFFFFF",
+                          "EnableMiddleColor": false,
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "EndColor": "#FFFFFF00",
+                          "StartColorValue": 0.0,
+                          "EndColorValue": 1.0,
+                          "Mode": 4,
+                          "TargetPropertyName": "BackgroundColor"
+                        },
+                        "Text": {
+                          "Formula": {
+                            "Interpreter": 1,
+                            "Expression": "if ($prop('DahlDesign.CoupleInCarToPit') == false) {\r\n\treturn \"-\"\r\n} \r\nelse {\r\n\treturn \"PIT\"\r\n}"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      }
+                    }
+                  ],
+                  "Group": false,
+                  "Visible": true,
+                  "Name": "BMW LMDh",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DahlDesign.MenuType]='BMW LMDh'"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  }
                 }
               ],
               "Group": false,
               "Visible": true,
-              "Name": "Adjustments"
+              "Name": "Adjustments",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
           "Group": false,
           "Visible": false,
           "Name": "Double",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
@@ -16063,7 +17477,8 @@
             }
           }
         }
-      ]
+      ],
+      "MinimumRefreshIntervalMS": 0.0
     }
   ],
   "SnapToGrid": false,
