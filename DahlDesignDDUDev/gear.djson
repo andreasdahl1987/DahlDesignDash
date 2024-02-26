@@ -2,7 +2,7 @@
   "Variables": { "DashboardVariables": [] },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "2055a3d9-8309-4cc7-8d5e-176d98b76c88",
+  "Id": "94a5108b-36ba-4054-b3d7-300f495a8e83",
   "BaseHeight": 598,
   "BaseWidth": 450,
   "BackgroundColor": "#FF000000",
@@ -2079,7 +2079,7 @@
               "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Visible": true,
+          "Visible": false,
           "Name": "GT3",
           "RenderingSkip": 0,
           "MinimumRefreshIntervalMS": 0.0,
@@ -10239,6 +10239,27 @@
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
+              "BackgroundColor": "#FFFF0000",
+              "Height": 98.0,
+              "Left": 83.0,
+              "Top": 498.0,
+              "Visible": true,
+              "Width": 283.0,
+              "Name": "TCActive",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "BackgroundColor": {
+                  "Formula": {
+                    "Expression": "if (![DahlDesign.TCToggle], 'red',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'white',\r\nif([DahlDesign.TCActive],'orange','transparent')))"
+                  },
+                  "Mode": 2
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
               "BackgroundColor": "#FF7CFC00",
               "Height": 87.0,
               "Left": 81.0,
@@ -10804,39 +10825,6 @@
               }
             },
             {
-              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
-              "IsRectangleItem": true,
-              "BackgroundColor": "#FFFF0000",
-              "BorderStyle": {
-                "BorderTop": 2,
-                "BorderBottom": 2,
-                "BorderLeft": 2,
-                "BorderRight": 2
-              },
-              "Height": 98.0,
-              "Left": 81.0,
-              "Top": 498.0,
-              "Visible": false,
-              "Width": 286.0,
-              "Name": "Magic",
-              "RenderingSkip": 0,
-              "MinimumRefreshIntervalMS": 0.0,
-              "Bindings": {
-                "Visible": {
-                  "Formula": {
-                    "Expression": "isnull([GameRawData.Telemetry.dcBrakeMisc],0) = 1 || [DahlDesign.DRSState] = 'Open'"
-                  },
-                  "Mode": 2
-                },
-                "BackgroundColor": {
-                  "Formula": {
-                    "Expression": "if ([DahlDesign.DRSState] = 'Open', 'lawngreen', 'red')\r\n"
-                  },
-                  "Mode": 2
-                }
-              }
-            },
-            {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
               "IsTextItem": true,
               "Font": "Segoe UI",
@@ -10865,7 +10853,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1 ||  isnull([GameRawData.Telemetry.DRS_Status],0) > 2, 'black',\r\nif([PitLimiterOn]=1, 'white',\r\nif (changed([GameRawData.Telemetry.dcDiffEntry],2000), 'deepskyblue','white')))"
+                    "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
                   "Mode": 2
                 }
@@ -10899,7 +10887,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1  ||  isnull([GameRawData.Telemetry.DRS_Status],0) > 2, 'black',\r\nif([PitLimiterOn]=1, 'white',\r\nif (changed([GameRawData.Telemetry.dcDiffMiddle],2000), 'deepskyblue','white')))"
+                    "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
                   "Mode": 2
                 }
@@ -10997,7 +10985,7 @@
               "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Visible": false,
+          "Visible": true,
           "Name": "BMW LMDh",
           "RenderingSkip": 0,
           "MinimumRefreshIntervalMS": 0.0,
