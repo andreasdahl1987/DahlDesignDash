@@ -4562,7 +4562,7 @@
                         "$id": "463",
                         "Formula": {
                           "$id": "464",
-                          "Expression": "if ([IsInPit] = 1 && [PitLimiterOn] = 1, 2,\r\nif ([IsInPit] = 1 && [PitLimiterOn] = 0, 0,\r\nif ([IsInPit] = 0 && [PitLimiterOn] = 1, 1,0)))"
+                          "Expression": "if ([IsInPitLane] = 1 && [PitLimiterOn] = 1, 2,\r\nif ([IsInPitLane] = 1 && [PitLimiterOn] = 0, 0,\r\nif ([IsInPitLane] = 0 && [PitLimiterOn] = 1, 1,0)))"
                         },
                         "StartColor": "#FFFFFF00",
                         "EnableMiddleColor": true,
@@ -5268,7 +5268,7 @@
                   "$id": "512",
                   "Formula": {
                     "$id": "513",
-                    "Expression": "[IsInPit] = 1 || ([IsInPit] = 0 && [PitLimiterOn] = 1)"
+                    "Expression": "[IsInPitLane] = 1 || ([IsInPitLane] = 0 && [PitLimiterOn] = 1)"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"

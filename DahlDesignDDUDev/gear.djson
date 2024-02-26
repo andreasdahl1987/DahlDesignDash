@@ -64,13 +64,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 }
@@ -330,13 +330,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -373,7 +373,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -566,13 +566,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -609,7 +609,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','White',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','White',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -684,7 +684,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black',\r\nif (changed([BrakeBias],1500),'deepskyblue', 'white')))"
+                    "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black',\r\nif (changed([BrakeBias],1500),'deepskyblue', 'white')))"
                   },
                   "Mode": 2
                 }
@@ -802,7 +802,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -829,7 +829,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -856,7 +856,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -883,7 +883,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -910,7 +910,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -937,7 +937,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -964,7 +964,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -991,7 +991,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -1018,7 +1018,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -1045,7 +1045,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -1072,7 +1072,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -1099,7 +1099,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -1126,7 +1126,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -1153,7 +1153,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -1180,7 +1180,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -1207,7 +1207,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -1270,7 +1270,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -1297,7 +1297,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -1324,7 +1324,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -1351,7 +1351,7 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
-                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                      "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                     },
                     "Mode": 2
                   }
@@ -1388,7 +1388,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                    "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                   },
                   "Mode": 2
                 }
@@ -1435,7 +1435,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                    "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                   },
                   "Mode": 2
                 }
@@ -1463,7 +1463,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
+                    "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPitLane], 'black', 'white'))"
                   },
                   "Mode": 2
                 }
@@ -1503,13 +1503,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -1546,7 +1546,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -1605,7 +1605,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if (![DahlDesign.ABSToggle], 'white',\r\nif([ABSActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([ABSActive],'white',\r\nif([PitLimiterOn]=0 and [IsInPit]=1, 'black',\r\n'white'))))"
+                    "Expression": "if (![DahlDesign.ABSToggle], 'white',\r\nif([ABSActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([ABSActive],'white',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\n'white'))))"
                   },
                   "Mode": 2
                 }
@@ -1633,7 +1633,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if (![DahlDesign.ABSToggle], 'white',\r\nif([ABSActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([ABSActive],'white',\r\nif([PitLimiterOn]=0 and [IsInPit]=1, 'black',\r\n'white'))))"
+                    "Expression": "if (![DahlDesign.ABSToggle], 'white',\r\nif([ABSActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([ABSActive],'white',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\n'white'))))"
                   },
                   "Mode": 2
                 },
@@ -1689,7 +1689,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPit]=1, 'black','white'))))"
+                    "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
                   "Mode": 2
                 }
@@ -1717,7 +1717,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPit]=1, 'black','white'))))"
+                    "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
                   "Mode": 2
                 },
@@ -1809,7 +1809,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                   },
                   "Mode": 2
                 }
@@ -1837,7 +1837,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                   },
                   "Mode": 2
                 },
@@ -1876,7 +1876,7 @@
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
-                        "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh], 'transparent',\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPit] = 1, 'black', 'yellow')),\r\n'lawngreen'))"
+                        "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh], 'transparent',\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPitLane] = 1, 'black', 'yellow')),\r\n'lawngreen'))"
                       },
                       "Mode": 2
                     }
@@ -1904,7 +1904,7 @@
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
-                        "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh],  if ([IsInPit] = 1 && [PitLimiterOn] = 0, 'black','white'),\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPit] = 1, 'yellow','black')),\r\n'black'))\r\n"
+                        "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh],  if ([IsInPitLane] = 1 && [PitLimiterOn] = 0, 'black','white'),\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPitLane] = 1, 'yellow','black')),\r\n'black'))\r\n"
                       },
                       "Mode": 2
                     }
@@ -1932,7 +1932,7 @@
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
-                        "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh],  if ([IsInPit] = 1 && [PitLimiterOn] = 0, 'black','white'),\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPit] = 1, 'yellow','black')),\r\n'black'))\r\n\r\n"
+                        "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh],  if ([IsInPitLane] = 1 && [PitLimiterOn] = 0, 'black','white'),\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPitLane] = 1, 'yellow','black')),\r\n'black'))\r\n\r\n"
                       },
                       "Mode": 2
                     },
@@ -2004,7 +2004,7 @@
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
-                        "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                        "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                       },
                       "Mode": 2
                     }
@@ -2032,7 +2032,7 @@
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
-                        "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                        "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                       },
                       "Mode": 2
                     },
@@ -2112,13 +2112,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -2155,7 +2155,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -2431,13 +2431,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -2490,7 +2490,7 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "if(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 1 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 6 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 7 , 'transparent',\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 8, \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPit] = 1, 'black', 'yellow')),'lawngreen'))"
+                    "Expression": "if(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 1 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 6 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 7 , 'transparent',\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 8, \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPitLane] = 1, 'black', 'yellow')),'lawngreen'))"
                   },
                   "Mode": 2
                 }
@@ -2518,7 +2518,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 1 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 6 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 7 , \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPit] = 1, 'black', 'white')),\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 8, \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPit] = 1, 'yellow', 'black')),'black'))"
+                    "Expression": "if(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 1 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 6 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 7 , \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPitLane] = 1, 'black', 'white')),\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 8, \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPitLane] = 1, 'yellow', 'black')),'black'))"
                   },
                   "Mode": 2
                 }
@@ -2546,7 +2546,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 1 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 6 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 7 , \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPit] = 1, 'black', 'white')),\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 8, \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPit] = 1, 'yellow', 'black')),'black'))"
+                    "Expression": "if(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 1 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 6 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 7 , \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPitLane] = 1, 'black', 'white')),\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 8, \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPitLane] = 1, 'yellow', 'black')),'black'))"
                   },
                   "Mode": 2
                 },
@@ -2585,7 +2585,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -2616,7 +2616,7 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "if ([SessionTypeName] != 'Race', \r\n\t\tif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus] && [IsInPit] = 0 && [PitLimiterOn] = 0, 'lawngreen','transparent'),\r\nif ([DahlDesign.P2PCount] = 0, 'red', \r\nif ([PitLimiterOn] = 1, 'transparent',\r\nif ([IsInPit] = 1, 'transparent',\r\nif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus], 'lawngreen', 'transparent')))))"
+                    "Expression": "if ([SessionTypeName] != 'Race', \r\n\t\tif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus] && [IsInPitLane] = 0 && [PitLimiterOn] = 0, 'lawngreen','transparent'),\r\nif ([DahlDesign.P2PCount] = 0, 'red', \r\nif ([PitLimiterOn] = 1, 'transparent',\r\nif ([IsInPitLane] = 1, 'transparent',\r\nif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus], 'lawngreen', 'transparent')))))"
                   },
                   "Mode": 2
                 },
@@ -2650,7 +2650,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus] && [IsInPit] = 0 && [PitLimiterOn] = 0, 'black',\r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPit] = 1, 'black','white'))),\r\nif ([DahlDesign.P2PCount] = 0, 'white', \r\nif ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black',\r\nif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus], 'black', 'white')))))"
+                    "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus] && [IsInPitLane] = 0 && [PitLimiterOn] = 0, 'black',\r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPitLane] = 1, 'black','white'))),\r\nif ([DahlDesign.P2PCount] = 0, 'white', \r\nif ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black',\r\nif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus], 'black', 'white')))))"
                   },
                   "Mode": 2
                 },
@@ -2684,7 +2684,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus] && [IsInPit] = 0 && [PitLimiterOn] = 0, 'black',\r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPit] = 1, 'black','white'))),\r\nif ([DahlDesign.P2PCount] = 0, 'white', \r\nif ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black',\r\nif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus], 'black', 'white')))))"
+                    "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus] && [IsInPitLane] = 0 && [PitLimiterOn] = 0, 'black',\r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPitLane] = 1, 'black','white'))),\r\nif ([DahlDesign.P2PCount] = 0, 'white', \r\nif ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black',\r\nif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus], 'black', 'white')))))"
                   },
                   "Mode": 2
                 },
@@ -2774,7 +2774,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                   },
                   "Mode": 2
                 }
@@ -2802,7 +2802,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                   },
                   "Mode": 2
                 },
@@ -2855,7 +2855,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                   },
                   "Mode": 2
                 }
@@ -2883,7 +2883,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                   },
                   "Mode": 2
                 },
@@ -2912,7 +2912,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -2939,7 +2939,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -2966,7 +2966,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -2993,7 +2993,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3020,7 +3020,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3047,7 +3047,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3074,7 +3074,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3101,7 +3101,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3128,7 +3128,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3155,7 +3155,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3182,7 +3182,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3209,7 +3209,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3236,7 +3236,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3263,7 +3263,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3290,7 +3290,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3317,7 +3317,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3344,7 +3344,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3371,7 +3371,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3398,7 +3398,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3425,7 +3425,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3452,7 +3452,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3479,7 +3479,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3506,7 +3506,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3533,7 +3533,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3560,7 +3560,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3587,7 +3587,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3614,7 +3614,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3641,7 +3641,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3668,7 +3668,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3695,7 +3695,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3722,7 +3722,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3749,7 +3749,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3776,7 +3776,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3803,7 +3803,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3830,7 +3830,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3857,7 +3857,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3884,7 +3884,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3911,7 +3911,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3938,7 +3938,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -3965,7 +3965,7 @@
                     "Bindings": {
                       "BorderColor": {
                         "Formula": {
-                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                          "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                         },
                         "Mode": 2
                       }
@@ -4070,7 +4070,7 @@
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
-                        "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                        "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                       },
                       "Mode": 2
                     }
@@ -4117,7 +4117,7 @@
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
-                        "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                        "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                       },
                       "Mode": 2
                     },
@@ -4195,13 +4195,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -4238,7 +4238,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -4487,13 +4487,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -4586,7 +4586,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -4636,7 +4636,7 @@
                 },
                 "GaugeColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn] = 1, 'white',\r\nif([IsInPit] = 1, 'black',\r\nif(isnull([GameRawData.SessionData.CarSetup.DriveBrake.PowerUnitConfig.MguKDeployMode],'') = 'Race',\r\nif([DahlDesign.ERSTarget] = 25, 'red',\r\nif([DahlDesign.ERSTarget] = 50, 'orange',\r\nif([DahlDesign.ERSTarget] = 75, 'lawngreen', 'white'))),\r\n'white')))"
+                    "Expression": "if([PitLimiterOn] = 1, 'white',\r\nif([IsInPitLane] = 1, 'black',\r\nif(isnull([GameRawData.SessionData.CarSetup.DriveBrake.PowerUnitConfig.MguKDeployMode],'') = 'Race',\r\nif([DahlDesign.ERSTarget] = 25, 'red',\r\nif([DahlDesign.ERSTarget] = 50, 'orange',\r\nif([DahlDesign.ERSTarget] = 75, 'lawngreen', 'white'))),\r\n'white')))"
                   },
                   "Mode": 2
                 },
@@ -4757,7 +4757,7 @@
                 },
                 "GaugeColor": {
                   "Formula": {
-                    "Expression": "if([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True','fuchsia',\r\nif([PitLimiterOn] = 1, 'white',\r\nif([IsInPit] = 1, 'black',\r\nif([DahlDesign.NoBoost], 'lawngreen', \r\n'white'))))"
+                    "Expression": "if([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True','fuchsia',\r\nif([PitLimiterOn] = 1, 'white',\r\nif([IsInPitLane] = 1, 'black',\r\nif([DahlDesign.NoBoost], 'lawngreen', \r\n'white'))))"
                   },
                   "Mode": 2
                 }
@@ -5171,13 +5171,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -5271,7 +5271,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -5321,7 +5321,7 @@
                 },
                 "GaugeColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn] = 1, 'white',\r\nif([IsInPit] = 1, 'black',\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct],0)*100 < 25, 'red','white')))"
+                    "Expression": "if([PitLimiterOn] = 1, 'white',\r\nif([IsInPitLane] = 1, 'black',\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct],0)*100 < 25, 'red','white')))"
                   },
                   "Mode": 2
                 },
@@ -6034,13 +6034,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -6080,7 +6080,7 @@
                 },
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),'transparent')"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),'transparent')"
                   },
                   "Mode": 2
                 },
@@ -6119,7 +6119,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,\r\n\tif([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),\r\nif([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',\r\nif([DahlDesign.SmoothGear]=='N','Yellow',\r\nif([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,\r\n\tif([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),\r\nif([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',\r\nif([DahlDesign.SmoothGear]=='N','Yellow',\r\nif([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -6169,7 +6169,7 @@
                 },
                 "GaugeColor": {
                   "Formula": {
-                    "Expression": "if([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True',if (\r\nif(isnull([DataCorePlugin.CurrentGame],0)=='IRacing'\r\n,\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct]),'',\r\n100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct],0))\r\n,\r\n100*isnull(\r\n[DataCorePlugin.GameRawData.PlayerCarStatusData.m_ersDeployedThisLap],0)\r\n/\r\nif(\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)==0,\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)+1,\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)\r\n)) = 100, 'red',\r\n\r\n'fuchsia'),\r\nif([PitLimiterOn] = 1, 'white',\r\nif([IsInPit] = 1, 'black',\r\nif([DahlDesign.NoBoost], 'lawngreen', \r\n'white'))))"
+                    "Expression": "if([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True',if (\r\nif(isnull([DataCorePlugin.CurrentGame],0)=='IRacing'\r\n,\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct]),'',\r\n100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct],0))\r\n,\r\n100*isnull(\r\n[DataCorePlugin.GameRawData.PlayerCarStatusData.m_ersDeployedThisLap],0)\r\n/\r\nif(\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)==0,\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)+1,\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)\r\n)) = 100, 'red',\r\n\r\n'fuchsia'),\r\nif([PitLimiterOn] = 1, 'white',\r\nif([IsInPitLane] = 1, 'black',\r\nif([DahlDesign.NoBoost], 'lawngreen', \r\n'white'))))"
                   },
                   "Mode": 2
                 },
@@ -6234,7 +6234,7 @@
                 },
                 "GaugeColor": {
                   "Formula": {
-                    "Expression": "if([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True',if(\r\nif(isnull([DataCorePlugin.CurrentGame],0)=='IRacing'\r\n,\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct]),'',\r\n100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct],0))\r\n,\r\n100*isnull(\r\n[DataCorePlugin.GameRawData.PlayerCarStatusData.m_ersDeployedThisLap],0)\r\n/\r\nif(\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)==0,\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)+1,\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)\r\n)) = 100, 'red',\r\n\r\n'fuchsia'),\r\nif([PitLimiterOn] = 1, 'white',\r\nif([IsInPit] = 1, 'black',\r\nif([[DahlDesign.NoBoost], 'lawngreen', \r\n'white'))))"
+                    "Expression": "if([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True',if(\r\nif(isnull([DataCorePlugin.CurrentGame],0)=='IRacing'\r\n,\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct]),'',\r\n100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct],0))\r\n,\r\n100*isnull(\r\n[DataCorePlugin.GameRawData.PlayerCarStatusData.m_ersDeployedThisLap],0)\r\n/\r\nif(\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)==0,\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)+1,\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)\r\n)) = 100, 'red',\r\n\r\n'fuchsia'),\r\nif([PitLimiterOn] = 1, 'white',\r\nif([IsInPitLane] = 1, 'black',\r\nif([[DahlDesign.NoBoost], 'lawngreen', \r\n'white'))))"
                   },
                   "Mode": 2
                 }
@@ -6263,7 +6263,7 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),'transparent')"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),'transparent')"
                   },
                   "Mode": 2
                 },
@@ -6298,7 +6298,7 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),'transparent')"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),'transparent')"
                   },
                   "Mode": 2
                 },
@@ -6340,7 +6340,7 @@
                 },
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),'transparent')"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),'transparent')"
                   },
                   "Mode": 2
                 },
@@ -6713,13 +6713,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -6776,7 +6776,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -6846,7 +6846,7 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([DahlDesign.OvertakeMode] && [IsInPit] = 0 && [PitLimiterOn] = 0, 'lawngreen','transparent'),\r\n\t\r\nif ([DahlDesign.DRSCount] = 0, 'red', \r\nif ([PitLimiterOn] = 1, 'transparent',\r\nif ([IsInPit] = 1, 'transparent',\r\nif ([DahlDesign.OvertakeMode], 'lawngreen', 'transparent')))))"
+                    "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([DahlDesign.OvertakeMode] && [IsInPitLane] = 0 && [PitLimiterOn] = 0, 'lawngreen','transparent'),\r\n\t\r\nif ([DahlDesign.DRSCount] = 0, 'red', \r\nif ([PitLimiterOn] = 1, 'transparent',\r\nif ([IsInPitLane] = 1, 'transparent',\r\nif ([DahlDesign.OvertakeMode], 'lawngreen', 'transparent')))))"
                   },
                   "Mode": 2
                 }
@@ -6874,7 +6874,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([IsInPit] = 1, 'black',\r\n\tif ([DahlDesign.OvertakeMode] && [IsInPit] = 0 && [PitLimiterOn] = 0, 'black','white')),\r\n\t\r\nif ([DahlDesign.DRSCount] = 0, 'white', \r\nif ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black',\r\nif ([DahlDesign.OvertakeMode], 'black', 'white')))))"
+                    "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([IsInPitLane] = 1, 'black',\r\n\tif ([DahlDesign.OvertakeMode] && [IsInPitLane] = 0 && [PitLimiterOn] = 0, 'black','white')),\r\n\t\r\nif ([DahlDesign.DRSCount] = 0, 'white', \r\nif ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black',\r\nif ([DahlDesign.OvertakeMode], 'black', 'white')))))"
                   },
                   "Mode": 2
                 }
@@ -6902,7 +6902,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([IsInPit] = 1, 'black',\r\n\tif ([DahlDesign.OvertakeMode] && [IsInPit] = 0 && [PitLimiterOn] = 0, 'black','white')),\r\n\t\r\nif ([DahlDesign.DRSCount] = 0, 'white', \r\nif ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black',\r\nif ([DahlDesign.OvertakeMode], 'black', 'white')))))"
+                    "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([IsInPitLane] = 1, 'black',\r\n\tif ([DahlDesign.OvertakeMode] && [IsInPitLane] = 0 && [PitLimiterOn] = 0, 'black','white')),\r\n\t\r\nif ([DahlDesign.DRSCount] = 0, 'white', \r\nif ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black',\r\nif ([DahlDesign.OvertakeMode], 'black', 'white')))))"
                   },
                   "Mode": 2
                 },
@@ -6949,13 +6949,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -7012,7 +7012,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -8455,13 +8455,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -8498,7 +8498,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Orange','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Orange','white'))))"
                   },
                   "Mode": 2
                 },
@@ -8561,13 +8561,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -8604,7 +8604,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -8783,7 +8783,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                   },
                   "Mode": 2
                 }
@@ -8811,7 +8811,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                   },
                   "Mode": 2
                 },
@@ -8962,7 +8962,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                   },
                   "Mode": 2
                 },
@@ -9002,7 +9002,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
+                    "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPitLane] = 1, 'black','white'))"
                   },
                   "Mode": 2
                 },
@@ -9075,13 +9075,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -9118,7 +9118,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -9238,7 +9238,7 @@
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
-                        "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh], 'transparent',\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPit] = 1, 'black', 'yellow')),\r\n'lawngreen'))"
+                        "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh], 'transparent',\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPitLane] = 1, 'black', 'yellow')),\r\n'lawngreen'))"
                       },
                       "Mode": 2
                     }
@@ -9266,7 +9266,7 @@
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
-                        "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh],  if ([IsInPit] = 1 && [PitLimiterOn] = 0, 'black','white'),\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPit] = 1, 'yellow','black')),\r\n'black'))\r\n"
+                        "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh],  if ([IsInPitLane] = 1 && [PitLimiterOn] = 0, 'black','white'),\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPitLane] = 1, 'yellow','black')),\r\n'black'))\r\n"
                       },
                       "Mode": 2
                     }
@@ -9294,7 +9294,7 @@
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
-                        "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh],  if ([IsInPit] = 1 && [PitLimiterOn] = 0, 'black','white'),\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPit] = 1, 'yellow','black')),\r\n'black'))\r\n\r\n"
+                        "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh],  if ([IsInPitLane] = 1 && [PitLimiterOn] = 0, 'black','white'),\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPitLane] = 1, 'yellow','black')),\r\n'black'))\r\n\r\n"
                       },
                       "Mode": 2
                     },
@@ -9624,13 +9624,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -9723,7 +9723,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -10220,13 +10220,13 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
                   "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
-                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
+                    "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
                   "Mode": 2
                 },
@@ -10320,7 +10320,7 @@
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
+                    "Expression": "If([DataCorePlugin.GameData.NewData.IsInPitLane]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
                   "Mode": 2
                 },
@@ -10370,7 +10370,7 @@
                 },
                 "GaugeColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn] = 1, 'white',\r\nif([IsInPit] = 1, 'black',\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct],0)*100 < 25, 'red','white')))"
+                    "Expression": "if([PitLimiterOn] = 1, 'white',\r\nif([IsInPitLane] = 1, 'black',\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct],0)*100 < 25, 'red','white')))"
                   },
                   "Mode": 2
                 },
