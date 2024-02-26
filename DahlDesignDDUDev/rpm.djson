@@ -62,7 +62,7 @@
             },
             "GaugeColor": {
               "Formula": {
-                "Expression": "if([DahlDesign.ShiftWarning] && [Rpms] > [DahlDesign.ShiftLightRPM], 'orange',\r\nif([DataCorePlugin.GameData.NewData.PitLimiterOn]>0, 'deepskyblue', \r\nif([DataCorePlugin.GameData.NewData.IsInPitLane]=1, 'yellow',\r\nif([DahlDesign.SF23.OTActive], 'deepskyblue',\r\nif([DahlDesign.P2PStatus],'fuchsia',\r\nif([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True',\r\n\r\n\tif([DahlDesign.CenterDashType] = 'Porsche 919' && 100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct],0) = 1, 'red', 'fuchsia'),\r\n\t\r\nif([DahlDesign.DRSState]='Open' || [DahlDesign.NoBoost],'lawngreen',\r\n\r\n'white')))))))"
+                "Expression": "if([DahlDesign.ShiftWarning] && [Rpms] > [DahlDesign.ShiftLightRPM], 'orange',\r\nif([DataCorePlugin.GameData.NewData.PitLimiterOn]>0, 'deepskyblue', \r\nif([DataCorePlugin.GameData.NewData.IsInPit]=1, 'yellow',\r\nif([DahlDesign.SF23.OTActive], 'deepskyblue',\r\nif([DahlDesign.P2PStatus],'fuchsia',\r\nif([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True',\r\n\r\n\tif([DahlDesign.CenterDashType] = 'Porsche 919' && 100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct],0) = 1, 'red', 'fuchsia'),\r\n\t\r\nif([DahlDesign.DRSState]='Open' || [DahlDesign.NoBoost],'lawngreen',\r\n\r\n'white')))))))"
               },
               "Mode": 2,
               "TargetPropertyName": "GaugeColor"
