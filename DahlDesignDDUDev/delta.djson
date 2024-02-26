@@ -482,7 +482,7 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn],'deepskyblue',\r\n\r\nif([IsInPitLane]=1,'yellow',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'deepskyblue',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'dimgray',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'fuchsia',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'dimgray',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'lawngreen',\r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'black', 'black'))))))))"
+                    "Expression": "if([PitLimiterOn],'deepskyblue',\r\n\r\nif([IsInPit]=1,'yellow',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'deepskyblue',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'dimgray',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'fuchsia',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'dimgray',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'lawngreen',\r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'black', 'black'))))))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "BackgroundColor"
@@ -512,14 +512,14 @@
                 "Text": {
                   "FormatString": "0.00",
                   "Formula": {
-                    "Expression": "if([IsInPitLane]=1,'PIT',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'OUT',\r\n\r\nif (abs([DahlDesign.DeltaLapRecord]) > 100, '-', format([DahlDesign.DeltaLapRecord],'0.00',1))))"
+                    "Expression": "if([IsInPit]=1,'PIT',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'OUT',\r\n\r\nif (abs([DahlDesign.DeltaLapRecord]) > 100, '-', format([DahlDesign.DeltaLapRecord],'0.00',1))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPitLane]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
+                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPit]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "TextColor"
@@ -547,7 +547,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPitLane]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
+                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPit]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "TextColor"
@@ -2554,7 +2554,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPitLane]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
+                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPit]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "TextColor"
@@ -2596,7 +2596,7 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn],'deepskyblue',\r\n\r\nif([IsInPitLane]=1,'yellow',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'deepskyblue',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'dimgray',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'fuchsia',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'dimgray',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'lawngreen',\r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'black', 'black'))))))))"
+                    "Expression": "if([PitLimiterOn],'deepskyblue',\r\n\r\nif([IsInPit]=1,'yellow',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'deepskyblue',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'dimgray',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'fuchsia',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'dimgray',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'lawngreen',\r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'black', 'black'))))))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "BackgroundColor"
@@ -2626,14 +2626,14 @@
                 "Text": {
                   "FormatString": "0.00",
                   "Formula": {
-                    "Expression": "if([IsInPitLane]=1,'PIT',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'OUT',\r\n\r\nif (abs([DahlDesign.DeltaSessionBest]) > 100, '-', format([DahlDesign.DeltaSessionBest],'0.00',1))))"
+                    "Expression": "if([IsInPit]=1,'PIT',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'OUT',\r\n\r\nif (abs([DahlDesign.DeltaSessionBest]) > 100, '-', format([DahlDesign.DeltaSessionBest],'0.00',1))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPitLane]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
+                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPit]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "TextColor"
@@ -2661,7 +2661,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPitLane]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
+                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPit]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "TextColor"
@@ -4668,7 +4668,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPitLane]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
+                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPit]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "TextColor"
@@ -4710,7 +4710,7 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn],'deepskyblue',\r\n\r\nif([IsInPitLane]=1,'yellow',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'deepskyblue',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'dimgray',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'fuchsia',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'dimgray',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'lawngreen',\r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'black', 'black'))))))))"
+                    "Expression": "if([PitLimiterOn],'deepskyblue',\r\n\r\nif([IsInPit]=1,'yellow',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'deepskyblue',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'dimgray',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'fuchsia',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'dimgray',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'lawngreen',\r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'black', 'black'))))))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "BackgroundColor"
@@ -4740,14 +4740,14 @@
                 "Text": {
                   "FormatString": "0.00",
                   "Formula": {
-                    "Expression": "if([IsInPitLane]=1,'PIT',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'OUT',\r\n\r\nif (abs([DahlDesign.DeltaLastLap]) > 100, '-', format([DahlDesign.DeltaLastLap],'0.00',1))))"
+                    "Expression": "if([IsInPit]=1,'PIT',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'OUT',\r\n\r\nif (abs([DahlDesign.DeltaLastLap]) > 100, '-', format([DahlDesign.DeltaLastLap],'0.00',1))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPitLane]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
+                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPit]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "TextColor"
@@ -4775,7 +4775,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPitLane]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
+                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPit]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "TextColor"
@@ -6782,7 +6782,7 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPitLane]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
+                    "Expression": "if([PitLimiterOn],'white',\r\n\r\nif([IsInPit]=1,'black',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=3,'white',\r\n\r\nif(isnull([DahlDesign.LapStatus],0)=2, 'white',\r\n\r\nif([DahlDesign.DeltaLapRecord] < 0, 'white',\r\n\r\nif(timespantoseconds([DahlDesign.SessionBestLap]) = 0, 'white',\r\n\r\nif([DahlDesign.DeltaSessionBest] < 0, 'black', \r\n\r\nif([DahlDesign.DeltaLastLap] < 0, 'lawngreen', 'white'))))))))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "TextColor"
