@@ -2,12 +2,13 @@
   "Variables": { "DashboardVariables": [] },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "b436feef-cde0-4d90-9d05-b2a7188054a7",
+  "Id": "fd48ff8c-a538-49a2-b828-e1b91d340cae",
   "BaseHeight": 768,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
   "Screens": [
     {
+      "RenderingSkip": 0,
       "Name": "Idle",
       "InGameScreen": false,
       "IdleScreen": true,
@@ -34,7 +35,9 @@
           "Top": 0.0,
           "Visible": true,
           "Width": 1280.0,
-          "Name": "Image"
+          "Name": "Image",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -44,6 +47,7 @@
           "AutoSize": true,
           "FileName": "ign.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 768.0,
@@ -51,11 +55,15 @@
           "Top": 0.0,
           "Visible": true,
           "Width": 1280.0,
-          "Name": "Idle"
+          "Name": "Idle",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         }
-      ]
+      ],
+      "MinimumRefreshIntervalMS": 0.0
     },
     {
+      "RenderingSkip": 0,
       "Name": "Race",
       "InGameScreen": true,
       "IdleScreen": false,
@@ -80,6 +88,7 @@
           "AutoSize": true,
           "FileName": "adjust.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 102.0,
@@ -87,7 +96,9 @@
           "Top": 586.0,
           "Visible": true,
           "Width": 410.0,
-          "Name": "Adjust"
+          "Name": "Adjust",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -97,6 +108,7 @@
           "AutoSize": true,
           "FileName": "speed.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 173.0,
@@ -104,7 +116,9 @@
           "Top": 93.0,
           "Visible": true,
           "Width": 415.0,
-          "Name": "Speed"
+          "Name": "Speed",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -114,6 +128,7 @@
           "AutoSize": true,
           "FileName": "sector delta.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 420.0,
@@ -121,7 +136,9 @@
           "Top": 268.0,
           "Visible": true,
           "Width": 425.0,
-          "Name": "Left screen"
+          "Name": "Left screen",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -131,6 +148,7 @@
           "AutoSize": true,
           "FileName": "delta.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 180.0,
@@ -138,7 +156,9 @@
           "Top": 92.0,
           "Visible": true,
           "Width": 425.0,
-          "Name": "Delta"
+          "Name": "Delta",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -148,6 +168,7 @@
           "AutoSize": true,
           "FileName": "distance.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 220.0,
@@ -155,7 +176,9 @@
           "Top": 265.0,
           "Visible": true,
           "Width": 412.0,
-          "Name": "Right screen"
+          "Name": "Right screen",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -165,6 +188,7 @@
           "AutoSize": true,
           "FileName": "car.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 113.0,
@@ -172,7 +196,9 @@
           "Top": 478.0,
           "Visible": true,
           "Width": 410.0,
-          "Name": "Time and session"
+          "Name": "Time and session",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -182,6 +208,7 @@
           "AutoSize": true,
           "FileName": "gear.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 598.0,
@@ -189,7 +216,9 @@
           "Top": 93.0,
           "Visible": true,
           "Width": 450.0,
-          "Name": "Gear"
+          "Name": "Gear",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -199,21 +228,23 @@
           "AutoSize": true,
           "FileName": "BrakeAndThrottleCenter.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 598.0,
-          "Left": 317.0,
-          "Top": 70.0,
+          "Left": 424.0,
+          "Top": 88.0,
           "Visible": false,
           "Width": 450.0,
           "Name": "BrakeAndThrottleCenter",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
                 "Expression": "[DahlDesign.ShowBrakeThrottleGaugesEnabled]"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
@@ -225,6 +256,7 @@
           "AutoSize": true,
           "FileName": "rpm.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 100.0,
@@ -232,15 +264,14 @@
           "Top": -1.0,
           "Visible": true,
           "Width": 1280.0,
-          "Name": "RPM"
+          "Name": "RPM",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": 0.0,
-          "Left": -461.0,
-          "Height": 98.0,
-          "Width": 1750.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.IntegratedLedItem, SimHub.Plugins",
@@ -252,8 +283,34 @@
                 "AllOnExceptEffects_KeepOffOutOfGame": true,
                 "LightLedsOnBrightnessChange": true,
                 "ForcedLedCount": -1,
+                "ProfilesCycleMode": 0,
                 "Profiles": [
                   {
+                    "EmbeddedJsExtension": { "FileName": "" },
+                    "GlobalBrightness": 50.0,
+                    "LedContainers": [
+                      {
+                        "$type": "User.LedEditorEffect.DahlLedEffect, DahlDesignLED",
+                        "radioCounter": 0,
+                        "ignCounter": 0,
+                        "ignCounterSW1": 0,
+                        "pitCounter": 0,
+                        "pitSW1Counter": 0,
+                        "biteCounter1": 0,
+                        "biteCounter2": 0,
+                        "biteCounter3": 0,
+                        "pitLimCounter": 0,
+                        "pitLimOutCounter": 0,
+                        "pitEntryCounter": 0,
+                        "referenceDouble": 0.0,
+                        "triggerTime": "00:00:00",
+                        "StartPosition": 1,
+                        "ContainerId": "70164885-437c-4485-98ca-049cabd8181f",
+                        "ContainerType": "User.LedEditorEffect.DahlLedEffect",
+                        "Description": "DahlDesign LED control for SW1 and DDU",
+                        "IsEnabled": true
+                      }
+                    ],
                     "TestLedsGameData": {
                       "GearEx": 0,
                       "FuelMax": 100.0,
@@ -267,6 +324,7 @@
                       "DRSAvailable": false,
                       "MaxRpm": 10000.0,
                       "GameRunning": false,
+                      "Brake": 0.0,
                       "Fuel": 0.0,
                       "RPMPercent": 0.0,
                       "RPMRedlineReached": false,
@@ -293,32 +351,7 @@
                       "SessionBestDelta": 0.0,
                       "AllTimeBestDelta": 0.0
                     },
-                    "LedContainers": [
-                      {
-                        "$type": "User.LedEditorEffect.DahlLedEffect, DahlDesignLED",
-                        "radioCounter": 0,
-                        "ignCounter": 0,
-                        "ignCounterSW1": 0,
-                        "pitCounter": 0,
-                        "pitSW1Counter": 0,
-                        "biteCounter1": 0,
-                        "biteCounter2": 0,
-                        "biteCounter3": 0,
-                        "pitLimCounter": 0,
-                        "pitLimOutCounter": 0,
-                        "pitEntryCounter": 0,
-                        "referenceDouble": 0.0,
-                        "triggerTime": "00:00:00",
-                        "StartPosition": 1,
-                        "ContainerId": "70164885-437c-4485-98ca-049cabd8181f",
-                        "ContainerType": "User.LedEditorEffect.DahlLedEffect",
-                        "Description": "DahlDesign LED control for SW1 and DDU",
-                        "IsEnabled": true
-                      }
-                    ],
-                    "GlobalBrightness": 50.0,
                     "UseProfileBrightness": false,
-                    "Error": "",
                     "LastLoaded": "0001-01-01T00:00:00",
                     "Name": "Default Profile",
                     "ProfileId": "30dee5b0-d4e8-46cd-83f3-e5e499b3f298"
@@ -340,7 +373,9 @@
               "Left": -461.0,
               "Top": 0.0,
               "Visible": true,
-              "Name": "IntegratedLedItem0"
+              "Name": "IntegratedLedItem0",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -357,7 +392,9 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 6.0,
-              "Name": "Border mask"
+              "Name": "Border mask",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -374,17 +411,19 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 6.0,
-              "Name": "Border mask"
+              "Name": "Border mask",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "LEDs",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": { "Expression": "[DahlDesign.DashLEDEnabled]" },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
@@ -396,6 +435,7 @@
           "AutoSize": true,
           "FileName": "brake and throttle.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 82.0,
@@ -403,7 +443,9 @@
           "Top": 686.0,
           "Visible": true,
           "Width": 1280.0,
-          "Name": "Brake and throttle"
+          "Name": "Brake and throttle",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -413,6 +455,7 @@
           "AutoSize": true,
           "FileName": "rotary menu.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 82.0,
@@ -421,23 +464,21 @@
           "Visible": true,
           "Width": 1280.0,
           "Name": "Menu",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
                 "Expression": "[DahlDesign.MenuType] != 'Default' && ([DahlDesign.PitMenu] != 0 || [DahlDesign.DDCDDSEnabled])"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": -8.0,
-          "Left": 0.0,
-          "Height": 108.0,
-          "Width": 1280.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -449,13 +490,14 @@
               "Visible": false,
               "Width": 1280.0,
               "Name": "TOPEngine",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": {
                     "Expression": "if ([DahlDesign.IdleRPM] = 0, \r\n\t[CarSettings_CurrentDisplayedRPMPercent] < 9, \r\n\t[Rpms] <= ([DahlDesign.IdleRPM] * 0.6))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -477,20 +519,20 @@
               "Visible": false,
               "Width": 602.0,
               "Name": "TOP text",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": {
                     "Expression": "if ([DahlDesign.IdleRPM] = 0, \r\n\t[CarSettings_CurrentDisplayedRPMPercent] < 9, \r\n\t[Rpms] <= ([DahlDesign.IdleRPM] * 0.6))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "if([DataCorePlugin.GameData.NewData.SpeedLocal]<2,'ENGINE OFF','STALL')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -502,6 +544,7 @@
               "AutoSize": true,
               "FileName": "pit menu info bar.djson",
               "InitialScreenIndex": 0,
+              "FreezePageChanges": false,
               "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 100.0,
@@ -510,13 +553,14 @@
               "Visible": false,
               "Width": 1280.0,
               "Name": "Pit menu guide",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": {
                     "Expression": "(\r\n([DahlDesign.DDCDDSMode] = 1 || [DahlDesign.SW1DDSMode] = 1)\r\n\r\n||\r\n\r\n([DahlDesign.DDCDDSMode] != 1 && [DahlDesign.SW1DDSMode] != 1 && changed(3000,[DahlDesign.PitMenu]) && !(changed(3100,[DahlDesign.InCarMenu]) && [DahlDesign.MenuType] != 'Single'))\r\n)\r\n\r\n&& \r\n\r\n[DahlDesign.PitMenu] != 0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -538,27 +582,26 @@
               "Visible": false,
               "Width": 1280.0,
               "Name": "FR35 launch",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=1,'white','black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "[CarModel] = 'Formula Renault 3.5'\r\nand\r\n[CarSettings_MaxRPM]<9020\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "if(changed(2000,[CarSettings_MaxRPM]),'LAUNCH MODE ' + left([GameRawData.Telemetry.dcTractionControl],0,1),'LAUNCH CONTROL')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -570,6 +613,7 @@
               "AutoSize": true,
               "FileName": "pit approach.djson",
               "InitialScreenIndex": 0,
+              "FreezePageChanges": false,
               "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 100.0,
@@ -578,13 +622,14 @@
               "Visible": false,
               "Width": 1280.0,
               "Name": "Pit approach",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": {
                     "Expression": "([PitLimiterOn]=1 and [IsInPitLane]=1 and round([SpeedKmh],0)-2.5>left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2))\r\nor \r\n[DahlDesign.PitEntry]\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -605,27 +650,26 @@
               "Visible": false,
               "Width": 1280.0,
               "Name": "anti-stall back",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=1,'deepskyblue','yellow')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=1,'white','black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "[DahlDesign.HasAntiStall]\r\nand\r\n[Rpms] > 300\r\nand\r\n[Rpms] < ([DahlDesign.IdleRPM] * 1.1)\r\nand\r\n!([GameRawData.Telemetry.EngineWarnings] = 4 && [Rpms] < [DahlDesign.IdleRPM] * 0.9)\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -646,20 +690,20 @@
               "Visible": false,
               "Width": 1280.0,
               "Name": "anti-stall txt",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=1,'white','black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "[DahlDesign.HasAntiStall]\r\nand\r\n[Rpms] > 300\r\nand\r\n[Rpms] < ([DahlDesign.IdleRPM] * 1.1)\r\nand\r\n!([GameRawData.Telemetry.EngineWarnings] = 4 && [Rpms] < [DahlDesign.IdleRPM] * 0.9)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -671,6 +715,7 @@
               "AutoSize": true,
               "FileName": "pit hit.djson",
               "InitialScreenIndex": 0,
+              "FreezePageChanges": false,
               "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 100.0,
@@ -679,11 +724,12 @@
               "Visible": false,
               "Width": 1280.0,
               "Name": "pit hit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.PitBoxApproach]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -695,6 +741,7 @@
               "AutoSize": true,
               "FileName": "offtrack.djson",
               "InitialScreenIndex": 0,
+              "FreezePageChanges": false,
               "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 100.0,
@@ -703,18 +750,20 @@
               "Visible": false,
               "Width": 1280.0,
               "Name": "Track reentry",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.TrackEntry]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             }
           ],
-          "Group": false,
           "Visible": true,
-          "Name": "RPM Bar widgets"
+          "Name": "RPM Bar widgets",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -724,6 +773,7 @@
           "AutoSize": true,
           "FileName": "messages.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 768.0,
@@ -732,7 +782,9 @@
           "Visible": true,
           "Width": 1280.0,
           "IsFreezed": true,
-          "Name": "Messages"
+          "Name": "Messages",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -750,15 +802,14 @@
           "Visible": true,
           "Width": 1280.0,
           "IsFreezed": true,
-          "Name": "Border"
+          "Name": "Border",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": -42.0,
-          "Left": 0.0,
-          "Height": 810.0,
-          "Width": 1280.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -775,15 +826,14 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 1280.0,
-              "Name": "Background"
+              "Name": "Background",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 222.0,
-              "Left": 16.0,
-              "Height": 227.0,
-              "Width": 192.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": true,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -802,14 +852,15 @@
                   "Visible": true,
                   "Width": 61.0,
                   "Name": "outer t",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.LFtempCL]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -822,8 +873,7 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -843,14 +893,15 @@
                   "Visible": true,
                   "Width": 58.0,
                   "Name": "mid t",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.LFtempCM]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -863,8 +914,7 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -885,14 +935,15 @@
                   "Visible": true,
                   "Width": 61.0,
                   "Name": "inner  t",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.LFtempCR]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -905,8 +956,7 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -932,8 +982,7 @@
                         "EndColor": "#FFC0C0C0",
                         "StartColorValue": 0.0,
                         "EndColorValue": 1.0,
-                        "Mode": 4,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 4
                       }
                     }
                   },
@@ -943,6 +992,8 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "outer",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
@@ -955,8 +1006,7 @@
                       "EndColor": "#FFFF0000",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -982,8 +1032,7 @@
                         "EndColor": "#FFC0C0C0",
                         "StartColorValue": 0.0,
                         "EndColorValue": 1.0,
-                        "Mode": 4,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 4
                       }
                     }
                   },
@@ -993,6 +1042,8 @@
                   "Visible": true,
                   "Width": 56.0,
                   "Name": "middle",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
@@ -1005,8 +1056,7 @@
                       "EndColor": "#FFFF0000",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1032,8 +1082,7 @@
                         "EndColor": "#FFC0C0C0",
                         "StartColorValue": 0.0,
                         "EndColorValue": 1.0,
-                        "Mode": 4,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 4
                       }
                     }
                   },
@@ -1043,6 +1092,8 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "inner",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
@@ -1055,8 +1106,7 @@
                       "EndColor": "#FFFF0000",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1077,14 +1127,15 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "outer w",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "if([GameRawData.Telemetry.LFwearL] = 1, '99',left(100*[GameRawData.Telemetry.LFwearL],0,2))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -1097,8 +1148,7 @@
                       "EndColor": "#FF7CFC00",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1118,14 +1168,15 @@
                   "Visible": true,
                   "Width": 56.0,
                   "Name": "mid w",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "if([GameRawData.Telemetry.LFwearM] = 1, '-',left(100*[GameRawData.Telemetry.LFwearM],0,2))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -1138,8 +1189,7 @@
                       "EndColor": "#FF7CFC00",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1160,14 +1210,15 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "inner w",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "if([GameRawData.Telemetry.LFwearR] = 1, '-',left(100*[GameRawData.Telemetry.LFwearR],0,2))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -1180,23 +1231,20 @@
                       "EndColor": "#FF7CFC00",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 }
               ],
-              "Group": true,
               "Visible": true,
-              "Name": "LF"
+              "Name": "LF",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 222.0,
-              "Left": 356.0,
-              "Height": 227.0,
-              "Width": 192.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": true,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1220,8 +1268,7 @@
                         "EndColor": "#FFC0C0C0",
                         "StartColorValue": 0.0,
                         "EndColorValue": 1.0,
-                        "Mode": 4,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 4
                       }
                     }
                   },
@@ -1231,6 +1278,8 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "outer",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
@@ -1243,8 +1292,7 @@
                       "EndColor": "#FFFF0000",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1270,8 +1318,7 @@
                         "EndColor": "#FFC0C0C0",
                         "StartColorValue": 0.0,
                         "EndColorValue": 1.0,
-                        "Mode": 4,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 4
                       }
                     }
                   },
@@ -1281,6 +1328,8 @@
                   "Visible": true,
                   "Width": 56.0,
                   "Name": "middle",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
@@ -1293,8 +1342,7 @@
                       "EndColor": "#FFFF0000",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1320,8 +1368,7 @@
                         "EndColor": "#FFC0C0C0",
                         "StartColorValue": 0.0,
                         "EndColorValue": 1.0,
-                        "Mode": 4,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 4
                       }
                     }
                   },
@@ -1331,6 +1378,8 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "inner",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
@@ -1343,8 +1392,7 @@
                       "EndColor": "#FFFF0000",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1365,14 +1413,15 @@
                   "Visible": true,
                   "Width": 61.0,
                   "Name": "outer t",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.RFtempCL]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -1385,8 +1434,7 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1406,14 +1454,15 @@
                   "Visible": true,
                   "Width": 56.0,
                   "Name": "mid t",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.RFtempCM]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -1426,8 +1475,7 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1448,14 +1496,15 @@
                   "Visible": true,
                   "Width": 60.0,
                   "Name": "inner  t",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.RFtempCR]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -1468,8 +1517,7 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1490,14 +1538,15 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "outer w",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "if([GameRawData.Telemetry.RFwearL] = 1, '-', left(100*[GameRawData.Telemetry.RFwearL],0,2))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -1510,8 +1559,7 @@
                       "EndColor": "#FF7CFC00",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1531,14 +1579,15 @@
                   "Visible": true,
                   "Width": 56.0,
                   "Name": "mid w",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "if([GameRawData.Telemetry.RFwearM] = 1, '-', left(100*[GameRawData.Telemetry.RFwearM],0,2))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -1551,8 +1600,7 @@
                       "EndColor": "#FF7CFC00",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1573,14 +1621,15 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "inner w",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "if([GameRawData.Telemetry.RFwearR] = 1, '99', left(100*[GameRawData.Telemetry.RFwearR],0,2))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -1593,23 +1642,20 @@
                       "EndColor": "#FF7CFC00",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 }
               ],
-              "Group": true,
               "Visible": true,
-              "Name": "RF"
+              "Name": "RF",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 456.0,
-              "Left": 16.0,
-              "Height": 227.0,
-              "Width": 192.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": true,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -1628,14 +1674,15 @@
                   "Visible": true,
                   "Width": 61.0,
                   "Name": "outer t",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.LRtempCL]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -1648,8 +1695,7 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1669,14 +1715,15 @@
                   "Visible": true,
                   "Width": 58.0,
                   "Name": "mid t",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.LRtempCM]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -1689,8 +1736,7 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1718,8 +1764,7 @@
                         "EndColor": "#FFC0C0C0",
                         "StartColorValue": 0.0,
                         "EndColorValue": 1.0,
-                        "Mode": 4,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 4
                       }
                     }
                   },
@@ -1729,14 +1774,15 @@
                   "Visible": true,
                   "Width": 61.0,
                   "Name": "inner  t",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.LRtempCR]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -1749,8 +1795,7 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1776,8 +1821,7 @@
                         "EndColor": "#FFC0C0C0",
                         "StartColorValue": 0.0,
                         "EndColorValue": 1.0,
-                        "Mode": 4,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 4
                       }
                     }
                   },
@@ -1787,6 +1831,8 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "outer",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
@@ -1799,8 +1845,7 @@
                       "EndColor": "#FFFF0000",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1826,8 +1871,7 @@
                         "EndColor": "#FFC0C0C0",
                         "StartColorValue": 0.0,
                         "EndColorValue": 1.0,
-                        "Mode": 4,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 4
                       }
                     }
                   },
@@ -1837,6 +1881,8 @@
                   "Visible": true,
                   "Width": 56.0,
                   "Name": "middle",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
@@ -1849,8 +1895,7 @@
                       "EndColor": "#FFFF0000",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1876,8 +1921,7 @@
                         "EndColor": "#FFC0C0C0",
                         "StartColorValue": 0.0,
                         "EndColorValue": 1.0,
-                        "Mode": 4,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 4
                       }
                     }
                   },
@@ -1887,6 +1931,8 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "inner",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
@@ -1899,8 +1945,7 @@
                       "EndColor": "#FFFF0000",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1921,14 +1966,15 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "outer w",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "if([GameRawData.Telemetry.LRwearL] = 1, '99',left(100*[GameRawData.Telemetry.LRwearL],0,2))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -1941,8 +1987,7 @@
                       "EndColor": "#FF7CFC00",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -1962,14 +2007,15 @@
                   "Visible": true,
                   "Width": 56.0,
                   "Name": "mid w",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "if([GameRawData.Telemetry.LRwearM] = 1, '-',left(100*[GameRawData.Telemetry.LRwearM],0,2))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -1982,8 +2028,7 @@
                       "EndColor": "#FF7CFC00",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -2004,14 +2049,15 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "inner w",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "if([GameRawData.Telemetry.LRwearR] = 1, '-',left(100*[GameRawData.Telemetry.LRwearR],0,2))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -2024,23 +2070,20 @@
                       "EndColor": "#FF7CFC00",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 }
               ],
-              "Group": true,
               "Visible": true,
-              "Name": "LR"
+              "Name": "LR",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 456.0,
-              "Left": 356.0,
-              "Height": 227.0,
-              "Width": 192.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": true,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -2064,8 +2107,7 @@
                         "EndColor": "#FFC0C0C0",
                         "StartColorValue": 0.0,
                         "EndColorValue": 1.0,
-                        "Mode": 4,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 4
                       }
                     }
                   },
@@ -2075,6 +2117,8 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "outer",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
@@ -2087,8 +2131,7 @@
                       "EndColor": "#FFFF0000",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -2114,8 +2157,7 @@
                         "EndColor": "#FFC0C0C0",
                         "StartColorValue": 0.0,
                         "EndColorValue": 1.0,
-                        "Mode": 4,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 4
                       }
                     }
                   },
@@ -2125,6 +2167,8 @@
                   "Visible": true,
                   "Width": 56.0,
                   "Name": "middle",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
@@ -2137,8 +2181,7 @@
                       "EndColor": "#FFFF0000",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -2164,8 +2207,7 @@
                         "EndColor": "#FFC0C0C0",
                         "StartColorValue": 0.0,
                         "EndColorValue": 1.0,
-                        "Mode": 4,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 4
                       }
                     }
                   },
@@ -2175,6 +2217,8 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "inner",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "BackgroundColor": {
                       "Formula": {
@@ -2187,8 +2231,7 @@
                       "EndColor": "#FFFF0000",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -2209,14 +2252,15 @@
                   "Visible": true,
                   "Width": 61.0,
                   "Name": "outer t",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.RRtempCL]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -2229,8 +2273,7 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -2250,14 +2293,15 @@
                   "Visible": true,
                   "Width": 56.0,
                   "Name": "mid t",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.RRtempCM]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -2270,8 +2314,7 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -2292,14 +2335,15 @@
                   "Visible": true,
                   "Width": 60.0,
                   "Name": "inner  t",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.RRtempCR]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -2312,8 +2356,7 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -2334,14 +2377,15 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "outer w",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "if([GameRawData.Telemetry.RRwearL] = 1, '-', left(100*[GameRawData.Telemetry.RRwearL],0,2))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -2354,8 +2398,7 @@
                       "EndColor": "#FF7CFC00",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -2375,14 +2418,15 @@
                   "Visible": true,
                   "Width": 56.0,
                   "Name": "mid w",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "if([GameRawData.Telemetry.RRwearM] = 1, '-', left(100*[GameRawData.Telemetry.RRwearM],0,2))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -2395,8 +2439,7 @@
                       "EndColor": "#FF7CFC00",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -2417,14 +2460,15 @@
                   "Visible": true,
                   "Width": 50.0,
                   "Name": "inner w",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": {
                         "Expression": "if([GameRawData.Telemetry.RRwearR] = 1, '99', left(100*[GameRawData.Telemetry.RRwearR],0,2))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
@@ -2437,23 +2481,20 @@
                       "EndColor": "#FF7CFC00",
                       "StartColorValue": 0.0,
                       "EndColorValue": 1.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 4
                     }
                   }
                 }
               ],
-              "Group": true,
               "Visible": true,
-              "Name": "RR"
+              "Name": "RR",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 221.0,
-              "Left": 205.0,
-              "Height": 219.0,
-              "Width": 153.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": true,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -2470,7 +2511,9 @@
                   "Top": 422.0,
                   "Visible": true,
                   "Width": 150.0,
-                  "Name": "wear border"
+                  "Name": "wear border",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -2487,7 +2530,9 @@
                   "Top": 405.0,
                   "Visible": true,
                   "Width": 95.0,
-                  "Name": "wear"
+                  "Name": "wear",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -2504,7 +2549,9 @@
                   "Top": 238.0,
                   "Visible": true,
                   "Width": 139.0,
-                  "Name": "temp border"
+                  "Name": "temp border",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -2521,7 +2568,9 @@
                   "Top": 221.0,
                   "Visible": true,
                   "Width": 95.0,
-                  "Name": "temp"
+                  "Name": "temp",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -2538,7 +2587,9 @@
                   "Top": 255.0,
                   "Visible": true,
                   "Width": 115.0,
-                  "Name": "cold pressure"
+                  "Name": "cold pressure",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -2555,7 +2606,9 @@
                   "Top": 373.0,
                   "Visible": true,
                   "Width": 108.0,
-                  "Name": "hot pressure txt"
+                  "Name": "hot pressure txt",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -2572,7 +2625,9 @@
                   "Top": 297.0,
                   "Visible": true,
                   "Width": 3.0,
-                  "Name": "mid split"
+                  "Name": "mid split",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -2590,13 +2645,14 @@
                   "Visible": true,
                   "Width": 69.0,
                   "Name": "RF cold",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
                         "Expression": "round([DahlDesign.PitServiceRFPCold],0)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -2616,13 +2672,14 @@
                   "Visible": true,
                   "Width": 69.0,
                   "Name": "LF cold",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
                         "Expression": "round([DahlDesign.PitServiceLFPCold],0)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -2642,13 +2699,14 @@
                   "Visible": true,
                   "Width": 69.0,
                   "Name": "RF set",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
                         "Expression": "round([DahlDesign.PitServiceRFPSet],0)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "TextColor": {
                       "Formula": {
@@ -2661,8 +2719,7 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 2.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -2682,13 +2739,14 @@
                   "Visible": true,
                   "Width": 69.0,
                   "Name": "LF set",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
                         "Expression": "round([DahlDesign.PitServiceLFPSet],0)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "TextColor": {
                       "Formula": {
@@ -2701,23 +2759,20 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 2.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 4
                     }
                   }
                 }
               ],
-              "Group": true,
               "Visible": true,
-              "Name": "Front pressures"
+              "Name": "Front pressures",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 461.0,
-              "Left": 205.0,
-              "Height": 220.0,
-              "Width": 153.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": true,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -2734,7 +2789,9 @@
                   "Top": 479.0,
                   "Visible": true,
                   "Width": 150.0,
-                  "Name": "wear border"
+                  "Name": "wear border",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -2751,7 +2808,9 @@
                   "Top": 461.0,
                   "Visible": true,
                   "Width": 95.0,
-                  "Name": "wear"
+                  "Name": "wear",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -2768,7 +2827,9 @@
                   "Top": 663.0,
                   "Visible": true,
                   "Width": 139.0,
-                  "Name": "temp border"
+                  "Name": "temp border",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -2785,7 +2846,9 @@
                   "Top": 646.0,
                   "Visible": true,
                   "Width": 95.0,
-                  "Name": "temp"
+                  "Name": "temp",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -2802,7 +2865,9 @@
                   "Top": 614.0,
                   "Visible": true,
                   "Width": 115.0,
-                  "Name": "cold pressure"
+                  "Name": "cold pressure",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -2819,7 +2884,9 @@
                   "Top": 496.0,
                   "Visible": true,
                   "Width": 108.0,
-                  "Name": "hot pressure txt"
+                  "Name": "hot pressure txt",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -2836,7 +2903,9 @@
                   "Top": 538.0,
                   "Visible": true,
                   "Width": 3.0,
-                  "Name": "mid split"
+                  "Name": "mid split",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -2854,13 +2923,14 @@
                   "Visible": true,
                   "Width": 69.0,
                   "Name": "RR cold",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
                         "Expression": "round([DahlDesign.PitServiceRRPCold],0)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -2880,13 +2950,14 @@
                   "Visible": true,
                   "Width": 69.0,
                   "Name": "LR cold",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
                         "Expression": "round([DahlDesign.PitServiceLRPCold],0)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -2906,13 +2977,14 @@
                   "Visible": true,
                   "Width": 69.0,
                   "Name": "RR set",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
                         "Expression": "round([DahlDesign.PitServiceRRPSet],0)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "TextColor": {
                       "Formula": {
@@ -2925,8 +2997,7 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 2.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 4
                     }
                   }
                 },
@@ -2946,13 +3017,14 @@
                   "Visible": true,
                   "Width": 69.0,
                   "Name": "LR set",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
                         "Expression": "round([DahlDesign.PitServiceLRPSet],0)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "TextColor": {
                       "Formula": {
@@ -2965,23 +3037,20 @@
                       "EndColor": "#FFC0C0C0",
                       "StartColorValue": 0.0,
                       "EndColorValue": 2.0,
-                      "Mode": 4,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 4
                     }
                   }
                 }
               ],
-              "Group": true,
               "Visible": true,
-              "Name": "Rear pressures"
+              "Name": "Rear pressures",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 137.0,
-              "Left": 18.0,
-              "Height": 84.0,
-              "Width": 551.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": false,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
@@ -2995,11 +3064,12 @@
                   "Visible": true,
                   "Width": 68.759999999999991,
                   "Name": "Water red",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": { "Expression": "[WaterTemperature] >= 110" },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3015,11 +3085,12 @@
                   "Visible": true,
                   "Width": 71.46,
                   "Name": "Oil white",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": { "Expression": "[OilTemperature] < 110" },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3035,11 +3106,12 @@
                   "Visible": false,
                   "Width": 68.759999999999991,
                   "Name": "Water white",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": { "Expression": "[WaterTemperature] < 110" },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3054,7 +3126,9 @@
                   "Top": 150.0,
                   "Visible": true,
                   "Width": 56.339999999999996,
-                  "Name": "Air"
+                  "Name": "Air",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
@@ -3067,7 +3141,9 @@
                   "Top": 137.0,
                   "Visible": true,
                   "Width": 91.0,
-                  "Name": "Road"
+                  "Name": "Road",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
@@ -3081,11 +3157,12 @@
                   "Visible": false,
                   "Width": 71.46,
                   "Name": "Oil red",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": { "Expression": "[OilTemperature] >= 110" },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3105,14 +3182,15 @@
                   "Visible": true,
                   "Width": 76.0,
                   "Name": "AIR V",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "Round([GameRawData.Telemetry.AirTemp],1)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3132,14 +3210,15 @@
                   "Visible": true,
                   "Width": 82.0,
                   "Name": "TRACK V",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "Round([GameRawData.Telemetry.TrackTemp],1)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3159,19 +3238,19 @@
                   "Visible": true,
                   "Width": 98.0,
                   "Name": "WTR V",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": { "Expression": "[WaterTemperature]" },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "TextColor": {
                       "Formula": {
                         "Expression": "if ([WaterTemperature] < 110, 'white', 'red')"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3191,26 +3270,27 @@
                   "Visible": true,
                   "Width": 97.0,
                   "Name": "OIL V",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
                       "Formula": { "Expression": "[OilTemperature]" },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "TextColor": {
                       "Formula": {
                         "Expression": "if ([OilTemperature] < 110, 'white', 'red')"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     }
                   }
                 }
               ],
-              "Group": false,
               "Visible": true,
-              "Name": "Temps"
+              "Name": "Temps",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -3220,6 +3300,7 @@
               "AutoSize": true,
               "FileName": "pit exit.djson",
               "InitialScreenIndex": 0,
+              "FreezePageChanges": false,
               "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 681.0,
@@ -3227,7 +3308,9 @@
               "Top": 6.0,
               "Visible": true,
               "Width": 200.0,
-              "Name": "Pitstop"
+              "Name": "Pitstop",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -3237,6 +3320,7 @@
               "AutoSize": true,
               "FileName": "pit approach vert.djson",
               "InitialScreenIndex": 0,
+              "FreezePageChanges": false,
               "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 681.0,
@@ -3245,13 +3329,14 @@
               "Visible": false,
               "Width": 200.0,
               "Name": "Pit approach",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": {
                     "Expression": "([PitLimiterOn]=1 and [IsInPitLane]=0 and [StintOdo]>1000)\r\nor\r\n([PitLimiterOn]=1 and [IsInPitLane]=1 and round([SpeedKmh],0)-2.5>left([GameRawData.SessionData.WeekendInfo.TrackPitSpeedLimit],0,2))\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -3263,6 +3348,7 @@
               "AutoSize": true,
               "FileName": "pit hit vert.djson",
               "InitialScreenIndex": 0,
+              "FreezePageChanges": false,
               "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 681.0,
@@ -3271,11 +3357,12 @@
               "Visible": false,
               "Width": 200.0,
               "Name": "PIT HIT",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.PitBoxApproach]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -3287,6 +3374,7 @@
               "AutoSize": true,
               "FileName": "brake and throttle.djson",
               "InitialScreenIndex": 0,
+              "FreezePageChanges": false,
               "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 82.0,
@@ -3294,7 +3382,9 @@
               "Top": 686.0,
               "Visible": true,
               "Width": 1280.0,
-              "Name": "Brake and throttle"
+              "Name": "Brake and throttle",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -3304,6 +3394,7 @@
               "AutoSize": true,
               "FileName": "pit gear and info.djson",
               "InitialScreenIndex": 0,
+              "FreezePageChanges": false,
               "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 340.0,
@@ -3312,7 +3403,9 @@
               "Visible": true,
               "Width": 566.0,
               "IsFreezed": true,
-              "Name": "Gear pit lane"
+              "Name": "Gear pit lane",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -3322,6 +3415,7 @@
               "AutoSize": true,
               "FileName": "adjust.djson",
               "InitialScreenIndex": 0,
+              "FreezePageChanges": false,
               "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 102.0,
@@ -3329,7 +3423,9 @@
               "Top": 587.0,
               "Visible": true,
               "Width": 410.0,
-              "Name": "Adjust"
+              "Name": "Adjust",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -3339,6 +3435,7 @@
               "AutoSize": true,
               "FileName": "rotary menu.djson",
               "InitialScreenIndex": 0,
+              "FreezePageChanges": false,
               "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 82.0,
@@ -3347,13 +3444,14 @@
               "Visible": true,
               "Width": 1280.0,
               "Name": "Rotarymenu",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": {
                     "Expression": "[DahlDesign.MenuType] != 'Default' && [DahlDesign.PitMenu] != 0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -3372,7 +3470,9 @@
               "Top": 213.0,
               "Visible": true,
               "Width": 566.0,
-              "Name": "Temp frame"
+              "Name": "Temp frame",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3390,7 +3490,9 @@
               "Visible": true,
               "Width": 1280.0,
               "IsFreezed": true,
-              "Name": "Frame"
+              "Name": "Frame",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3407,7 +3509,9 @@
               "Top": 587.0,
               "Visible": true,
               "Width": 90.0,
-              "Name": "Small frame bit"
+              "Name": "Small frame bit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -3417,6 +3521,7 @@
               "AutoSize": true,
               "FileName": "pit fuel.djson",
               "InitialScreenIndex": 0,
+              "FreezePageChanges": false,
               "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 692.0,
@@ -3424,7 +3529,9 @@
               "Top": -1.0,
               "Visible": true,
               "Width": 116.0,
-              "Name": "Fuel gauge"
+              "Name": "Fuel gauge",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -3434,6 +3541,7 @@
               "AutoSize": true,
               "FileName": "pit messages.djson",
               "InitialScreenIndex": 0,
+              "FreezePageChanges": false,
               "EnableScreenRolesAndActivation": false,
               "BackgroundColor": "#00FFFFFF",
               "Height": 345.0,
@@ -3441,15 +3549,14 @@
               "Top": 246.0,
               "Visible": true,
               "Width": 106.0,
-              "Name": "Pit messages"
+              "Name": "Pit messages",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 238.0,
-              "Left": 753.0,
-              "Height": 353.0,
-              "Width": 313.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": false,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
@@ -3462,7 +3569,9 @@
                   "Top": 524.0,
                   "Visible": true,
                   "Width": 102.89999999999999,
-                  "Name": "Min fuel"
+                  "Name": "Min fuel",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
@@ -3475,7 +3584,9 @@
                   "Top": 381.0,
                   "Visible": true,
                   "Width": 100.8,
-                  "Name": "StopsWhite"
+                  "Name": "StopsWhite",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
@@ -3489,13 +3600,14 @@
                   "Visible": false,
                   "Width": 100.8,
                   "Name": "Stopsyellow",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
                         "Expression": "[DahlDesign.FuelConserveToSaveAStop] < 0.03 && [DahlDesign.FuelConserveToSaveAStop] != 0 "
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3511,13 +3623,14 @@
                   "Visible": false,
                   "Width": 100.8,
                   "Name": "Stopsred",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
                         "Expression": "[DahlDesign.FuelConserveToSaveAStop] > 0.03 && [DahlDesign.FuelConserveToSaveAStop] != 0 && [DahlDesign.FuelConserveToSaveAStop] < 0.15"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3538,13 +3651,14 @@
                   "Visible": true,
                   "Width": 100.0,
                   "Name": "Delta",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
                         "Expression": "if ([DahlDesign.FuelDelta] < 0 && [DahlDesign.FuelPitStops] < 2 && [DahlDesign.FuelConserveToSaveAStop] < 0.03, 'yellow', \r\nif ([DahlDesign.FuelDelta] < 0 && [DahlDesign.FuelPitStops] < 2 && [DahlDesign.FuelConserveToSaveAStop] < 0.07, 'red', 'white'))\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3559,7 +3673,9 @@
                   "Top": 311.0,
                   "Visible": true,
                   "Width": 71.990998439983883,
-                  "Name": "Pit window"
+                  "Name": "Pit window",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
@@ -3573,13 +3689,14 @@
                   "Visible": false,
                   "Width": 71.990998439983883,
                   "Name": "Pit window yellow",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
                         "Expression": "[DahlDesign.FuelPitWindowFirst] != 0 \r\n&& ([CurrentLap] - 3) >= [DahlDesign.FuelPitWindowFirst] \r\n&& ![DahlDesign.FuelAlert]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3595,11 +3712,12 @@
                   "Visible": false,
                   "Width": 71.990998439983883,
                   "Name": "Pitwindowred",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": { "Expression": "[DahlDesign.FuelAlert]" },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3625,30 +3743,31 @@
                   "Visible": true,
                   "Width": 113.0,
                   "Name": "Fuelmin",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "if ([DahlDesign.FuelMinimumFuelFill] = 0, '-', [DahlDesign.FuelMinimumFuelFill])"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
+                        "JSExt": 3,
                         "Interpreter": 1,
                         "Expression": "var fueltoggle = $prop('DahlDesign.PitToggleFuel');\r\nvar plannedfuel = $prop('GameRawData.Telemetry.PitSvFuel');\r\nvar max = $prop('MaxFuel');\r\nvar fuel = $prop('Fuel');\r\nvar minfuel = $prop('DahlDesign.FuelMinimumFuelFill');\r\n\r\nif (minfuel == 0) {return 'transparent'};\r\n\r\nif (plannedfuel > max - fuel)\r\n{\r\n\tplannedfuel = max - fuel;\r\n}\r\n\r\nif (plannedfuel < minfuel && fueltoggle) \r\n{\r\nreturn 'red';\r\n}\r\n\r\nelse if (plannedfuel >= minfuel && fueltoggle)\r\n{\r\nreturn 'lawngreen';\r\n}\r\n\r\nelse\r\n{\r\nreturn 'transparent';\r\n}\r\n\r\n\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 2
                     },
                     "TextColor": {
                       "Formula": {
+                        "JSExt": 3,
                         "Interpreter": 1,
                         "Expression": "var fueltoggle = $prop('DahlDesign.PitToggleFuel');\r\nvar plannedfuel = $prop('GameRawData.Telemetry.PitSvFuel');\r\nvar max = $prop('MaxFuel');\r\nvar fuel = $prop('Fuel');\r\nvar minfuel = $prop('DahlDesign.FuelMinimumFuelFill');\r\n\r\nif (minfuel == 0) {return 'white'};\r\n\r\nif (plannedfuel > max - fuel)\r\n{\r\n\tplannedfuel = max - fuel;\r\n}\r\n\r\nif (plannedfuel < minfuel && fueltoggle) \r\n{\r\nreturn 'white';\r\n}\r\n\r\nelse if (plannedfuel >= minfuel && fueltoggle)\r\n{\r\nreturn 'black';\r\n}\r\n\r\nelse\r\n{\r\nreturn 'white';\r\n}\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3674,30 +3793,31 @@
                   "Visible": true,
                   "Width": 113.0,
                   "Name": "FuelminLL",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "if ([DahlDesign.FuelMinimumFuelFillLL] = 0, '-', [DahlDesign.FuelMinimumFuelFillLL])"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "TextColor": {
                       "Formula": {
+                        "JSExt": 3,
                         "Interpreter": 1,
                         "Expression": "var fueltoggle = $prop('DahlDesign.PitToggleFuel');\r\nvar plannedfuel = $prop('GameRawData.Telemetry.PitSvFuel');\r\nvar max = $prop('MaxFuel');\r\nvar fuel = $prop('Fuel');\r\nvar minfuel = $prop('DahlDesign.FuelMinimumFuelFillLL');\r\n\r\nif (minfuel == 0) {return 'white'};\r\n\r\nif (plannedfuel > max - fuel)\r\n{\r\n\tplannedfuel = max - fuel;\r\n}\r\n\r\nif (plannedfuel < minfuel && fueltoggle) \r\n{\r\nreturn 'white';\r\n}\r\n\r\nelse if (plannedfuel >= minfuel && fueltoggle)\r\n{\r\nreturn 'black';\r\n}\r\n\r\nelse\r\n{\r\nreturn 'white';\r\n}\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
+                        "JSExt": 3,
                         "Interpreter": 1,
                         "Expression": "var fueltoggle = $prop('DahlDesign.PitToggleFuel');\r\nvar plannedfuel = $prop('GameRawData.Telemetry.PitSvFuel');\r\nvar max = $prop('MaxFuel');\r\nvar fuel = $prop('Fuel');\r\nvar minfuel = $prop('DahlDesign.FuelMinimumFuelFillLL');\r\n\r\nif (minfuel == 0) {return 'transparent'};\r\n\r\nif (plannedfuel > max - fuel)\r\n{\r\n\tplannedfuel = max - fuel;\r\n}\r\n\r\nif (plannedfuel < minfuel && fueltoggle) \r\n{\r\nreturn 'red';\r\n}\r\n\r\nelse if (plannedfuel >= minfuel && fueltoggle)\r\n{\r\nreturn 'lawngreen';\r\n}\r\n\r\nelse\r\n{\r\nreturn 'transparent';\r\n}\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3723,21 +3843,21 @@
                   "Visible": true,
                   "Width": 113.0,
                   "Name": "Delta",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "if( [DahlDesign.FuelDelta] = 0, '-', format([DahlDesign.FuelDelta],'0.0',1))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "FontSize": {
                       "Formula": {
                         "Expression": "if ([DahlDesign.FuelDelta] >= 1000 || [DahlDesign.FuelDelta] <= -1000, 30,\r\nif ([DahlDesign.FuelDelta] >= 100 || [DahlDesign.FuelDelta] <= -100, 33, 40))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "FontSize"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3763,21 +3883,21 @@
                   "Visible": true,
                   "Width": 113.0,
                   "Name": "DeltaLL",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "if( [DahlDesign.FuelDeltaLL] = 0, '-', format([DahlDesign.FuelDeltaLL],'0.0',1))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "FontSize": {
                       "Formula": {
                         "Expression": "if ([DahlDesign.FuelDeltaLL] >= 1000 || [DahlDesign.FuelDeltaLL] <= -1000, 30,\r\nif ([DahlDesign.FuelDeltaLL] >= 100 || [DahlDesign.FuelDeltaLL] <= -100, 33, 40))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "FontSize"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3803,14 +3923,15 @@
                   "Visible": true,
                   "Width": 113.0,
                   "Name": "Pitstops",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.00",
                       "Formula": {
                         "Expression": "if ([DahlDesign.FuelPitStops] = 0, '-', [DahlDesign.FuelPitStops])\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3836,14 +3957,15 @@
                   "Visible": true,
                   "Width": 113.0,
                   "Name": "PitstopsLL",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.00",
                       "Formula": {
                         "Expression": "if ([DahlDesign.FuelPitStopsLL] = 0, '-', [DahlDesign.FuelPitStopsLL])"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3863,13 +3985,14 @@
                   "Visible": true,
                   "Width": 61.0,
                   "Name": "Window opens",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
                         "Expression": "if ([DahlDesign.FuelPitWindowFirst] = 0, '-', \r\nif ([DahlDesign.FuelPitWindowFirst] = [CurrentLap], 'OK', \r\n[DahlDesign.FuelPitWindowFirst]))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3889,13 +4012,14 @@
                   "Visible": true,
                   "Width": 61.0,
                   "Name": "Window closes",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
                         "Expression": "if ([DahlDesign.FuelPitWindowLast] = 0, '-', \r\nif ([DahlDesign.FuelPitWindowLast] = [CurrentLap], 'BOX', \r\n[DahlDesign.FuelPitWindowLast]))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3915,7 +4039,9 @@
                   "Top": 311.0,
                   "Visible": true,
                   "Width": 3.0,
-                  "Name": "Window border"
+                  "Name": "Window border",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -3933,13 +4059,14 @@
                   "Visible": true,
                   "Width": 61.0,
                   "Name": "Window opensLL",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
                         "Expression": "if ([DahlDesign.FuelPitWindowFirstLL] = 0, '-', \r\nif ([DahlDesign.FuelPitWindowFirstLL] = [CurrentLap], 'OK', \r\n[DahlDesign.FuelPitWindowFirstLL]))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3959,13 +4086,14 @@
                   "Visible": true,
                   "Width": 61.0,
                   "Name": "Window closesLL",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
                         "Expression": "if ([DahlDesign.FuelPitWindowLastLL] = 0, '-', \r\nif ([DahlDesign.FuelPitWindowLastLL] = [CurrentLap], 'BOX', \r\n[DahlDesign.FuelPitWindowLastLL]))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -3985,7 +4113,9 @@
                   "Top": 311.0,
                   "Visible": true,
                   "Width": 3.0,
-                  "Name": "Window borderLL"
+                  "Name": "Window borderLL",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -4003,21 +4133,21 @@
                   "Visible": true,
                   "Width": 113.0,
                   "Name": "PerlapLL",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "if([DahlDesign.CalcLastLapFuel] = 0, '-', format([DahlDesign.CalcLastLapFuel],'0.00'))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "FontSize": {
                       "Formula": {
                         "Expression": "if ([DataCorePlugin.Computed.Fuel_LastLapConsumption] >= 100, 36,\r\n40)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "FontSize"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4037,28 +4167,27 @@
                   "Visible": true,
                   "Width": 113.0,
                   "Name": "Perlap",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "if( ([DataCorePlugin.Computed.Fuel_LitersPerLap] + [DahlDesign.FuelPerLapOffset]) = 0, '-', format(([DataCorePlugin.Computed.Fuel_LitersPerLap] + [DahlDesign.FuelPerLapOffset]),'0.00'))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "FontSize": {
                       "Formula": {
                         "Expression": "if (([DataCorePlugin.Computed.Fuel_LitersPerLap] + [DahlDesign.FuelPerLapOffset]) >= 100, 36,\r\n40)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "FontSize"
+                      "Mode": 2
                     },
                     "TextColor": {
                       "Formula": {
                         "Expression": "if([DahlDesign.CalculationAccuracy] = 0, 'red',\r\nif([DahlDesign.CalculationAccuracy] = 1, 'yellow',\r\nif([DahlDesign.CalculationAccuracy] = 2, 'deepskyblue',\r\nif([DahlDesign.CalculationAccuracy] = 3, 'lawngreen', 'red'))))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4080,35 +4209,33 @@
                   "BlinkEnabled": true,
                   "Width": 111.0,
                   "Name": "Perlap1",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "format([DahlDesign.FuelPerLapOffset],'0.00',1)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "FontSize": {
                       "Formula": {
                         "Expression": "if (([DataCorePlugin.Computed.Fuel_LitersPerLap] + [DahlDesign.FuelPerLapOffset]) >= 100, 32,\r\n36)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "FontSize"
+                      "Mode": 2
                     },
                     "Visible": {
                       "Formula": {
                         "Expression": "Round([DahlDesign.FuelPerLapOffset],1) != 0"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     },
                     "BackgroundColor": {
                       "Formula": {
                         "Expression": "if([DahlDesign.FuelPerLapTargetLocked], 'fuchsia','deepskyblue')"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4134,21 +4261,21 @@
                   "Visible": true,
                   "Width": 91.0,
                   "Name": "LAP number",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "if ([CurrentLap] = 0, '-', 'L'+[CurrentLap])"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "FontSize": {
                       "Formula": {
                         "Expression": "if ([CurrentLap] >= 100, 36, 50)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "FontSize"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4167,7 +4294,9 @@
                   "Top": 302.0,
                   "Visible": true,
                   "Width": 100.0,
-                  "Name": "Border top"
+                  "Name": "Border top",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -4185,7 +4314,9 @@
                   "Visible": true,
                   "Width": 224.0,
                   "IsFreezed": true,
-                  "Name": "Frame"
+                  "Name": "Frame",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -4202,7 +4333,9 @@
                   "Top": 246.0,
                   "Visible": true,
                   "Width": 221.0,
-                  "Name": "Top margin"
+                  "Name": "Top margin",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -4219,7 +4352,9 @@
                   "Top": 303.0,
                   "Visible": true,
                   "Width": 3.0,
-                  "Name": "border 3"
+                  "Name": "border 3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -4236,20 +4371,20 @@
                   "Top": 248.0,
                   "Visible": true,
                   "Width": 3.0,
-                  "Name": "border 3"
+                  "Name": "border 3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 }
               ],
-              "Group": false,
               "Visible": true,
-              "Name": "Strategy page"
+              "Name": "Strategy page",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 0.0,
-              "Left": 746.0,
-              "Height": 250.0,
-              "Width": 420.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": false,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -4273,14 +4408,15 @@
                   "Visible": true,
                   "Width": 104.0,
                   "Name": "Stop and go",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "[DahlDesign.PitTimeDriveThrough]\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4295,7 +4431,9 @@
                   "Top": 124.0,
                   "Visible": true,
                   "Width": 89.65,
-                  "Name": "S&G pic"
+                  "Name": "S&G pic",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -4319,14 +4457,15 @@
                   "Visible": true,
                   "Width": 104.0,
                   "Name": "Tyres",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "[DahlDesign.PitTimeTires]\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4341,7 +4480,9 @@
                   "Top": 14.0,
                   "Visible": true,
                   "Width": 62.6,
-                  "Name": "Type white"
+                  "Name": "Type white",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
@@ -4355,13 +4496,14 @@
                   "Visible": true,
                   "Width": 62.6,
                   "Name": "Tyre pink",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
                         "Expression": "[DahlDesign.PitToggleLF] || [DahlDesign.PitToggleRF] || [DahlDesign.PitToggleLR] || [DahlDesign.PitToggleLR]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4387,12 +4529,13 @@
                   "Visible": true,
                   "Width": 104.0,
                   "Name": "Fuel",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": { "Expression": "[DahlDesign.PitTimeFuel]" },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4407,7 +4550,9 @@
                   "Top": 12.0,
                   "Visible": true,
                   "Width": 80.640000000000015,
-                  "Name": "Fuel white"
+                  "Name": "Fuel white",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
@@ -4421,11 +4566,12 @@
                   "Visible": true,
                   "Width": 80.640000000000015,
                   "Name": "pink fuel",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": { "Expression": "[DahlDesign.PitToggleFuel]" },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4451,14 +4597,15 @@
                   "Visible": true,
                   "Width": 104.0,
                   "Name": "WS",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "[DahlDesign.PitTimeWindscreen]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4473,7 +4620,9 @@
                   "Top": 6.0,
                   "Visible": true,
                   "Width": 81.5,
-                  "Name": "WS white"
+                  "Name": "WS white",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
@@ -4487,13 +4636,14 @@
                   "Visible": true,
                   "Width": 81.5,
                   "Name": "WS pink",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
                         "Expression": "[DahlDesign.PitToggleWindscreen]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4519,14 +4669,15 @@
                   "Visible": true,
                   "Width": 104.0,
                   "Name": "Total",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "[DahlDesign.PitTimeTotal]\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4546,13 +4697,14 @@
                   "Visible": true,
                   "Width": 52.0,
                   "Name": "Sigma",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "TextColor": {
                       "Formula": {
                         "Expression": "if ([DahlDesign.PitTimeService] > 0, 'fuchsia', 'white')"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4577,7 +4729,9 @@
                   "Top": 123.0,
                   "Visible": true,
                   "Width": 105.0,
-                  "Name": "Pit exit box"
+                  "Name": "Pit exit box",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -4594,7 +4748,9 @@
                   "Top": 127.0,
                   "Visible": true,
                   "Width": 98.0,
-                  "Name": "EXIT POSITION"
+                  "Name": "EXIT POSITION",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -4612,13 +4768,14 @@
                   "Visible": true,
                   "Width": 128.0,
                   "Name": "EXITPOSITION value",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "Formula": {
                         "Expression": "if ([DahlDesign.PitExitPosition] = 0, '-', 'P'+[DahlDesign.PitExitPosition]+if([DahlDesign.PitToggleRepair] && [GameRawData.Telemetry.FastRepairAvailable] = 0, '?',''))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4644,14 +4801,15 @@
                   "Visible": true,
                   "Width": 104.0,
                   "Name": "Total service time",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "[DahlDesign.PitTimeService]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4667,13 +4825,14 @@
                   "Visible": false,
                   "Width": 132.3,
                   "Name": "car service pic white",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
                         "Expression": "[DahlDesign.PitTimeService]  = 0"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4689,13 +4848,14 @@
                   "Visible": true,
                   "Width": 132.3,
                   "Name": "car service pic",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
                         "Expression": "[DahlDesign.PitTimeService]  > 0"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4721,21 +4881,21 @@
                   "Visible": false,
                   "Width": 104.0,
                   "Name": "Repair",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "[DahlDesign.PitTimeTotal]\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "Visible": {
                       "Formula": {
                         "Expression": "[DahlDesign.PitToggleRepair] && [GameRawData.Telemetry.FastRepairAvailable] = 0"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4751,13 +4911,14 @@
                   "Visible": false,
                   "Width": 72.0,
                   "Name": "Repair??",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
                         "Expression": "[DahlDesign.PitToggleRepair] && [GameRawData.Telemetry.FastRepairAvailable] = 0"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4783,14 +4944,15 @@
                   "Visible": true,
                   "Width": 104.0,
                   "Name": "Adjust",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
                       "Formula": {
                         "Expression": "[DahlDesign.PitTimeAdjustment]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4805,13 +4967,14 @@
                   "Visible": false,
                   "Width": 81.0,
                   "Name": "Adjustwhite",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
                         "Expression": "[DahlDesign.PitTimeAdjustment] = 0"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4826,28 +4989,27 @@
                   "Visible": true,
                   "Width": 81.0,
                   "Name": "Adjustpink",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
                         "Expression": "[DahlDesign.PitTimeAdjustment] > 0"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 }
               ],
-              "Group": false,
               "Visible": true,
-              "Name": "Service duration"
+              "Name": "Service duration",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": -42.0,
-              "Left": 560.0,
-              "Height": 780.0,
-              "Width": 221.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": false,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -4871,7 +5033,9 @@
                   "Top": 0.0,
                   "Visible": true,
                   "Width": 200.0,
-                  "Name": "DRS"
+                  "Name": "DRS",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -4889,7 +5053,9 @@
                   "Top": -42.0,
                   "Visible": true,
                   "Width": 185.0,
-                  "Name": "TextItem0"
+                  "Name": "TextItem0",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -4907,7 +5073,9 @@
                   "Top": 175.0,
                   "Visible": true,
                   "Width": 185.0,
-                  "Name": "TextItem1"
+                  "Name": "TextItem1",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -4925,31 +5093,33 @@
                   "Top": 387.0,
                   "Visible": true,
                   "Width": 185.0,
-                  "Name": "TextItem2"
+                  "Name": "TextItem2",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0
                 }
               ],
-              "Group": false,
               "Visible": false,
               "Name": "DRS",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
                   "Formula": {
                     "Expression": "[DahlDesign.HasDRS] && [DahlDesign.DRSState] = 'Ready'"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "Pit screen",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": { "Expression": "[DahlDesign.PitScreen]" },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
@@ -4961,6 +5131,7 @@
           "AutoSize": true,
           "FileName": "dual clutch.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 768.0,
@@ -4970,13 +5141,14 @@
           "Width": 1280.0,
           "IsFreezed": true,
           "Name": "Dual clutch",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
                 "Expression": "([DahlDesign.LaunchScreen] || ([DahlDesign.HighPower] && [GameRawData.Telemetry.SessionState] = 2))\r\n&&\r\n!([GameRawData.Telemetry.SessionState] = 4 && isnull([SessionTypeName],'Practice') = 'Race' && [SpeedKmh] > 100)"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
@@ -4988,6 +5160,7 @@
           "AutoSize": true,
           "FileName": "splash.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 768.0,
@@ -4997,11 +5170,12 @@
           "Width": 1280.0,
           "IsFreezed": true,
           "Name": "Splash",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": { "Expression": "[DahlDesign.PitBoxPosition] = 0" },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
@@ -5013,6 +5187,7 @@
           "AutoSize": true,
           "FileName": "warning led.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 768.0,
@@ -5022,21 +5197,19 @@
           "Width": 1280.0,
           "IsFreezed": true,
           "Name": "Warning LEDs",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": { "Expression": "[DahlDesign.LEDWarnings]" },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": 0.0,
-          "Left": 0.0,
-          "Height": 768.0,
-          "Width": 1281.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -5053,7 +5226,9 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 1280.0,
-              "Name": "RectangleItem"
+              "Name": "RectangleItem",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -5072,20 +5247,20 @@
               "Visible": true,
               "Width": 334.0,
               "Name": "TextItem10",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": {
                     "Expression": "if ([DahlDesign.SW1Enabled], \r\ntruncate([DahlDesign.SW1bitePoint]/10),\r\ntruncate([DahlDesign.DDCbitePoint]/10))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DahlDesign.DDCbiteSetting] = 1 || [DahlDesign.SW1BiteSetting] = 1"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 }
               }
             },
@@ -5106,21 +5281,22 @@
               "Visible": true,
               "Width": 239.0,
               "Name": "TextItem11",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": {
+                    "JSExt": 3,
                     "Interpreter": 1,
                     "Expression": "\r\nvar bite = parseInt($prop('DahlDesign.DDCbitePoint') % 10, 10);\r\n\r\nif ($prop('DahlDesign.SW1Enabled'))\r\n{\r\n\tbite = parseInt($prop('DahlDesign.SW1bitePoint') % 10, 10);\r\n}\r\n\r\nreturn bite;"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DahlDesign.DDCbiteSetting] = 2 || [DahlDesign.SW1BiteSetting] = 2"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 }
               }
             },
@@ -5141,21 +5317,22 @@
               "Visible": true,
               "Width": 247.0,
               "Name": "TextItem17",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": {
+                    "JSExt": 3,
                     "Interpreter": 1,
                     "Expression": "var bite = $prop('DahlDesign.DDCbitePoint');\r\nif ($prop('DahlDesign.SW1Enabled'))\r\n{\r\n\tbite = $prop('DahlDesign.SW1bitePoint');\r\n}\r\n\r\n\r\nvar trunc = parseInt(bite, 10);\r\n\r\nvar result = Math.round(10*(bite-trunc));\r\n\r\nreturn \".\" + String(result);"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DahlDesign.DDCbiteSetting] = 3 || [DahlDesign.SW1BiteSetting] = 3"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 }
               }
             },
@@ -5175,19 +5352,21 @@
               "Top": 102.0,
               "Visible": true,
               "Width": 1280.0,
-              "Name": "TextItem"
+              "Name": "TextItem",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "DDC bite",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
                 "Expression": "([DahlDesign.DDCbiteSetting] > 0 || [DahlDesign.SW1BiteSetting] > 0)\r\n&&\r\n![DahlDesign.LaunchScreen]"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
@@ -5199,6 +5378,7 @@
           "AutoSize": true,
           "FileName": "ign.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 768.0,
@@ -5208,13 +5388,14 @@
           "Width": 1280.0,
           "IsFreezed": true,
           "Name": "Idle screen",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": {
                 "Expression": "[DahlDesign.Idle]\r\nor\r\nif ([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione', [ACCCDS_Physics.ignitionOn]=0,\r\n[GameRawData.Telemetry.Voltage]=0)"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
@@ -5226,6 +5407,7 @@
           "AutoSize": true,
           "FileName": "SW1.djson",
           "InitialScreenIndex": 0,
+          "FreezePageChanges": false,
           "EnableScreenRolesAndActivation": false,
           "BackgroundColor": "#00FFFFFF",
           "Height": 768.0,
@@ -5235,15 +5417,17 @@
           "Width": 1280.0,
           "IsFreezed": true,
           "Name": "SW1",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
               "Formula": { "Expression": "[DahlDesign.SW1Enabled]" },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         }
-      ]
+      ],
+      "MinimumRefreshIntervalMS": 0.0
     }
   ],
   "SnapToGrid": false,
@@ -5645,6 +5829,7 @@
     }
   ],
   "Metadata": {
+    "SimHubVersion": "9.1.24",
     "Category": "Rally",
     "Description": "Informative and simple",
     "Author": "Andreas Dahl",

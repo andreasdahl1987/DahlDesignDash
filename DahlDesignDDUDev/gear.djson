@@ -2,7 +2,7 @@
   "Variables": { "DashboardVariables": [] },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "b0f535d7-801d-4059-afec-51c1b4ec93d2",
+  "Id": "2055a3d9-8309-4cc7-8d5e-176d98b76c88",
   "BaseHeight": 598,
   "BaseWidth": 450,
   "BackgroundColor": "#FF000000",
@@ -26,11 +26,8 @@
       "Items": [
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": 0.0,
-          "Left": -2.8421709430404007e-14,
-          "Height": 598.0,
-          "Width": 450.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -69,25 +66,20 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 }
               }
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 0.0,
-              "Left": -2.8421709430404007e-14,
-              "Height": 598.0,
-              "Width": 450.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": false,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
@@ -118,27 +110,23 @@
                       "Formula": {
                         "Expression": "[CarSettings_RedLineRPM]*0.75"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Minimum"
+                      "Mode": 2
                     },
                     "Maximum": {
                       "Formula": {
                         "Expression": "[CarSettings_RedLineRPM]*0.85"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Maximum"
+                      "Mode": 2
                     },
                     "Value": {
                       "Formula": { "Expression": "[Rpms]" },
-                      "Mode": 2,
-                      "TargetPropertyName": "Value"
+                      "Mode": 2
                     },
                     "Visible": {
                       "Formula": {
                         "Expression": "![DahlDesign.ShowMapEnabled]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -171,27 +159,23 @@
                       "Formula": {
                         "Expression": "[CarSettings_RedLineRPM]*0.85"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Minimum"
+                      "Mode": 2
                     },
                     "Maximum": {
                       "Formula": {
                         "Expression": "[CarSettings_RedLineRPM]*0.95"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Maximum"
+                      "Mode": 2
                     },
                     "Value": {
                       "Formula": { "Expression": "[Rpms]" },
-                      "Mode": 2,
-                      "TargetPropertyName": "Value"
+                      "Mode": 2
                     },
                     "Visible": {
                       "Formula": {
                         "Expression": "![DahlDesign.ShowMapEnabled]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -224,32 +208,27 @@
                       "Formula": {
                         "Expression": "[CarSettings_RedLineRPM]*1.02"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Maximum"
+                      "Mode": 2
                     },
                     "Minimum": {
                       "Formula": {
                         "Expression": "[CarSettings_RedLineRPM]*0.95"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Minimum"
+                      "Mode": 2
                     },
                     "Value": {
                       "Formula": { "Expression": "[Rpms]" },
-                      "Mode": 2,
-                      "TargetPropertyName": "Value"
+                      "Mode": 2
                     },
                     "Visible": {
                       "Formula": {
                         "Expression": "![DahlDesign.ShowMapEnabled]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 }
               ],
-              "Group": false,
               "Visible": false,
               "Name": "Rally graphics",
               "RenderingSkip": 0,
@@ -259,8 +238,7 @@
                   "Formula": {
                     "Expression": "[DahlDesign.CenterDashType] = 'Rally'"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -275,6 +253,7 @@
               "DisplayScale": 1.0,
               "MapShadow": true,
               "OverrideColorsWithCarClassColors": true,
+              "KeepMapDefinedClassColorsInSingleClass": true,
               "ForcePlayerDotBorderContrastWhenUsingCarClassColors": true,
               "MinimumTrackBorderWidth": 0.0,
               "MinimumTrackWidth": 5.0,
@@ -319,7 +298,6 @@
               "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "Map",
           "RenderingSkip": 0,
@@ -327,18 +305,14 @@
           "Bindings": {
             "Visible": {
               "Formula": { "Expression": "[DahlDesign.ShowMapEnabled]" },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": -112.13708498984761,
-          "Left": -114.13708498984761,
-          "Height": 822.27416997969522,
-          "Width": 676.27416997969522,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -358,20 +332,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -398,20 +369,17 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -437,15 +405,13 @@
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.HasABS]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
                     "Expression": "\r\nif ([ABSActive], 'deepskyblue', 'transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -471,15 +437,13 @@
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.HasABS]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
                     "Expression": "\r\nif ([ABSActive], 'deepskyblue', 'transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -505,15 +469,13 @@
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.HasABS]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
                     "Expression": "\r\nif ([ABSActive], 'deepskyblue', 'transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -539,15 +501,13 @@
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.HasABS]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
                     "Expression": "\r\nif ([ABSActive], 'deepskyblue', 'transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -572,7 +532,6 @@
               "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "Default",
           "RenderingSkip": 0,
@@ -582,18 +541,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] = 'Default'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": -142.0,
-          "Left": 0.0,
-          "Height": 742.0,
-          "Width": 450.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -613,20 +568,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -653,20 +605,17 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','White',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -731,15 +680,13 @@
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.BrakeBias]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black',\r\nif (changed([BrakeBias],1500),'deepskyblue', 'white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -857,8 +804,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -885,8 +831,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -913,8 +858,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -941,8 +885,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -969,8 +912,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -997,8 +939,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1025,8 +966,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1053,8 +993,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1081,8 +1020,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1109,8 +1047,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1137,8 +1074,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1165,8 +1101,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1193,8 +1128,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1221,8 +1155,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1249,8 +1182,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1277,8 +1209,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1306,8 +1237,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white','deepskyblue')"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1324,8 +1254,7 @@
                   "Formula": {
                     "Expression": "(([BrakeBias])-50)*(120/20)+290"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Left"
+                  "Mode": 2
                 }
               }
             },
@@ -1343,8 +1272,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1371,8 +1299,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1399,8 +1326,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1427,8 +1353,7 @@
                     "Formula": {
                       "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -1465,8 +1390,7 @@
                   "Formula": {
                     "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -1513,8 +1437,7 @@
                   "Formula": {
                     "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -1542,13 +1465,11 @@
                   "Formula": {
                     "Expression": "if ([PitLimiterOn], 'white',\r\nif ([IsInPit], 'black', 'white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "BiasOnly",
           "RenderingSkip": 0,
@@ -1558,18 +1479,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] = 'BiasOnly'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": -79.0,
-          "Left": 0.0,
-          "Height": 704.0,
-          "Width": 450.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1588,20 +1505,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -1628,20 +1542,17 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -1668,8 +1579,7 @@
                   "Formula": {
                     "Expression": "if ([DahlDesign.ABSToggle],\r\n\tif([ABSActive] = 1 and [PitLimiterOn] = 1,'white',\r\n\tif([ABSActive],'deepskyblue',\r\n\tif(![ABSActive],'transparent', 'transparent'))),\r\n'red')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -1695,10 +1605,9 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if (![DahlDesign.ABSToggle], 'white',\r\nif([ABSActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([ABSActive],'white',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\n'white'))))"
+                    "Expression": "if (![DahlDesign.ABSToggle], 'white',\r\nif([ABSActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([ABSActive],'white',\r\nif([PitLimiterOn]=0 and [IsInPit]=1, 'black',\r\n'white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -1724,16 +1633,11 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if (![DahlDesign.ABSToggle], 'white',\r\nif([ABSActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([ABSActive],'white',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\n'white'))))"
+                    "Expression": "if (![DahlDesign.ABSToggle], 'white',\r\nif([ABSActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([ABSActive],'white',\r\nif([PitLimiterOn]=0 and [IsInPit]=1, 'black',\r\n'white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
-                "Text": {
-                  "Formula": { "Expression": "[ABSLevel]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
-                }
+                "Text": { "Formula": { "Expression": "[ABSLevel]" }, "Mode": 2 }
               }
             },
             {
@@ -1759,8 +1663,7 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'red',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'white',\r\nif([DahlDesign.TCActive],'orange','transparent')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -1786,10 +1689,9 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
+                    "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPit]=1, 'black','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -1815,17 +1717,15 @@
               "Bindings": {
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
+                    "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPit]=1, 'black','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "[GameRawData.Telemetry.dcTractionControl]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -1858,15 +1758,13 @@
                   "Formula": {
                     "Expression": "timespantoseconds([DahlDesign.TCOffTimer])"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "timespantoseconds([DahlDesign.TCOffTimer]) > 0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -1913,8 +1811,7 @@
                   "Formula": {
                     "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -1942,26 +1839,21 @@
                   "Formula": {
                     "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "FormatString": "0.0",
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.BrakeBias]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 442.0,
-              "Left": 316.0,
-              "Height": 175.0,
-              "Width": 133.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": false,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -1986,8 +1878,7 @@
                       "Formula": {
                         "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh], 'transparent',\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPit] = 1, 'black', 'yellow')),\r\n'lawngreen'))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 2
                     }
                   }
                 },
@@ -2015,8 +1906,7 @@
                       "Formula": {
                         "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh],  if ([IsInPit] = 1 && [PitLimiterOn] = 0, 'black','white'),\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPit] = 1, 'yellow','black')),\r\n'black'))\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     }
                   }
                 },
@@ -2044,20 +1934,17 @@
                       "Formula": {
                         "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh],  if ([IsInPit] = 1 && [PitLimiterOn] = 0, 'black','white'),\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPit] = 1, 'yellow','black')),\r\n'black'))\r\n\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     },
                     "Text": {
                       "Formula": {
                         "Expression": "[DataCorePlugin.GameRawData.Telemetry.dcFuelMixture]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 }
               ],
-              "Group": false,
               "Visible": true,
               "Name": "MapframeDefault",
               "RenderingSkip": 0,
@@ -2065,20 +1952,16 @@
               "Bindings": {
                 "Visible": {
                   "Formula": {
-                    "Expression": "[DahlDesign.MenuType]  != 'Audi R8 GT3'"
+                    "Expression": "[DahlDesign.MenuType]  != 'Audi R8 GT3' &&\r\n[DahlDesign.MenuType]  != 'Ferrari 488 GT3'"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 442.0,
-              "Left": 316.0,
-              "Height": 175.0,
-              "Width": 133.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": false,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -2123,8 +2006,7 @@
                       "Formula": {
                         "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     }
                   }
                 },
@@ -2152,20 +2034,17 @@
                       "Formula": {
                         "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     },
                     "Text": {
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.dcThrottleShape]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 }
               ],
-              "Group": false,
               "Visible": false,
               "Name": "Throttle frame Audi",
               "RenderingSkip": 0,
@@ -2173,10 +2052,9 @@
               "Bindings": {
                 "Visible": {
                   "Formula": {
-                    "Expression": "[DahlDesign.MenuType]  = 'Audi R8 GT3'"
+                    "Expression": "[DahlDesign.MenuType]  = 'Audi R8 GT3' \r\n||\r\n[DahlDesign.MenuType]  = 'Ferrari 488 GT3'"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -2201,8 +2079,7 @@
               "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": false,
-          "Visible": false,
+          "Visible": true,
           "Name": "GT3",
           "RenderingSkip": 0,
           "MinimumRefreshIntervalMS": 0.0,
@@ -2211,18 +2088,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] =  'GT3'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": -30.0,
-          "Left": 0.0,
-          "Height": 704.0,
-          "Width": 450.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -2241,20 +2114,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -2281,20 +2151,17 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -2321,8 +2188,7 @@
                   "Formula": {
                     "Expression": "if ([DahlDesign.ABSToggle],\r\n\tif([ABSActive] = 1 and [PitLimiterOn] = 1,'white',\r\n\tif([ABSActive],'deepskyblue',\r\n\tif(![ABSActive],'transparent', 'transparent'))),\r\n'red')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -2350,8 +2216,7 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.ABSToggle], 'white',\r\nif([ABSActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([ABSActive],'white',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\n'white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -2379,14 +2244,9 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.ABSToggle], 'white',\r\nif([ABSActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([ABSActive],'white',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\n'white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
-                "Text": {
-                  "Formula": { "Expression": "[ABSLevel]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
-                }
+                "Text": { "Formula": { "Expression": "[ABSLevel]" }, "Mode": 2 }
               }
             },
             {
@@ -2412,8 +2272,7 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'red',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'white',\r\nif([DahlDesign.TCActive],'orange','transparent')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -2441,8 +2300,7 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -2470,15 +2328,13 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "[GameRawData.Telemetry.dcTractionControl]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -2511,15 +2367,13 @@
                   "Formula": {
                     "Expression": "timespantoseconds([DahlDesign.TCOffTimer])"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "timespantoseconds([DahlDesign.TCOffTimer]) > 0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -2544,7 +2398,6 @@
               "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "TC/ABS",
           "RenderingSkip": 0,
@@ -2554,18 +2407,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] =  'TC/ABS'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": -33.0,
-          "Left": 0.0,
-          "Height": 649.0,
-          "Width": 455.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -2584,20 +2433,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -2619,8 +2465,7 @@
                   "Formula": {
                     "Expression": "if([DahlDesign.P2PStatus],'fuchsia','transparent')\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -2647,8 +2492,7 @@
                   "Formula": {
                     "Expression": "if(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 1 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 6 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 7 , 'transparent',\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 8, \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPit] = 1, 'black', 'yellow')),'lawngreen'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -2676,8 +2520,7 @@
                   "Formula": {
                     "Expression": "if(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 1 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 6 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 7 , \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPit] = 1, 'black', 'white')),\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 8, \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPit] = 1, 'yellow', 'black')),'black'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -2705,15 +2548,13 @@
                   "Formula": {
                     "Expression": "if(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 1 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 6 || isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 7 , \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPit] = 1, 'black', 'white')),\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0) = 8, \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPit] = 1, 'yellow', 'black')),'black'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "isnull([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture],0)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -2740,20 +2581,17 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -2780,15 +2618,13 @@
                   "Formula": {
                     "Expression": "if ([SessionTypeName] != 'Race', \r\n\t\tif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus] && [IsInPit] = 0 && [PitLimiterOn] = 0, 'lawngreen','transparent'),\r\nif ([DahlDesign.P2PCount] = 0, 'red', \r\nif ([PitLimiterOn] = 1, 'transparent',\r\nif ([IsInPit] = 1, 'transparent',\r\nif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus], 'lawngreen', 'transparent')))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "[SessionTypeName] = 'Race' && [DahlDesign.TrackType] < 5"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -2816,15 +2652,13 @@
                   "Formula": {
                     "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus] && [IsInPit] = 0 && [PitLimiterOn] = 0, 'black',\r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPit] = 1, 'black','white'))),\r\nif ([DahlDesign.P2PCount] = 0, 'white', \r\nif ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black',\r\nif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus], 'black', 'white')))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "[SessionTypeName] = 'Race' && [DahlDesign.TrackType] < 5"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -2852,20 +2686,17 @@
                   "Formula": {
                     "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus] && [IsInPit] = 0 && [PitLimiterOn] = 0, 'black',\r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPit] = 1, 'black','white'))),\r\nif ([DahlDesign.P2PCount] = 0, 'white', \r\nif ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black',\r\nif ([DahlDesign.OvertakeMode] && ![DahlDesign.P2PStatus], 'black', 'white')))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.P2PCount]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "[SessionTypeName] = 'Race' && [DahlDesign.TrackType] < 5"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -2892,15 +2723,13 @@
                 "Text": {
                   "FormatString": "0.0",
                   "Formula": { "Expression": "[BrakeBias]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, \r\n\t'black',\r\nif([PitLimiterOn]=0, \r\n\tif (changed(2000,[BrakeBias]), 'deepskyblue','white'), 'white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -2947,8 +2776,7 @@
                   "Formula": {
                     "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -2976,15 +2804,13 @@
                   "Formula": {
                     "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "[GameRawData.Telemetry.dcAntiRollRear]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -3031,8 +2857,7 @@
                   "Formula": {
                     "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -3060,25 +2885,20 @@
                   "Formula": {
                     "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "[GameRawData.Telemetry.dcAntiRollFront]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": -27.0,
-              "Left": 3.0,
-              "Height": 491.0,
-              "Width": 444.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": true,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -3094,8 +2914,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3122,8 +2941,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3150,8 +2968,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3178,8 +2995,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3206,8 +3022,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3234,8 +3049,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3262,8 +3076,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3290,8 +3103,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3318,8 +3130,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3346,8 +3157,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3374,8 +3184,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3402,8 +3211,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3430,8 +3238,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3458,8 +3265,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3486,8 +3292,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3514,8 +3319,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3542,8 +3346,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3570,8 +3373,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3598,8 +3400,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3626,8 +3427,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3654,8 +3454,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3682,8 +3481,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3710,8 +3508,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3738,8 +3535,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3766,8 +3562,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3794,8 +3589,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3822,8 +3616,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3850,8 +3643,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3878,8 +3670,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3906,8 +3697,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3934,8 +3724,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3962,8 +3751,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -3990,8 +3778,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -4018,8 +3805,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -4046,8 +3832,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -4074,8 +3859,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -4102,8 +3886,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -4130,8 +3913,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -4158,8 +3940,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -4186,8 +3967,7 @@
                         "Formula": {
                           "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                         },
-                        "Mode": 2,
-                        "TargetPropertyName": "BorderColor"
+                        "Mode": 2
                       }
                     }
                   },
@@ -4224,15 +4004,13 @@
                       "Formula": {
                         "Expression": "459 - ((isnull([GameRawData.Telemetry.dcWeightJackerRight],0)-1)*17.25)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Top"
+                      "Mode": 2
                     },
                     "Visible": {
                       "Formula": {
                         "Expression": "isnull([GameRawData.Telemetry.dcWeightJackerRight],0) > 0"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4260,15 +4038,13 @@
                       "Formula": {
                         "Expression": "459 + ((isnull([GameRawData.Telemetry.dcWeightJackerRight],0)+1)*17.25)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Top"
+                      "Mode": 2
                     },
                     "Visible": {
                       "Formula": {
                         "Expression": "isnull([GameRawData.Telemetry.dcWeightJackerRight],0) < 0"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Visible"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4296,8 +4072,7 @@
                       "Formula": {
                         "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     }
                   }
                 },
@@ -4344,20 +4119,17 @@
                       "Formula": {
                         "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     },
                     "Text": {
                       "Formula": {
                         "Expression": "if (isnull([GameRawData.Telemetry.dcWeightJackerRight],0) > 0, '+','') + isnull([GameRawData.Telemetry.dcWeightJackerRight],0)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 }
               ],
-              "Group": true,
               "Visible": false,
               "Name": "Jackers",
               "RenderingSkip": 0,
@@ -4365,8 +4137,7 @@
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.TrackType] > 4" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -4391,7 +4162,6 @@
               "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "Indycar",
           "RenderingSkip": 0,
@@ -4401,18 +4171,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] = 'Indycar'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": -27.0,
-          "Left": 0.0,
-          "Height": 704.0,
-          "Width": 450.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -4431,20 +4197,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -4471,20 +4234,17 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -4531,8 +4291,7 @@
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -4560,8 +4319,7 @@
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -4589,8 +4347,7 @@
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -4618,15 +4375,13 @@
                   "Formula": {
                     "Expression": "left([GameRawData.Telemetry.dcDiffEntry],0,2)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -4654,15 +4409,13 @@
                   "Formula": {
                     "Expression": "[GameRawData.Telemetry.dcDiffMiddle]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -4690,20 +4443,17 @@
                   "Formula": {
                     "Expression": "[GameRawData.Telemetry.dcDiffExit]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "Williams F1",
           "RenderingSkip": 0,
@@ -4713,18 +4463,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] = 'Williams F1'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": 0.0,
-          "Left": 0.0,
-          "Height": 598.0,
-          "Width": 450.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -4743,20 +4489,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -4777,8 +4520,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.DRS_Status],0) > 0, 'lawngreen','transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -4807,15 +4549,13 @@
                   "Formula": {
                     "Expression": "100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct], 0)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if(([PitLimiterOn]=0 and [IsInPitLane]=1) || isnull([GameRawData.Telemetry.DRS_Status],0) > 0, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -4842,27 +4582,23 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "FontSize": {
                   "Formula": {
                     "Expression": "if([DahlDesign.SmoothGear]='N', 400, 440)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "FontSize"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -4896,15 +4632,13 @@
                   "Formula": {
                     "Expression": "isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct],0)*100\r\n\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Value"
+                  "Mode": 2
                 },
                 "GaugeColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn] = 1, 'white',\r\nif([IsInPit] = 1, 'black',\r\nif(isnull([GameRawData.SessionData.CarSetup.DriveBrake.PowerUnitConfig.MguKDeployMode],'') = 'Race',\r\nif([DahlDesign.ERSTarget] = 25, 'red',\r\nif([DahlDesign.ERSTarget] = 50, 'orange',\r\nif([DahlDesign.ERSTarget] = 75, 'lawngreen', 'white'))),\r\n'white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "GaugeColor"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
@@ -4917,8 +4651,7 @@
                   "EndColor": "#FFFF0000",
                   "StartColorValue": 0.0,
                   "EndColorValue": 2.0,
-                  "Mode": 4,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 4
                 }
               }
             },
@@ -4939,8 +4672,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.DRS_Status],0) > 1, 'lawngreen','transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -4969,15 +4701,13 @@
                   "Formula": {
                     "Expression": "if(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyBatteryToMGU_KLap]),'',\r\nisnull([DataCorePlugin.GameRawData.Telemetry.EnergyBatteryToMGU_KLap],0)/40000)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if(([PitLimiterOn]=0 and [IsInPitLane]=1) || isnull([GameRawData.Telemetry.DRS_Status],0) > 1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -5010,8 +4740,7 @@
                   "Formula": {
                     "Expression": "isnull([DataCorePlugin.GameRawData.Telemetry.EnergyBatteryToMGU_KLap],0)/40000"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Value"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
@@ -5024,15 +4753,13 @@
                   "EndColor": "#FFFF0000",
                   "StartColorValue": 0.0,
                   "EndColorValue": 2.0,
-                  "Mode": 4,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 4
                 },
                 "GaugeColor": {
                   "Formula": {
                     "Expression": "if([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True','fuchsia',\r\nif([PitLimiterOn] = 1, 'white',\r\nif([IsInPit] = 1, 'black',\r\nif([DahlDesign.NoBoost], 'lawngreen', \r\n'white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "GaugeColor"
+                  "Mode": 2
                 }
               }
             },
@@ -5060,8 +4787,7 @@
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -5089,8 +4815,7 @@
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -5118,15 +4843,13 @@
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "'PRE ' + isnull([GameRawData.Telemetry.dcDiffPreload] ,0 )"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -5154,15 +4877,13 @@
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "'ENT ' + left(isnull([GameRawData.Telemetry.dcDiffEntry],0),0,1)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -5189,18 +4910,17 @@
               "Bindings": {
                 "Top": {
                   "Formula": {
+                    "JSExt": 3,
                     "Interpreter": 1,
                     "Expression": "if ($prop('GameRawData.Telemetry.dcMGUKDeployMode') == null)\r\n{\r\nreturn 0;\r\n}\r\nvar soc = parseInt($prop('GameRawData.Telemetry.dcMGUKDeployMode'))\r\n\r\nreturn 585 - ((529/100) * soc)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Top"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "[DahlDesign.ERSTarget] != format(isnull([GameRawData.Telemetry.dcMGUKDeployMode],0),1)\r\nand\r\nisnull([GameRawData.SessionData.CarSetup.DriveBrake.PowerUnitConfig.MguKDeployMode],'') = 'Race'"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -5219,8 +4939,7 @@
                     "Formula": {
                       "Expression": "if([DahlDesign.ERSTarget] = 25, 'red',\r\nif([DahlDesign.ERSTarget] = 50, 'orange',\r\nif([DahlDesign.ERSTarget] = 75, 'lawngreen', 'transparent')))"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -5237,15 +4956,13 @@
                   "Formula": {
                     "Expression": "585 - ((529/100) * [DahlDesign.ERSTarget])"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Top"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "[DahlDesign.ERSTarget] = format(isnull([GameRawData.Telemetry.dcMGUKDeployMode],0),1)\r\nand\r\nisnull([GameRawData.SessionData.CarSetup.DriveBrake.PowerUnitConfig.MguKDeployMode],'') = 'Race'\r\nand\r\n(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct],0)*100 < [DahlDesign.ERSTarget])\r\n\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -5406,23 +5123,21 @@
                 "Text": {
                   "FormatString": "0.0",
                   "Formula": {
+                    "JSExt": 3,
                     "Interpreter": 1,
                     "Expression": "thingie = $prop('GameRawData.SessionData.CarSetup.DriveBrake.BrakeSystemConfig.BaseBrakeBias')\r\nif (thingie == null) {return 0;}\r\nbias = $prop('BrakeBias')\r\n\r\nthongie = thingie.slice(0,4)\r\ninteger = parseFloat(thongie) + bias\r\n\r\nreturn integer;"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\nif ([PitLimiterOn] = 1, 'white',\r\nif (changed(2000,[BrakeBias]), 'deepskyblue','white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "Mclaren F1",
           "RenderingSkip": 0,
@@ -5432,18 +5147,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] = 'Mclaren F1'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": 0.0,
-          "Left": 0.0,
-          "Height": 598.0,
-          "Width": 450.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -5462,20 +5173,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -5496,8 +5204,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.DRS_Status],0) > 0, 'lawngreen','transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -5527,15 +5234,13 @@
                   "Formula": {
                     "Expression": "100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct], 0)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if(([PitLimiterOn]=0 and [IsInPitLane]=1) || isnull([GameRawData.Telemetry.DRS_Status],0) > 0, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -5562,27 +5267,23 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "FontSize": {
                   "Formula": {
                     "Expression": "if([DahlDesign.SmoothGear]='N', 370, 420)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "FontSize"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -5616,15 +5317,13 @@
                   "Formula": {
                     "Expression": "isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct],0)*100\r\n\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Value"
+                  "Mode": 2
                 },
                 "GaugeColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn] = 1, 'white',\r\nif([IsInPit] = 1, 'black',\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct],0)*100 < 25, 'red','white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "GaugeColor"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
@@ -5637,8 +5336,7 @@
                   "EndColor": "#FFFF0000",
                   "StartColorValue": 0.0,
                   "EndColorValue": 2.0,
-                  "Mode": 4,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 4
                 }
               }
             },
@@ -5667,8 +5365,7 @@
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -5689,8 +5386,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.DRS_Status],0) > 1, 'lawngreen','transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -5720,15 +5416,13 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 0, 'OFF',\r\nif (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 1, 'QLY',\r\nif (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 2, 'ATK',\r\nif (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 3, 'BAL', 'ECO'))))\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if(([PitLimiterOn]=0 and [IsInPitLane]=1) || isnull([GameRawData.Telemetry.DRS_Status],0) > 1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -5750,8 +5444,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 4, 'lawngreen', 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -5773,8 +5466,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 3, 'deepskyblue', 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -5796,8 +5488,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 2, 'red', 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -5819,8 +5510,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 1, 'fuchsia', 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -5841,8 +5531,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 0, 'orange', 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -5968,8 +5657,7 @@
                   "Formula": {
                     "Expression": "if ([DahlDesign.ERSCharges] = 4, \t\r\n\tif ([Rpms] > 300 && [SpeedKmh] < 75, 'fuchsia', 'Lawngreen'), 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6000,8 +5688,7 @@
                   "Formula": {
                     "Expression": "if ([DahlDesign.ERSCharges] > 2, \r\n\tif ([Rpms] > 300 && [SpeedKmh] < 75, 'fuchsia', 'Lawngreen'), 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6032,8 +5719,7 @@
                   "Formula": {
                     "Expression": "if ([DahlDesign.ERSCharges] > 1,\r\n\tif ([Rpms] > 300 && [SpeedKmh] < 75, 'fuchsia', 'Lawngreen'), 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6064,8 +5750,7 @@
                   "Formula": {
                     "Expression": "if ([DahlDesign.ERSCharges] > 0,\r\n\tif ([Rpms] > 300 && [SpeedKmh] < 75, 'fuchsia', 'Lawngreen'), 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6092,15 +5777,13 @@
                   "Formula": {
                     "Expression": "isnull([GameRawData.Telemetry.dcBrakeMisc],0) = 1 || [DahlDesign.DRSState] = 'Open'"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
                     "Expression": "if ([DahlDesign.DRSState] = 'Open', 'lawngreen', 'red')\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6129,15 +5812,13 @@
                   "Formula": {
                     "Expression": "[GameRawData.Telemetry.dcDiffEntry]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1 ||  isnull([GameRawData.Telemetry.DRS_Status],0) > 2, 'black',\r\nif([PitLimiterOn]=1, 'white',\r\nif (changed([GameRawData.Telemetry.dcDiffEntry],2000), 'deepskyblue','white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6165,15 +5846,13 @@
                   "Formula": {
                     "Expression": "[GameRawData.Telemetry.dcDiffMiddle]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1  ||  isnull([GameRawData.Telemetry.DRS_Status],0) > 2, 'black',\r\nif([PitLimiterOn]=1, 'white',\r\nif (changed([GameRawData.Telemetry.dcDiffMiddle],2000), 'deepskyblue','white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6201,15 +5880,13 @@
                   "Formula": {
                     "Expression": "[GameRawData.Telemetry.dcDiffExit]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1  ||  isnull([GameRawData.Telemetry.DRS_Status],0) > 2, 'black',\r\nif([PitLimiterOn]=1, 'white',\r\nif (changed([GameRawData.Telemetry.dcDiffExit],2000), 'deepskyblue','white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6236,15 +5913,13 @@
                 "Text": {
                   "FormatString": "0.0",
                   "Formula": { "Expression": "[BrakeBias]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\nif ([PitLimiterOn] = 1, 'white',\r\nif (changed(2000,[BrakeBias]), 'deepskyblue','white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6326,7 +6001,6 @@
               "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "Mercedes W12",
           "RenderingSkip": 0,
@@ -6336,18 +6010,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] = 'Mercedes W12'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": 0.0,
-          "Left": 0.0,
-          "Height": 598.0,
-          "Width": 450.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -6366,20 +6036,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -6409,22 +6076,19 @@
                   "Formula": {
                     "Expression": "if(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct]),'',\r\n100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct],0))\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),'transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6451,27 +6115,23 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,\r\n\tif([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),\r\nif([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',\r\nif([DahlDesign.SmoothGear]=='N','Yellow',\r\nif([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "FontSize": {
                   "Formula": {
                     "Expression": "if([DahlDesign.SmoothGear]='N' || [DahlDesign.SmoothGear]='R' , 400, 460)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "FontSize"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -6505,15 +6165,13 @@
                   "Formula": {
                     "Expression": "if(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct]),'',\r\n100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct],0))\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Value"
+                  "Mode": 2
                 },
                 "GaugeColor": {
                   "Formula": {
                     "Expression": "if([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True',if (\r\nif(isnull([DataCorePlugin.CurrentGame],0)=='IRacing'\r\n,\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct]),'',\r\n100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct],0))\r\n,\r\n100*isnull(\r\n[DataCorePlugin.GameRawData.PlayerCarStatusData.m_ersDeployedThisLap],0)\r\n/\r\nif(\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)==0,\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)+1,\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)\r\n)) = 100, 'red',\r\n\r\n'fuchsia'),\r\nif([PitLimiterOn] = 1, 'white',\r\nif([IsInPit] = 1, 'black',\r\nif([DahlDesign.NoBoost], 'lawngreen', \r\n'white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "GaugeColor"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
@@ -6526,8 +6184,7 @@
                   "EndColor": "#FFFF0000",
                   "StartColorValue": 0.0,
                   "EndColorValue": 2.0,
-                  "Mode": 4,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 4
                 }
               }
             },
@@ -6560,8 +6217,7 @@
                   "Formula": {
                     "Expression": "\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct]),'',\r\n100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct],0))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Value"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
@@ -6574,15 +6230,13 @@
                   "EndColor": "#FFFF0000",
                   "StartColorValue": 0.0,
                   "EndColorValue": 2.0,
-                  "Mode": 4,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 4
                 },
                 "GaugeColor": {
                   "Formula": {
                     "Expression": "if([DataCorePlugin.GameRawData.Telemetry.ManualBoost]='True',if(\r\nif(isnull([DataCorePlugin.CurrentGame],0)=='IRacing'\r\n,\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct]),'',\r\n100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct],0))\r\n,\r\n100*isnull(\r\n[DataCorePlugin.GameRawData.PlayerCarStatusData.m_ersDeployedThisLap],0)\r\n/\r\nif(\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)==0,\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)+1,\r\nisnull([DataCorePlugin.GameData.NewData.ERSMax],1)\r\n)) = 100, 'red',\r\n\r\n'fuchsia'),\r\nif([PitLimiterOn] = 1, 'white',\r\nif([IsInPit] = 1, 'black',\r\nif([[DahlDesign.NoBoost], 'lawngreen', \r\n'white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "GaugeColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6611,15 +6265,13 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),'transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6648,15 +6300,13 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),'transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6686,29 +6336,25 @@
                   "Formula": {
                     "Expression": "\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct]),'',\r\n100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyMGU_KLapDeployPct],0))\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),'transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.CarModel]!='Mclaren MP4-30'"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6741,22 +6387,19 @@
                   "Formula": {
                     "Expression": "if (!([GameRawData.Telemetry.dcTractionControlToggle] || timespantoseconds([DahlDesign.TCOffTimer]) == 0), 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "[GameRawData.Telemetry.dcTractionControl]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'red',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'white',\r\nif([DahlDesign.TCActive],'orange','transparent')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6785,8 +6428,7 @@
                   "Formula": {
                     "Expression": "if (!([GameRawData.Telemetry.dcTractionControlToggle] || timespantoseconds([DahlDesign.TCOffTimer]) == 0), 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6821,15 +6463,13 @@
                   "Formula": {
                     "Expression": "timespantoseconds([DahlDesign.TCOffTimer])"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "timespantoseconds([DahlDesign.TCOffTimer]) > 0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -6862,20 +6502,17 @@
                   "Formula": {
                     "Expression": "\r\nif([ABSActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([ABSActive],'white',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\n'white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": { "Expression": "[ABSLevel]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
                     "Expression": "\r\n\tif([ABSActive] = 1 and [PitLimiterOn] = 1,'white',\r\n\tif([ABSActive],'deepskyblue',\r\n\tif(![ABSActive],'transparent', 'transparent')))\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -6903,8 +6540,7 @@
                   "Formula": {
                     "Expression": "\r\nif([ABSActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([ABSActive],'white',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\n'white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -7043,7 +6679,6 @@
               "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "Porsche 919",
           "RenderingSkip": 0,
@@ -7053,18 +6688,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] = 'Porsche 919'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": -30.0,
-          "Left": 0.0,
-          "Height": 631.0,
-          "Width": 450.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7084,20 +6715,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -7144,27 +6772,23 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "FontSize": {
                   "Formula": {
                     "Expression": "if([DahlDesign.SmoothGear]='N', 410, 430)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "FontSize"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -7191,15 +6815,13 @@
                 "Text": {
                   "FormatString": "0.0",
                   "Formula": { "Expression": "[BrakeBias]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\nif (changed(2000,[BrakeBias]), 'deepskyblue','white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -7226,8 +6848,7 @@
                   "Formula": {
                     "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([DahlDesign.OvertakeMode] && [IsInPit] = 0 && [PitLimiterOn] = 0, 'lawngreen','transparent'),\r\n\t\r\nif ([DahlDesign.DRSCount] = 0, 'red', \r\nif ([PitLimiterOn] = 1, 'transparent',\r\nif ([IsInPit] = 1, 'transparent',\r\nif ([DahlDesign.OvertakeMode], 'lawngreen', 'transparent')))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -7255,8 +6876,7 @@
                   "Formula": {
                     "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([IsInPit] = 1, 'black',\r\n\tif ([DahlDesign.OvertakeMode] && [IsInPit] = 0 && [PitLimiterOn] = 0, 'black','white')),\r\n\t\r\nif ([DahlDesign.DRSCount] = 0, 'white', \r\nif ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black',\r\nif ([DahlDesign.OvertakeMode], 'black', 'white')))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -7284,20 +6904,17 @@
                   "Formula": {
                     "Expression": "if ([SessionTypeName] != 'Race', \r\n\tif ([IsInPit] = 1, 'black',\r\n\tif ([DahlDesign.OvertakeMode] && [IsInPit] = 0 && [PitLimiterOn] = 0, 'black','white')),\r\n\t\r\nif ([DahlDesign.DRSCount] = 0, 'white', \r\nif ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black',\r\nif ([DahlDesign.OvertakeMode], 'black', 'white')))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "if ([SessionTypeName] = 'Race', [DahlDesign.DRSCount], '-')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "Formula Renault 3.5",
           "RenderingSkip": 0,
@@ -7307,18 +6924,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] = 'FR3.5'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": 0.0,
-          "Left": 0.0,
-          "Height": 598.0,
-          "Width": 456.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7338,20 +6951,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -7398,27 +7008,23 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "FontSize": {
                   "Formula": {
                     "Expression": "if([DahlDesign.SmoothGear]='N' || [DahlDesign.SmoothGear]='R', 360, 410)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "FontSize"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -7445,25 +7051,20 @@
                 "Text": {
                   "FormatString": "0.0",
                   "Formula": { "Expression": "[BrakeBias]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\nif (changed(2000,[BrakeBias]), 'deepskyblue','white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 0.0,
-              "Left": 0.0,
-              "Height": 598.0,
-              "Width": 80.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": true,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -7748,20 +7349,17 @@
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.dcAntiRollRear]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "Top": {
                       "Formula": {
                         "Expression": "if([DahlDesign.ARBstiffForward],\r\n12+(12-isnull([GameRawData.Telemetry.dcAntiRollRear],0))*46,\r\n12+(isnull([GameRawData.Telemetry.dcAntiRollRear],0)-1)*46)\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Top"
+                      "Mode": 2
                     }
                   }
                 }
               ],
-              "Group": true,
               "Visible": true,
               "Name": "ARB rear",
               "RenderingSkip": 0,
@@ -7769,18 +7367,14 @@
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ARBswapped]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 0.0,
-              "Left": 76.0,
-              "Height": 598.0,
-              "Width": 80.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": true,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -8065,20 +7659,17 @@
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.dcAntiRollFront]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "Top": {
                       "Formula": {
                         "Expression": "if([DahlDesign.ARBstiffForward],\r\n12+(12-isnull([GameRawData.Telemetry.dcAntiRollFront],0))*46,\r\n12+(isnull([GameRawData.Telemetry.dcAntiRollFront],0)-1)*46)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Top"
+                      "Mode": 2
                     }
                   }
                 }
               ],
-              "Group": true,
               "Visible": true,
               "Name": "ARB front",
               "RenderingSkip": 0,
@@ -8086,18 +7677,14 @@
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ARBswapped]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 0.0,
-              "Left": 76.0,
-              "Height": 598.0,
-              "Width": 80.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": true,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -8382,20 +7969,17 @@
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.dcAntiRollRear]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "Top": {
                       "Formula": {
                         "Expression": "if([DahlDesign.ARBstiffForward],\r\n12+(12-isnull([GameRawData.Telemetry.dcAntiRollRear],0))*46,\r\n12+(isnull([GameRawData.Telemetry.dcAntiRollRear],0)-1)*46)"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Top"
+                      "Mode": 2
                     }
                   }
                 }
               ],
-              "Group": true,
               "Visible": false,
               "Name": "ARB rear2",
               "RenderingSkip": 0,
@@ -8403,18 +7987,14 @@
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.ARBswapped]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 0.0,
-              "Left": 0.0,
-              "Height": 598.0,
-              "Width": 80.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": true,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -8699,20 +8279,17 @@
                       "Formula": {
                         "Expression": "[GameRawData.Telemetry.dcAntiRollFront]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     },
                     "Top": {
                       "Formula": {
                         "Expression": "if([DahlDesign.ARBstiffForward],\r\n12+(12-isnull([GameRawData.Telemetry.dcAntiRollFront],0))*46,\r\n12+(isnull([GameRawData.Telemetry.dcAntiRollFront],0)-1)*46)\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Top"
+                      "Mode": 2
                     }
                   }
                 }
               ],
-              "Group": true,
               "Visible": false,
               "Name": "ARB front2",
               "RenderingSkip": 0,
@@ -8720,13 +8297,11 @@
               "Bindings": {
                 "Visible": {
                   "Formula": { "Expression": "[DahlDesign.ARBswapped]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "Supercar",
           "RenderingSkip": 0,
@@ -8736,18 +8311,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] = 'Supercar'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": -104.0,
-          "Left": -2.8421709430404007e-14,
-          "Height": 704.0,
-          "Width": 450.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
@@ -8776,23 +8347,16 @@
               "Bindings": {
                 "Minimum": {
                   "Formula": { "Expression": "[CarSettings_RedLineRPM]*0.75" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Minimum"
+                  "Mode": 2
                 },
                 "Maximum": {
                   "Formula": { "Expression": "[CarSettings_RedLineRPM]*0.85" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Maximum"
+                  "Mode": 2
                 },
-                "Value": {
-                  "Formula": { "Expression": "[Rpms]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Value"
-                },
+                "Value": { "Formula": { "Expression": "[Rpms]" }, "Mode": 2 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -8823,23 +8387,16 @@
               "Bindings": {
                 "Minimum": {
                   "Formula": { "Expression": "[CarSettings_RedLineRPM]*0.85" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Minimum"
+                  "Mode": 2
                 },
                 "Maximum": {
                   "Formula": { "Expression": "[CarSettings_RedLineRPM]*0.95" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Maximum"
+                  "Mode": 2
                 },
-                "Value": {
-                  "Formula": { "Expression": "[Rpms]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Value"
-                },
+                "Value": { "Formula": { "Expression": "[Rpms]" }, "Mode": 2 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -8870,23 +8427,16 @@
               "Bindings": {
                 "Maximum": {
                   "Formula": { "Expression": "[CarSettings_RedLineRPM]*1.02" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Maximum"
+                  "Mode": 2
                 },
                 "Minimum": {
                   "Formula": { "Expression": "[CarSettings_RedLineRPM]*0.95" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Minimum"
+                  "Mode": 2
                 },
-                "Value": {
-                  "Formula": { "Expression": "[Rpms]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Value"
-                },
+                "Value": { "Formula": { "Expression": "[Rpms]" }, "Mode": 2 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -8907,20 +8457,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -8947,20 +8494,17 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Orange','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -8984,7 +8528,6 @@
               "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "Rally",
           "RenderingSkip": 0,
@@ -8994,18 +8537,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] = 'Rally'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": -79.0,
-          "Left": 0.0,
-          "Height": 704.0,
-          "Width": 450.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -9024,20 +8563,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -9064,20 +8600,17 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -9104,8 +8637,7 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'red',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'white',\r\nif([DahlDesign.TCActive],'orange','transparent')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -9133,8 +8665,7 @@
                   "Formula": {
                     "Expression": "if (!([GameRawData.Telemetry.dcTractionControlToggle] || timespantoseconds([DahlDesign.TCOffTimer]) == 0), 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -9162,15 +8693,13 @@
                   "Formula": {
                     "Expression": "if (!([GameRawData.Telemetry.dcTractionControlToggle] || timespantoseconds([DahlDesign.TCOffTimer]) == 0), 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "[GameRawData.Telemetry.dcTractionControl]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -9203,15 +8732,13 @@
                   "Formula": {
                     "Expression": "timespantoseconds([DahlDesign.TCOffTimer])"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "timespantoseconds([DahlDesign.TCOffTimer]) > 0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -9258,8 +8785,7 @@
                   "Formula": {
                     "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -9287,16 +8813,14 @@
                   "Formula": {
                     "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "FormatString": "0.0",
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.BrakeBias]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -9323,8 +8847,7 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'red',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'white',\r\nif([DahlDesign.TCActive],'orange','transparent')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -9352,8 +8875,7 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -9381,15 +8903,13 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "[GameRawData.Telemetry.dcTractionControl2]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -9416,8 +8936,7 @@
                   "Formula": {
                     "Expression": "[SessionTypeName] = 'Race'\r\n&&\r\n[DahlDesign.Position] >= 2"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -9445,22 +8964,19 @@
                   "Formula": {
                     "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "[SessionTypeName] = 'Race'\r\n&&\r\n[DahlDesign.Position] >= 2"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "'P' \r\n+\r\nformat([DahlDesign.Position]-1,1)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -9488,23 +9004,20 @@
                   "Formula": {
                     "Expression": "if ([PitLimiterOn] = 1, 'white',\r\nif ([IsInPit] = 1, 'black','white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "FormatString": "0.0",
                   "Formula": {
                     "Expression": "if([DahlDesign.AheadRealGap] < -100, format([DahlDesign.AheadRealGap],'0'),[DahlDesign.AheadRealGap])"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "[SessionTypeName] = 'Race'\r\n&&\r\n[DahlDesign.Position] >= 2"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -9529,7 +9042,6 @@
               "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "Dallara LMP2",
           "RenderingSkip": 0,
@@ -9539,18 +9051,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] =  'Dallara LMP2'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": -79.0,
-          "Left": 0.0,
-          "Height": 704.0,
-          "Width": 450.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -9569,20 +9077,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -9609,20 +9114,17 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -9649,8 +9151,7 @@
                   "Formula": {
                     "Expression": "if ([DahlDesign.ABSToggle],\r\n\tif([ABSActive] = 1 and [PitLimiterOn] = 1,'white',\r\n\tif([ABSActive],'deepskyblue',\r\n\tif(![ABSActive],'transparent', 'transparent'))),\r\n'red')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -9678,8 +9179,7 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.ABSToggle], 'white',\r\nif([ABSActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([ABSActive],'white',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\n'white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -9707,23 +9207,15 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.ABSToggle], 'white',\r\nif([ABSActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([ABSActive],'white',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\n'white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
-                "Text": {
-                  "Formula": { "Expression": "[ABSLevel]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
-                }
+                "Text": { "Formula": { "Expression": "[ABSLevel]" }, "Mode": 2 }
               }
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 442.0,
-              "Left": 316.0,
-              "Height": 175.0,
-              "Width": 133.0,
-              "BackgroundColor": "#00FFFFFF",
+              "Group": false,
+              "Repetitions": 0,
               "Childrens": [
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -9748,8 +9240,7 @@
                       "Formula": {
                         "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh], 'transparent',\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'white',\r\n\tif ([IsInPit] = 1, 'black', 'yellow')),\r\n'lawngreen'))"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "BackgroundColor"
+                      "Mode": 2
                     }
                   }
                 },
@@ -9777,8 +9268,7 @@
                       "Formula": {
                         "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh],  if ([IsInPit] = 1 && [PitLimiterOn] = 0, 'black','white'),\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPit] = 1, 'yellow','black')),\r\n'black'))\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     }
                   }
                 },
@@ -9806,20 +9296,17 @@
                       "Formula": {
                         "Expression": "if ([DahlDesign.MapHigh] = -1 || [DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapHigh],  if ([IsInPit] = 1 && [PitLimiterOn] = 0, 'black','white'),\r\n\r\nif ([DataCorePlugin.GameRawData.Telemetry.dcFuelMixture] = [DahlDesign.MapLow], \r\n\tif ([PitLimiterOn] = 1, 'deepskyblue',\r\n\tif ([IsInPit] = 1, 'yellow','black')),\r\n'black'))\r\n\r\n"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "TextColor"
+                      "Mode": 2
                     },
                     "Text": {
                       "Formula": {
                         "Expression": "[DataCorePlugin.GameRawData.Telemetry.dcFuelMixture]"
                       },
-                      "Mode": 2,
-                      "TargetPropertyName": "Text"
+                      "Mode": 2
                     }
                   }
                 }
               ],
-              "Group": false,
               "Visible": true,
               "Name": "MapframeDefault",
               "RenderingSkip": 0,
@@ -9829,8 +9316,7 @@
                   "Formula": {
                     "Expression": "[DahlDesign.MenuType]  != 'Audi R8 GT3'"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -9877,8 +9363,7 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'red',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'white',\r\nif([DahlDesign.TCActive],'orange','transparent')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -9906,8 +9391,7 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -9935,15 +9419,13 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "[GameRawData.Telemetry.dcTractionControl]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -9976,15 +9458,13 @@
                   "Formula": {
                     "Expression": "timespantoseconds([DahlDesign.TCOffTimer])"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": {
                     "Expression": "timespantoseconds([DahlDesign.TCOffTimer]) > 0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -10011,8 +9491,7 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'red',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'white',\r\nif([DahlDesign.TCActive],'orange','transparent')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -10040,8 +9519,7 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -10069,15 +9547,13 @@
                   "Formula": {
                     "Expression": "if (![DahlDesign.TCToggle], 'white',\r\nif([DahlDesign.TCActive] and [PitLimiterOn]=1, 'deepskyblue',\r\nif([DahlDesign.TCActive],'black',\r\nif([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "[GameRawData.Telemetry.dcTractionControl2]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -10104,20 +9580,17 @@
                 "Text": {
                   "FormatString": "0.0",
                   "Formula": { "Expression": "[BrakeBias]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, \r\n\t'black',\r\nif([PitLimiterOn]=0, \r\n\tif (changed(2000,[BrakeBias]), 'deepskyblue','white'), 'white'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "Porsche 911 GT3R",
           "RenderingSkip": 0,
@@ -10127,18 +9600,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] = 'Porsche GT3R'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": 0.0,
-          "Left": 0.0,
-          "Height": 598.0,
-          "Width": 450.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -10157,20 +9626,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -10191,8 +9657,7 @@
                   "Formula": {
                     "Expression": "if ([DahlDesign.SF23.OTCooldownActive], 'red', 'transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -10221,15 +9686,13 @@
                   "Formula": {
                     "Expression": "[DahlDesign.SF23.OTCooldownTimer]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if(([PitLimiterOn]=0 and [IsInPitLane]=1), 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -10256,27 +9719,23 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','Yellow',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "FontSize": {
                   "Formula": {
                     "Expression": "if([DahlDesign.SmoothGear]='N', 400, 440)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "FontSize"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -10310,8 +9769,7 @@
                   "Formula": {
                     "Expression": "[DahlDesign.SF23.OTCooldownTimer]\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Value"
+                  "Mode": 2
                 }
               }
             },
@@ -10332,8 +9790,7 @@
                   "Formula": {
                     "Expression": "if ([DahlDesign.SF23.OTActive], 'deepskyblue', 'transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -10360,15 +9817,13 @@
                 "Text": {
                   "FormatString": "0",
                   "Formula": { "Expression": "[DahlDesign.SF23.OTTimeLeft]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if(([PitLimiterOn]=0 and [IsInPitLane]=1) || [DahlDesign.SF23.OTActive], 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -10399,15 +9854,13 @@
               "Bindings": {
                 "Value": {
                   "Formula": { "Expression": "[DahlDesign.SF23.OTTimeLeft]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Value"
+                  "Mode": 2
                 },
                 "GaugeColor": {
                   "Formula": {
                     "Expression": "if([DahlDesign.PitBoxPosition] > 0, 'transparent',\r\nif([DahlDesign.SF23.OTAllowed] && ![DahlDesign.SF23.OTActive], 'lawngreen',\r\nif([DahlDesign.SF23.OTActive], 'deepskyblue',\r\nif([DahlDesign.SF23.OTCooldownActive], 'red',\r\nif(![DahlDesign.SF23.OTAllowed], 'red',\r\n'darkgray')))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "GaugeColor"
+                  "Mode": 2
                 }
               }
             },
@@ -10435,8 +9888,7 @@
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -10464,8 +9916,7 @@
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -10493,15 +9944,13 @@
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "'LC ' + [GameRawData.Telemetry.dcTractionControl]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -10529,15 +9978,13 @@
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "Text": {
                   "Formula": {
                     "Expression": "'THR ' + [GameRawData.Telemetry.dcThrottleShape]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -10565,8 +10012,7 @@
                   "Formula": {
                     "Expression": "52 + (542 * ([CompletedLaps]+[GameRawData.Telemetry.LapDistPct])/([CompletedLaps] + [DahlDesign.LapsRemaining] + 1))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Top"
+                  "Mode": 2
                 }
               }
             },
@@ -10726,23 +10172,21 @@
                 "Text": {
                   "FormatString": "0.0",
                   "Formula": {
+                    "JSExt": 3,
                     "Interpreter": 1,
                     "Expression": "return $prop('BrakeBias')\r\n\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\nif ([PitLimiterOn] = 1, 'white',\r\nif (changed(2000,[BrakeBias]), 'deepskyblue','white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             }
           ],
-          "Group": false,
           "Visible": false,
           "Name": "SF23",
           "RenderingSkip": 0,
@@ -10752,18 +10196,14 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] = 'SF23'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": 0.0,
-          "Left": 0.0,
-          "Height": 598.0,
-          "Width": 450.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": false,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -10782,20 +10222,17 @@
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','yellow'),if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'deepskyblue','transparent'))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 },
                 "BlinkEnabled": {
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=0\r\nand \r\n[DataCorePlugin.GameData.NewData.PitLimiterOn]>0"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BlinkEnabled"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -10816,8 +10253,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.DRS_Status],0) > 0, 'lawngreen','transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -10847,15 +10283,13 @@
                   "Formula": {
                     "Expression": "100*isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct], 0)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if(([PitLimiterOn]=0 and [IsInPitLane]=1) || isnull([GameRawData.Telemetry.DRS_Status],0) > 0, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -10882,27 +10316,23 @@
               "Bindings": {
                 "Text": {
                   "Formula": { "Expression": "[DahlDesign.SmoothGear]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "If([DataCorePlugin.GameData.NewData.IsInPit]>0,if([DataCorePlugin.GameData.NewData.PitLimiterOn]>0,'white','black'),if([DataCorePlugin.GameData.NewData.PitLimiterOn],'white',if([DahlDesign.SmoothGear]=='N','white',if([DahlDesign.SmoothGear]=='R','Red','white'))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "FontSize": {
                   "Formula": {
                     "Expression": "if([DahlDesign.SmoothGear]='N', 370, 420)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "FontSize"
+                  "Mode": 2
                 },
                 "Visible": {
                   "Formula": { "Expression": "![DahlDesign.ShowMapEnabled]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 }
               }
             },
@@ -10936,15 +10366,13 @@
                   "Formula": {
                     "Expression": "isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct],0)*100\r\n\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Value"
+                  "Mode": 2
                 },
                 "GaugeColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn] = 1, 'white',\r\nif([IsInPit] = 1, 'black',\r\nif(isnull([DataCorePlugin.GameRawData.Telemetry.EnergyERSBatteryPct],0)*100 < 25, 'red','white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "GaugeColor"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
@@ -10957,8 +10385,7 @@
                   "EndColor": "#FFFF0000",
                   "StartColorValue": 0.0,
                   "EndColorValue": 2.0,
-                  "Mode": 4,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 4
                 }
               }
             },
@@ -10987,8 +10414,7 @@
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11009,8 +10435,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.DRS_Status],0) > 1, 'lawngreen','transparent')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11040,15 +10465,13 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 0, 'OFF',\r\nif (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 1, 'QLY',\r\nif (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 2, 'ATK',\r\nif (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 3, 'BAL', 'ECO'))))\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if(([PitLimiterOn]=0 and [IsInPitLane]=1) || isnull([GameRawData.Telemetry.DRS_Status],0) > 1, 'black','white')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11070,8 +10493,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 4, 'lawngreen', 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11093,8 +10515,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 3, 'deepskyblue', 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11116,8 +10537,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 2, 'red', 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11139,8 +10559,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 1, 'fuchsia', 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11161,8 +10580,7 @@
                   "Formula": {
                     "Expression": "if (isnull([GameRawData.Telemetry.dcMGUKDeployMode],0) = 0, 'orange', 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11288,8 +10706,7 @@
                   "Formula": {
                     "Expression": "if ([DahlDesign.ERSCharges] = 4, \t\r\n\tif ([Rpms] > 300 && [SpeedKmh] < 75, 'fuchsia', 'Lawngreen'), 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11320,8 +10737,7 @@
                   "Formula": {
                     "Expression": "if ([DahlDesign.ERSCharges] > 2, \r\n\tif ([Rpms] > 300 && [SpeedKmh] < 75, 'fuchsia', 'Lawngreen'), 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11352,8 +10768,7 @@
                   "Formula": {
                     "Expression": "if ([DahlDesign.ERSCharges] > 1,\r\n\tif ([Rpms] > 300 && [SpeedKmh] < 75, 'fuchsia', 'Lawngreen'), 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11384,8 +10799,7 @@
                   "Formula": {
                     "Expression": "if ([DahlDesign.ERSCharges] > 0,\r\n\tif ([Rpms] > 300 && [SpeedKmh] < 75, 'fuchsia', 'Lawngreen'), 'black')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11412,15 +10826,13 @@
                   "Formula": {
                     "Expression": "isnull([GameRawData.Telemetry.dcBrakeMisc],0) = 1 || [DahlDesign.DRSState] = 'Open'"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Visible"
+                  "Mode": 2
                 },
                 "BackgroundColor": {
                   "Formula": {
                     "Expression": "if ([DahlDesign.DRSState] = 'Open', 'lawngreen', 'red')\r\n"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "BackgroundColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11449,15 +10861,13 @@
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameRawData.Telemetry.dcTractionControl2]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1 ||  isnull([GameRawData.Telemetry.DRS_Status],0) > 2, 'black',\r\nif([PitLimiterOn]=1, 'white',\r\nif (changed([GameRawData.Telemetry.dcDiffEntry],2000), 'deepskyblue','white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11485,15 +10895,13 @@
                   "Formula": {
                     "Expression": "[DataCorePlugin.GameRawData.Telemetry.dcTractionControl]"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1  ||  isnull([GameRawData.Telemetry.DRS_Status],0) > 2, 'black',\r\nif([PitLimiterOn]=1, 'white',\r\nif (changed([GameRawData.Telemetry.dcDiffMiddle],2000), 'deepskyblue','white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11520,15 +10928,13 @@
                 "Text": {
                   "FormatString": "0.0",
                   "Formula": { "Expression": "[BrakeBias]" },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
                     "Expression": "if([PitLimiterOn]=0 and [IsInPitLane]=1, 'black',\r\nif ([PitLimiterOn] = 1, 'white',\r\nif (changed(2000,[BrakeBias]), 'deepskyblue','white')))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 }
               }
             },
@@ -11591,8 +10997,7 @@
               "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": false,
-          "Visible": true,
+          "Visible": false,
           "Name": "BMW LMDh",
           "RenderingSkip": 0,
           "MinimumRefreshIntervalMS": 0.0,
@@ -11601,8 +11006,7 @@
               "Formula": {
                 "Expression": "[DahlDesign.CenterDashType] = 'BMW LMDh'"
               },
-              "Mode": 2,
-              "TargetPropertyName": "Visible"
+              "Mode": 2
             }
           }
         }
@@ -11620,6 +11024,7 @@
   "GridSize": 10,
   "Images": [],
   "Metadata": {
+    "SimHubVersion": "9.1.24",
     "Title": "HYS + DRS",
     "ScreenCount": 1.0,
     "InGameScreensIndexs": [0],
