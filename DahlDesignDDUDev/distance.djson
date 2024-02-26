@@ -714,7 +714,7 @@
             },
             "Visible": {
               "Formula": {
-                "Expression": "not([GameRawData.Telemetry.LapDistPct] < (50/if([TrackLength]=0,1,[TrackLength])))\r\nor\r\n[IsInPitLane] = 1"
+                "Expression": "not([GameRawData.Telemetry.LapDistPct] < (50/if([TrackLength]=0,1,[TrackLength])))\r\nor\r\n[IsInPit] = 1"
               },
               "Mode": 2,
               "TargetPropertyName": "Visible"

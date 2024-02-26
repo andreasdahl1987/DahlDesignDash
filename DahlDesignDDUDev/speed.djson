@@ -256,7 +256,7 @@
           "Bindings": {
             "Visible": {
               "Formula": {
-                "Expression": "[DataCorePlugin.GameData.NewData.IsInPitLane]=1"
+                "Expression": "[DataCorePlugin.GameData.NewData.IsInPit]=1"
               },
               "Mode": 2,
               "TargetPropertyName": "Visible"
