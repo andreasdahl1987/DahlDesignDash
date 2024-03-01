@@ -1,8 +1,10 @@
 {
-  "Variables": { "DashboardVariables": [] },
+  "Variables": {
+    "DashboardVariables": []
+  },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "de4bcaa6-b99a-4ab4-acdf-cb3664366501",
+  "Id": "96a0d205-a182-41da-9b39-77d22c0c13cb",
   "BaseHeight": 768,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
@@ -17,8 +19,12 @@
       "AllowOverlays": true,
       "IsForegroundLayer": false,
       "IsOverlayLayer": false,
-      "OverlayTriggerExpression": { "Expression": "" },
-      "ScreenEnabledExpression": { "Expression": "" },
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
       "OverlayMaxDuration": 0,
       "OverlayMinDuration": 0,
       "IsBackgroundLayer": false,
@@ -41,7 +47,9 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -72,8 +80,12 @@
       "AllowOverlays": true,
       "IsForegroundLayer": false,
       "IsOverlayLayer": false,
-      "OverlayTriggerExpression": { "Expression": "" },
-      "ScreenEnabledExpression": { "Expression": "" },
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
       "OverlayMaxDuration": 0,
       "OverlayMinDuration": 0,
       "IsBackgroundLayer": false,
@@ -82,7 +94,9 @@
       "Items": [
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -102,7 +116,9 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -122,7 +138,9 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 2,
           "PreviousScreenCommand": 1,
           "AutoSize": true,
@@ -142,7 +160,9 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -162,7 +182,9 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 5,
           "PreviousScreenCommand": 4,
           "AutoSize": true,
@@ -182,7 +204,9 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -202,7 +226,9 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -222,7 +248,9 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -233,7 +261,7 @@
           "BackgroundColor": "#00FFFFFF",
           "Height": 598.0,
           "Left": 424.0,
-          "Top": 88.0,
+          "Top": 92.0,
           "Visible": false,
           "Width": 450.0,
           "Name": "BrakeAndThrottleCenter",
@@ -250,7 +278,9 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -286,7 +316,9 @@
                 "ProfilesCycleMode": 0,
                 "Profiles": [
                   {
-                    "EmbeddedJsExtension": { "FileName": "" },
+                    "EmbeddedJsExtension": {
+                      "FileName": ""
+                    },
                     "GlobalBrightness": 50.0,
                     "LedContainers": [
                       {
@@ -422,14 +454,18 @@
           "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
-              "Formula": { "Expression": "[DahlDesign.DashLEDEnabled]" },
+              "Formula": {
+                "Expression": "[DahlDesign.DashLEDEnabled]"
+              },
               "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -449,7 +485,9 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -538,7 +576,9 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-              "Variables": { "DashboardVariables": [] },
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
@@ -575,7 +615,9 @@
               "HorizontalAlignment": 1,
               "VerticalAlignment": 1,
               "BackgroundColor": "#FFFF00FF",
-              "BorderStyle": { "BorderBottom": 6 },
+              "BorderStyle": {
+                "BorderBottom": 6
+              },
               "Height": 106.0,
               "Left": 0.0,
               "Top": -6.0,
@@ -607,7 +649,9 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-              "Variables": { "DashboardVariables": [] },
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
@@ -709,7 +753,9 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-              "Variables": { "DashboardVariables": [] },
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
@@ -728,14 +774,18 @@
               "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "[DahlDesign.PitBoxApproach]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.PitBoxApproach]"
+                  },
                   "Mode": 2
                 }
               }
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-              "Variables": { "DashboardVariables": [] },
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
@@ -754,7 +804,9 @@
               "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "[DahlDesign.TrackEntry]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.TrackEntry]"
+                  },
                   "Mode": 2
                 }
               }
@@ -767,7 +819,9 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -845,7 +899,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFFF00FF",
-                  "BorderStyle": { "RadiusBottomLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 16.0,
                   "Top": 222.0,
@@ -928,7 +984,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFFF00FF",
-                  "BorderStyle": { "RadiusBottomRight": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomRight": 10
+                  },
                   "Height": 45.0,
                   "Left": 147.0,
                   "Top": 222.0,
@@ -1120,7 +1178,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FF7CFC00",
-                  "BorderStyle": { "RadiusBottomLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 26.0,
                   "Top": 404.0,
@@ -1203,7 +1263,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFADFF2F",
-                  "BorderStyle": { "RadiusBottomRight": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomRight": 10
+                  },
                   "Height": 45.0,
                   "Left": 148.0,
                   "Top": 404.0,
@@ -1406,7 +1468,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFFF00FF",
-                  "BorderStyle": { "RadiusBottomLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 356.0,
                   "Top": 222.0,
@@ -1489,7 +1553,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFFF00FF",
-                  "BorderStyle": { "RadiusBottomRight": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomRight": 10
+                  },
                   "Height": 45.0,
                   "Left": 488.0,
                   "Top": 222.0,
@@ -1531,7 +1597,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFADFF2F",
-                  "BorderStyle": { "RadiusBottomLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 366.0,
                   "Top": 404.0,
@@ -1614,7 +1682,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FF7CFC00",
-                  "BorderStyle": { "RadiusBottomRight": 10 },
+                  "BorderStyle": {
+                    "RadiusBottomRight": 10
+                  },
                   "Height": 45.0,
                   "Left": 488.0,
                   "Top": 404.0,
@@ -1667,7 +1737,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFC0C0C0",
-                  "BorderStyle": { "RadiusTopLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusTopLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 16.0,
                   "Top": 638.0,
@@ -1959,7 +2031,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FF7CFC00",
-                  "BorderStyle": { "RadiusTopLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusTopLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 26.0,
                   "Top": 456.0,
@@ -2042,7 +2116,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FF7CFC00",
-                  "BorderStyle": { "RadiusTopRight": 10 },
+                  "BorderStyle": {
+                    "RadiusTopRight": 10
+                  },
                   "Height": 45.0,
                   "Left": 148.0,
                   "Top": 456.0,
@@ -2245,7 +2321,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFC0C0C0",
-                  "BorderStyle": { "RadiusTopLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusTopLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 356.0,
                   "Top": 638.0,
@@ -2328,7 +2406,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FFC0C0C0",
-                  "BorderStyle": { "RadiusTopRight": 10 },
+                  "BorderStyle": {
+                    "RadiusTopRight": 10
+                  },
                   "Height": 45.0,
                   "Left": 488.0,
                   "Top": 638.0,
@@ -2370,7 +2450,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FF7CFC00",
-                  "BorderStyle": { "RadiusTopLeft": 10 },
+                  "BorderStyle": {
+                    "RadiusTopLeft": 10
+                  },
                   "Height": 45.0,
                   "Left": 366.0,
                   "Top": 456.0,
@@ -2453,7 +2535,9 @@
                   "HorizontalAlignment": 1,
                   "VerticalAlignment": 0,
                   "BackgroundColor": "#FF7CFC00",
-                  "BorderStyle": { "RadiusTopRight": 10 },
+                  "BorderStyle": {
+                    "RadiusTopRight": 10
+                  },
                   "Height": 45.0,
                   "Left": 488.0,
                   "Top": 456.0,
@@ -3068,7 +3152,9 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": { "Expression": "[WaterTemperature] >= 110" },
+                      "Formula": {
+                        "Expression": "[WaterTemperature] >= 110"
+                      },
                       "Mode": 2
                     }
                   }
@@ -3089,7 +3175,9 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": { "Expression": "[OilTemperature] < 110" },
+                      "Formula": {
+                        "Expression": "[OilTemperature] < 110"
+                      },
                       "Mode": 2
                     }
                   }
@@ -3110,7 +3198,9 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": { "Expression": "[WaterTemperature] < 110" },
+                      "Formula": {
+                        "Expression": "[WaterTemperature] < 110"
+                      },
                       "Mode": 2
                     }
                   }
@@ -3161,7 +3251,9 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": { "Expression": "[OilTemperature] >= 110" },
+                      "Formula": {
+                        "Expression": "[OilTemperature] >= 110"
+                      },
                       "Mode": 2
                     }
                   }
@@ -3243,7 +3335,9 @@
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
-                      "Formula": { "Expression": "[WaterTemperature]" },
+                      "Formula": {
+                        "Expression": "[WaterTemperature]"
+                      },
                       "Mode": 2
                     },
                     "TextColor": {
@@ -3275,7 +3369,9 @@
                   "Bindings": {
                     "Text": {
                       "FormatString": "0",
-                      "Formula": { "Expression": "[OilTemperature]" },
+                      "Formula": {
+                        "Expression": "[OilTemperature]"
+                      },
                       "Mode": 2
                     },
                     "TextColor": {
@@ -3294,7 +3390,9 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-              "Variables": { "DashboardVariables": [] },
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
@@ -3314,7 +3412,9 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-              "Variables": { "DashboardVariables": [] },
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
@@ -3342,7 +3442,9 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-              "Variables": { "DashboardVariables": [] },
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
@@ -3361,14 +3463,18 @@
               "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Visible": {
-                  "Formula": { "Expression": "[DahlDesign.PitBoxApproach]" },
+                  "Formula": {
+                    "Expression": "[DahlDesign.PitBoxApproach]"
+                  },
                   "Mode": 2
                 }
               }
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-              "Variables": { "DashboardVariables": [] },
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
@@ -3388,7 +3494,9 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-              "Variables": { "DashboardVariables": [] },
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
@@ -3409,7 +3517,9 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-              "Variables": { "DashboardVariables": [] },
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
@@ -3429,7 +3539,9 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-              "Variables": { "DashboardVariables": [] },
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
@@ -3515,7 +3627,9 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-              "Variables": { "DashboardVariables": [] },
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
@@ -3535,7 +3649,9 @@
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-              "Variables": { "DashboardVariables": [] },
+              "Variables": {
+                "DashboardVariables": []
+              },
               "NextScreenCommand": 0,
               "PreviousScreenCommand": 0,
               "AutoSize": true,
@@ -3716,7 +3832,9 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": { "Expression": "[DahlDesign.FuelAlert]" },
+                      "Formula": {
+                        "Expression": "[DahlDesign.FuelAlert]"
+                      },
                       "Mode": 2
                     }
                   }
@@ -4534,7 +4652,9 @@
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
-                      "Formula": { "Expression": "[DahlDesign.PitTimeFuel]" },
+                      "Formula": {
+                        "Expression": "[DahlDesign.PitTimeFuel]"
+                      },
                       "Mode": 2
                     }
                   }
@@ -4570,7 +4690,9 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": { "Expression": "[DahlDesign.PitToggleFuel]" },
+                      "Formula": {
+                        "Expression": "[DahlDesign.PitToggleFuel]"
+                      },
                       "Mode": 2
                     }
                   }
@@ -5118,14 +5240,18 @@
           "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
-              "Formula": { "Expression": "[DahlDesign.PitScreen]" },
+              "Formula": {
+                "Expression": "[DahlDesign.PitScreen]"
+              },
               "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -5154,7 +5280,9 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -5174,14 +5302,18 @@
           "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
-              "Formula": { "Expression": "[DahlDesign.PitBoxPosition] = 0" },
+              "Formula": {
+                "Expression": "[DahlDesign.PitBoxPosition] = 0"
+              },
               "Mode": 2
             }
           }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -5201,7 +5333,9 @@
           "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
-              "Formula": { "Expression": "[DahlDesign.LEDWarnings]" },
+              "Formula": {
+                "Expression": "[DahlDesign.LEDWarnings]"
+              },
               "Mode": 2
             }
           }
@@ -5372,7 +5506,9 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -5401,7 +5537,9 @@
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "Variables": { "DashboardVariables": [] },
+          "Variables": {
+            "DashboardVariables": []
+          },
           "NextScreenCommand": 0,
           "PreviousScreenCommand": 0,
           "AutoSize": true,
@@ -5421,7 +5559,9 @@
           "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
-              "Formula": { "Expression": "[DahlDesign.SW1Enabled]" },
+              "Formula": {
+                "Expression": "[DahlDesign.SW1Enabled]"
+              },
               "Mode": 2
             }
           }
@@ -5834,8 +5974,12 @@
     "Description": "Informative and simple",
     "Author": "Andreas Dahl",
     "ScreenCount": 2.0,
-    "InGameScreensIndexs": [1],
-    "IdleScreensIndexs": [0],
+    "InGameScreensIndexs": [
+      1
+    ],
+    "IdleScreensIndexs": [
+      0
+    ],
     "MainPreviewIndex": 1,
     "IsOverlay": false,
     "Width": 1280.0,
