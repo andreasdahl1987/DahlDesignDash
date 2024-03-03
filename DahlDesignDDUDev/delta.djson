@@ -11621,9 +11621,7 @@
     "SimHubVersion": "9.1.24",
     "Title": "Delta",
     "ScreenCount": 1.0,
-    "InGameScreensIndexs": [
-      0
-    ],
+    "InGameScreensIndexs": [0],
     "IdleScreensIndexs": [],
     "MainPreviewIndex": 0,
     "IsOverlay": false,
