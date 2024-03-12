@@ -1,10 +1,8 @@
 {
-  "Variables": {
-    "DashboardVariables": []
-  },
+  "Variables": { "DashboardVariables": [] },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "f9f56192-da9f-40b9-b857-6cddd4fdad19",
+  "Id": "4f0d0eaf-c960-4b4e-b9e6-3bc32e6cb7a6",
   "BaseHeight": 102,
   "BaseWidth": 410,
   "BackgroundColor": "#FF000000",
@@ -19,12 +17,8 @@
       "AllowOverlays": true,
       "IsForegroundLayer": false,
       "IsOverlayLayer": false,
-      "OverlayTriggerExpression": {
-        "Expression": ""
-      },
-      "ScreenEnabledExpression": {
-        "Expression": ""
-      },
+      "OverlayTriggerExpression": { "Expression": "" },
+      "ScreenEnabledExpression": { "Expression": "" },
       "OverlayMaxDuration": 0,
       "OverlayMinDuration": 0,
       "IsBackgroundLayer": false,
@@ -86,10 +80,7 @@
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                   "IsRectangleItem": true,
                   "BackgroundColor": "#00FFFFFF",
-                  "BorderStyle": {
-                    "BorderTop": 6,
-                    "BorderRight": 6
-                  },
+                  "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                   "Height": 102.0,
                   "Left": 0.0,
                   "Top": 0.0,
@@ -253,9 +244,7 @@
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
-                      "Formula": {
-                        "Expression": "[AirTemperature]"
-                      },
+                      "Formula": { "Expression": "[AirTemperature]" },
                       "Mode": 2
                     }
                   }
@@ -309,9 +298,7 @@
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
-                      "Formula": {
-                        "Expression": "[WaterTemperature]"
-                      },
+                      "Formula": { "Expression": "[WaterTemperature]" },
                       "Mode": 2
                     }
                   }
@@ -337,9 +324,7 @@
                   "Bindings": {
                     "Text": {
                       "FormatString": "0.0",
-                      "Formula": {
-                        "Expression": "[OilTemperature]"
-                      },
+                      "Formula": { "Expression": "[OilTemperature]" },
                       "Mode": 2
                     }
                   }
@@ -367,10 +352,7 @@
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                   "IsRectangleItem": true,
                   "BackgroundColor": "#00FFFFFF",
-                  "BorderStyle": {
-                    "BorderTop": 6,
-                    "BorderRight": 6
-                  },
+                  "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                   "Height": 102.0,
                   "Left": 0.0,
                   "Top": 0.0,
@@ -488,9 +470,7 @@
                   "VerticalAlignment": 1,
                   "TextMask": "0000000000",
                   "BackgroundColor": "#00FFFFFF",
-                  "BorderStyle": {
-                    "BorderColor": "#FF808080"
-                  },
+                  "BorderStyle": { "BorderColor": "#FF808080" },
                   "Height": 61.0,
                   "Left": 0.0,
                   "Top": 43.0,
@@ -800,10 +780,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -1454,9 +1431,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 1" },
                       "Mode": 2
                     }
                   }
@@ -1656,10 +1631,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -1715,9 +1687,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 2" },
                       "Mode": 2
                     }
                   }
@@ -1731,10 +1701,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -2077,9 +2044,7 @@
                       "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "Text": {
-                          "Formula": {
-                            "Expression": "[ABSLevel]"
-                          },
+                          "Formula": { "Expression": "[ABSLevel]" },
                           "Mode": 2
                         },
                         "Left": {
@@ -2141,9 +2106,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 3" },
                       "Mode": 2
                     }
                   }
@@ -2157,10 +2120,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -2566,9 +2526,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 4" },
                       "Mode": 2
                     }
                   }
@@ -2582,10 +2540,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -2621,9 +2576,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] =5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] =5" },
                       "Mode": 2
                     }
                   }
@@ -2637,10 +2590,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -2676,9 +2626,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 6" },
                       "Mode": 2
                     }
                   }
@@ -2692,10 +2640,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -2731,9 +2676,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
                       "Mode": 2
                     }
                   }
@@ -2747,10 +2690,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -2786,9 +2726,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
                       "Mode": 2
                     }
                   }
@@ -2802,10 +2740,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -2841,9 +2776,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
                       "Mode": 2
                     }
                   }
@@ -2857,10 +2790,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -2912,10 +2842,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -2986,10 +2913,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -3640,9 +3564,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 1" },
                       "Mode": 2
                     }
                   }
@@ -3656,10 +3578,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -3898,9 +3817,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 2" },
                       "Mode": 2
                     }
                   }
@@ -3930,9 +3847,7 @@
                       "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "BackgroundColor": {
-                          "Formula": {
-                            "Expression": "[TCLevel]"
-                          },
+                          "Formula": { "Expression": "[TCLevel]" },
                           "StartColor": "#FFFF0000",
                           "EnableMiddleColor": true,
                           "MiddleColor": "#00FFFFFF",
@@ -3943,9 +3858,7 @@
                           "Mode": 4
                         },
                         "TextColor": {
-                          "Formula": {
-                            "Expression": "[TCLevel]"
-                          },
+                          "Formula": { "Expression": "[TCLevel]" },
                           "StartColor": "#FFFFFFFF",
                           "EnableMiddleColor": true,
                           "MiddleColor": "#FFC0C0C0",
@@ -3977,9 +3890,7 @@
                       "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "BackgroundColor": {
-                          "Formula": {
-                            "Expression": "[TCLevel]"
-                          },
+                          "Formula": { "Expression": "[TCLevel]" },
                           "StartColor": "#00FFFFFF",
                           "EnableMiddleColor": true,
                           "MiddleColor": "#FFFFFF00",
@@ -3990,9 +3901,7 @@
                           "Mode": 4
                         },
                         "TextColor": {
-                          "Formula": {
-                            "Expression": "[TCLevel]"
-                          },
+                          "Formula": { "Expression": "[TCLevel]" },
                           "StartColor": "#FFC0C0C0",
                           "EnableMiddleColor": true,
                           "MiddleColor": "#FF000000",
@@ -4024,9 +3933,7 @@
                       "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "BackgroundColor": {
-                          "Formula": {
-                            "Expression": "[TCLevel]"
-                          },
+                          "Formula": { "Expression": "[TCLevel]" },
                           "StartColor": "#00FFFFFF",
                           "EnableMiddleColor": true,
                           "MiddleColor": "#00FFFFFF",
@@ -4037,9 +3944,7 @@
                           "Mode": 4
                         },
                         "TextColor": {
-                          "Formula": {
-                            "Expression": "[TCLevel]"
-                          },
+                          "Formula": { "Expression": "[TCLevel]" },
                           "StartColor": "#FFC0C0C0",
                           "EnableMiddleColor": true,
                           "MiddleColor": "#FFC0C0C0",
@@ -4055,10 +3960,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -4114,9 +4016,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 3" },
                       "Mode": 2
                     }
                   }
@@ -4130,10 +4030,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -4169,9 +4066,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 4" },
                       "Mode": 2
                     }
                   }
@@ -4185,10 +4080,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -4224,9 +4116,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 5" },
                       "Mode": 2
                     }
                   }
@@ -4240,10 +4130,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -4279,9 +4166,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 6" },
                       "Mode": 2
                     }
                   }
@@ -4295,10 +4180,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -4334,9 +4216,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
                       "Mode": 2
                     }
                   }
@@ -4350,10 +4230,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -4389,9 +4266,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
                       "Mode": 2
                     }
                   }
@@ -4405,10 +4280,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -4444,9 +4316,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
                       "Mode": 2
                     }
                   }
@@ -4460,10 +4330,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -4515,10 +4382,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -4589,10 +4453,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -5247,9 +5108,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 1" },
                       "Mode": 2
                     }
                   }
@@ -5263,10 +5122,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -5720,9 +5576,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 2" },
                       "Mode": 2
                     }
                   }
@@ -5736,10 +5590,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -5776,9 +5627,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 3" },
                       "Mode": 2
                     }
                   }
@@ -5792,10 +5641,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -6161,9 +6007,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 4" },
                       "Mode": 2
                     }
                   }
@@ -6177,10 +6021,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -6546,9 +6387,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 5" },
                       "Mode": 2
                     }
                   }
@@ -6562,10 +6401,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -6601,9 +6437,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 6" },
                       "Mode": 2
                     }
                   }
@@ -6617,10 +6451,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -6656,9 +6487,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
                       "Mode": 2
                     }
                   }
@@ -6672,10 +6501,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -6711,9 +6537,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
                       "Mode": 2
                     }
                   }
@@ -6727,10 +6551,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -6766,9 +6587,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
                       "Mode": 2
                     }
                   }
@@ -6782,10 +6601,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -6837,10 +6653,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -7354,10 +7167,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -8008,9 +7818,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=1" },
                       "Mode": 2
                     }
                   }
@@ -8024,10 +7832,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -8373,9 +8178,7 @@
                       "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "Text": {
-                          "Formula": {
-                            "Expression": "[ABSLevel]"
-                          },
+                          "Formula": { "Expression": "[ABSLevel]" },
                           "Mode": 2
                         },
                         "Left": {
@@ -8431,9 +8234,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=2" },
                       "Mode": 2
                     }
                   }
@@ -8447,10 +8248,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -8854,9 +8652,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=3" },
                       "Mode": 2
                     }
                   }
@@ -8870,10 +8666,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -9239,9 +9032,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=4" },
                       "Mode": 2
                     }
                   }
@@ -9255,10 +9046,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -9683,9 +9471,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=5" },
                       "Mode": 2
                     }
                   }
@@ -9699,10 +9485,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -9755,9 +9538,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=6" },
                       "Mode": 2
                     }
                   }
@@ -9771,10 +9552,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -10102,9 +9880,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=7" },
                       "Mode": 2
                     }
                   }
@@ -10118,10 +9894,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -10381,9 +10154,7 @@
                       "HorizontalAlignment": 1,
                       "VerticalAlignment": 1,
                       "BackgroundColor": "#FF000000",
-                      "BorderStyle": {
-                        "BorderColor": "#FFFFA500"
-                      },
+                      "BorderStyle": { "BorderColor": "#FFFFA500" },
                       "Height": 34.0,
                       "Left": 100.0,
                       "Top": 10.0,
@@ -10452,9 +10223,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=8" },
                       "Mode": 2
                     }
                   }
@@ -10468,10 +10237,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -10799,9 +10565,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=9" },
                       "Mode": 2
                     }
                   }
@@ -10815,10 +10579,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -11146,9 +10907,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=10"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=10" },
                       "Mode": 2
                     }
                   }
@@ -11162,10 +10921,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -11471,9 +11227,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=11"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=11" },
                       "Mode": 2
                     }
                   }
@@ -11506,10 +11260,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -12160,9 +11911,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 1" },
                       "Mode": 2
                     }
                   }
@@ -12210,10 +11959,7 @@
                       "HorizontalAlignment": 1,
                       "VerticalAlignment": 1,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 2,
-                        "BorderRight": 2
-                      },
+                      "BorderStyle": { "BorderTop": 2, "BorderRight": 2 },
                       "Height": 60.0,
                       "Left": 0.0,
                       "Top": 38.0,
@@ -12248,10 +11994,7 @@
                       "HorizontalAlignment": 1,
                       "VerticalAlignment": 1,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 2,
-                        "BorderRight": 2
-                      },
+                      "BorderStyle": { "BorderTop": 2, "BorderRight": 2 },
                       "Height": 60.0,
                       "Left": 48.0,
                       "Top": 38.0,
@@ -12286,10 +12029,7 @@
                       "HorizontalAlignment": 1,
                       "VerticalAlignment": 1,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 2,
-                        "BorderRight": 2
-                      },
+                      "BorderStyle": { "BorderTop": 2, "BorderRight": 2 },
                       "Height": 60.0,
                       "Left": 96.0,
                       "Top": 38.0,
@@ -12324,10 +12064,7 @@
                       "HorizontalAlignment": 1,
                       "VerticalAlignment": 1,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 2,
-                        "BorderRight": 2
-                      },
+                      "BorderStyle": { "BorderTop": 2, "BorderRight": 2 },
                       "Height": 60.0,
                       "Left": 144.0,
                       "Top": 38.0,
@@ -12362,10 +12099,7 @@
                       "HorizontalAlignment": 1,
                       "VerticalAlignment": 1,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 2,
-                        "BorderRight": 2
-                      },
+                      "BorderStyle": { "BorderTop": 2, "BorderRight": 2 },
                       "Height": 60.0,
                       "Left": 192.0,
                       "Top": 38.0,
@@ -12400,10 +12134,7 @@
                       "HorizontalAlignment": 1,
                       "VerticalAlignment": 1,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 2,
-                        "BorderRight": 2
-                      },
+                      "BorderStyle": { "BorderTop": 2, "BorderRight": 2 },
                       "Height": 60.0,
                       "Left": 240.0,
                       "Top": 38.0,
@@ -12438,10 +12169,7 @@
                       "HorizontalAlignment": 1,
                       "VerticalAlignment": 1,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 44.0,
                       "Left": 0.0,
                       "Top": -1.0,
@@ -12461,10 +12189,7 @@
                       "HorizontalAlignment": 1,
                       "VerticalAlignment": 1,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 2,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 2, "BorderRight": 6 },
                       "Height": 30.0,
                       "Left": 283.0,
                       "Top": 38.0,
@@ -12484,9 +12209,7 @@
                       "HorizontalAlignment": 1,
                       "VerticalAlignment": 1,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderRight": 6 },
                       "Height": 36.0,
                       "Left": 283.0,
                       "Top": 60.0,
@@ -12511,9 +12234,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 2" },
                       "Mode": 2
                     }
                   }
@@ -12534,10 +12255,7 @@
                       "HorizontalAlignment": 0,
                       "VerticalAlignment": 1,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 2,
-                        "BorderRight": 2
-                      },
+                      "BorderStyle": { "BorderTop": 2, "BorderRight": 2 },
                       "Height": 60.0,
                       "Left": 0.0,
                       "Top": 42.0,
@@ -12572,10 +12290,7 @@
                       "HorizontalAlignment": 0,
                       "VerticalAlignment": 1,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 2,
-                        "BorderRight": 2
-                      },
+                      "BorderStyle": { "BorderTop": 2, "BorderRight": 2 },
                       "Height": 60.0,
                       "Left": 136.0,
                       "Top": 42.0,
@@ -12610,10 +12325,7 @@
                       "HorizontalAlignment": 0,
                       "VerticalAlignment": 1,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 2,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 2, "BorderRight": 6 },
                       "Height": 60.0,
                       "Left": 273.0,
                       "Top": 42.0,
@@ -12648,10 +12360,7 @@
                       "HorizontalAlignment": 1,
                       "VerticalAlignment": 1,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 44.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -13100,9 +12809,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 3" },
                       "Mode": 2
                     }
                   }
@@ -13116,10 +12823,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -13155,9 +12859,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 4" },
                       "Mode": 2
                     }
                   }
@@ -13171,10 +12873,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -13210,9 +12909,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 5" },
                       "Mode": 2
                     }
                   }
@@ -13226,10 +12923,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -13265,9 +12959,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 6" },
                       "Mode": 2
                     }
                   }
@@ -13281,10 +12973,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -13320,9 +13009,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
                       "Mode": 2
                     }
                   }
@@ -13336,10 +13023,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -13375,9 +13059,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
                       "Mode": 2
                     }
                   }
@@ -13391,10 +13073,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -13430,9 +13109,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
                       "Mode": 2
                     }
                   }
@@ -13446,10 +13123,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -13501,10 +13175,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -13575,10 +13246,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -14229,9 +13897,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 1" },
                       "Mode": 2
                     }
                   }
@@ -14245,10 +13911,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -14633,9 +14296,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 2" },
                       "Mode": 2
                     }
                   }
@@ -14649,10 +14310,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -15037,9 +14695,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 3" },
                       "Mode": 2
                     }
                   }
@@ -15053,10 +14709,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -15100,9 +14753,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 4" },
                       "Mode": 2
                     }
                   }
@@ -15116,10 +14767,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -15550,9 +15198,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 5" },
                       "Mode": 2
                     }
                   }
@@ -15566,10 +15212,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -15605,9 +15248,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 6" },
                       "Mode": 2
                     }
                   }
@@ -15621,10 +15262,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -15660,9 +15298,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
                       "Mode": 2
                     }
                   }
@@ -15676,10 +15312,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -15715,9 +15348,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
                       "Mode": 2
                     }
                   }
@@ -15731,10 +15362,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -15770,9 +15398,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
                       "Mode": 2
                     }
                   }
@@ -15786,10 +15412,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -15841,10 +15464,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -16283,10 +15903,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -16937,9 +16554,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 1" },
                       "Mode": 2
                     }
                   }
@@ -16953,10 +16568,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -17413,10 +17025,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -17751,9 +17360,7 @@
                       "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "Text": {
-                          "Formula": {
-                            "Expression": "[ABSLevel]"
-                          },
+                          "Formula": { "Expression": "[ABSLevel]" },
                           "Mode": 2
                         },
                         "Left": {
@@ -17815,9 +17422,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 2" },
                       "Mode": 2
                     }
                   }
@@ -18135,7 +17740,7 @@
                   "Bindings": {
                     "Visible": {
                       "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] && [CarModel] != 'Porsche 911 GT3 R (992)' = 3"
+                        "Expression": "[DahlDesign.InCarMenu] = 3 && [CarModel] != 'Porsche 911 GT3 R (992)'"
                       },
                       "Mode": 2
                     }
@@ -18390,14 +17995,14 @@
                       "MinimumRefreshIntervalMS": 0.0
                     }
                   ],
-                  "Visible": false,
+                  "Visible": true,
                   "Name": "Throttle shape Porsche",
                   "RenderingSkip": 0,
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
                       "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] && [CarModel] = 'Porsche 911 GT3 R (992)' = 3"
+                        "Expression": "[DahlDesign.InCarMenu] = 3 && [CarModel] = 'Porsche 911 GT3 R (992)'"
                       },
                       "Mode": 2
                     }
@@ -18412,10 +18017,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -18835,9 +18437,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 4" },
                       "Mode": 2
                     }
                   }
@@ -18851,10 +18451,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -18890,9 +18487,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 6" },
                       "Mode": 2
                     }
                   }
@@ -18906,10 +18501,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -18945,9 +18537,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
                       "Mode": 2
                     }
                   }
@@ -18961,10 +18551,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -19000,9 +18587,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
                       "Mode": 2
                     }
                   }
@@ -19016,10 +18601,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -19055,9 +18637,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
                       "Mode": 2
                     }
                   }
@@ -19071,10 +18651,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -19126,10 +18703,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -19181,10 +18755,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -19220,9 +18791,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 5" },
                       "Mode": 2
                     }
                   }
@@ -19235,7 +18804,7 @@
               "Bindings": {
                 "Visible": {
                   "Formula": {
-                    "Expression": "[DahlDesign.MenuType] = 'Ferrari 488 GT3'\r\n"
+                    "Expression": "[DahlDesign.MenuType] = 'Ferrari 488 GT3'"
                   },
                   "Mode": 2
                 }
@@ -19255,10 +18824,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -19909,9 +19475,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 1" },
                       "Mode": 2
                     }
                   }
@@ -19925,10 +19489,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -20377,9 +19938,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 2" },
                       "Mode": 2
                     }
                   }
@@ -20696,9 +20255,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 3" },
                       "Mode": 2
                     }
                   }
@@ -20712,10 +20269,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -21021,9 +20575,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 4" },
                       "Mode": 2
                     }
                   }
@@ -21037,10 +20589,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -21346,9 +20895,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 5" },
                       "Mode": 2
                     }
                   }
@@ -21362,10 +20909,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -21401,9 +20945,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 6" },
                       "Mode": 2
                     }
                   }
@@ -21417,10 +20959,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -21456,9 +20995,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
                       "Mode": 2
                     }
                   }
@@ -21472,10 +21009,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -21511,9 +21045,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
                       "Mode": 2
                     }
                   }
@@ -21527,10 +21059,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -21566,9 +21095,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
                       "Mode": 2
                     }
                   }
@@ -21582,10 +21109,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -21637,10 +21161,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -21711,10 +21232,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -22365,9 +21883,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=1" },
                       "Mode": 2
                     }
                   }
@@ -22381,10 +21897,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -23035,9 +22548,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=2" },
                       "Mode": 2
                     }
                   }
@@ -23051,10 +22562,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -23468,9 +22976,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=3" },
                       "Mode": 2
                     }
                   }
@@ -23484,10 +22990,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -23891,9 +23394,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=5" },
                       "Mode": 2
                     }
                   }
@@ -23943,10 +23444,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -24017,9 +23515,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=6" },
                       "Mode": 2
                     }
                   }
@@ -24033,10 +23529,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -24448,9 +23941,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
                       "Mode": 2
                     }
                   }
@@ -24464,10 +23955,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -24879,9 +24367,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
                       "Mode": 2
                     }
                   }
@@ -24895,10 +24381,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -25310,9 +24793,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
                       "Mode": 2
                     }
                   }
@@ -25326,10 +24807,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -25381,10 +24859,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -25662,10 +25137,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -25701,9 +25173,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 4" },
                       "Mode": 2
                     }
                   }
@@ -25736,10 +25206,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -26390,9 +25857,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=1" },
                       "Mode": 2
                     }
                   }
@@ -26406,10 +25871,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -27060,9 +26522,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=2" },
                       "Mode": 2
                     }
                   }
@@ -27076,10 +26536,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -27493,9 +26950,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=3" },
                       "Mode": 2
                     }
                   }
@@ -27545,10 +27000,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -27620,9 +27072,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=4" },
                       "Mode": 2
                     }
                   }
@@ -27636,10 +27086,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -28043,9 +27490,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=5" },
                       "Mode": 2
                     }
                   }
@@ -28095,10 +27540,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -28169,9 +27611,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=6" },
                       "Mode": 2
                     }
                   }
@@ -28185,10 +27625,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -28600,9 +28037,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
                       "Mode": 2
                     }
                   }
@@ -28616,10 +28051,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -29031,9 +28463,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
                       "Mode": 2
                     }
                   }
@@ -29047,10 +28477,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -29462,9 +28889,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
                       "Mode": 2
                     }
                   }
@@ -29478,10 +28903,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -29533,10 +28955,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -29833,10 +29252,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -30487,9 +29903,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=1" },
                       "Mode": 2
                     }
                   }
@@ -30836,10 +30250,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -30857,9 +30268,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 2" },
                       "Mode": 2
                     }
                   }
@@ -30873,10 +30282,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -31174,9 +30580,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 3" },
                       "Mode": 2
                     }
                   }
@@ -31190,10 +30594,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -31491,9 +30892,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 4" },
                       "Mode": 2
                     }
                   }
@@ -31507,10 +30906,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -31753,10 +31149,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -31808,10 +31201,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -31847,9 +31237,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 6" },
                       "Mode": 2
                     }
                   }
@@ -31863,10 +31251,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -31902,9 +31287,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
                       "Mode": 2
                     }
                   }
@@ -31918,10 +31301,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -31957,9 +31337,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
                       "Mode": 2
                     }
                   }
@@ -31973,10 +31351,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -32012,9 +31387,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
                       "Mode": 2
                     }
                   }
@@ -32028,10 +31401,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -32290,10 +31660,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -32571,10 +31938,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -33225,9 +32589,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 1" },
                       "Mode": 2
                     }
                   }
@@ -33487,9 +32849,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 2" },
                       "Mode": 2
                     }
                   }
@@ -33503,10 +32863,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -33844,9 +33201,7 @@
                       "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "Text": {
-                          "Formula": {
-                            "Expression": "[ABSLevel]"
-                          },
+                          "Formula": { "Expression": "[ABSLevel]" },
                           "Mode": 2
                         },
                         "Left": {
@@ -33927,9 +33282,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 3" },
                       "Mode": 2
                     }
                   }
@@ -33943,10 +33296,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -34367,9 +33717,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 4" },
                       "Mode": 2
                     }
                   }
@@ -34383,10 +33731,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -34422,9 +33767,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 5" },
                       "Mode": 2
                     }
                   }
@@ -34438,10 +33781,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -34477,9 +33817,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 6" },
                       "Mode": 2
                     }
                   }
@@ -34493,10 +33831,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -34532,9 +33867,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
                       "Mode": 2
                     }
                   }
@@ -34548,10 +33881,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -34587,9 +33917,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
                       "Mode": 2
                     }
                   }
@@ -34603,10 +33931,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -34642,9 +33967,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
                       "Mode": 2
                     }
                   }
@@ -34658,10 +33981,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -34713,10 +34033,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -34787,10 +34104,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -35441,9 +34755,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 1" },
                       "Mode": 2
                     }
                   }
@@ -35457,10 +34769,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -35798,9 +35107,7 @@
                       "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "Text": {
-                          "Formula": {
-                            "Expression": "[ABSLevel]"
-                          },
+                          "Formula": { "Expression": "[ABSLevel]" },
                           "Mode": 2
                         },
                         "Left": {
@@ -35881,9 +35188,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 2" },
                       "Mode": 2
                     }
                   }
@@ -35897,10 +35202,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -36349,9 +35651,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 3" },
                       "Mode": 2
                     }
                   }
@@ -36365,10 +35665,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -36789,9 +36086,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 4" },
                       "Mode": 2
                     }
                   }
@@ -37051,9 +36346,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 5" },
                       "Mode": 2
                     }
                   }
@@ -37067,10 +36360,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -37106,9 +36396,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 6" },
                       "Mode": 2
                     }
                   }
@@ -37122,10 +36410,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -37161,9 +36446,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
                       "Mode": 2
                     }
                   }
@@ -37177,10 +36460,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -37216,9 +36496,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
                       "Mode": 2
                     }
                   }
@@ -37232,10 +36510,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -37271,9 +36546,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
                       "Mode": 2
                     }
                   }
@@ -37287,10 +36560,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -37342,10 +36612,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -37416,10 +36683,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -38070,9 +37334,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 1" },
                       "Mode": 2
                     }
                   }
@@ -38086,10 +37348,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -38398,9 +37657,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 2" },
                       "Mode": 2
                     }
                   }
@@ -38414,10 +37671,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -38752,15 +38006,11 @@
                       "MinimumRefreshIntervalMS": 0.0,
                       "Bindings": {
                         "Text": {
-                          "Formula": {
-                            "Expression": "[ABSLevel]"
-                          },
+                          "Formula": { "Expression": "[ABSLevel]" },
                           "Mode": 2
                         },
                         "Left": {
-                          "Formula": {
-                            "Expression": "100 + ([ABSLevel])*24"
-                          },
+                          "Formula": { "Expression": "100 + ([ABSLevel])*24" },
                           "Mode": 2
                         },
                         "TextColor": {
@@ -38816,9 +38066,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 3" },
                       "Mode": 2
                     }
                   }
@@ -39097,9 +38345,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 4" },
                       "Mode": 2
                     }
                   }
@@ -39113,10 +38359,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -39536,9 +38779,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 5" },
                       "Mode": 2
                     }
                   }
@@ -39552,10 +38793,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -39974,9 +39212,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 6" },
                       "Mode": 2
                     }
                   }
@@ -39990,10 +39226,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -40029,9 +39262,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
                       "Mode": 2
                     }
                   }
@@ -40045,10 +39276,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -40084,9 +39312,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
                       "Mode": 2
                     }
                   }
@@ -40100,10 +39326,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -40139,9 +39362,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
                       "Mode": 2
                     }
                   }
@@ -40155,10 +39376,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -40210,10 +39428,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -40257,7 +39472,7 @@
                   }
                 }
               ],
-              "Visible": false,
+              "Visible": true,
               "Name": "Porsche  911 GT3.R",
               "RenderingSkip": 0,
               "MinimumRefreshIntervalMS": 0.0,
@@ -40284,10 +39499,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -40938,9 +40150,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 1" },
                       "Mode": 2
                     }
                   }
@@ -40954,10 +40164,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -41342,9 +40549,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 2" },
                       "Mode": 2
                     }
                   }
@@ -41358,10 +40563,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -41746,9 +40948,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 3" },
                       "Mode": 2
                     }
                   }
@@ -41762,10 +40962,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -42044,9 +41241,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 4" },
                       "Mode": 2
                     }
                   }
@@ -42060,10 +41255,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -42342,9 +41534,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 5" },
                       "Mode": 2
                     }
                   }
@@ -42394,10 +41584,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -42468,9 +41655,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu]=6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu]=6" },
                       "Mode": 2
                     }
                   }
@@ -42484,10 +41669,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -42523,9 +41705,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 7" },
                       "Mode": 2
                     }
                   }
@@ -42539,10 +41719,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -42578,9 +41755,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 8" },
                       "Mode": 2
                     }
                   }
@@ -42594,10 +41769,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -42633,9 +41805,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.InCarMenu] = 9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.InCarMenu] = 9" },
                       "Mode": 2
                     }
                   }
@@ -42649,10 +41819,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -42704,10 +41871,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -42778,10 +41942,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -43063,9 +42224,7 @@
                       "VerticalAlignment": 1,
                       "TextMask": "0000000000",
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderColor": "#FF7CFC00"
-                      },
+                      "BorderStyle": { "BorderColor": "#FF7CFC00" },
                       "Height": 90.0,
                       "Left": 240.0,
                       "Top": 6.0,
@@ -43173,9 +42332,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.PitMenu]=1"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.PitMenu]=1" },
                       "Mode": 2
                     }
                   }
@@ -43189,10 +42346,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -43351,9 +42505,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.PitMenu]=2"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.PitMenu]=2" },
                       "Mode": 2
                     }
                   }
@@ -43367,10 +42519,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -43710,9 +42859,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.PitMenu]=3"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.PitMenu]=3" },
                       "Mode": 2
                     }
                   }
@@ -43726,10 +42873,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -44045,9 +43189,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.PitMenu]=4"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.PitMenu]=4" },
                       "Mode": 2
                     }
                   }
@@ -44061,10 +43203,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -44380,9 +43519,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.PitMenu]=5"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.PitMenu]=5" },
                       "Mode": 2
                     }
                   }
@@ -44396,10 +43533,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -44493,9 +43627,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.PitMenu]=6"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.PitMenu]=6" },
                       "Mode": 2
                     }
                   }
@@ -44509,10 +43641,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -44748,9 +43877,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.PitMenu]=7"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.PitMenu]=7" },
                       "Mode": 2
                     }
                   }
@@ -44764,10 +43891,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -45003,9 +44127,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.PitMenu]=8"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.PitMenu]=8" },
                       "Mode": 2
                     }
                   }
@@ -45019,10 +44141,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -45156,9 +44275,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.PitMenu]=9"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.PitMenu]=9" },
                       "Mode": 2
                     }
                   }
@@ -45214,10 +44331,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -45437,9 +44551,7 @@
                       "Bindings": {
                         "Text": {
                           "FormatString": "0.0",
-                          "Formula": {
-                            "Expression": "[WaterTemperature]"
-                          },
+                          "Formula": { "Expression": "[WaterTemperature]" },
                           "Mode": 2
                         }
                       }
@@ -45465,9 +44577,7 @@
                       "Bindings": {
                         "Text": {
                           "FormatString": "0.0",
-                          "Formula": {
-                            "Expression": "[OilTemperature]"
-                          },
+                          "Formula": { "Expression": "[OilTemperature]" },
                           "Mode": 2
                         }
                       }
@@ -45479,9 +44589,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.PitMenu]=10"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.PitMenu]=10" },
                       "Mode": 2
                     }
                   }
@@ -45495,10 +44603,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -45668,9 +44773,7 @@
                   "MinimumRefreshIntervalMS": 0.0,
                   "Bindings": {
                     "Visible": {
-                      "Formula": {
-                        "Expression": "[DahlDesign.PitMenu]=11"
-                      },
+                      "Formula": { "Expression": "[DahlDesign.PitMenu]=11" },
                       "Mode": 2
                     }
                   }
@@ -45684,10 +44787,7 @@
                       "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
                       "IsRectangleItem": true,
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderTop": 6,
-                        "BorderRight": 6
-                      },
+                      "BorderStyle": { "BorderTop": 6, "BorderRight": 6 },
                       "Height": 102.0,
                       "Left": 0.0,
                       "Top": 0.0,
@@ -45805,9 +44905,7 @@
                       "VerticalAlignment": 1,
                       "TextMask": "0000000000",
                       "BackgroundColor": "#00FFFFFF",
-                      "BorderStyle": {
-                        "BorderColor": "#FF808080"
-                      },
+                      "BorderStyle": { "BorderColor": "#FF808080" },
                       "Height": 61.0,
                       "Left": 0.0,
                       "Top": 43.0,

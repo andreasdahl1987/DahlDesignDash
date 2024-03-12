@@ -473,7 +473,7 @@
                 "Left": {
                   "Formula": {
                     "Interpreter": 1,
-                    "Expression": "var DDC = $prop('DahlDesign.DDCclutchEnabled');\r\nvar SW =  $prop('DahlDesign.SW1Enabled');\r\nif (SW)\r\n{\r\n\treturn Math.round($prop('DahlDesign.SW1Clutch')*12.8,1);\r\n}\r\nelse if (DDC)\r\n{\r\nreturn Math.round($prop('DahlDesign.DDCclutch')*12.8,2);\r\n}\r\nelse\r\n{\r\nreturn Math.round(myClutch()*12.8,2);\r\n}"
+                    "Expression": "var DDC = $prop('DahlDesign.DDCclutchEnabled');\r\nvar SW =  $prop('DahlDesign.SW1Enabled');\r\nif (SW)\r\n{\r\n\treturn Math.round($prop('DahlDesign.SW1Clutch')*12.8,1);\r\n}\r\nelse if (DDC)\r\n{\r\nreturn Math.round($prop('DahlDesign.DDCclutch')*12.8,2);\r\n}\r\nelse\r\n{\r\nreturn Math.round($prop('DahlDesign.MyClutch')*12.8,2);\r\n}"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Left"
@@ -499,7 +499,7 @@
                 "Left": {
                   "Formula": {
                     "Interpreter": 1,
-                    "Expression": "var DDC = $prop('DahlDesign.DDCclutchEnabled');\r\nvar SW =  $prop('DahlDesign.SW1Enabled');\r\nif (SW)\r\n{\r\nreturn Math.round($prop('DahlDesign.SW1Clutch')*12.8,2)-15;\r\n}\r\nif (DDC)\r\n{\r\nreturn Math.round($prop('DahlDesign.DDCclutch')*12.8,2)-15;\r\n}\r\nelse\r\n{\r\nreturn Math.round(myClutch()*12.8,2)-15;\r\n}\r\n"
+                    "Expression": "var DDC = $prop('DahlDesign.DDCclutchEnabled');\r\nvar SW =  $prop('DahlDesign.SW1Enabled');\r\nif (SW)\r\n{\r\nreturn Math.round($prop('DahlDesign.SW1Clutch')*12.8,2)-15;\r\n}\r\nif (DDC)\r\n{\r\nreturn Math.round($prop('DahlDesign.DDCclutch')*12.8,2)-15;\r\n}\r\nelse\r\n{\r\nreturn Math.round($prop('DahlDesign.MyClutch')*12.8,2)-15;\r\n}\r\n"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Left"
@@ -507,7 +507,7 @@
                 "Visible": {
                   "Formula": {
                     "Interpreter": 1,
-                    "Expression": "var DDC = $prop('DahlDesign.DDCclutchEnabled');\r\nvar clutch = myClutch();\r\nvar SW = $prop('DahlDesign.SW1Enabled');\r\nif (SW)\r\nclutch = $prop('DahlDesign.SW1Clutch');\r\nelse if (DDC)\r\n{\r\nclutch = $prop('DahlDesign.DDCclutch');\r\n}\r\n\r\nreturn (clutch > 0 && clutch < 100);\r\n"
+                    "Expression": "var DDC = $prop('DahlDesign.DDCclutchEnabled');\r\nvar clutch = $prop('DahlDesign.MyClutch');\r\nvar SW = $prop('DahlDesign.SW1Enabled');\r\nif (SW)\r\nclutch = $prop('DahlDesign.SW1Clutch');\r\nelse if (DDC)\r\n{\r\nclutch = $prop('DahlDesign.DDCclutch');\r\n}\r\n\r\nreturn (clutch > 0 && clutch < 100);\r\n"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Visible"
@@ -602,7 +602,7 @@
                 "Left": {
                   "Formula": {
                     "Interpreter": 1,
-                    "Expression": "var DDC = $prop('DahlDesign.DDCclutchEnabled');\r\nvar SW =  $prop('DahlDesign.SW1Enabled');\r\nif (SW)\r\n{\r\n\treturn Math.round($prop('DahlDesign.SW1bitePoint')*12.8,1);\r\n}\r\nelse if (DDC)\r\n{\r\n\treturn Math.round($prop('DahlDesign.DDCbitePoint')*12.8,1);\r\n}\r\nelse \r\n{\r\n\treturn Math.round(myBitePoint()*12.8,1);\r\n}\r\n"
+                    "Expression": "var DDC = $prop('DahlDesign.DDCclutchEnabled');\r\nvar SW =  $prop('DahlDesign.SW1Enabled');\r\nif (SW)\r\n{\r\n\treturn Math.round($prop('DahlDesign.SW1bitePoint')*12.8,1);\r\n}\r\nelse if (DDC)\r\n{\r\n\treturn Math.round($prop('DahlDesign.DDCbitePoint')*12.8,1);\r\n}\r\nelse \r\n{\r\n\treturn Math.round($prop('DahlDesign.MyBitePoint')*12.8,1);\r\n}\r\n"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Left"
@@ -637,7 +637,7 @@
                   "FormatString": "0.0",
                   "Formula": {
                     "Interpreter": 1,
-                    "Expression": "var DDC = $prop('DahlDesign.DDCclutchEnabled');\r\n\r\nif (DDC || $prop('DahlDesign.SW1Enabled'))\r\n{\r\n\treturn \"\"\r\n}\r\nelse \r\n{\r\n\treturn myBitePoint();\r\n}\r\n"
+                    "Expression": "var DDC = $prop('DahlDesign.DDCclutchEnabled');\r\n\r\nif (DDC || $prop('DahlDesign.SW1Enabled'))\r\n{\r\n\treturn \"\"\r\n}\r\nelse \r\n{\r\n\treturn $prop('DahlDesign.MyBitePoint');\r\n}\r\n"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Text"
@@ -1058,7 +1058,7 @@
                   "FormatString": "0.0",
                   "Formula": {
                     "Interpreter": 1,
-                    "Expression": "var DDC = $prop('DahlDesign.DDCclutchEnabled');\r\nif (DDC)\r\n{\r\n\treturn \"\"\r\n}\r\nelse \r\n{\r\n\treturn myBitePoint();\r\n}\r\n"
+                    "Expression": "var DDC = $prop('DahlDesign.DDCclutchEnabled');\r\nif (DDC)\r\n{\r\n\treturn \"\"\r\n}\r\nelse \r\n{\r\n\treturn $prop('DahlDesign.MyBitePoint');\r\n}\r\n"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Text"

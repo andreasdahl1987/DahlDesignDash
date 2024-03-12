@@ -1355,7 +1355,7 @@
                         "$id": "138",
                         "Formula": {
                           "$id": "139",
-                          "Expression": "round([DataCorePlugin.ExternalScript.myClutch],0)*1280/100\r\n"
+                          "Expression": "round([DahlDesign.MyClutch],0)*1280/100\r\n"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Left"
@@ -1412,7 +1412,7 @@
                         "$id": "144",
                         "Formula": {
                           "$id": "145",
-                          "Expression": "round([DataCorePlugin.ExternalScript.myClutch],0)*1280/100-15\r\n"
+                          "Expression": "round([DahlDesign.MyClutch],0)*1280/100-15\r\n"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Left"
@@ -1421,7 +1421,7 @@
                         "$id": "146",
                         "Formula": {
                           "$id": "147",
-                          "Expression": "[DataCorePlugin.ExternalScript.myClutch]>0 and [DataCorePlugin.ExternalScript.myClutch]<100"
+                          "Expression": "[DahlDesign.MyClutch]>0 and [DahlDesign.MyClutch]<100"
                         },
                         "Mode": 2,
                         "TargetPropertyName": "Visible"
