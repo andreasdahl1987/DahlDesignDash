@@ -2,12 +2,13 @@
   "Variables": { "DashboardVariables": [] },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "044eaa5c-b672-43fd-9102-662e7ae33d38",
+  "Id": "23037967-1702-4cfa-aae4-d3328844da9f",
   "BaseHeight": 113,
   "BaseWidth": 410,
   "BackgroundColor": "#FF000000",
   "Screens": [
     {
+      "RenderingSkip": 0,
       "Name": "Screen1",
       "InGameScreen": true,
       "IdleScreen": false,
@@ -25,11 +26,8 @@
       "Items": [
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": 0.0,
-          "Left": 0.0,
-          "Height": 109.5,
-          "Width": 368.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": true,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
@@ -52,13 +50,14 @@
               "Visible": true,
               "Width": 236.0,
               "Name": "LinearGaugeItem",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Value": {
                   "Formula": {
                     "Expression": "if ([SessionTypeName] = 'Offline Testing', 0,\r\nif ([DahlDesign.LapsRemaining] = 0 and [CompletedLaps] = 0, 0,\r\n100*[CompletedLaps]/([CompletedLaps]+[DahlDesign.LapsRemaining])))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Value"
+                  "Mode": 2
                 }
               }
             },
@@ -80,13 +79,13 @@
               "Width": 237.0,
               "Name": "Tag Time Remaining",
               "RenderingSkip": 59,
+              "MinimumRefreshIntervalMS": 590.0,
               "Bindings": {
                 "Text": {
                   "Formula": {
                     "Expression": "if (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Offline Testing', 'TEST SESSION',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Warmup', 'WARMUP',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Practice' and ([GameRawData.Telemetry.SessionState] =5 or [GameRawData.Telemetry.SessionState] =6)  , 'SESSION CLOSING',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Practice', 'SOF ' + [DahlDesign.SoF] + ' IR',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Race' and [GameRawData.Telemetry.SessionState] =2, 'GRID',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Race' and ([GameRawData.Telemetry.SessionState] =4 || [GameRawData.Telemetry.SessionState] = 5) , 'SOF ' + [DahlDesign.SoF] + format([DahlDesign.IRchange],1,1),\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Race' and ([DahlDesign.RaceFinished] or [GameRawData.Telemetry.SessionState] =6), 'FINISHED:' + format([DahlDesign.IRchange],1,1),\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Lone Qualify', 'LONE QUALY',\r\nif (isnull([DataCorePlugin.GameData.NewData.SessionTypeName],'') = 'Open Qualify', 'OPEN QUALY',\r\nisnull([DataCorePlugin.GameData.NewData.SessionTypeName],''))))))))))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
@@ -112,41 +111,36 @@
               "Width": 276.0,
               "Name": "Time Remaining Value",
               "RenderingSkip": 5,
+              "MinimumRefreshIntervalMS": 50.0,
               "Bindings": {
                 "Text": {
                   "FormatString": "hh\\:mm\\:ss",
                   "Formula": {
                     "Expression": "if(![DataCorePlugin.GameRunning],'--:--.---',(\r\n\r\nif(isnull([DataCorePlugin.CurrentGame],0)=='IRacing'\r\n,\r\n(\r\nif(\r\n(isnull([DataCorePlugin.GameRawData.Telemetry.SessionTimeRemain],0)<>604800),\r\nsecondstotimespan(isnull([DataCorePlugin.GameRawData.Telemetry.SessionTimeRemain],0)),'∞')\r\n)\r\n,isnull([DataCorePlugin.GameData.NewData.SessionTimeLeft],0))\r\n))"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 }
               }
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-              "Top": 0.0,
-              "Left": 0.0,
-              "Height": 0.0,
-              "Width": 0.0,
-              "BackgroundColor": "#00FFFFFF",
-              "Childrens": [],
               "Group": false,
+              "Repetitions": 0,
               "Visible": true,
-              "Name": "Colors"
+              "Name": "Colors",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": true,
           "Visible": true,
-          "Name": "Session"
+          "Name": "Session",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": 0.0,
-          "Left": 0.0,
-          "Height": 113.0,
-          "Width": 111.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": true,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -157,7 +151,9 @@
               "Top": 0.0,
               "Visible": true,
               "Width": 111.0,
-              "Name": "RectangleItem2"
+              "Name": "RectangleItem2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
@@ -175,28 +171,28 @@
               "Visible": true,
               "Width": 70.0,
               "Name": "Limit",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": {
                     "Expression": "if ([GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit] = 'unlimited'\r\nor\r\nisnull([GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit], '∞') = '∞',\r\n'∞',[GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit])"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
+                    "JSExt": 3,
                     "Interpreter": 1,
                     "Expression": "var calc = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount') / isnull ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'), 1);\r\nvar session = isnull($prop('SessionTypeName'), \"\");\r\n\r\nif ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit') == \"unlimited\")\r\n{\r\n\treturn \"white\";\r\n}\r\n\r\nif (session == \"Race\" || session == \"Lone qualify\" || session == \"Open qualify\")\r\n{\r\n\tif (calc == 0) {return \"fuchsia\"};\r\n\tif (calc < 0.3) {return \"lawngreen\"};\r\n\tif (calc < 0.6) {return \"yellow\"};\r\n\tif (calc < 0.85) {return \"orange\"};\r\n\treturn \"red\";\r\n}\r\n\r\nreturn \"white\";"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "FontSize": {
                   "Formula": {
                     "Expression": "if ([GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit] != 'unlimited'\r\nand\r\n[GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit] > 99, 40, 45)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "FontSize"
+                  "Mode": 2
                 }
               }
             },
@@ -216,28 +212,28 @@
               "Visible": true,
               "Width": 70.0,
               "Name": "Incidents",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
               "Bindings": {
                 "Text": {
                   "Formula": {
                     "Expression": "isnull([GameRawData.Telemetry.PlayerCarTeamIncidentCount], '0')"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
+                  "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
+                    "JSExt": 3,
                     "Interpreter": 1,
                     "Expression": "var calc = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount') / isnull ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'), 1);\r\nvar session = isnull($prop('SessionTypeName'), \"\");\r\n\r\nif ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit') == \"unlimited\")\r\n{\r\n\treturn \"white\";\r\n}\r\n\r\nif (session == \"Race\" || session == \"Lone qualify\" || session == \"Open qualify\")\r\n{\r\n\tif (calc == 0) {return \"fuchsia\"};\r\n\tif (calc < 0.3) {return \"lawngreen\"};\r\n\tif (calc < 0.6) {return \"yellow\"};\r\n\tif (calc < 0.85) {return \"orange\"};\r\n\treturn \"red\";\r\n}\r\n\r\nreturn \"white\";"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "TextColor"
+                  "Mode": 2
                 },
                 "FontSize": {
                   "Formula": {
                     "Expression": "if ([GameRawData.Telemetry.PlayerCarTeamIncidentCount] > 99, 38, 45)"
                   },
-                  "Mode": 2,
-                  "TargetPropertyName": "FontSize"
+                  "Mode": 2
                 }
               }
             },
@@ -255,11 +251,11 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
+                      "JSExt": 3,
                       "Interpreter": 1,
                       "Expression": "var calc = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount') / isnull ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'), 1);\r\nvar session = isnull($prop('SessionTypeName'), \"\");\r\n\r\nif ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit') == \"unlimited\")\r\n{\r\n\treturn \"white\";\r\n}\r\n\r\nif (session == \"Race\" || session == \"Lone qualify\" || session == \"Open qualify\")\r\n{\r\n\tif (calc == 0) {return \"fuchsia\"};\r\n\tif (calc < 0.3) {return \"lawngreen\"};\r\n\tif (calc < 0.6) {return \"yellow\"};\r\n\tif (calc < 0.85) {return \"orange\"};\r\n\treturn \"red\";\r\n}\r\n\r\nreturn \"white\";"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -268,7 +264,9 @@
               "Top": 23.0,
               "Visible": true,
               "Width": 3.0,
-              "Name": "RectangleItem"
+              "Name": "RectangleItem",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -284,11 +282,11 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
+                      "JSExt": 3,
                       "Interpreter": 1,
                       "Expression": "var calc = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount') / isnull ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'), 1);\r\nvar session = isnull($prop('SessionTypeName'), \"\");\r\n\r\nif ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit') == \"unlimited\")\r\n{\r\n\treturn \"white\";\r\n}\r\n\r\nif (session == \"Race\" || session == \"Lone qualify\" || session == \"Open qualify\")\r\n{\r\n\tif (calc == 0) {return \"fuchsia\"};\r\n\tif (calc < 0.3) {return \"lawngreen\"};\r\n\tif (calc < 0.6) {return \"yellow\"};\r\n\tif (calc < 0.85) {return \"orange\"};\r\n\treturn \"red\";\r\n}\r\n\r\nreturn \"white\";"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -297,7 +295,9 @@
               "Top": 18.0,
               "Visible": true,
               "Width": 3.0,
-              "Name": "RectangleItem2"
+              "Name": "RectangleItem2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -313,11 +313,11 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
+                      "JSExt": 3,
                       "Interpreter": 1,
                       "Expression": "var calc = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount') / isnull ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'), 1);\r\nvar session = isnull($prop('SessionTypeName'), \"\");\r\n\r\nif ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit') == \"unlimited\")\r\n{\r\n\treturn \"white\";\r\n}\r\n\r\nif (session == \"Race\" || session == \"Lone qualify\" || session == \"Open qualify\")\r\n{\r\n\tif (calc == 0) {return \"fuchsia\"};\r\n\tif (calc < 0.3) {return \"lawngreen\"};\r\n\tif (calc < 0.6) {return \"yellow\"};\r\n\tif (calc < 0.85) {return \"orange\"};\r\n\treturn \"red\";\r\n}\r\n\r\nreturn \"white\";"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -326,7 +326,9 @@
               "Top": 18.0,
               "Visible": true,
               "Width": 3.0,
-              "Name": "RectangleItem3"
+              "Name": "RectangleItem3",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -342,11 +344,11 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
+                      "JSExt": 3,
                       "Interpreter": 1,
                       "Expression": "var calc = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount') / isnull ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'), 1);\r\nvar session = isnull($prop('SessionTypeName'), \"\");\r\n\r\nif ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit') == \"unlimited\")\r\n{\r\n\treturn \"white\";\r\n}\r\n\r\nif (session == \"Race\" || session == \"Lone qualify\" || session == \"Open qualify\")\r\n{\r\n\tif (calc == 0) {return \"fuchsia\"};\r\n\tif (calc < 0.3) {return \"lawngreen\"};\r\n\tif (calc < 0.6) {return \"yellow\"};\r\n\tif (calc < 0.85) {return \"orange\"};\r\n\treturn \"red\";\r\n}\r\n\r\nreturn \"white\";"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -355,7 +357,9 @@
               "Top": 77.0,
               "Visible": true,
               "Width": 3.0,
-              "Name": "RectangleItem4"
+              "Name": "RectangleItem4",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -371,11 +375,11 @@
                 "Bindings": {
                   "BorderColor": {
                     "Formula": {
+                      "JSExt": 3,
                       "Interpreter": 1,
                       "Expression": "var calc = $prop('GameRawData.Telemetry.PlayerCarTeamIncidentCount') / isnull ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'), 1);\r\nvar session = isnull($prop('SessionTypeName'), \"\");\r\n\r\nif ($prop('GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit') == \"unlimited\")\r\n{\r\n\treturn \"white\";\r\n}\r\n\r\nif (session == \"Race\" || session == \"Lone qualify\" || session == \"Open qualify\")\r\n{\r\n\tif (calc == 0) {return \"fuchsia\"};\r\n\tif (calc < 0.3) {return \"lawngreen\"};\r\n\tif (calc < 0.6) {return \"yellow\"};\r\n\tif (calc < 0.85) {return \"orange\"};\r\n\treturn \"red\";\r\n}\r\n\r\nreturn \"white\";"
                     },
-                    "Mode": 2,
-                    "TargetPropertyName": "BorderColor"
+                    "Mode": 2
                   }
                 }
               },
@@ -384,20 +388,20 @@
               "Top": 77.0,
               "Visible": true,
               "Width": 3.0,
-              "Name": "RectangleItem5"
+              "Name": "RectangleItem5",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": true,
           "Visible": true,
-          "Name": "Incidents"
+          "Name": "Incidents",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "Top": 4.0,
-          "Left": 358.0,
-          "Height": 101.0,
-          "Width": 45.0,
-          "BackgroundColor": "#00FFFFFF",
+          "Group": true,
+          "Repetitions": 0,
           "Childrens": [
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.TimeText, SimHub.Plugins",
@@ -415,7 +419,9 @@
               "Top": 4.0,
               "Visible": true,
               "Width": 44.0,
-              "Name": "TimeText"
+              "Name": "TimeText",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.TimeText, SimHub.Plugins",
@@ -433,7 +439,9 @@
               "Top": 60.0,
               "Visible": true,
               "Width": 44.0,
-              "Name": "TimeText2"
+              "Name": "TimeText2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -450,7 +458,9 @@
               "Top": 55.0,
               "Visible": true,
               "Width": 6.0,
-              "Name": "RectangleItem2"
+              "Name": "RectangleItem2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -467,12 +477,15 @@
               "Top": 55.0,
               "Visible": true,
               "Width": 6.0,
-              "Name": "RectangleItem"
+              "Name": "RectangleItem",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
             }
           ],
-          "Group": true,
           "Visible": true,
-          "Name": "Clock"
+          "Name": "Clock",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -489,7 +502,9 @@
           "Top": 0.0,
           "Visible": true,
           "Width": 4.0,
-          "Name": "Border2"
+          "Name": "Border2",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -506,7 +521,9 @@
           "Top": 2.0,
           "Visible": true,
           "Width": 4.0,
-          "Name": "Border"
+          "Name": "Border",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
@@ -523,9 +540,2055 @@
           "Visible": true,
           "Width": 410.0,
           "IsFreezed": true,
-          "Name": "Background"
+          "Name": "Background",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "Group": true,
+          "Repetitions": 0,
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Group": false,
+              "Repetitions": 0,
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 5.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "1",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[0]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7FFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[0]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;\r\n"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 25.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "2",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[1]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[1]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 45.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[2]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[2]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 65.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "4",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[3]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[3]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 85.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "5",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[4]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[4]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 105.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "6",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[5]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[5]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 125.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "7",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[6]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[6]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 145.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "8",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[7]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[7]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 165.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "9",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[8]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[8]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 185.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "10",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[9]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[9]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 205.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "11",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[10]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[10]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 225.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "12",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[11]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[11]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 245.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "13",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[12]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[12]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 265.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "14",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[13]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[13]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 285.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "15",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[14]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[14]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 305.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "16",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[15]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[15]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 325.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "17",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[16]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[16]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 345.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "18",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[17]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[17]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 65.0,
+                  "Steps": 0.0,
+                  "PAW": 25.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 365.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "19",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[18]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[18]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 0,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 100.0,
+                  "Steps": 0.0,
+                  "PAW": 38.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 385.0,
+                  "Top": 137.0,
+                  "Visible": true,
+                  "Width": 22.0,
+                  "Name": "20",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[19]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FF7CFC00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FF00BFFF",
+                      "StartColorValue": -1.0,
+                      "EndColorValue": 0.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[19]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                }
+              ],
+              "Visible": true,
+              "Name": "Negative change",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Group": false,
+              "Repetitions": 0,
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 5.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "1",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[0]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[0]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;\r\n"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 25.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "2",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[1]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[1]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 45.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "3",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[2]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[2]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 65.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "4",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[3]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[3]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 85.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "5",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[4]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[4]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 105.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "6",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[5]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[5]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 125.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "7",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[6]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[6]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 145.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "8",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[7]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[7]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 165.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "9",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[8]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[8]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 185.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "10",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[9]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[9]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 205.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "11",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[10]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[10]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 225.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "12",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[11]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[11]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 245.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "13",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[12]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[12]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 265.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "14",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[13]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[13]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 285.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "15",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[14]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[14]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 100.0,
+                  "Steps": 0.0,
+                  "PAW": 38.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 305.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "16",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[15]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[15]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 325.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "17",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[16]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[16]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 345.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "18",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[17]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[17]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 365.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 21.0,
+                  "Name": "19",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[18]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[18]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "IsLinearGauge": true,
+                  "GaugeOrientation": 1,
+                  "GaugeAlignment": 2,
+                  "AutoSize": false,
+                  "GaugeColor": "#FFFF0000",
+                  "AlternateGaugeColor": "#FF008000",
+                  "UseAlternateStyle": false,
+                  "Minimum": 0.0,
+                  "Maximum": 100.0,
+                  "Value": 10.0,
+                  "Steps": 0.0,
+                  "PAW": 4.0,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 38.0,
+                  "Left": 385.0,
+                  "Top": 175.0,
+                  "Visible": true,
+                  "Width": 22.0,
+                  "Name": "20",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[19]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;"
+                      },
+                      "StartColor": "#FFFFFF00",
+                      "EnableMiddleColor": false,
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "EndColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "EndColorValue": 1.0,
+                      "Mode": 4
+                    },
+                    "Value": {
+                      "Formula": {
+                        "JSExt": 3,
+                        "Interpreter": 1,
+                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[19]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                }
+              ],
+              "Visible": true,
+              "Name": "Positive change",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#FFC0C0C0",
+              "BorderStyle": { "BorderLeft": 3, "BorderRight": 2 },
+              "Height": 80.0,
+              "Left": 410.0,
+              "Opacity": 50.0,
+              "Top": 135.0,
+              "Visible": true,
+              "Width": 1000.0,
+              "Name": "Mid border2",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "Left": {
+                  "Formula": {
+                    "Expression": "6+([GameRawData.Telemetry.LapDistPct]*420)"
+                  },
+                  "Mode": 2
+                }
+              }
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "IsRectangleItem": true,
+              "BackgroundColor": "#00FFFFFF",
+              "BorderStyle": {
+                "BorderTop": 2,
+                "BorderBottom": 2,
+                "BorderLeft": 2,
+                "BorderRight": 2
+              },
+              "Height": 2.0,
+              "Left": -3.0,
+              "Top": 174.0,
+              "Visible": true,
+              "Width": 428.0,
+              "Name": "Center line",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
+            }
+          ],
+          "Visible": true,
+          "Name": "CarBehind",
+          "RenderingSkip": 0,
+          "MinimumRefreshIntervalMS": 0.0,
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "[DahlDesign.Dashboard.DeltaScreen] = 1"
+              },
+              "Mode": 2
+            }
+          }
         }
-      ]
+      ],
+      "MinimumRefreshIntervalMS": 0.0
     }
   ],
   "SnapToGrid": false,
@@ -538,6 +2601,7 @@
   "GridSize": 10,
   "Images": [],
   "Metadata": {
+    "SimHubVersion": "9.2.6",
     "Title": "Session info",
     "ScreenCount": 1.0,
     "InGameScreensIndexs": [0],

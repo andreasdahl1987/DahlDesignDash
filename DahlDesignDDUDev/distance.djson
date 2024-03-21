@@ -2,7 +2,7 @@
   "Variables": { "DashboardVariables": [] },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "7ca6fc72-cd0d-4cb9-b49d-d803b8b919d3",
+  "Id": "499a1705-f9fd-4b03-b9fc-90b876954b8f",
   "BaseHeight": 220,
   "BaseWidth": 412,
   "BackgroundColor": "#FF000000",
@@ -4059,9 +4059,7 @@
           "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
-              "Formula": {
-                "Expression": "[DahlDesign.Dashboard.DeltaScreen] = 1"
-              },
+              "Formula": { "Expression": "[DahlDesign.BehindName] != ''" },
               "Mode": 2
             }
           }
@@ -4104,7 +4102,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[0]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[0]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7FFF00",
                       "EnableMiddleColor": false,
@@ -4119,7 +4117,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[0]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[0]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;\r\n"
                       },
                       "Mode": 2
                     }
@@ -4153,7 +4151,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[1]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[1]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4168,7 +4166,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[1]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[1]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4202,7 +4200,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[2]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[2]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4217,7 +4215,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[2]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[2]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4251,7 +4249,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[3]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[3]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4266,7 +4264,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[3]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[3]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4300,7 +4298,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[4]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[4]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4315,7 +4313,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[4]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[4]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4349,7 +4347,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[5]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[5]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4364,7 +4362,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[5]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[5]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4398,7 +4396,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[6]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[6]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4413,7 +4411,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[6]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[6]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4447,7 +4445,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[7]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[7]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4462,7 +4460,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[7]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[7]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4496,7 +4494,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[8]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[8]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4511,7 +4509,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[8]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[8]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4545,7 +4543,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[9]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[9]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4560,7 +4558,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[9]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[9]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4594,7 +4592,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[10]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[10]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4609,7 +4607,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[10]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[10]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4643,7 +4641,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[11]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[11]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4658,7 +4656,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[11]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[11]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4692,7 +4690,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[12]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[12]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4707,7 +4705,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[12]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[12]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4741,7 +4739,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[13]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[13]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4756,7 +4754,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[13]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[13]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4790,7 +4788,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[14]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[14]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4805,7 +4803,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[14]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[14]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4839,7 +4837,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[15]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[15]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4854,7 +4852,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[15]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[15]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4888,7 +4886,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[16]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[16]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4903,7 +4901,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[16]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[16]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4937,7 +4935,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[17]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[17]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -4952,7 +4950,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[17]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[17]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -4986,7 +4984,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[18]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[18]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -5001,7 +4999,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[18]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[18]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5035,7 +5033,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[19]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[19]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FF7CFC00",
                       "EnableMiddleColor": false,
@@ -5050,7 +5048,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[19]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = -(segment[19]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5095,7 +5093,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[0]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[0]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5110,7 +5108,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[0]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[0]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;\r\n"
                       },
                       "Mode": 2
                     }
@@ -5144,7 +5142,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[1]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[1]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5159,7 +5157,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[1]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[1]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5193,7 +5191,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[2]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[2]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5208,7 +5206,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[2]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[2]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5242,7 +5240,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[3]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[3]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5257,7 +5255,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[3]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[3]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5291,7 +5289,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[4]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[4]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5306,7 +5304,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[4]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[4]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5340,7 +5338,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[5]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[5]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5355,7 +5353,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[5]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[5]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5389,7 +5387,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[6]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[6]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5404,7 +5402,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[6]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[6]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5438,7 +5436,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[7]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[7]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5453,7 +5451,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[7]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[7]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5487,7 +5485,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[8]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[8]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5502,7 +5500,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[8]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[8]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5536,7 +5534,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[9]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[9]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5551,7 +5549,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[9]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[9]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5585,7 +5583,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[10]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[10]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5600,7 +5598,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[10]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[10]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5634,7 +5632,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[11]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[11]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5649,7 +5647,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[11]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[11]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5683,7 +5681,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[12]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[12]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5698,7 +5696,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[12]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[12]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5732,7 +5730,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[13]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[13]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5747,7 +5745,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[13]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[13]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5781,7 +5779,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[14]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[14]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5796,7 +5794,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[14]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[14]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5830,7 +5828,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[15]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[15]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5845,7 +5843,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[15]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[15]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5879,7 +5877,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[16]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[16]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5894,7 +5892,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[16]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[16]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5928,7 +5926,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[17]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[17]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;\r\n\r\n"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5943,7 +5941,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[17]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[17]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -5977,7 +5975,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[18]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[18]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -5992,7 +5990,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[18]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[18]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -6026,7 +6024,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[19]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[19]/(0.1*$prop('DahlDesign.DeltaBarSensitivity')));\r\n\r\nreturn normalized;"
                       },
                       "StartColor": "#FFFFFF00",
                       "EnableMiddleColor": false,
@@ -6041,7 +6039,7 @@
                       "Formula": {
                         "JSExt": 3,
                         "Interpreter": 1,
-                        "Expression": "var raw = $prop('DahlDesign.BehindDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[19]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
+                        "Expression": "var raw = $prop('DahlDesign.AheadDeltaChange')\r\nvar segment = raw.split(\",\");\r\nvar normalized = (segment[19]/$prop('DahlDesign.DeltaBarSensitivity'))*1000;\r\n\r\nreturn normalized;"
                       },
                       "Mode": 2
                     }
@@ -6102,9 +6100,7 @@
           "MinimumRefreshIntervalMS": 0.0,
           "Bindings": {
             "Visible": {
-              "Formula": {
-                "Expression": "[DahlDesign.Dashboard.DeltaScreen] = 1"
-              },
+              "Formula": { "Expression": "[DahlDesign.AheadName] != ''" },
               "Mode": 2
             }
           }
