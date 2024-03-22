@@ -2,7 +2,7 @@
   "Variables": { "DashboardVariables": [] },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "499a1705-f9fd-4b03-b9fc-90b876954b8f",
+  "Id": "404a4be5-08cd-446a-a189-13b0bf7b7b5f",
   "BaseHeight": 220,
   "BaseWidth": 412,
   "BackgroundColor": "#FF000000",
@@ -4027,7 +4027,7 @@
               "Bindings": {
                 "Left": {
                   "Formula": {
-                    "Expression": "6+([GameRawData.Telemetry.LapDistPct]*420)"
+                    "Expression": "6+([DahlDesign.BehindTrackPosition]*420)"
                   },
                   "Mode": 2
                 }
