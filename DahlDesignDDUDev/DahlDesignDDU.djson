@@ -2,7 +2,7 @@
   "Variables": { "DashboardVariables": [] },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "7d4c0231-732d-473c-a6e2-eac633d8b3fd",
+  "Id": "3ab94e88-f16b-4945-b03f-297a89d498ff",
   "BaseHeight": 768,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
@@ -5833,6 +5833,16 @@
       "Height": 163,
       "Length": 6880,
       "MD5": "80d2391fd4fffc9d7bfb1bd29c637c64"
+    },
+    {
+      "Name": "Green star",
+      "Extension": ".png",
+      "Modified": false,
+      "Optimized": true,
+      "Width": 117,
+      "Height": 113,
+      "Length": 1173,
+      "MD5": "475ffe1498c8faf5c0b3da2f0ab61812"
     }
   ],
   "Metadata": {

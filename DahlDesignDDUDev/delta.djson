@@ -1,10 +1,8 @@
 {
-  "Variables": {
-    "DashboardVariables": []
-  },
+  "Variables": { "DashboardVariables": [] },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "fdee0945-4074-4196-a84d-3e0ca2311137",
+  "Id": "57a847b0-b63c-4b95-bedb-a121e41206c2",
   "BaseHeight": 180,
   "BaseWidth": 425,
   "BackgroundColor": "#FF000000",
@@ -19,12 +17,8 @@
       "AllowOverlays": true,
       "IsForegroundLayer": false,
       "IsOverlayLayer": false,
-      "OverlayTriggerExpression": {
-        "Expression": ""
-      },
-      "ScreenEnabledExpression": {
-        "Expression": ""
-      },
+      "OverlayTriggerExpression": { "Expression": "" },
+      "ScreenEnabledExpression": { "Expression": "" },
       "OverlayMaxDuration": 0,
       "OverlayMinDuration": 0,
       "IsBackgroundLayer": false,
@@ -39,9 +33,7 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FF000000",
-              "BorderStyle": {
-                "BorderBottom": 4
-              },
+              "BorderStyle": { "BorderBottom": 4 },
               "Height": 176.0,
               "Left": 0.0,
               "Top": 0.0,
@@ -243,9 +235,7 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FF000000",
-              "BorderStyle": {
-                "BorderBottom": 4
-              },
+              "BorderStyle": { "BorderBottom": 4 },
               "Height": 176.0,
               "Left": 0.0,
               "Top": 0.0,
@@ -371,9 +361,7 @@
               "Bindings": {
                 "Text": {
                   "FormatString": "0.00",
-                  "Formula": {
-                    "Expression": "[DahlDesign.FuelPerLapTarget]"
-                  },
+                  "Formula": { "Expression": "[DahlDesign.FuelPerLapTarget]" },
                   "Mode": 2
                 }
               }
@@ -2567,10 +2555,7 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FFC0C0C0",
-              "BorderStyle": {
-                "BorderLeft": 3,
-                "BorderRight": 2
-              },
+              "BorderStyle": { "BorderLeft": 3, "BorderRight": 2 },
               "Height": 80.0,
               "Left": 410.0,
               "Opacity": 50.0,
@@ -4766,10 +4751,7 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FFC0C0C0",
-              "BorderStyle": {
-                "BorderLeft": 3,
-                "BorderRight": 2
-              },
+              "BorderStyle": { "BorderLeft": 3, "BorderRight": 2 },
               "Height": 80.0,
               "Left": 410.0,
               "Opacity": 50.0,
@@ -6965,10 +6947,7 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FFC0C0C0",
-              "BorderStyle": {
-                "BorderLeft": 3,
-                "BorderRight": 2
-              },
+              "BorderStyle": { "BorderLeft": 3, "BorderRight": 2 },
               "Height": 80.0,
               "Left": 410.0,
               "Opacity": 50.0,
@@ -9164,10 +9143,7 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FFC0C0C0",
-              "BorderStyle": {
-                "BorderLeft": 3,
-                "BorderRight": 2
-              },
+              "BorderStyle": { "BorderLeft": 3, "BorderRight": 2 },
               "Height": 80.0,
               "Left": 410.0,
               "Opacity": 50.0,
@@ -11363,10 +11339,7 @@
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FFC0C0C0",
-              "BorderStyle": {
-                "BorderLeft": 3,
-                "BorderRight": 2
-              },
+              "BorderStyle": { "BorderLeft": 3, "BorderRight": 2 },
               "Height": 80.0,
               "Left": 410.0,
               "Opacity": 50.0,
@@ -11508,7 +11481,7 @@
               "IsTextItem": true,
               "Font": "Segoe UI",
               "FontWeight": "SemiBold",
-              "FontSize": 80.0,
+              "FontSize": 60.0,
               "Text": "LAP",
               "TextColor": "#FFFFFFFF",
               "HorizontalAlignment": 1,
@@ -11516,7 +11489,7 @@
               "BackgroundColor": "#00FFFFFF",
               "Height": 100.0,
               "Left": 0.0,
-              "Top": -6.0,
+              "Top": 36.0,
               "Visible": true,
               "Width": 425.0,
               "Name": "TextItem",
@@ -11525,13 +11498,13 @@
               "Bindings": {
                 "Text": {
                   "Formula": {
-                    "Expression": "if ([DahlDesign.Dashboard.DeltaScreen] = 1, 'LAST',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 2, 'SESSION',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 3, 'LAP',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 4, 'SPEED',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 5, 'SPEED',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 6, 'FUEL',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 7, 'FUEL',\r\n'')))))))"
+                    "Expression": "if ([DahlDesign.Dashboard.DeltaScreen] = 1, 'LAST',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 2, 'SESSION',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 3, 'LAP',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 4, 'SPEED',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 5, 'SPEED',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 6, 'FUEL',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 7, 'FUEL',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 8, 'AHEAD',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 9, 'BEHIND',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 10, 'LEADER',\r\n''))))))))))"
                   },
                   "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([DahlDesign.Dashboard.DeltaScreen] = 1, 'white',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 2, 'lawngreen',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 3, 'fuchsia',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 4, 'orange',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 5, 'orange',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 6, 'deepskyblue',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 7, 'yellow',\r\n'')))))))"
+                    "Expression": "if ([DahlDesign.Dashboard.DeltaScreen] = 1, 'white',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 2, 'lawngreen',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 3, 'fuchsia',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 4, 'orange',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 5, 'orange',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 6, 'deepskyblue',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 7, 'yellow',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 8, 'lawngreen',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 9, 'red',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 10, 'fuchsia',\r\n''))))))))))"
                   },
                   "Mode": 2
                 }
@@ -11542,7 +11515,7 @@
               "IsTextItem": true,
               "Font": "Segoe UI",
               "FontWeight": "SemiBold",
-              "FontSize": 80.0,
+              "FontSize": 60.0,
               "Text": "RECORD",
               "TextColor": "#FFFFFFFF",
               "HorizontalAlignment": 1,
@@ -11550,7 +11523,7 @@
               "BackgroundColor": "#00FFFFFF",
               "Height": 100.0,
               "Left": 0.0,
-              "Top": 67.0,
+              "Top": 94.0,
               "Visible": true,
               "Width": 425.0,
               "Name": "TextItem2",
@@ -11559,13 +11532,13 @@
               "Bindings": {
                 "Text": {
                   "Formula": {
-                    "Expression": "if ([DahlDesign.Dashboard.DeltaScreen] = 1, 'LAP',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 2, 'BEST',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 3, 'RECORD',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 4, 'DELTA',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 5, 'PERCENT',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 6, 'TARGET',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 7, 'SAVE',\r\n'')))))))"
+                    "Expression": "if ([DahlDesign.Dashboard.DeltaScreen] = 1, 'LAP',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 2, 'BEST',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 3, 'RECORD',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 4, 'DELTA',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 5, 'PERCENT',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 6, 'TARGET',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 7, 'SAVE',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 8, 'DELTA',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 9, 'DELTA',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 10, 'DELTA',\r\n''))))))))))"
                   },
                   "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if ([DahlDesign.Dashboard.DeltaScreen] = 1, 'white',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 2, 'lawngreen',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 3, 'fuchsia',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 4, 'orange',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 5, 'orange',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 6, 'deepskyblue',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 7, 'yellow',\r\n'')))))))"
+                    "Expression": "if ([DahlDesign.Dashboard.DeltaScreen] = 1, 'white',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 2, 'lawngreen',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 3, 'fuchsia',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 4, 'orange',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 5, 'orange',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 6, 'deepskyblue',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 7, 'yellow',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 8, 'lawngreen',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 9, 'red',\r\nif ([DahlDesign.Dashboard.DeltaScreen] = 10, 'fuchsia',\r\n''))))))))))"
                   },
                   "Mode": 2
                 }
@@ -11587,6 +11560,531 @@
               "Visible": true,
               "Width": 425.0,
               "Name": "Bottom border",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "Group": true,
+              "Repetitions": 0,
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "Image": "White star",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.13,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 33.410000000000004,
+                  "Left": 9.0,
+                  "Top": 7.0,
+                  "Visible": true,
+                  "Width": 34.45,
+                  "Name": "LLunsel",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "Image": {
+                      "Formula": {
+                        "Expression": "[DahlDesign.Dashboard.DeltaScreen] != 1"
+                      },
+                      "Mode": 2
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DahlDesign.Dashboard.DeltaScreen] != 1"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "Image": "Black star",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.13,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 33.410000000000004,
+                  "Left": 9.0,
+                  "Top": 7.0,
+                  "Visible": false,
+                  "Width": 34.45,
+                  "Name": "LLsel",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DahlDesign.Dashboard.DeltaScreen] = 1"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontSize": 30.0,
+                  "Text": "",
+                  "TextColor": "#FF000000",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": { "BorderBottom": 4, "BorderRight": 2 },
+                  "Height": 40.0,
+                  "Left": 6.0,
+                  "Top": 6.0,
+                  "Visible": true,
+                  "Width": 43.0,
+                  "Name": "LL",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "if ([DahlDesign.Dashboard.DeltaScreen] = 1, 'white','transparent')"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "Image": "Green star",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.13,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 33.410000000000004,
+                  "Left": 50.0,
+                  "Top": 7.0,
+                  "Visible": true,
+                  "Width": 34.45,
+                  "Name": "SBunsel",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "Image": {
+                      "Formula": {
+                        "Expression": "[DahlDesign.Dashboard.DeltaScreen] != 1"
+                      },
+                      "Mode": 2
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DahlDesign.Dashboard.DeltaScreen] != 2"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "Image": "Black star",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.13,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 33.410000000000004,
+                  "Left": 50.0,
+                  "Top": 7.0,
+                  "Visible": false,
+                  "Width": 34.45,
+                  "Name": "SBsel",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DahlDesign.Dashboard.DeltaScreen] = 2"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontSize": 30.0,
+                  "Text": "",
+                  "TextColor": "#FFFFFF00",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "BorderBottom": 4,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 40.0,
+                  "Left": 45.0,
+                  "Top": 6.0,
+                  "Visible": true,
+                  "Width": 43.0,
+                  "Name": "SB",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "if ([DahlDesign.Dashboard.DeltaScreen] = 2, 'lawngreen','transparent')"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "Image": "Pink star",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.13,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 33.410000000000004,
+                  "Left": 90.0,
+                  "Top": 7.0,
+                  "Visible": true,
+                  "Width": 34.45,
+                  "Name": "LRunsel",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "Image": {
+                      "Formula": {
+                        "Expression": "[DahlDesign.Dashboard.DeltaScreen] != 1"
+                      },
+                      "Mode": 2
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DahlDesign.Dashboard.DeltaScreen] != 3"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "Image": "Black star",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.13,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 33.410000000000004,
+                  "Left": 90.0,
+                  "Top": 7.0,
+                  "Visible": false,
+                  "Width": 34.45,
+                  "Name": "LRsel",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DahlDesign.Dashboard.DeltaScreen] = 3"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontSize": 30.0,
+                  "Text": "",
+                  "TextColor": "#FFFFFF00",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "BorderBottom": 4,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 40.0,
+                  "Left": 85.0,
+                  "Top": 6.0,
+                  "Visible": true,
+                  "Width": 43.0,
+                  "Name": "LR",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "if ([DahlDesign.Dashboard.DeltaScreen] = 3, 'fuchsia', 'transparent')"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontSize": 30.0,
+                  "Text": "S",
+                  "TextColor": "#FFFFA500",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "BorderBottom": 4,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 40.0,
+                  "Left": 128.0,
+                  "Top": 6.0,
+                  "Visible": true,
+                  "Width": 43.0,
+                  "Name": "S",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "TextColor": {
+                      "Formula": {
+                        "Expression": "if( [DahlDesign.Dashboard.DeltaScreen] = 4, 'white', 'orange')"
+                      },
+                      "Mode": 2
+                    },
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "if( [DahlDesign.Dashboard.DeltaScreen] = 4, 'orange', 'white')"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontSize": 30.0,
+                  "Text": "%",
+                  "TextColor": "#FFFFA500",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "BorderBottom": 4,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 40.0,
+                  "Left": 168.0,
+                  "Top": 6.0,
+                  "Visible": true,
+                  "Width": 43.0,
+                  "Name": "%",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "TextColor": {
+                      "Formula": {
+                        "Expression": "if( [DahlDesign.Dashboard.DeltaScreen] = 5, 'white', 'orange')"
+                      },
+                      "Mode": 2
+                    },
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "if( [DahlDesign.Dashboard.DeltaScreen] = 5, 'orange', 'white')"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontSize": 30.0,
+                  "Text": "FT",
+                  "TextColor": "#FF00BFFF",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "BorderBottom": 4,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 40.0,
+                  "Left": 211.0,
+                  "Top": 6.0,
+                  "Visible": true,
+                  "Width": 43.0,
+                  "Name": "FT",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "TextColor": {
+                      "Formula": {
+                        "Expression": "if( [DahlDesign.Dashboard.DeltaScreen] = 6, 'white', 'deepskyblue')"
+                      },
+                      "Mode": 2
+                    },
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "if( [DahlDesign.Dashboard.DeltaScreen] = 6, 'deepskyblue', 'white')"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontSize": 30.0,
+                  "Text": "FS",
+                  "TextColor": "#FFFFFF00",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "BorderBottom": 4,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 40.0,
+                  "Left": 254.0,
+                  "Top": 6.0,
+                  "Visible": true,
+                  "Width": 43.0,
+                  "Name": "FS",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "TextColor": {
+                      "Formula": {
+                        "Expression": "if( [DahlDesign.Dashboard.DeltaScreen] = 7, 'white', 'yellow')"
+                      },
+                      "Mode": 2
+                    },
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "if( [DahlDesign.Dashboard.DeltaScreen] = 7, 'yellow', 'white')"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontSize": 30.0,
+                  "Text": "A",
+                  "TextColor": "#FF7CFC00",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "BorderBottom": 4,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 40.0,
+                  "Left": 297.0,
+                  "Top": 6.0,
+                  "Visible": true,
+                  "Width": 43.0,
+                  "Name": "A",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "TextColor": {
+                      "Formula": {
+                        "Expression": "if( [DahlDesign.Dashboard.DeltaScreen] = 8, 'white', 'lawngreen')"
+                      },
+                      "Mode": 2
+                    },
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "if( [DahlDesign.Dashboard.DeltaScreen] = 8, 'lawngreen', 'white')"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontSize": 30.0,
+                  "Text": "B",
+                  "TextColor": "#FFFF0000",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "BorderBottom": 4,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 40.0,
+                  "Left": 340.0,
+                  "Top": 6.0,
+                  "Visible": true,
+                  "Width": 43.0,
+                  "Name": "B",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "TextColor": {
+                      "Formula": {
+                        "Expression": "if( [DahlDesign.Dashboard.DeltaScreen] = 9, 'white', 'red')"
+                      },
+                      "Mode": 2
+                    },
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "if( [DahlDesign.Dashboard.DeltaScreen] = 9, 'red', 'white')"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "IsTextItem": true,
+                  "Font": "Segoe UI",
+                  "FontSize": 30.0,
+                  "Text": "P1",
+                  "TextColor": "#FFFF00FF",
+                  "HorizontalAlignment": 1,
+                  "VerticalAlignment": 1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "BorderBottom": 4,
+                    "BorderLeft": 2,
+                    "BorderRight": 2
+                  },
+                  "Height": 40.0,
+                  "Left": 383.0,
+                  "Top": 6.0,
+                  "Visible": true,
+                  "Width": 43.0,
+                  "Name": "P1",
+                  "RenderingSkip": 0,
+                  "MinimumRefreshIntervalMS": 0.0,
+                  "Bindings": {
+                    "TextColor": {
+                      "Formula": {
+                        "Expression": "if( [DahlDesign.Dashboard.DeltaScreen] = 10, 'white', 'fuchsia')"
+                      },
+                      "Mode": 2
+                    },
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "if( [DahlDesign.Dashboard.DeltaScreen] = 10, 'fuchsia', 'white')"
+                      },
+                      "Mode": 2
+                    }
+                  }
+                }
+              ],
+              "Visible": true,
+              "Name": "Menu",
               "RenderingSkip": 0,
               "MinimumRefreshIntervalMS": 0.0
             }
@@ -11616,9 +12114,50 @@
   "BackgroundOpacity": 100.0,
   "ShowBoundingRectangles": false,
   "GridSize": 10,
-  "Images": [],
+  "Images": [
+    {
+      "Name": "Black star",
+      "Extension": ".png",
+      "Modified": false,
+      "Optimized": true,
+      "Width": 265,
+      "Height": 257,
+      "Length": 2347,
+      "MD5": "801a267533d7e4d115be9ca462569eb7"
+    },
+    {
+      "Name": "Green star",
+      "Extension": ".png",
+      "Modified": false,
+      "Optimized": true,
+      "Width": 265,
+      "Height": 257,
+      "Length": 2720,
+      "MD5": "324b17674dfa8062998fdee50ea23749"
+    },
+    {
+      "Name": "Pink star",
+      "Extension": ".png",
+      "Modified": false,
+      "Optimized": true,
+      "Width": 265,
+      "Height": 257,
+      "Length": 2718,
+      "MD5": "2fe6874f5c578d24004e68b7b0501690"
+    },
+    {
+      "Name": "White star",
+      "Extension": ".png",
+      "Modified": false,
+      "Optimized": true,
+      "Width": 265,
+      "Height": 257,
+      "Length": 2623,
+      "MD5": "06213628b5aa07c12b573e470796efa0"
+    }
+  ],
   "Metadata": {
-    "SimHubVersion": "9.1.24",
+    "SimHubVersion": "9.2.6",
     "Title": "Delta",
     "ScreenCount": 1.0,
     "InGameScreensIndexs": [0],
