@@ -53,7 +53,7 @@
               "Bindings": {
                 "BackgroundColor": {
                   "Formula": {
-                    "Expression": "if (timespantoseconds([DahlDesign.PredictedLapTime]) > 0\r\nand timespantoseconds([DahlDesign.FuelSlowestFuelSavePace]) > 0,\r\n\t\r\nif (timespantoseconds([LastLapTime]) > 0 && [GameRawData.Telemetry.LapDistPct] < 0.3, \r\n\r\n'darkgray',\r\n\r\n'black'),\r\n\r\n'black')"
+                    "Expression": "if (timespantoseconds([DahlDesign.PredictedLapTime]) > 0\r\nand timespantoseconds([DahlDesign.FuelSlowestFuelSavePace]) > 0,\r\n\t\r\nif (timespantoseconds([LastLapTime]) > 0 && [DahlDesign.MyTrackPosition] < 0.3, \r\n\r\n'darkgray',\r\n\r\n'black'),\r\n\r\n'black')"
                   },
                   "Mode": 2
                 }
@@ -135,13 +135,13 @@
                 "Text": {
                   "FormatString": "0.0",
                   "Formula": {
-                    "Expression": "if (timespantoseconds([DahlDesign.PredictedLapTime]) > 0\r\nand timespantoseconds([DahlDesign.FuelSlowestFuelSavePace]) > 0,\r\n\t\r\nif (timespantoseconds([LastLapTime]) > 0 && [GameRawData.Telemetry.LapDistPct] < 0.3, \r\n\r\nif(abs(timespantoseconds([LastLapTime]) - timespantoseconds([DahlDesign.FuelSlowestFuelSavePace])) < 100, format(timespantoseconds([LastLapTime]) - timespantoseconds([DahlDesign.FuelSlowestFuelSavePace]),'0.0',1), format(0, '0.0',1)),\r\n\r\nif(abs(timespantoseconds([LastLapTime]) - timespantoseconds([DahlDesign.PredictedLapTime])) < 100, format(timespantoseconds([DahlDesign.PredictedLapTime]) - timespantoseconds([DahlDesign.FuelSlowestFuelSavePace]),'0.0',1), format(0, '0.0',1))),\r\n\r\nformat(0, '0.0',1))"
+                    "Expression": "if (timespantoseconds([DahlDesign.PredictedLapTime]) > 0\r\nand timespantoseconds([DahlDesign.FuelSlowestFuelSavePace]) > 0,\r\n\t\r\nif (timespantoseconds([LastLapTime]) > 0 && [DahlDesign.MyTrackPosition] < 0.3, \r\n\r\nif(abs(timespantoseconds([LastLapTime]) - timespantoseconds([DahlDesign.FuelSlowestFuelSavePace])) < 100, format(timespantoseconds([LastLapTime]) - timespantoseconds([DahlDesign.FuelSlowestFuelSavePace]),'0.0',1), format(0, '0.0',1)),\r\n\r\nif(abs(timespantoseconds([LastLapTime]) - timespantoseconds([DahlDesign.PredictedLapTime])) < 100, format(timespantoseconds([DahlDesign.PredictedLapTime]) - timespantoseconds([DahlDesign.FuelSlowestFuelSavePace]),'0.0',1), format(0, '0.0',1))),\r\n\r\nformat(0, '0.0',1))"
                   },
                   "Mode": 2
                 },
                 "TextColor": {
                   "Formula": {
-                    "Expression": "if (timespantoseconds([DahlDesign.PredictedLapTime]) > 0\r\nand timespantoseconds([DahlDesign.FuelSlowestFuelSavePace]) > 0,\r\n\t\r\nif (timespantoseconds([LastLapTime]) > 0 && [GameRawData.Telemetry.LapDistPct] < 0.3, \r\n\r\n\tif (timespantoseconds([LastLapTime]) - timespantoseconds([DahlDesign.FuelSlowestFuelSavePace]) < 0, 'lawngreen','red'),\r\n\r\nif (timespantoseconds([DahlDesign.PredictedLapTime]) - timespantoseconds([DahlDesign.FuelSlowestFuelSavePace]) < 0, 'lawngreen', 'red')),\r\n\r\n'white')\r\n\r\n"
+                    "Expression": "if (timespantoseconds([DahlDesign.PredictedLapTime]) > 0\r\nand timespantoseconds([DahlDesign.FuelSlowestFuelSavePace]) > 0,\r\n\t\r\nif (timespantoseconds([LastLapTime]) > 0 && [DahlDesign.MyTrackPosition] < 0.3, \r\n\r\n\tif (timespantoseconds([LastLapTime]) - timespantoseconds([DahlDesign.FuelSlowestFuelSavePace]) < 0, 'lawngreen','red'),\r\n\r\nif (timespantoseconds([DahlDesign.PredictedLapTime]) - timespantoseconds([DahlDesign.FuelSlowestFuelSavePace]) < 0, 'lawngreen', 'red')),\r\n\r\n'white')\r\n\r\n"
                   },
                   "Mode": 2
                 }
@@ -2583,7 +2583,7 @@
               "Bindings": {
                 "Left": {
                   "Formula": {
-                    "Expression": "6+([GameRawData.Telemetry.LapDistPct]*420)"
+                    "Expression": "6+([DahlDesign.MyTrackPosition]*420)"
                   },
                   "Mode": 2
                 }
@@ -4782,7 +4782,7 @@
               "Bindings": {
                 "Left": {
                   "Formula": {
-                    "Expression": "6+([GameRawData.Telemetry.LapDistPct]*420)"
+                    "Expression": "6+([DahlDesign.MyTrackPosition]*420)"
                   },
                   "Mode": 2
                 }
@@ -6981,7 +6981,7 @@
               "Bindings": {
                 "Left": {
                   "Formula": {
-                    "Expression": "6+([GameRawData.Telemetry.LapDistPct]*420)"
+                    "Expression": "6+([DahlDesign.MyTrackPosition]*420)"
                   },
                   "Mode": 2
                 }
@@ -9180,7 +9180,7 @@
               "Bindings": {
                 "Left": {
                   "Formula": {
-                    "Expression": "6+([GameRawData.Telemetry.LapDistPct]*420)"
+                    "Expression": "6+([DahlDesign.MyTrackPosition]*420)"
                   },
                   "Mode": 2
                 }
@@ -11379,7 +11379,7 @@
               "Bindings": {
                 "Left": {
                   "Formula": {
-                    "Expression": "6+([GameRawData.Telemetry.LapDistPct]*420)"
+                    "Expression": "6+([DahlDesign.MyTrackPosition]*420)"
                   },
                   "Mode": 2
                 }

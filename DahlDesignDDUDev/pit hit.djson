@@ -206,7 +206,7 @@
                   "$id": "26",
                   "Formula": {
                     "$id": "27",
-                    "Expression": "if([GameRawData.SessionData.DriverInfo.DriverPitTrkPct] < 0.2 and [GameRawData.Telemetry.LapDistPct] > 0.8,\r\n((([GameRawData.SessionData.DriverInfo.DriverPitTrkPct] + (1-[GameRawData.Telemetry.LapDistPct]))*[TrackLength])+8)*32,\r\nif([GameRawData.SessionData.DriverInfo.DriverPitTrkPct] > 0.8 and [GameRawData.Telemetry.LapDistPct] < 0.2, ((((1-[GameRawData.SessionData.DriverInfo.DriverPitTrkPct]) + [GameRawData.Telemetry.LapDistPct])*-[TrackLength])+8)*32,((([GameRawData.SessionData.DriverInfo.DriverPitTrkPct]-[GameRawData.Telemetry.LapDistPct])*[TrackLength])+8)*32))"
+                    "Expression": "if([GameRawData.SessionData.DriverInfo.DriverPitTrkPct] < 0.2 and [DahlDesign.MyTrackPosition] > 0.8,\r\n((([GameRawData.SessionData.DriverInfo.DriverPitTrkPct] + (1-[DahlDesign.MyTrackPosition]))*[TrackLength])+8)*32,\r\nif([GameRawData.SessionData.DriverInfo.DriverPitTrkPct] > 0.8 and [DahlDesign.MyTrackPosition] < 0.2, ((((1-[GameRawData.SessionData.DriverInfo.DriverPitTrkPct]) + [DahlDesign.MyTrackPosition])*-[TrackLength])+8)*32,((([GameRawData.SessionData.DriverInfo.DriverPitTrkPct]-[DahlDesign.MyTrackPosition])*[TrackLength])+8)*32))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "Left"

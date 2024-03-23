@@ -280,7 +280,7 @@
           "Bindings": {
             "Visible": {
               "Formula": {
-                "Expression": "[DahlDesign.FuelAlert]\r\n&&\r\n(([GameRawData.Telemetry.LapDistPct] < 0.25 && [GameRawData.Telemetry.LapDistPct] > 0.15) \r\n|| \r\n([GameRawData.Telemetry.LapDistPct] > 0.5 && [GameRawData.Telemetry.LapDistPct] < 0.6)) "
+                "Expression": "[DahlDesign.FuelAlert]\r\n&&\r\n(([DahlDesign.MyTrackPosition] < 0.25 && [DahlDesign.MyTrackPosition] > 0.15) \r\n|| \r\n([DahlDesign.MyTrackPosition] > 0.5 && [DahlDesign.MyTrackPosition] < 0.6)) "
               },
               "Mode": 2,
               "TargetPropertyName": "Visible"

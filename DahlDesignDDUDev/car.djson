@@ -2548,7 +2548,7 @@
               "Bindings": {
                 "Left": {
                   "Formula": {
-                    "Expression": "6+([GameRawData.Telemetry.LapDistPct]*420)"
+                    "Expression": "6+([DahlDesign.MyTrackPosition]*420)"
                   },
                   "Mode": 2
                 }

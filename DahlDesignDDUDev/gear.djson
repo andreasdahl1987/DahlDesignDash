@@ -10230,7 +10230,7 @@
               "Bindings": {
                 "Top": {
                   "Formula": {
-                    "Expression": "52 + (542 * ([CompletedLaps]+[GameRawData.Telemetry.LapDistPct])/([CompletedLaps] + [DahlDesign.LapsRemaining] + 1))"
+                    "Expression": "52 + (542 * ([CompletedLaps]+[DahlDesign.MyTrackPosition])/([CompletedLaps] + [DahlDesign.LapsRemaining] + 1))"
                   },
                   "Mode": 2
                 }
