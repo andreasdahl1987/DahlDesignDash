@@ -2,7 +2,7 @@
   "Variables": { "DashboardVariables": [] },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "404a4be5-08cd-446a-a189-13b0bf7b7b5f",
+  "Id": "8c85a6be-dd3b-4f84-99a2-4d9877566a95",
   "BaseHeight": 220,
   "BaseWidth": 412,
   "BackgroundColor": "#FF000000",
@@ -4011,12 +4011,35 @@
               "MinimumRefreshIntervalMS": 0.0
             },
             {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.EllipseItem, SimHub.Plugins",
+              "FillColor": "#00FFFFFF",
+              "EllipseColor": "#FFFFFFFF",
+              "EllipseThickness": 10.0,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 18.0,
+              "Left": 399.0,
+              "Top": 166.0,
+              "Visible": true,
+              "Width": 18.0,
+              "Name": "EllipseItem",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "Left": {
+                  "Formula": {
+                    "Expression": "-1 + ([DahlDesign.MyTrackPosition]*400)"
+                  },
+                  "Mode": 2
+                }
+              }
+            },
+            {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FFC0C0C0",
               "BorderStyle": { "BorderLeft": 3, "BorderRight": 2 },
               "Height": 80.0,
-              "Left": 410.0,
+              "Left": 406.0,
               "Opacity": 50.0,
               "Top": 135.0,
               "Visible": true,
@@ -4027,7 +4050,7 @@
               "Bindings": {
                 "Left": {
                   "Formula": {
-                    "Expression": "6+([DahlDesign.BehindTrackPosition]*420)"
+                    "Expression": "6+([DahlDesign.BehindTrackPosition]*400)"
                   },
                   "Mode": 2
                 }
@@ -5566,9 +5589,9 @@
                   "UseAlternateStyle": false,
                   "Minimum": 0.0,
                   "Maximum": 100.0,
-                  "Value": 10.0,
+                  "Value": 90.0,
                   "Steps": 0.0,
-                  "PAW": 4.0,
+                  "PAW": 34.0,
                   "BackgroundColor": "#00FFFFFF",
                   "Height": 38.0,
                   "Left": 205.0,
@@ -6052,6 +6075,29 @@
               "MinimumRefreshIntervalMS": 0.0
             },
             {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.EllipseItem, SimHub.Plugins",
+              "FillColor": "#00FFFFFF",
+              "EllipseColor": "#FFFFFFFF",
+              "EllipseThickness": 10.0,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 18.0,
+              "Left": 399.0,
+              "Top": 71.0,
+              "Visible": true,
+              "Width": 18.0,
+              "Name": "EllipseItem",
+              "RenderingSkip": 0,
+              "MinimumRefreshIntervalMS": 0.0,
+              "Bindings": {
+                "Left": {
+                  "Formula": {
+                    "Expression": "-1 + ([DahlDesign.AheadTrackPosition]*400)"
+                  },
+                  "Mode": 2
+                }
+              }
+            },
+            {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
               "IsRectangleItem": true,
               "BackgroundColor": "#FFC0C0C0",
@@ -6068,7 +6114,7 @@
               "Bindings": {
                 "Left": {
                   "Formula": {
-                    "Expression": "6+([GameRawData.Telemetry.LapDistPct]*420)"
+                    "Expression": "6+([GameRawData.Telemetry.LapDistPct]*400)"
                   },
                   "Mode": 2
                 }
@@ -6108,40 +6154,46 @@
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
           "IsRectangleItem": true,
-          "BackgroundColor": "#00FFFFFF",
-          "BorderStyle": {
-            "BorderTop": 2,
-            "BorderBottom": 2,
-            "BorderLeft": 2,
-            "BorderRight": 2
-          },
-          "Height": 2.0,
-          "Left": -3.0,
-          "Top": 118.0,
+          "BackgroundColor": "#FFFFFF00",
+          "BorderStyle": { "BorderColor": "#FF7CFC00" },
+          "Height": 15.0,
+          "Left": 5.0,
+          "Top": 120.0,
           "Visible": true,
-          "Width": 428.0,
-          "Name": "Center line",
+          "Width": 201.0,
+          "Name": "BHDcolor",
           "RenderingSkip": 0,
-          "MinimumRefreshIntervalMS": 0.0
+          "MinimumRefreshIntervalMS": 0.0,
+          "Bindings": {
+            "BackgroundColor": {
+              "Formula": {
+                "Expression": "if([DahlDesign.BehindPrognosis] = 0, 'white',\r\nif([DahlDesign.BehindPrognosis] = 1, 'fuchsia',\r\nif([DahlDesign.BehindPrognosis] = 2, 'lawngreen',\r\nif([DahlDesign.BehindPrognosis] = 3, 'deepskyblue',\r\nif([DahlDesign.BehindPrognosis] = 4, 'yellow',\r\nif([DahlDesign.BehindPrognosis] = 5, 'red','white'))))))"
+              },
+              "Mode": 2
+            }
+          }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
           "IsRectangleItem": true,
-          "BackgroundColor": "#00FFFFFF",
-          "BorderStyle": {
-            "BorderTop": 2,
-            "BorderBottom": 2,
-            "BorderLeft": 2,
-            "BorderRight": 2
-          },
-          "Height": 2.0,
-          "Left": -3.0,
-          "Top": 135.0,
+          "BackgroundColor": "#FFFF00FF",
+          "BorderStyle": { "BorderColor": "#FF7CFC00" },
+          "Height": 15.0,
+          "Left": 205.0,
+          "Top": 120.0,
           "Visible": true,
-          "Width": 428.0,
-          "Name": "Center line2",
+          "Width": 220.0,
+          "Name": "AHD color",
           "RenderingSkip": 0,
-          "MinimumRefreshIntervalMS": 0.0
+          "MinimumRefreshIntervalMS": 0.0,
+          "Bindings": {
+            "BackgroundColor": {
+              "Formula": {
+                "Expression": "if([DahlDesign.AheadPrognosis] = 0, 'white',\r\nif([DahlDesign.AheadPrognosis] = 1, 'fuchsia',\r\nif([DahlDesign.AheadPrognosis] = 2, 'lawngreen',\r\nif([DahlDesign.AheadPrognosis] = 3, 'deepskyblue',\r\nif([DahlDesign.AheadPrognosis] = 4, 'yellow',\r\nif([DahlDesign.AheadPrognosis] = 5, 'red','white'))))))"
+              },
+              "Mode": 2
+            }
+          }
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
