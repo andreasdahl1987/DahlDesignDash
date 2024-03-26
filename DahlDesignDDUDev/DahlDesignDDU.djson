@@ -2,7 +2,7 @@
   "Variables": { "DashboardVariables": [] },
   "DashboardDebugManager": {},
   "Version": 2,
-  "Id": "3ab94e88-f16b-4945-b03f-297a89d498ff",
+  "Id": "fda8b2c9-31bd-4b30-b6b1-ce6c40e7f073",
   "BaseHeight": 768,
   "BaseWidth": 1280,
   "BackgroundColor": "#FF000000",
@@ -276,9 +276,11 @@
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.IntegratedLedItem, SimHub.Plugins",
               "Settings": {
-                "LastGameProfiles": {},
+                "LastGameProfiles": {
+                  "iracing": "30dee5b0-d4e8-46cd-83f3-e5e499b3f298"
+                },
                 "LastUsedProfile": "00000000-0000-0000-0000-000000000000",
-                "activeProfileId": "00000000-0000-0000-0000-000000000000",
+                "activeProfileId": "30dee5b0-d4e8-46cd-83f3-e5e499b3f298",
                 "GlobalBrightness": 100.0,
                 "GlobalBrightnessPreset": {
                   "CurrentMode": 0,
